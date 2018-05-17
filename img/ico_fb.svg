@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico_fb" fill="#14A31A">
+            <path d="M7.73,4.486 L7.73,6.964 L6,6.964 L6,9.994 L7.73,9.994 L7.73,19 L11.28,19 L11.28,10 L13.66,10 C13.66,10 13.89,8.547 14,6.958 L11.29,6.958 L11.29,4.881 C11.349085,4.49067687 11.666879,4.19104255 12.06,4.155 L14,4.155 L14,1 L11.37,1 C7.64,1 7.73,4.033 7.73,4.486 Z" id="fb"></path>
+        </g>
+    </g>
+</svg>
