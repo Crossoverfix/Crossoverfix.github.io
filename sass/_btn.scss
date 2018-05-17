@@ -1,0 +1,110 @@
+button, button:active, button:hover, button:visited, button:focus{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button{
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0 25px;
+  background-color: $green;
+  border-radius: 23px;
+  i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  span{
+    @include text(17px,19px,white)
+  }
+  &:hover{
+    background-color: $text-color;
+    i,span{
+      color: $green;
+    }
+  }
+}
+.button-wave{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  padding: 0 23px;
+  background-color: $green;
+  border-radius: 22px;
+  left: 20px;
+  top: 20px;
+  &:hover{
+    background-color: $text-color;
+    i{
+      color: $green;
+    }
+    span{
+      color: $green;
+    }
+    &:before{
+      opacity: 1;
+    }
+    &:after{
+      opacity: 1;
+    }
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    border-radius: 32px;
+    border: solid 1px $green;
+    opacity: 0.5;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: calc(100% + 40px);
+    width: calc(100% + 40px);
+    border-radius: 42px;
+    border: solid 1px $green;
+    opacity: 0.4;
+  }
+  i{
+    font-size: 18px;
+    color: white;
+    margin-right: 13px;
+  }
+  span{
+    @include text(17px,19px,white);
+  }
+}
+.btn-ico{
+  height: 30px;
+  width: 48px;
+  border-radius: 15px;
+  border: solid 1px $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  i{
+    color: $green;
+    font-size: 20px;
+  }
+  &:hover{
+    border: solid 1px $green;
+    background-color: $green;
+    i{
+      color: white;
+    }
+  }
+}

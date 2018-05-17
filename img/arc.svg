@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arc</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape" fill-rule="nonzero" fill="#72C42A">
+            <path d="M38,95.8603584 C16.2620674,91.0625831 0,71.6803962 0,48.5 C0,21.7141896 21.7141896,0 48.5,0 C71.6803962,0 91.0625831,16.2620674 95.8603584,38 L90.7242896,38 C86.0270006,19.0481737 68.9040637,5 48.5,5 C24.4756134,5 5,24.4756134 5,48.5 C5,68.9040637 19.0481737,86.0270006 38,90.7242896 L38,95.8603584 Z" id="arc"></path>
+        </g>
+    </g>
+</svg>
