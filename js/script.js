@@ -111,12 +111,16 @@ function sliderControl ($direct) {
   }
 }
 var $buttonCalc = $(".slider__nav-block__content button.button");
+var $calcBtnAll = $('span:contains("Рассчитать стоимость")').parent();
 var $modal = $("div.model-windows");
 var $calc = $("#model-w-calc");
 var $review = $("#model-w-review");
 var $question = $("#model-w-question");
 var $callBack = $("#model-w-call-back");
 var $sucess = $("#model-w-sucess");
+$calcBtnAll.click(function () {
+  modalControl("calc");
+});
 $buttonCalc.click(function () {
   modalControl("calc");
 });
