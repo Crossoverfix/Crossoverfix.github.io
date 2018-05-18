@@ -26,6 +26,7 @@ a,a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 95px;
   input{
     display: none;
   }
@@ -518,7 +519,7 @@ a,a:hover{
       z-index: 1;
       content: "";
       position: absolute;
-      background: url("../img/Hover numbers.jpg")no-repeat;
+      background: url("../img/Hover_numbers.jpg")no-repeat;
       background-size: cover;
       height: calc(100% + 18px);
       width: calc(100% + 22px);

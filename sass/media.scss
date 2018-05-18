@@ -170,8 +170,30 @@
       margin: 0 25px 40px 0;
     }
   }
+  .button-bar__btn{
+    &:nth-child(1){
+      left: -20%;
+    }
+    &:nth-child(2){
+      left: calc(0% + 180px);
+    }
+    &:nth-child(4){
+      left: calc(100% - 180px);
+    }
+    &:nth-child(5){
+      left: 120%;
+    }
+  }
 }
 @media screen and (max-width: 991px){
+  .button-bar__btn{
+    &:nth-child(2){
+      left: calc(0% + 140px);
+    }
+    &:nth-child(4){
+      left: calc(100% - 140px);
+    }
+  }
   .faq__content-more{
     span{
       font-size: 24px;
@@ -346,9 +368,19 @@
   }
 }
 @media screen and (max-width: 767px){
-  .model-windows{
-    min-height: 600vh;
-    position: absolute;
+  .button-bar__btn{
+    &:nth-child(1){
+      left: -65%;
+    }
+    &:nth-child(2){
+      left: -45%;
+    }
+    &:nth-child(4){
+      left: 145%;
+    }
+    &:nth-child(5){
+      left: 165%;
+    }
   }
   .model-windows__item{
     min-width: 275px;
@@ -533,11 +565,6 @@
   }
   .button-bar{
     height: 83px;
-    &__btn{
-      &:nth-last-child(-n +3){
-        display: none;
-      }
-    }
   }
   .slider__{
     &watch-block{
