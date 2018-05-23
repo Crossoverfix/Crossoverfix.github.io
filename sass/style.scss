@@ -11,3 +11,12 @@ a,a:hover{
   text-decoration: none;
   cursor: pointer;
 }
+.link-to-content{
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  a{
+    display: block;
+    margin: 25px 50px;
+  }
+}

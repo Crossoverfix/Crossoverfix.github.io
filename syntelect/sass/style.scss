@@ -13,6 +13,17 @@ a,a:hover{
   color: inherit;
 
 }
+.sub-line-text{
+  display: block;
+  @include text($font-rw,22px,26px,$text-color);
+  margin-bottom: 30px;
+}
+.head-line-text{
+  display: block;
+  @include text($font-rw,36px,42px,$blue);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
 #top{
   display: none;
 }
@@ -155,14 +166,292 @@ a,a:hover{
       @include text($font-rw,36px,42px,$d-blue);
       margin-bottom: 17px;
     }
-    span{
-      display: block;
-      @include text($font-rw,22px,26px,#65738E);
-      margin-bottom: 30px;
-    }
     p{
       @include text($font-op,15px,20px,#65738E);
       margin-bottom: 20px;
+    }
+  }
+}
+#why-choose-us{
+  margin-top: 135px;
+  position: relative;
+}
+.whu{
+  &__header{
+    margin: 0 auto 270px auto;
+    max-width: 680px;
+    & + .whu__background{
+      top: 50px;
+      height: 1000px;
+    }
+    h2,span{
+      text-align: center;
+    }
+  }
+  &__background{
+    position: absolute;
+    width: 100%;
+    img{
+      @include absolut-center;
+      height: 100%;
+    }
+  }
+  &__poligon{
+    z-index: 1;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    background: url("../img/bg_poly+spl.svg")no-repeat;
+    &__text{
+      @include absolut-center;
+      width: 400px;
+      h2{
+        width: 225px;
+        @include text($font-rw,24px,29px,$d-blue);
+        text-align: center;
+        margin: 0 auto 25px auto;
+        font-weight: 800;
+      }
+      span{
+        @include text($font-rw,14px,19px,$d-blue);
+        text-align: center;
+        display: block;
+      }
+    }
+    &__reason{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      a{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        span{
+          @include text($font-rw,16px,19px,$text-color);
+          text-align: center;
+          display: block;
+        }
+        h2{
+          @include text($font-rw,20px,24px,$blue);
+          text-align: center;
+          font-weight: 600;
+        }
+        &:hover{
+          h2{
+            color: $d-blue;
+          }
+          .whu__poligon__ico{
+            background-color: #CFF1FF;
+            img:nth-child(2){
+              display: none;
+            }
+            img:nth-child(3){
+              display: block;
+            }
+            & > div{
+              border-bottom: solid 2px $d-blue;
+              & > div{
+                border-bottom: solid 2px $d-blue;
+                & > div{
+                  background-color: $blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__ico{
+      height: 63px;
+      width: 63px;
+      background-color: $blue;
+      box-shadow: 5px 5px 20px 0 rgba(75,101,129,0.4);
+      border-radius: 32px;
+      position: absolute;
+      img{
+        @include absolut-center;
+        z-index: 2;
+      }
+      img:nth-child(2){
+        display: block;
+      }
+      img:nth-child(3){
+        display: none;
+      }
+      & > div{
+        transform-origin: left 50%;
+        transform: rotate(50deg);
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 1px;
+        min-width: 100px;
+        border-bottom: dashed 2px #6D94C0;
+        & > div{
+          transform-origin: left 50%;
+          transform: rotate(50deg);
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          height: 1px;
+          min-width: 200px;
+          border-bottom: dashed 2px #6D94C0;
+          & > div{
+            position: absolute;
+            top: 1px;
+            left: 100%;
+            transform: translate(-50%,-50%);
+            height: 12px;
+            width: 12px;
+            border-radius: 6px;
+            background-color: $d-blue;
+          }
+        }
+      }
+    }
+  }
+}
+#reason-1{
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 170px;
+    left: calc(50% - 32px);
+    & > div{
+      transform: rotate(-55deg);
+      width: 175px;
+      & > div{
+        transform: rotate(-125deg);
+      }
+    }
+  }
+}
+#reason-2{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-3{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-4{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-5{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-6{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-7{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
+    }
+  }
+}
+#reason-8{
+  width: 200px;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-50%);
+  .whu__poligon__ico{
+    top: 110px;
+    left: -160px;
+    & > div{
+      transform: rotate(-40deg);
+      width: 135px;
+      & > div{
+        transform: rotate(40deg);
+        width: 250px;
+      }
     }
   }
 }

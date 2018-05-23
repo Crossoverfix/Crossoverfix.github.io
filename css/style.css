@@ -11,3 +11,15 @@ a, a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* line 14, ../sass/style.scss */
+.link-to-content {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+/* line 18, ../sass/style.scss */
+.link-to-content a {
+  display: block;
+  margin: 25px 50px;
+}
