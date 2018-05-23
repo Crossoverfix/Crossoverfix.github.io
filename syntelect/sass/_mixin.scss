@@ -1,0 +1,12 @@
+@mixin text($ff,$mx-font-size,$mx-line-height,$mx-color){
+  font-family: $ff;
+  font-size: $mx-font-size;
+  line-height: $mx-line-height;
+  color: $mx-color;
+}
+@mixin absolut-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}

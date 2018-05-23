@@ -1,0 +1,62 @@
+button,button:focus{
+  outline: none;
+  cursor: pointer;
+}
+.button-ghost{
+  height: 45px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px $blue;
+  padding: 0 25px;
+  &:hover{
+    background-color: $blue;
+    i{
+      color: white;
+    }
+    span{
+      color: white;
+    }
+  }
+  i{
+    font-size: 18px;
+    color: $blue;
+    margin-right: 8px;
+  }
+  span{
+    @include text($font-op,15px,20px,$blue);
+  }
+}
+.button{
+  height: 45px;
+  background-color: $blue;
+  border-radius: 25px;
+  border: solid 2px $blue;
+  padding: 0 25px;
+  box-shadow: 0 2px 10px 0 #4D5AFF;
+  &:hover{
+    background-color: $d-blue;
+    border-color: $d-blue;
+  }
+  i{
+    font-size: 18px;
+    color: white;
+    margin-right: 8px;
+  }
+  span{
+    @include text($font-op,15px,20px,white);
+  }
+}
+.button-lite{
+  height: 25px;
+  padding: 0 25px;
+  border: solid 1px $blue;
+  border-radius: 8px;
+  @include text($font-op,14px,19px,$blue);
+  opacity: 0.6;
+  background-color: transparent;
+  &:hover{
+    background-color: $blue;
+    color: white;
+    opacity: 0.9;
+  }
+}

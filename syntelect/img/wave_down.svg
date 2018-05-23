@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="162px" viewBox="0 0 1920 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>wave_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="(Syntelect)-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -4727.000000)">
+        <path d="M0,4727 C168.904661,4727 484.262273,4887 962.992188,4887 C1441.7221,4887 1752.72998,4727 1920,4727 C1920,4746.99479 1920,4800.99479 1920,4889 L0,4889 C0,4870.32812 0,4816.32812 0,4727 Z" id="wave_down" fill="#F4F5F8" transform="translate(960.000000, 4808.000000) scale(1, -1) translate(-960.000000, -4808.000000) "></path>
+    </g>
+</svg>

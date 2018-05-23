@@ -1,0 +1,311 @@
+/* line 1, ../sass/_btn.scss */
+button, button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 5, ../sass/_btn.scss */
+.button-ghost {
+  height: 45px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px #1100C2;
+  padding: 0 25px;
+}
+/* line 11, ../sass/_btn.scss */
+.button-ghost:hover {
+  background-color: #1100C2;
+}
+/* line 13, ../sass/_btn.scss */
+.button-ghost:hover i {
+  color: white;
+}
+/* line 16, ../sass/_btn.scss */
+.button-ghost:hover span {
+  color: white;
+}
+/* line 20, ../sass/_btn.scss */
+.button-ghost i {
+  font-size: 18px;
+  color: #1100C2;
+  margin-right: 8px;
+}
+/* line 25, ../sass/_btn.scss */
+.button-ghost span {
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1100C2;
+}
+
+/* line 29, ../sass/_btn.scss */
+.button {
+  height: 45px;
+  background-color: #1100C2;
+  border-radius: 25px;
+  border: solid 2px #1100C2;
+  padding: 0 25px;
+  box-shadow: 0 2px 10px 0 #4D5AFF;
+}
+/* line 36, ../sass/_btn.scss */
+.button:hover {
+  background-color: #08005A;
+  border-color: #08005A;
+}
+/* line 40, ../sass/_btn.scss */
+.button i {
+  font-size: 18px;
+  color: white;
+  margin-right: 8px;
+}
+/* line 45, ../sass/_btn.scss */
+.button span {
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+}
+
+/* line 49, ../sass/_btn.scss */
+.button-lite {
+  height: 25px;
+  padding: 0 25px;
+  border: solid 1px #1100C2;
+  border-radius: 8px;
+  font-family: "Open sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1100C2;
+  opacity: 0.6;
+  background-color: transparent;
+}
+/* line 57, ../sass/_btn.scss */
+.button-lite:hover {
+  background-color: #1100C2;
+  color: white;
+  opacity: 0.9;
+}
+
+/* line 4, ../sass/style.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* line 10, ../sass/style.scss */
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* line 16, ../sass/style.scss */
+#top {
+  display: none;
+}
+
+/* line 19, ../sass/style.scss */
+#header-nav-bar {
+  background-color: white;
+  box-shadow: 0 5px 20px 0 rgba(75, 101, 129, 0.4);
+  position: fixed;
+  z-index: 100;
+}
+
+/* line 25, ../sass/style.scss */
+.header {
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+/* line 29, ../sass/style.scss */
+.header__logo {
+  cursor: pointer;
+}
+/* line 32, ../sass/style.scss */
+.header__nav-bar {
+  display: flex;
+  justify-content: center;
+}
+/* line 35, ../sass/style.scss */
+.header__nav-bar a {
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+  border-bottom: solid 2px transparent;
+}
+/* line 40, ../sass/style.scss */
+.header__nav-bar a:hover {
+  border-bottom: solid 2px #1100C2;
+}
+/* line 43, ../sass/style.scss */
+.header__nav-bar a:first-child:before {
+  width: 0;
+}
+/* line 46, ../sass/style.scss */
+.header__nav-bar a:last-child:before {
+  width: 0;
+}
+/* line 49, ../sass/style.scss */
+.header__nav-bar a:before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 5px;
+  width: 1px;
+  height: 13px;
+  background-color: #65738E;
+}
+/* line 58, ../sass/style.scss */
+.header__nav-bar a i {
+  color: #1100C2;
+  font-size: 20px;
+}
+/* line 62, ../sass/style.scss */
+.header__nav-bar a span {
+  font-family: "Raleway";
+  font-size: 14px;
+  line-height: 17px;
+  color: #08005A;
+  text-transform: uppercase;
+}
+
+/* line 72, ../sass/style.scss */
+#lang-select {
+  position: relative;
+}
+/* line 74, ../sass/style.scss */
+#lang-select:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -430px;
+  height: 900px;
+  width: 915px;
+  z-index: -1;
+  background: url("../img/bg.png") no-repeat;
+}
+
+/* line 85, ../sass/style.scss */
+.lang-select {
+  margin-top: 185px;
+}
+/* line 87, ../sass/style.scss */
+.lang-select input {
+  display: none;
+}
+/* line 90, ../sass/style.scss */
+.lang-select label {
+  height: 37px;
+  width: 37px;
+  border: solid 1px transparent;
+  background-color: #CED4E0;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+/* line 99, ../sass/style.scss */
+.lang-select label span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  white-space: nowrap;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1100C2;
+}
+/* line 105, ../sass/style.scss */
+.lang-select label:hover {
+  background-color: transparent;
+  border-color: #1100C2;
+}
+
+/* line 111, ../sass/style.scss */
+#lang-1:checked ~ label:nth-of-type(1),
+#lang-2:checked ~ label:nth-of-type(2),
+#lang-3:checked ~ label:nth-of-type(3) {
+  background-color: transparent;
+  border-color: #1100C2;
+}
+
+/* line 118, ../sass/style.scss */
+#contact-us-now .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* line 123, ../sass/style.scss */
+#contact-us-now h1 {
+  font-family: "Raleway";
+  font-size: 48px;
+  line-height: 56px;
+  color: #1100C2;
+  width: 552px;
+  margin-bottom: 75px;
+  position: relative;
+}
+/* line 128, ../sass/style.scss */
+#contact-us-now h1:before {
+  content: "syntelect";
+  font-family: "Raleway";
+  font-size: 120px;
+  line-height: 141px;
+  color: #F4F5F8;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 138, ../sass/style.scss */
+#about-us {
+  margin-top: 320px;
+  position: relative;
+}
+/* line 141, ../sass/style.scss */
+#about-us:before {
+  content: "";
+  z-index: -1;
+  height: 770px;
+  width: 780px;
+  position: absolute;
+  top: -80px;
+  left: -270px;
+  background: url("../img/foto_splash_text_1.png") no-repeat;
+}
+/* line 151, ../sass/style.scss */
+#about-us .content {
+  width: 680px;
+  margin-left: auto;
+}
+/* line 154, ../sass/style.scss */
+#about-us .content h2 {
+  font-family: "Raleway";
+  font-size: 36px;
+  line-height: 42px;
+  color: #08005A;
+  margin-bottom: 17px;
+}
+/* line 158, ../sass/style.scss */
+#about-us .content span {
+  display: block;
+  font-family: "Raleway";
+  font-size: 22px;
+  line-height: 26px;
+  color: #65738E;
+  margin-bottom: 30px;
+}
+/* line 163, ../sass/style.scss */
+#about-us .content p {
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #65738E;
+  margin-bottom: 20px;
+}
