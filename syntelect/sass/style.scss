@@ -175,6 +175,7 @@ a,a:hover{
 #why-choose-us{
   margin-top: 135px;
   position: relative;
+  margin-bottom: 160px;
 }
 .whu{
   &__header{
@@ -214,6 +215,7 @@ a,a:hover{
         font-weight: 800;
       }
       span{
+        padding: 0 20px 20px 20px;
         @include text($font-rw,14px,19px,$d-blue);
         text-align: center;
         display: block;
@@ -235,7 +237,7 @@ a,a:hover{
         h2{
           @include text($font-rw,20px,24px,$blue);
           text-align: center;
-          font-weight: 600;
+          font-weight: 800;
         }
         &:hover{
           h2{
@@ -311,6 +313,10 @@ a,a:hover{
         }
       }
     }
+    & + .whu__background{
+      top: 100%;
+      height: 160px;
+    }
   }
 }
 #reason-1{
@@ -332,126 +338,264 @@ a,a:hover{
 #reason-2{
   width: 200px;
   top: 70px;
-  left: 100%;
+  left: calc(100% + 20px);
   transform: translateX(-50%);
+  span,h2{
+    text-align: left;
+  }
   .whu__poligon__ico{
     top: 110px;
-    left: -160px;
+    left: -180px;
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(-35deg);
+      width: 155px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(35deg);
+        width: 230px;
       }
     }
   }
 }
 #reason-3{
   width: 200px;
-  top: 70px;
-  left: 100%;
+  top: 355px;
+  left: calc(100% + 50px);
   transform: translateX(-50%);
+  span,h2{
+    text-align: left;
+  }
   .whu__poligon__ico{
-    top: 110px;
-    left: -160px;
+    top: -5px;
+    left: -140px;
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(15deg);
+      width: 100px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(-15deg);
+        width: 210px;
       }
     }
   }
 }
 #reason-4{
-  width: 200px;
-  top: 70px;
-  left: 100%;
+  width: 220px;
+  top: calc(100% - 250px);
+  left: calc(100% + 30px);
   transform: translateX(-50%);
+  span,h2{
+    text-align: left;
+  }
   .whu__poligon__ico{
-    top: 110px;
+    top: -40px;
     left: -160px;
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(35deg);
+      width: 150px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(-35deg);
+        width: 230px;
       }
     }
   }
 }
 #reason-5{
   width: 200px;
-  top: 70px;
-  left: 100%;
+  top: 100%;
+  left: 50%;
   transform: translateX(-50%);
   .whu__poligon__ico{
-    top: 110px;
-    left: -160px;
+    top: -200px;
+    left: calc(50% - 32px);
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(125deg);
+      width: 190px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(-125deg);
+        width: 230px;
       }
     }
   }
 }
 #reason-6{
-  width: 200px;
-  top: 70px;
-  left: 100%;
+  width: 220px;
+  top: calc(100% - 250px);
+  left: -30px;
   transform: translateX(-50%);
+  span,h2{
+    text-align: right;
+  }
   .whu__poligon__ico{
-    top: 110px;
-    left: -160px;
+    top: -40px;
+    left: calc(100% + 100px);
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(145deg);
+      width: 120px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(35deg);
+        width: 230px;
       }
     }
   }
 }
 #reason-7{
-  width: 200px;
-  top: 70px;
-  left: 100%;
+  width: 240px;
+  top: 330px;
+  left: -50px;
   transform: translateX(-50%);
+  span,h2{
+    text-align: right;
+  }
   .whu__poligon__ico{
-    top: 110px;
-    left: -160px;
+    top: 15px;
+    left: calc(100% + 70px);
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(160deg);
+      width: 100px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(20deg);
+        width: 260px;
       }
     }
   }
 }
 #reason-8{
-  width: 200px;
+  width: 190px;
   top: 70px;
-  left: 100%;
+  left: -20px;
   transform: translateX(-50%);
+  span,h2{
+    text-align: right;
+  }
   .whu__poligon__ico{
     top: 110px;
-    left: -160px;
+    left: calc(100% + 120px);
     & > div{
-      transform: rotate(-40deg);
-      width: 135px;
+      transform: rotate(-155deg);
+      width: 145px;
       & > div{
-        transform: rotate(40deg);
-        width: 250px;
+        transform: rotate(-25deg);
+        width: 210px;
       }
     }
   }
 }
+#services{
+  padding-top: 100px;
+  position: relative;
+  .head-line-text{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sub-line-text{
+    text-align: center;
+  }
+}
+.services__table{
+  width: 100%;
+  margin-top: 100px;
+  &__control{
+    background-color: rgba(45,87,149,0.6);
+    padding: 1px 0 0 0;
+    align-self: flex-start;
+    &__point{
+      background-color: #F4F5F8;
+      margin-bottom: 1px;
+      padding: 17px 20px 17px 0;
+      border-left: solid 5px rgba(45,87,149,0.6);
+      cursor: pointer;
+      position: relative;
+      &:hover{
+        background-color: #CFF1FF;
+        border-color: $blue;
+      }
+      &.active{
+        background-color: white;
+        border-color: $d-blue;
+        &:before{
+          content: "";
+          position: absolute;
+          height: calc(100% + 2px);
+          width: 15px;
+          background-color: $blue;
+          top: -1px;
+          right: -15px;
+          z-index: 1;
+        }
+      }
+      i{
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 15px;
+        color: $blue;
+        font-size: 20px;
+      }
+      span{
+        display: inline-block;
+        @include text($font-rw,18px,21px,$d-blue);
+        margin-left: 18px;
+        max-width: 85%;
+      }
+    }
+  }
+  &__watch{
+    background-color: white;
+    padding: 40px 30px 30px 60px;
+    &__point{
+      display: none;
+      &.active{
+        display: block;
+      }
+      h2{
+        @include text($font-rw,36px,42px,$d-blue);
+        margin-bottom: 20px;
+      }
+      span.sub-line-text{
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      p{
+        display: block;
+        @include text($font-op,15px,20px,$text-color);
+        margin-bottom: 10px;
+        max-height: 100px;
+        overflow: hidden;
+      }
+      ul{
+        padding: 0;
+        list-style-type: none;
+        span{
+          @include text($font-rw,20px,24px,$d-blue);
+          margin-bottom: 15px;
+          display: block;
+        }
+        li{
+          margin-left: 40px;
+          position: relative;
+          @include text($font-op,14px,19px,$text-color);
+          margin-bottom: 10px;
+          &:before{
+            content: "\f00c";
+            font-family: FontAwesome;
+            display: block;
+            position: absolute;
+            left: -40px;
+            font-size: 20px;
+            color: $blue;
+          }
+        }
+      }
+      &__images{
+        margin-bottom: 20px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  & + .whu__background{
+    height: 160px;
+    bottom: -160px;
+  }
+}
+
+
