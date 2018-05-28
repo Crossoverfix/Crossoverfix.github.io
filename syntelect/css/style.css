@@ -102,6 +102,11 @@ a, a:hover {
 }
 
 /* line 16, ../sass/style.scss */
+input:focus {
+  outline: none;
+}
+
+/* line 19, ../sass/style.scss */
 .sub-line-text {
   display: block;
   font-family: "Raleway";
@@ -110,8 +115,12 @@ a, a:hover {
   color: #65738E;
   margin-bottom: 30px;
 }
+/* line 23, ../sass/style.scss */
+.sub-line-text, .sub-line-text centre {
+  text-align: center;
+}
 
-/* line 21, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .head-line-text {
   display: block;
   font-family: "Raleway";
@@ -121,13 +130,18 @@ a, a:hover {
   margin-bottom: 20px;
   font-weight: 800;
 }
+/* line 32, ../sass/style.scss */
+.head-line-text, .head-line-text centre {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/* line 27, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #top {
   display: none;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 #header-nav-bar {
   background-color: white;
   box-shadow: 0 5px 20px 0 rgba(75, 101, 129, 0.4);
@@ -135,41 +149,41 @@ a, a:hover {
   z-index: 100;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .header {
   height: 85px;
   display: flex;
   align-items: center;
 }
-/* line 40, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .header__logo {
   cursor: pointer;
 }
-/* line 43, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .header__nav-bar {
   display: flex;
   justify-content: center;
 }
-/* line 46, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .header__nav-bar a {
   text-decoration: none;
   margin: 0 10px;
   position: relative;
   border-bottom: solid 2px transparent;
 }
-/* line 51, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .header__nav-bar a:hover {
   border-bottom: solid 2px #1100C2;
 }
-/* line 54, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .header__nav-bar a:first-child:before {
   width: 0;
 }
-/* line 57, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .header__nav-bar a:last-child:before {
   width: 0;
 }
-/* line 60, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .header__nav-bar a:before {
   content: "";
   position: absolute;
@@ -179,12 +193,12 @@ a, a:hover {
   height: 13px;
   background-color: #65738E;
 }
-/* line 69, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .header__nav-bar a i {
   color: #1100C2;
   font-size: 20px;
 }
-/* line 73, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .header__nav-bar a span {
   font-family: "Raleway";
   font-size: 14px;
@@ -193,11 +207,11 @@ a, a:hover {
   text-transform: uppercase;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 #lang-select {
   position: relative;
 }
-/* line 85, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 #lang-select:before {
   content: "";
   position: absolute;
@@ -209,15 +223,15 @@ a, a:hover {
   background: url("../img/bg.png") no-repeat;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .lang-select {
   margin-top: 185px;
 }
-/* line 98, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .lang-select input {
   display: none;
 }
-/* line 101, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .lang-select label {
   height: 37px;
   width: 37px;
@@ -228,7 +242,7 @@ a, a:hover {
   position: relative;
   margin-right: 10px;
 }
-/* line 110, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .lang-select label span {
   position: absolute;
   left: 50%;
@@ -241,13 +255,13 @@ a, a:hover {
   line-height: 22px;
   color: #1100C2;
 }
-/* line 116, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .lang-select label:hover {
   background-color: transparent;
   border-color: #1100C2;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 #lang-1:checked ~ label:nth-of-type(1),
 #lang-2:checked ~ label:nth-of-type(2),
 #lang-3:checked ~ label:nth-of-type(3) {
@@ -255,13 +269,13 @@ a, a:hover {
   border-color: #1100C2;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #contact-us-now .row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-/* line 134, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 #contact-us-now h1 {
   font-family: "Raleway";
   font-size: 48px;
@@ -271,7 +285,7 @@ a, a:hover {
   margin-bottom: 75px;
   position: relative;
 }
-/* line 139, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #contact-us-now h1:before {
   content: "syntelect";
   font-family: "Raleway";
@@ -284,12 +298,12 @@ a, a:hover {
   z-index: -1;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #about-us {
   margin-top: 320px;
   position: relative;
 }
-/* line 152, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 #about-us:before {
   content: "";
   z-index: -1;
@@ -300,12 +314,12 @@ a, a:hover {
   left: -270px;
   background: url("../img/foto_splash_text_1.png") no-repeat;
 }
-/* line 162, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 #about-us .content {
   width: 680px;
   margin-left: auto;
 }
-/* line 165, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #about-us .content h2 {
   font-family: "Raleway";
   font-size: 36px;
@@ -313,7 +327,7 @@ a, a:hover {
   color: #08005A;
   margin-bottom: 17px;
 }
-/* line 169, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 #about-us .content p {
   font-family: "Open sans", sans-serif;
   font-size: 15px;
@@ -322,33 +336,33 @@ a, a:hover {
   margin-bottom: 20px;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 #why-choose-us {
   margin-top: 135px;
   position: relative;
   margin-bottom: 160px;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .whu__header {
   margin: 0 auto 270px auto;
   max-width: 680px;
 }
-/* line 184, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .whu__header + .whu__background {
   top: 50px;
   height: 1000px;
 }
-/* line 188, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .whu__header h2, .whu__header span {
   text-align: center;
 }
-/* line 192, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .whu__background {
   position: absolute;
   width: 100%;
 }
-/* line 195, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .whu__background img {
   position: absolute;
   left: 50%;
@@ -356,7 +370,7 @@ a, a:hover {
   transform: translate(-50%, -50%);
   height: 100%;
 }
-/* line 200, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .whu__poligon {
   z-index: 1;
   width: 800px;
@@ -365,7 +379,7 @@ a, a:hover {
   position: relative;
   background: url("../img/bg_poly+spl.svg") no-repeat;
 }
-/* line 207, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .whu__poligon__text {
   position: absolute;
   left: 50%;
@@ -373,7 +387,7 @@ a, a:hover {
   transform: translate(-50%, -50%);
   width: 400px;
 }
-/* line 210, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .whu__poligon__text h2 {
   width: 225px;
   font-family: "Raleway";
@@ -384,7 +398,7 @@ a, a:hover {
   margin: 0 auto 25px auto;
   font-weight: 800;
 }
-/* line 217, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .whu__poligon__text span {
   padding: 0 20px 20px 20px;
   font-family: "Raleway";
@@ -394,19 +408,19 @@ a, a:hover {
   text-align: center;
   display: block;
 }
-/* line 224, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .whu__poligon__reason {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 228, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .whu__poligon__reason a {
   display: block;
   position: absolute;
   cursor: pointer;
 }
-/* line 232, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .whu__poligon__reason a span {
   font-family: "Raleway";
   font-size: 16px;
@@ -415,7 +429,7 @@ a, a:hover {
   text-align: center;
   display: block;
 }
-/* line 237, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .whu__poligon__reason a h2 {
   font-family: "Raleway";
   font-size: 20px;
@@ -424,35 +438,35 @@ a, a:hover {
   text-align: center;
   font-weight: 800;
 }
-/* line 243, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .whu__poligon__reason a:hover h2 {
   color: #08005A;
 }
-/* line 246, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico {
   background-color: #CFF1FF;
 }
-/* line 248, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico img:nth-child(2) {
   display: none;
 }
-/* line 251, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico img:nth-child(3) {
   display: block;
 }
-/* line 254, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico > div {
   border-bottom: solid 2px #08005A;
 }
-/* line 256, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico > div > div {
   border-bottom: solid 2px #08005A;
 }
-/* line 258, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .whu__poligon__reason a:hover .whu__poligon__ico > div > div > div {
   background-color: #1100C2;
 }
-/* line 267, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .whu__poligon__ico {
   height: 63px;
   width: 63px;
@@ -461,7 +475,7 @@ a, a:hover {
   border-radius: 32px;
   position: absolute;
 }
-/* line 274, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .whu__poligon__ico img {
   position: absolute;
   left: 50%;
@@ -469,15 +483,15 @@ a, a:hover {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-/* line 278, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .whu__poligon__ico img:nth-child(2) {
   display: block;
 }
-/* line 281, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .whu__poligon__ico img:nth-child(3) {
   display: none;
 }
-/* line 284, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .whu__poligon__ico > div {
   transform-origin: left 50%;
   transform: rotate(50deg);
@@ -489,7 +503,7 @@ a, a:hover {
   min-width: 100px;
   border-bottom: dashed 2px #6D94C0;
 }
-/* line 294, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .whu__poligon__ico > div > div {
   transform-origin: left 50%;
   transform: rotate(50deg);
@@ -500,7 +514,7 @@ a, a:hover {
   min-width: 200px;
   border-bottom: dashed 2px #6D94C0;
 }
-/* line 303, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .whu__poligon__ico > div > div > div {
   position: absolute;
   top: 1px;
@@ -511,245 +525,246 @@ a, a:hover {
   border-radius: 6px;
   background-color: #08005A;
 }
-/* line 316, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .whu__poligon + .whu__background {
   top: 100%;
   height: 160px;
 }
 
-/* line 322, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 #reason-1 {
   top: -70px;
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 326, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 #reason-1 .whu__poligon__ico {
   top: 170px;
   left: calc(50% - 32px);
 }
-/* line 329, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 #reason-1 .whu__poligon__ico > div {
   transform: rotate(-55deg);
   width: 175px;
 }
-/* line 332, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 #reason-1 .whu__poligon__ico > div > div {
   transform: rotate(-125deg);
 }
 
-/* line 338, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 #reason-2 {
   width: 200px;
   top: 70px;
   left: calc(100% + 20px);
   transform: translateX(-50%);
 }
-/* line 343, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 #reason-2 span, #reason-2 h2 {
   text-align: left;
 }
-/* line 346, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 #reason-2 .whu__poligon__ico {
   top: 110px;
   left: -180px;
 }
-/* line 349, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 #reason-2 .whu__poligon__ico > div {
   transform: rotate(-35deg);
   width: 155px;
 }
-/* line 352, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 #reason-2 .whu__poligon__ico > div > div {
   transform: rotate(35deg);
   width: 230px;
 }
 
-/* line 359, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 #reason-3 {
   width: 200px;
   top: 355px;
   left: calc(100% + 50px);
   transform: translateX(-50%);
 }
-/* line 364, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 #reason-3 span, #reason-3 h2 {
   text-align: left;
 }
-/* line 367, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 #reason-3 .whu__poligon__ico {
   top: -5px;
   left: -140px;
 }
-/* line 370, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 #reason-3 .whu__poligon__ico > div {
   transform: rotate(15deg);
   width: 100px;
 }
-/* line 373, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 #reason-3 .whu__poligon__ico > div > div {
   transform: rotate(-15deg);
   width: 210px;
 }
 
-/* line 380, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 #reason-4 {
   width: 220px;
   top: calc(100% - 250px);
   left: calc(100% + 30px);
   transform: translateX(-50%);
 }
-/* line 385, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 #reason-4 span, #reason-4 h2 {
   text-align: left;
 }
-/* line 388, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 #reason-4 .whu__poligon__ico {
   top: -40px;
   left: -160px;
 }
-/* line 391, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 #reason-4 .whu__poligon__ico > div {
   transform: rotate(35deg);
   width: 150px;
 }
-/* line 394, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 #reason-4 .whu__poligon__ico > div > div {
   transform: rotate(-35deg);
   width: 230px;
 }
 
-/* line 401, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 #reason-5 {
   width: 200px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 406, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 #reason-5 .whu__poligon__ico {
   top: -200px;
   left: calc(50% - 32px);
 }
-/* line 409, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 #reason-5 .whu__poligon__ico > div {
   transform: rotate(125deg);
   width: 190px;
 }
-/* line 412, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 #reason-5 .whu__poligon__ico > div > div {
   transform: rotate(-125deg);
   width: 230px;
 }
 
-/* line 419, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 #reason-6 {
   width: 220px;
   top: calc(100% - 250px);
   left: -30px;
   transform: translateX(-50%);
 }
-/* line 424, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 #reason-6 span, #reason-6 h2 {
   text-align: right;
 }
-/* line 427, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 #reason-6 .whu__poligon__ico {
   top: -40px;
   left: calc(100% + 100px);
 }
-/* line 430, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 #reason-6 .whu__poligon__ico > div {
   transform: rotate(145deg);
   width: 120px;
 }
-/* line 433, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 #reason-6 .whu__poligon__ico > div > div {
   transform: rotate(35deg);
   width: 230px;
 }
 
-/* line 440, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 #reason-7 {
   width: 240px;
   top: 330px;
   left: -50px;
   transform: translateX(-50%);
 }
-/* line 445, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 #reason-7 span, #reason-7 h2 {
   text-align: right;
 }
-/* line 448, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 #reason-7 .whu__poligon__ico {
   top: 15px;
   left: calc(100% + 70px);
 }
-/* line 451, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 #reason-7 .whu__poligon__ico > div {
   transform: rotate(160deg);
   width: 100px;
 }
-/* line 454, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 #reason-7 .whu__poligon__ico > div > div {
   transform: rotate(20deg);
   width: 260px;
 }
 
-/* line 461, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 #reason-8 {
   width: 190px;
   top: 70px;
   left: -20px;
   transform: translateX(-50%);
 }
-/* line 466, ../sass/style.scss */
+/* line 476, ../sass/style.scss */
 #reason-8 span, #reason-8 h2 {
   text-align: right;
 }
-/* line 469, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 #reason-8 .whu__poligon__ico {
   top: 110px;
   left: calc(100% + 120px);
 }
-/* line 472, ../sass/style.scss */
+/* line 482, ../sass/style.scss */
 #reason-8 .whu__poligon__ico > div {
   transform: rotate(-155deg);
   width: 145px;
 }
-/* line 475, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 #reason-8 .whu__poligon__ico > div > div {
   transform: rotate(-25deg);
   width: 210px;
 }
 
-/* line 482, ../sass/style.scss */
+/* line 492, ../sass/style.scss */
 #services {
   padding-top: 100px;
   position: relative;
 }
-/* line 485, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 #services .head-line-text {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 489, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 #services .sub-line-text {
   text-align: center;
 }
 
-/* line 493, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .services__table {
   width: 100%;
   margin-top: 100px;
+  margin-bottom: 145px;
 }
-/* line 496, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .services__table__control {
   background-color: rgba(45, 87, 149, 0.6);
   padding: 1px 0 0 0;
   align-self: flex-start;
 }
-/* line 500, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .services__table__control__point {
   background-color: #F4F5F8;
   margin-bottom: 1px;
@@ -758,17 +773,17 @@ a, a:hover {
   cursor: pointer;
   position: relative;
 }
-/* line 507, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .services__table__control__point:hover {
   background-color: #CFF1FF;
   border-color: #1100C2;
 }
-/* line 511, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .services__table__control__point.active {
   background-color: white;
   border-color: #08005A;
 }
-/* line 514, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .services__table__control__point.active:before {
   content: "";
   position: absolute;
@@ -779,7 +794,7 @@ a, a:hover {
   right: -15px;
   z-index: 1;
 }
-/* line 525, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .services__table__control__point i {
   vertical-align: top;
   display: inline-block;
@@ -787,7 +802,7 @@ a, a:hover {
   color: #1100C2;
   font-size: 20px;
 }
-/* line 532, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .services__table__control__point span {
   display: inline-block;
   font-family: "Raleway";
@@ -797,20 +812,21 @@ a, a:hover {
   margin-left: 18px;
   max-width: 85%;
 }
-/* line 540, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .services__table__watch {
+  box-shadow: 0 10px 25px 0 rgba(37, 56, 106, 0.3);
   background-color: white;
   padding: 40px 30px 30px 60px;
 }
-/* line 543, ../sass/style.scss */
+/* line 555, ../sass/style.scss */
 .services__table__watch__point {
   display: none;
 }
-/* line 545, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .services__table__watch__point.active {
   display: block;
 }
-/* line 548, ../sass/style.scss */
+/* line 560, ../sass/style.scss */
 .services__table__watch__point h2 {
   font-family: "Raleway";
   font-size: 36px;
@@ -818,12 +834,12 @@ a, a:hover {
   color: #08005A;
   margin-bottom: 20px;
 }
-/* line 552, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 .services__table__watch__point span.sub-line-text {
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 556, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .services__table__watch__point p {
   display: block;
   font-family: "Open sans", sans-serif;
@@ -834,12 +850,12 @@ a, a:hover {
   max-height: 100px;
   overflow: hidden;
 }
-/* line 563, ../sass/style.scss */
+/* line 575, ../sass/style.scss */
 .services__table__watch__point ul {
   padding: 0;
   list-style-type: none;
 }
-/* line 566, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 .services__table__watch__point ul span {
   font-family: "Raleway";
   font-size: 20px;
@@ -848,7 +864,7 @@ a, a:hover {
   margin-bottom: 15px;
   display: block;
 }
-/* line 571, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .services__table__watch__point ul li {
   margin-left: 40px;
   position: relative;
@@ -858,7 +874,7 @@ a, a:hover {
   color: #65738E;
   margin-bottom: 10px;
 }
-/* line 576, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 .services__table__watch__point ul li:before {
   content: "\f00c";
   font-family: FontAwesome;
@@ -868,16 +884,214 @@ a, a:hover {
   font-size: 20px;
   color: #1100C2;
 }
-/* line 587, ../sass/style.scss */
+/* line 599, ../sass/style.scss */
 .services__table__watch__point__images {
   margin-bottom: 20px;
 }
-/* line 589, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 .services__table__watch__point__images img {
   width: 100%;
 }
-/* line 595, ../sass/style.scss */
+/* line 607, ../sass/style.scss */
 .services__table + .whu__background {
   height: 160px;
   bottom: -160px;
+}
+
+/* line 612, ../sass/style.scss */
+#our-process {
+  padding-top: 150px;
+  margin-bottom: 145px;
+}
+/* line 615, ../sass/style.scss */
+#our-process .content {
+  margin-top: 60px;
+  width: 100%;
+  padding: 0 50px;
+}
+/* line 620, ../sass/style.scss */
+#our-process .button-ghost {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 626, ../sass/style.scss */
+.opr__point {
+  display: block;
+  width: 490px;
+  position: relative;
+  margin-bottom: 55px;
+}
+/* line 631, ../sass/style.scss */
+.opr__point h2 {
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 24px;
+  color: #1100C2;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+/* line 636, ../sass/style.scss */
+.opr__point span {
+  font-family: "Raleway";
+  font-size: 14px;
+  line-height: 19px;
+  color: #65738E;
+  display: block;
+}
+/* line 640, ../sass/style.scss */
+.opr__point:nth-child(odd) {
+  height: 340px;
+  margin-right: auto;
+}
+/* line 643, ../sass/style.scss */
+.opr__point:nth-child(odd) h2 {
+  text-align: right;
+}
+/* line 646, ../sass/style.scss */
+.opr__point:nth-child(odd) span {
+  text-align: right;
+}
+/* line 649, ../sass/style.scss */
+.opr__point:nth-child(odd) .opr__images {
+  top: 0;
+  right: -400px;
+}
+/* line 654, ../sass/style.scss */
+.opr__point:nth-child(even) {
+  margin-left: auto;
+}
+/* line 656, ../sass/style.scss */
+.opr__point:nth-child(even) h2 {
+  text-align: left;
+}
+/* line 659, ../sass/style.scss */
+.opr__point:nth-child(even) span {
+  text-align: left;
+}
+/* line 662, ../sass/style.scss */
+.opr__point:nth-child(even) .opr__images {
+  bottom: 0;
+  left: -400px;
+}
+/* line 668, ../sass/style.scss */
+.opr__images {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: url("../img/ico_splash.svg") no-repeat;
+}
+
+/* line 675, ../sass/style.scss */
+#contacts {
+  margin-bottom: 280px;
+}
+/* line 677, ../sass/style.scss */
+#contacts form {
+  width: 100%;
+}
+/* line 679, ../sass/style.scss */
+#contacts form .button {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+/* line 683, ../sass/style.scss */
+#contacts form h2 {
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 24px;
+  color: #1100C2;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+/* line 688, ../sass/style.scss */
+#contacts form p {
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #65738E;
+  margin-bottom: 25px;
+}
+/* line 692, ../sass/style.scss */
+#contacts form input, #contacts form textarea {
+  height: 45px;
+  background-color: white;
+  border: 1px solid #9EAAC2;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1100C2;
+}
+/* line 701, ../sass/style.scss */
+#contacts form textarea {
+  min-height: 100px;
+}
+/* line 704, ../sass/style.scss */
+#contacts form label {
+  position: relative;
+  height: 45px;
+  background-color: white;
+  border: 1px solid #9EAAC2;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+/* line 712, ../sass/style.scss */
+#contacts form label input {
+  display: none;
+}
+/* line 715, ../sass/style.scss */
+#contacts form label span {
+  display: inline-block;
+}
+/* line 718, ../sass/style.scss */
+#contacts form label span:first-of-type {
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 42px;
+  color: #65738E;
+}
+/* line 721, ../sass/style.scss */
+#contacts form label span:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 20px;
+  margin-left: auto;
+  background-color: #6D94C0;
+  font-family: "Open sans", sans-serif;
+  font-size: 14px;
+  line-height: 44px;
+  color: white;
+}
+
+/* line 737, ../sass/style.scss */
+.footer__header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-top: 5px solid #CED4E0;
+  border-bottom: 1px solid #CED4E0;
+  background-color: #F4F5F8;
+}
+/* line 744, ../sass/style.scss */
+.footer__header:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 2000px;
+  height: 300px;
+  background: url("../img/dots_wave.svg") no-repeat;
+  background-size: 100%,1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -290px;
+}
+
+/* line 764, ../sass/style.scss */
+#bottom {
+  display: none;
 }

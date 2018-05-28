@@ -13,16 +13,26 @@ a,a:hover{
   color: inherit;
 
 }
+input:focus{
+  outline: none;
+}
 .sub-line-text{
   display: block;
   @include text($font-rw,22px,26px,$text-color);
   margin-bottom: 30px;
+  &,centre{
+    text-align: center;
+  }
 }
 .head-line-text{
   display: block;
   @include text($font-rw,36px,42px,$blue);
   margin-bottom: 20px;
   font-weight: 800;
+  &,centre{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #top{
   display: none;
@@ -493,6 +503,7 @@ a,a:hover{
 .services__table{
   width: 100%;
   margin-top: 100px;
+  margin-bottom: 145px;
   &__control{
     background-color: rgba(45,87,149,0.6);
     padding: 1px 0 0 0;
@@ -538,6 +549,7 @@ a,a:hover{
     }
   }
   &__watch{
+    box-shadow: 0 10px 25px 0 rgba(37,56,106,0.3);
     background-color: white;
     padding: 40px 30px 30px 60px;
     &__point{
@@ -597,5 +609,159 @@ a,a:hover{
     bottom: -160px;
   }
 }
+#our-process{
+  padding-top: 150px;
+  margin-bottom: 145px;
+  .content{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .button-ghost{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.opr{
+  &__point{
+    display: block;
+    width: 490px;
+    position: relative;
+    margin-bottom: 55px;
+    h2{
+      @include text($font-rw,20px,24px,$blue);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    span{
+      @include text($font-rw,14px,19px,$text-color);
+      display: block;
+    }
+    &:nth-child(odd){
+      height: 340px;
+      margin-right: auto;
+      h2{
+        text-align: right;
+      }
+      span{
+        text-align: right;
+      }
+      .opr__images{
+        top: 0;
+        right: -400px;
+      }
+    }
+    &:nth-child(even){
+      margin-left: auto;
+      h2{
+        text-align: left;
+      }
+      span{
+        text-align: left;
+      }
+      .opr__images{
+        bottom: 0;
+        left: -400px;
+      }
+    }
+  }
+  &__images{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: url("../img/ico_splash.svg")no-repeat;
+  }
+}
+#contacts{
+  margin-bottom: 280px;
+  form{
+    width: 100%;
+    .button{
+      padding-right: 65px;
+      padding-left: 65px;
+    }
+    h2{
+      @include text($font-rw,20px,24px,$blue);
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    p{
+      @include text($font-op,15px,20px,$text-color);
+      margin-bottom: 25px;
+    }
+    input,textarea{
+      height: 45px;
+      background-color: white;
+      border: 1px solid #9EAAC2;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      @include text($font-op,16px,22px,$blue);
+    }
+    textarea{
+      min-height: 100px;
+    }
+    label{
+      position: relative;
+      height: 45px;
+      background-color: white;
+      border: 1px solid #9EAAC2;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      input{
+        display: none;
+      }
+      span{
+        display: inline-block;
+      }
+      span:first-of-type{
+        @include text($font-op,16px,42px,$text-color);
+      }
+      span:last-of-type{
+        position: absolute;
+        top:0;
+        right: 0;
+        padding: 0 20px;
+        margin-left: auto;
+        background-color: #6D94C0;
+        @include text($font-op,14px,44px,white);
+      }
+    }
+  }
+}
+#footer{
 
+}
+.footer{
+  &__header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-top: 5px solid #CED4E0;
+    border-bottom: 1px solid #CED4E0;
+    background-color: #F4F5F8;
+    &:before{
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 2000px;
+      height: 300px;
+      background: url("../img/dots_wave.svg")no-repeat;
+      background-size: 100%,1000px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -290px;
+    }
+  }
+  &__map{
+
+  }
+  &__nav-bar{
+
+  }
+}
+#bottom{
+  display: none;
+}
 
