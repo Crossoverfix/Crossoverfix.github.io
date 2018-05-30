@@ -1,0 +1,103 @@
+@media screen and (max-width: 1199px) {
+  /* line 2, ../sass/media.scss */
+  .header__nav-bar a span {
+    font-size: 13px;
+  }
+
+  /* line 5, ../sass/media.scss */
+  #about-us:before {
+    left: -370px;
+  }
+
+  /* line 8, ../sass/media.scss */
+  .whu__poligon {
+    transform: scale(0.8);
+  }
+
+  /* line 11, ../sass/media.scss */
+  .services__table__control__point span {
+    max-width: 80%;
+  }
+
+  /* line 14, ../sass/media.scss */
+  .services__table__watch__point h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  /* line 19, ../sass/media.scss */
+  .footer__header i {
+    margin-right: 8px;
+  }
+  /* line 22, ../sass/media.scss */
+  .footer__header span {
+    font-size: 15px;
+  }
+  /* line 24, ../sass/media.scss */
+  .footer__header span b {
+    font-size: 18px;
+  }
+
+  /* line 29, ../sass/media.scss */
+  .footer__nav-bar {
+    height: 90px;
+  }
+
+  /* line 32, ../sass/media.scss */
+  .footer__nav-bar .container {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  /* line 36, ../sass/media.scss */
+  .header__nav-bar {
+    margin-left: 15px;
+  }
+
+  /* line 39, ../sass/media.scss */
+  .copy-right {
+    order: 1;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 45, ../sass/media.scss */
+  .header .header__nav-bar {
+    flex-direction: column;
+    margin-top: 230px;
+    background-color: white;
+    margin-right: 30px;
+    height: 0;
+    width: 30px;
+    overflow: hidden;
+  }
+  /* line 53, ../sass/media.scss */
+  .header .header__nav-bar.collapse {
+    height: auto;
+    padding-bottom: 20px;
+    width: auto;
+  }
+  /* line 58, ../sass/media.scss */
+  .header .header__nav-bar a:first-of-type {
+    display: none;
+  }
+  /* line 61, ../sass/media.scss */
+  .header .header__nav-bar a:before {
+    width: 0;
+  }
+
+  /* line 66, ../sass/media.scss */
+  .header__logo {
+    order: 1;
+    margin-right: auto;
+  }
+  /* line 70, ../sass/media.scss */
+  .header__contact-btn {
+    order: 1;
+  }
+
+  /* line 74, ../sass/media.scss */
+  #collapse__nav-bar {
+    display: block;
+  }
+}

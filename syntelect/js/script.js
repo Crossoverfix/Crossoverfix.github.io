@@ -29,3 +29,13 @@
     + "\r textarea:" + $formData.texta);
   }
 })
+$(function () {
+  var $headerColapseBtn = $("#collapse__nav-bar");
+  var $header =  $headerColapseBtn.parent()
+  $headerColapseBtn.click(function () {
+    colapseHeaderBar();
+  })
+  function colapseHeaderBar () {
+    $header.toggleClass("collapse");
+  }
+})
