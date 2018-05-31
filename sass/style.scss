@@ -16,7 +16,17 @@ a,a:hover{
   display: flex;
   justify-content: center;
   a{
+    text-decoration: none;
     display: block;
     margin: 25px 50px;
+  }
+}
+.content{
+  &__wrap{
+    background-color: aliceblue;
+    padding: 20px;
+  }
+  &__img{
+
   }
 }

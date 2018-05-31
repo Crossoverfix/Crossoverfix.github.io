@@ -20,6 +20,13 @@ a, a:hover {
 }
 /* line 18, ../sass/style.scss */
 .link-to-content a {
+  text-decoration: none;
   display: block;
   margin: 25px 50px;
+}
+
+/* line 25, ../sass/style.scss */
+.content__wrap {
+  background-color: aliceblue;
+  padding: 20px;
 }
