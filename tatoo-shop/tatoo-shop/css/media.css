@@ -1,0 +1,668 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .headerTopBlock ul li{
+        margin-left: 21px;
+    }
+    .headerTopBlock .cd-dropdown-content, .headerTopBlock .cd-dropdown-content ul {
+        margin-left: 0;
+    }
+    .personalCabinet {
+        padding-left: 31px;
+    }
+    .headerTopBlock ul li:first-child {
+        margin-left: 0;
+    }
+    .basket,.personal {
+        margin-right: -15px;
+    }
+    header .swiper-container{
+        height: 330px;
+    }
+    .leftMenu {
+        padding: 15px 20px 3px;
+    }
+    .banerToPortal span {
+        margin-right: 30px;
+        margin-bottom: 13px;
+    }
+    .banerToPortal img {
+        margin-top: 13px;
+        margin-left: -26px;
+    }
+    .banerToPortal button {
+        margin-top: 37px;
+    }
+/*    .benefits {
+        margin: 0 -15px 50px;
+    }*/
+    .benefits > .row > div:first-child+div+div+div i {
+        border-left: none;
+    }
+    .benefits span {
+        max-width: 260px;
+    }
+    .benefits > .row > div {
+        padding-top: 6px;
+    }
+    .benefits > .row > div:first-child,.benefits > .row > div:first-child+div {
+        border-bottom: 1px dashed #ffcc00;
+        padding-bottom: 6px;
+        padding-top: 0;
+    }
+    .benefits i {
+        padding-right: 14px;
+        padding-left: 26px;
+    }
+    footer {
+        background: url(../img/bottomTreeMd.png) no-repeat center 241px #1b2127;
+    }
+    .benefitsBasket {
+        padding-top: 26px;
+}
+    .benefitsBasket i {
+        padding-left: 0;
+        margin-right: 23px;
+    }
+    .benefitsBasketRBlock {
+        padding-top: 0; 
+        max-width: 795px;
+        margin-top: -6px;
+        line-height: 18px;
+    }
+    .viewedProducts span {
+        margin-right: 30px;
+    }
+    .headerTopBlock.secondaryPages .headerRowOne {
+        margin-bottom: 22px;
+    }
+    .toRetry a {
+        margin-left: 0;
+    }
+    /*card*/
+    .smallImg img {
+        margin-top: 22.5%;
+    }
+    .smallImg a:first-child img {
+        margin-top: 0;
+    }
+    .prodInfoWrap a.likeSingle {
+        float: left;
+    }
+    .prodInfoWrap .socialItems {
+        float: right;
+    }
+    .prodInfoWrap span.price {
+        float: left;
+        margin-right: 37px;
+    }
+    .galleryProd {
+        margin-bottom: 20px!important;
+    }
+    .basketButtonWrap {
+        margin-top: -14px!important;
+    }
+    .basketCount {
+        margin-top: 11px;
+    }
+    .whiteLine {
+        margin: -14px -21px 21px;
+    }
+    .prodInfoWrap .socialItems,.prodInfoWrap a.likeSingle {
+        margin-bottom: 13px;
+    }
+    .characterization {
+        width: 100%;
+    } 
+    /*card end*/
+    body:after {
+        display: none;
+    }
+    header {
+        background-image: url(../img/headerTree.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .productTableWrap tr td{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .container {
+        position: static;
+    }
+    .headerTopBlock ul {
+        margin-left: 0;
+        padding-top: 12px;
+    }
+    .headerTopBlock ul li{
+        margin-left: 19px;
+    }
+    .headerTopBlock {
+        height: 151px;
+        padding-top: 23px;
+    }
+    .headerTopBlock a.logo img{
+        max-width: 208px;
+    }
+    .headerTopBlock ul li:first-child {
+        margin-left: -5px;
+    }
+    .headerRowOne {
+        margin-bottom: 22px;
+    }
+    .headerTopBlock a.logo {
+        margin-top: -2px;
+        margin-left: 5px;
+    }
+    .personalCabinet {
+        padding-top: 16px;
+    }
+    .headerTopBlock .basketBlock {
+        height: 50px;
+    }
+    .basketBlock i.fa-cart-arrow-down {
+        font-size: 30px;
+        margin-top: 2px;
+    }
+    .headerRowTwo .basketBlockInner {
+        padding-top: 7px;
+        margin-left: 0;
+    }
+    .headerRowTwo .basketBlock span {
+        margin-left: 20px;
+    }
+    .headerTopBlock a.basketLink {
+        padding-top: 8px;
+        padding-bottom: 0;
+        padding-right: 0px;
+    }
+    .basketBlock {
+        height: auto;
+    }
+    header .swiper-container{
+        height: 373px;
+    }
+    .topFooterMenu ul li {
+        padding-left: 13px;
+        margin-left: 15px;
+    }
+    .banerToPortal button {
+        margin-top: 22px;
+        float: left;
+    }
+    .banerToPortal img {
+        margin-top: 8px;
+        margin-left: 17px;
+    }
+    .banerToPortal span {
+        margin-top: 11px;
+    }
+    .benefits {
+        padding: 13px 0px 20px 10px;
+    }
+    .benefits span {
+        max-width: 175px;
+    }
+    .benefits i {
+        padding-right: 14px;
+        padding-left: 19px;
+    }
+    .lafizzy {
+        margin-left: 80px;
+    }
+    .djem {
+        margin-left: 80px;
+    }
+    .kabinetTabs .nav-tabs > li {
+        width: 179px;
+    }
+    .benefitsBasketRBlock {
+        max-width: 640px;
+    }
+    .tableHeader div:first-child, .tableRow .namePoductBlock {
+        padding-left: 12px; 
+    }
+    .quantity span {
+        width: 50px;
+    }
+    .basketProductBlock span.availability {
+        font-size: 14px;
+    }
+    .weight {
+        margin-left: -18px;
+    }
+    a.sumClose {
+        right: 0;
+    }
+    .tableRow .sumBlock {
+        padding-right: 37px;
+        width: 160px;
+        margin-left: -32px;
+    }
+    .headerTopBlock.secondaryPages div>ul {
+        margin-left: 0;
+    }
+    /*card*/
+    .smallImg img {
+        margin-top: 25.5%;
+    }
+    .smallImg a:first-child img {
+        margin-top: 0;
+    }
+    .prodInfoWrap {
+        text-align: center;
+    }
+    .basketCount,.prodInfoWrap span.price,.basketButtonWrap,.prodInfoWrap a.likeSingle,.prodInfoWrap .socialItems {
+        float: none;
+        margin: 0 auto;
+    }
+    .prodInfoWrap span.price {
+        margin-bottom: 6px!important;
+    }
+    .basketCount {
+        margin-bottom: 33px;
+    }
+    .basketButtonWrap {
+        margin-bottom: 44px;
+    }
+    .whiteLine {
+        margin-bottom: 11px;
+    }
+    .prodInfoWrap a.likeSingle {
+        margin-bottom: 17px;
+    }
+    .prodInfoWrap {
+        padding-bottom: 20px;
+
+    }
+    /*card end*/
+}
+@media screen and (max-width: 767px) {
+    header {
+        margin-bottom: 45px;
+    }
+    .personalCabinet a:before {
+        display: none;
+    }
+    .personalCabinet {
+        padding-top: 5px;
+    }
+    .personalCabinet a {
+        border: 1px solid #40474d;
+        height: 47px;
+        width: 47px;
+        border-radius: 1px;
+        float: right;
+        padding-left: 12px;
+        padding-top: 10px;
+    }
+    .personalCabinet a:hover {
+        border-color: transparent;  
+    }
+    .swiper-button-prev.swiper-button-white i, .swiper-button-next.swiper-button-white i {
+        font-size: 27px;
+    }
+    .logoBlock {
+        text-align: center;
+    }
+    .headerTopBlock a.logo img{
+        max-width: 161px;
+    }
+    .headerTopBlock a.logo {
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+    .basketBlock {
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .headerRowTwo {
+        border: none;
+    }
+    .headerRowTwo a.basketLink {
+        border: 1px solid #40474d;
+        height: 52px;
+        text-align: center;
+    }
+    .headerRowTwo .basketBlockInner {
+        float: none;
+        display: inline-block;
+    }
+    .headerRowOne {
+        margin-bottom: 25px;
+    }
+    .basketBlock i.fa-cart-arrow-down {
+        margin-top: 0px;
+        display: inline-block;
+        float: none;
+        margin-left: 29px;
+        margin-right: 7px;
+    }
+    .headerRowTwo .row {
+        border: none; 
+        margin-bottom: 10px;
+    }
+    .headerTopBlock .basketBlock {
+        margin-left: 0;
+    }
+    .headerRowTwo .basketBlock span {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .headerRowTwo .basketBlockInner {
+        padding-right: 30px;
+    }
+    header .swiper-container{
+        height: auto;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 16px;
+        height: 34px;
+        margin-top: -17px;
+    }
+    .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
+        background-size: 200%;
+    }
+    .swiper-container-horizontal>.swiper-pagination {
+        bottom: 5px;
+    }
+    .newArrivalsBlock .swiper-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .swiper2 {
+        max-width: 420px;
+        float: none;
+    }
+    .newArrivalsBlock .swiper-button-next, .newArrivalsBlock .swiper-button-prev {
+        top: 30%;
+        right: 15px;
+    }
+    .newArrivalsBlock .swiper-button-prev {
+        left: 15px;
+    }
+
+    .banerToPortal {
+        text-align: center;
+        padding: 3px 10px 7px 10px;
+    }
+    .banerToPortal img {
+        margin-left: 0;
+    }
+    .banerToPortal span {
+        margin-right: 0;
+        margin-bottom: -4px;
+        margin-top: 3px;
+    }
+    .banerToPortal button {
+        margin-right: 0;
+        float: none;
+    }
+    .productItem a.img img {
+        border: none;
+    }
+    .productItem a.title {
+        margin-bottom: 13px;
+    }
+    .productItem span.brand {
+        margin-bottom: 10px;
+        min-height: 0;
+    }
+    .productItem .bottomProd {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+    .productItem .buttons a.moreInfo i{
+        line-height: 59px;
+    }
+    .productItem span.price {
+        float: none;
+        margin-bottom: 22px;
+        position: relative;
+    }
+    .productItem .buttons {
+        float: none;
+        width: 100%;
+    }
+    .productItem .buttons a {
+        width: 33.3%;
+        height: 50px;
+        vertical-align: top;
+    }
+    .productItem .buttons a i {
+        line-height: 53px;
+        font-size: 34px;
+    }
+    .productItem .buttons a i.fa-heart {
+        font-size: 30px;
+    }
+    .productItem .buttons a i.fa-cart-arrow-down {
+        font-size: 34px;
+    }
+
+    footer {
+        background: url(../img/bottomTreeXs.png) no-repeat center 9px #1b2127;
+    }
+    .xs-wrap-for-center {
+        margin: 0 auto;
+        max-width: 370px;
+    }
+    footer .basket {
+        margin-top: 30px;
+    }
+    footer .personal {
+        margin-bottom: 50px;
+    }
+    footer .contacts span.phone {
+        font-size: 18px;
+    }
+    /*contacts*/
+    #map {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: auto;
+    }
+    .prevNext {
+        float: none;
+        text-align: center;
+    }
+    .paginationWrap .sort {
+        float: none;
+        text-align: center;
+    }
+    .kabinetTabs .nav-tabs > li {
+        width: 70px;
+        text-align: center;
+    }
+    .kabinetTabs .nav-tabs > li > a {
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .kabinetForm button {
+        margin-bottom: 50px;
+    }
+    /*contacts end*/
+    .benefitsBasket {
+        margin-top: -45px;
+        margin-bottom: 45px;
+    }
+    .tableRow {
+        padding: 20px 0 10px;
+    }
+    .basketImg {
+        width: 80px;
+        height: 80px;
+    }
+    .basketProductBlock span, .basketProductItem span {
+        font-size: 14px;
+    }
+    .tableRow .namePoductBlock {
+        padding-left: 25px;
+        padding-top: 0;
+    }
+    .namePoductBlock a {
+        margin-bottom: 0;
+        margin-top: -7px;
+        padding-right: 20px;
+    }
+    .tableRow a span {
+        line-height: 7px;
+    }
+    .namePoductBlock span.date {
+        margin-bottom: 7px;
+    }
+    a.sumClose {
+        right: 14px;
+        top: 27px;
+        padding: 0;
+    }
+    .inTotal {
+        height: 61px;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 6px;
+    }
+    .inTotal span {
+        font-size: 16px;
+        display: block;
+        margin-bottom: -3px;
+    }
+    .basketButton a {
+        float: none; 
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .kabinetTabs .sumBlock {
+        padding-left: 0;
+    }
+    .breadcrumbs, .topContent h1 {
+        text-align: center;
+    }
+    .topContent {
+        margin-top: 0; 
+   }
+    /*card*/
+    .galleryProd {
+        max-width: 450px;
+        margin: 0 auto 20px;
+    }
+    .smallImg {
+        float: none;
+        border-top: 2px solid #e9e9ea;
+        padding-top: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+    .smallImg a {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .smallImg:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+    .smallImg img {
+        margin-top: 0%;
+    }
+    .bigImg {
+        float: none;
+        width: 100%;
+    }
+    .bigImg img {
+        border: none;
+        max-width: 380px;
+    }
+    .prodInfoWrap span.brand {
+        font-size: 16px;
+        margin-bottom: 4px!important;
+    }
+    .basketCount {
+        margin-bottom: 24px;
+    }
+    .basketButtonWrap {
+        width: 100%;
+    }
+    .basketButtonWrap b {
+        margin-bottom: 6px;
+    }
+    .basketButtonWrap button {
+        width: 70%;
+        display: block;
+        float: left;
+        font-size: 16px;
+        border-radius: 0;
+        height: 50px;
+    }
+    .basketButtonWrap button:before {
+        display: none;
+    }
+    .basketButtonWrap button i {
+        line-height: 50px;
+        font-size: 34px;
+        display: inline-block!important;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .basketButtonWrap button:hover,.basketButtonWrap button:active,.basketButtonWrap button:focus {
+        background: transparent;
+        border: 2px solid #ffcc00;
+        height: 50px;
+    }
+    .infoProdLine .leftInfoSide,.infoProdLine .rightUnfoSide {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .characterization {
+        padding-bottom: 40px;
+    }
+    .characterization:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        background: #e9e9ea;
+        left: -15px;
+        right: -15px;
+        width: auto;
+        bottom: 0;
+    }
+    footer:before {
+        display: none;
+    }
+    /*card end*/
+    .textBlockInner img{
+        float: none;
+        margin-left: 0;
+        width: auto;
+    }
+    .productTableWrap tr td {
+        font-size: 10px;
+        vertical-align: top;
+        padding: 0 2px;
+    }
+    .productTable td {
+        text-align: center;
+        color: #000;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .textPageWrap p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #1b2127;
+    }
+}

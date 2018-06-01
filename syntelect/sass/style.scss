@@ -44,7 +44,7 @@ input:focus{
   z-index: 100;
 }
 .header{
-  height: 85px;
+  min-height: 85px;
   display: flex;
   align-items: center;
   &__logo{
@@ -324,6 +324,9 @@ input:focus{
           }
         }
       }
+    }
+    &__coments{
+      display: none!important;
     }
     & + .whu__background{
       top: 100%;

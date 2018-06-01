@@ -63,41 +63,184 @@
 @media screen and (max-width: 991px) {
   /* line 45, ../sass/media.scss */
   .header .header__nav-bar {
-    flex-direction: column;
-    margin-top: 230px;
-    background-color: white;
-    margin-right: 30px;
+    order: 2;
+    margin: 0 auto;
     height: 0;
-    width: 30px;
     overflow: hidden;
   }
-  /* line 53, ../sass/media.scss */
+  /* line 50, ../sass/media.scss */
   .header .header__nav-bar.collapse {
     height: auto;
     padding-bottom: 20px;
-    width: auto;
   }
-  /* line 58, ../sass/media.scss */
+  /* line 54, ../sass/media.scss */
   .header .header__nav-bar a:first-of-type {
     display: none;
   }
-  /* line 61, ../sass/media.scss */
+  /* line 57, ../sass/media.scss */
   .header .header__nav-bar a:before {
     width: 0;
   }
 
-  /* line 66, ../sass/media.scss */
+  /* line 62, ../sass/media.scss */
   .header__logo {
-    order: 1;
+    margin-left: 80px;
     margin-right: auto;
   }
-  /* line 70, ../sass/media.scss */
+  /* line 66, ../sass/media.scss */
   .header__contact-btn {
     order: 1;
+    height: 85px;
+    display: flex;
+    align-items: center;
   }
 
-  /* line 74, ../sass/media.scss */
+  /* line 73, ../sass/media.scss */
   #collapse__nav-bar {
     display: block;
+  }
+
+  /* line 76, ../sass/media.scss */
+  #lang-select:before {
+    background-size: 430px;
+    right: -510px;
+  }
+
+  /* line 80, ../sass/media.scss */
+  #about-us .content {
+    width: 500px;
+  }
+  /* line 82, ../sass/media.scss */
+  #about-us .content .sub-line-text {
+    text-align: left;
+  }
+
+  /* line 86, ../sass/media.scss */
+  #about-us:before {
+    background-size: 500px;
+    top: -10px;
+    left: -300px;
+  }
+
+  /* line 91, ../sass/media.scss */
+  .whu__header + .whu__background {
+    top: 80px;
+    height: 500px;
+  }
+
+  /* line 95, ../sass/media.scss */
+  .whu__header {
+    margin: 0 auto 20px auto;
+  }
+
+  /* line 98, ../sass/media.scss */
+  .whu__poligon {
+    width: 330px;
+    height: auto;
+    background-size: contain;
+    transform: scale(1);
+    padding-top: 350px;
+  }
+  /* line 104, ../sass/media.scss */
+  .whu__poligon__text {
+    top: 40px;
+    transform: translate(-50%, 0%);
+  }
+  /* line 108, ../sass/media.scss */
+  .whu__poligon__reason {
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* line 115, ../sass/media.scss */
+  .whu__poligon__reason span, .whu__poligon__reason h2 {
+    text-align: left !important;
+  }
+  /* line 118, ../sass/media.scss */
+  .whu__poligon__reason a {
+    position: relative;
+    top: 0 !important;
+    left: 25% !important;
+    width: calc(50% - 20px) !important;
+    padding-left: 80px;
+    min-height: 65px;
+    margin-bottom: 20px;
+    padding-top: 7px;
+  }
+  /* line 129, ../sass/media.scss */
+  .whu__poligon__ico {
+    top: 0 !important;
+    left: 0 !important;
+  }
+  /* line 132, ../sass/media.scss */
+  .whu__poligon__ico div {
+    display: none;
+  }
+  /* line 136, ../sass/media.scss */
+  .whu__poligon__coments {
+    position: relative;
+    margin-top: 20px;
+    width: calc(100% + 75px);
+    left: -75px;
+    display: block !important;
+  }
+
+  /* line 144, ../sass/media.scss */
+  .whu__poligon + .whu__background {
+    top: calc(100% - 80px);
+  }
+
+  /* line 147, ../sass/media.scss */
+  #why-choose-us {
+    margin-bottom: 80px;
+  }
+
+  /* line 150, ../sass/media.scss */
+  #services {
+    padding-top: 50px;
+  }
+
+  /* line 153, ../sass/media.scss */
+  .services__table__control__point span {
+    max-width: 75%;
+  }
+
+  /* line 156, ../sass/media.scss */
+  .services__table div.row {
+    justify-content: center;
+  }
+
+  /* line 159, ../sass/media.scss */
+  .services__table {
+    position: relative;
+  }
+  /* line 161, ../sass/media.scss */
+  .services__table__control {
+    padding-right: 1px;
+  }
+  /* line 165, ../sass/media.scss */
+  .services__table__control__point.active :before {
+    width: 0;
+  }
+  /* line 170, ../sass/media.scss */
+  .services__table__watch {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+  }
+  /* line 175, ../sass/media.scss */
+  .services__table__watch:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 70px;
+    width: 15px;
+    background-color: #1100C2;
+    top: 40px;
+    z-index: 1;
   }
 }
