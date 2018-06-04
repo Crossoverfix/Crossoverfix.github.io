@@ -221,18 +221,18 @@
   .services__table__control {
     padding-right: 1px;
   }
-  /* line 165, ../sass/media.scss */
+  /* line 164, ../sass/media.scss */
   .services__table__control__point.active :before {
     width: 0;
   }
-  /* line 170, ../sass/media.scss */
+  /* line 169, ../sass/media.scss */
   .services__table__watch {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 60px;
   }
-  /* line 175, ../sass/media.scss */
+  /* line 174, ../sass/media.scss */
   .services__table__watch:before {
     content: "";
     left: 0;
@@ -242,5 +242,176 @@
     background-color: #1100C2;
     top: 40px;
     z-index: 1;
+  }
+
+  /* line 186, ../sass/media.scss */
+  #our-process .content {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  /* line 190, ../sass/media.scss */
+  .opr__images {
+    width: 270px;
+    height: 270px;
+    background-size: contain;
+  }
+
+  /* line 195, ../sass/media.scss */
+  .opr__point {
+    width: 440px;
+  }
+  /* line 197, ../sass/media.scss */
+  .opr__point:nth-child(odd) {
+    height: 240px;
+  }
+  /* line 199, ../sass/media.scss */
+  .opr__point:nth-child(odd) .opr__images {
+    right: -290px;
+  }
+  /* line 203, ../sass/media.scss */
+  .opr__point:nth-child(even) .opr__images {
+    left: -290px;
+  }
+
+  /* line 207, ../sass/media.scss */
+  .footer__header:before {
+    width: 1350px;
+    top: -170px;
+  }
+
+  /* line 211, ../sass/media.scss */
+  #contacts {
+    margin-bottom: 120px;
+  }
+
+  /* line 215, ../sass/media.scss */
+  .footer__header .container {
+    flex-direction: column;
+    padding: 10px 0 10px 25%;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /* line 223, ../sass/media.scss */
+  .footer__nav-bar .header__nav-bar {
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
+  /* line 227, ../sass/media.scss */
+  .footer__nav-bar .header__logo {
+    order: 1;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
+  /* line 233, ../sass/media.scss */
+  .copy-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 243, ../sass/media.scss */
+  .header__contact-btn {
+    left: -30px;
+    position: relative;
+  }
+  /* line 246, ../sass/media.scss */
+  .header__contact-btn .button-ghost {
+    width: 0;
+    padding: 0;
+    border-color: transparent;
+  }
+  /* line 250, ../sass/media.scss */
+  .header__contact-btn .button-ghost span {
+    display: none;
+  }
+
+  /* line 255, ../sass/media.scss */
+  .header__logo {
+    margin-left: auto;
+  }
+
+  /* line 258, ../sass/media.scss */
+  #collapse__nav-bar {
+    left: 30px;
+  }
+
+  /* line 261, ../sass/media.scss */
+  .header .header__nav-bar.collapse {
+    flex-wrap: wrap;
+  }
+
+  /* line 265, ../sass/media.scss */
+  #lang-select:before {
+    background-size: 310px;
+    right: -620px;
+    top: 40px;
+  }
+
+  /* line 271, ../sass/media.scss */
+  .lang-select {
+    margin-top: 365px;
+    padding-left: 20px;
+  }
+
+  /* line 275, ../sass/media.scss */
+  #contact-us-now {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  /* line 278, ../sass/media.scss */
+  #contact-us-now h1 {
+    font-size: 28px;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 45px;
+  }
+  /* line 283, ../sass/media.scss */
+  #contact-us-now h1:before {
+    font-size: 70px;
+    bottom: -90px;
+  }
+
+  /* line 289, ../sass/media.scss */
+  #about-us {
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 500px;
+  }
+  /* line 294, ../sass/media.scss */
+  #about-us:before {
+    right: -300px;
+    left: auto;
+    transform: scale(-1, 1);
+  }
+
+  /* line 300, ../sass/media.scss */
+  #why-choose-us {
+    margin-top: 50px;
+  }
+
+  /* line 303, ../sass/media.scss */
+  .whu__header + .whu__background {
+    top: 100px;
+    height: 600px;
+  }
+
+  /* line 307, ../sass/media.scss */
+  .whu__header {
+    margin: 0 auto 0 auto;
+  }
+
+  /* line 310, ../sass/media.scss */
+  .whu__poligon {
+    width: 100%;
+    padding-top: 420px;
+  }
+  /* line 313, ../sass/media.scss */
+  .whu__poligon__text {
+    width: 100%;
   }
 }
