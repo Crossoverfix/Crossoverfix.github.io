@@ -544,7 +544,39 @@
   }
 
   /* line 416, ../sass/media.scss */
+  #contacts {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  /* line 419, ../sass/media.scss */
   #contacts form {
     margin: 0;
+  }
+  /* line 421, ../sass/media.scss */
+  #contacts form button {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* line 429, ../sass/media.scss */
+  #contacts form > div:first-child {
+    position: static;
+  }
+  /* line 431, ../sass/media.scss */
+  #contacts form > div:first-child h2, #contacts form > div:first-child p {
+    text-align: center;
+  }
+
+  /* line 437, ../sass/media.scss */
+  .footer__header .container {
+    padding: 10px 0 10px 5%;
+  }
+
+  /* line 440, ../sass/media.scss */
+  .footer__nav-bar .header__nav-bar {
+    display: none;
   }
 }

@@ -413,7 +413,31 @@
     width: 110px!important;
     height: 110px!important;
   }
-  #contacts form{
-    margin: 0;
+  #contacts{
+    position: relative;
+    padding-bottom: 50px;
+    form{
+      margin: 0;
+      button{
+        display: flex;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      & > div:first-child{
+        position: static;
+        h2,p{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .footer__header .container{
+    padding: 10px 0 10px 5%;
+  }
+  .footer__nav-bar .header__nav-bar{
+    display: none;
   }
 }
