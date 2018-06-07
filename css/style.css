@@ -69,10 +69,11 @@ a, a:hover {
 .content__img {
   overflow: hidden;
   min-width: 220px;
+  width: 220px;
   height: 200px;
   margin-right: 15px;
 }
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .content__img img {
   height: 100%;
 }
