@@ -1,0 +1,48 @@
+﻿Rank,Name,ID,Damage
+1,[MT] Mefisto,9wmg3e3,113095780
+2,[MT] ARTEMIS,ng94wxe,50117332
+3,[MT] noplan,56gxn6y,44664919
+4,[MT] Nerv05,d6wg7y,39123044
+5,[MT] Boogeyman,dpk2n5,38315282
+6,[MT] NazguL,epm986,31087236
+7,[MT] Almaz,p7gr7n,30840670
+8,[MT] BTMmamory,7rwm4xq,30283339
+9,[MT] Сайтама,93mbddr,30197665
+10,[MT] Сашка,7r598eb,29521924
+11,[MT] KillLaKill,3qg854,26214729
+12,[МТ] Trolzik,k9k98ke,25729160
+13,[ MT] Горн,455bxd9,22160566
+14,[MT] Az1m3D,k53npxp,20289327
+15,[MT] miwka,x45k5rx,18330728
+16,[MT] Moloko,xdwgrnb,17139451
+17,[MT] $RockStaR$,e2yq39d,17045241
+18,[MT] hellhound,rk5prme,16545478
+19,[MT]MrJack,7erppy,13842766
+20,[MT] Newston,n5db3pw,13000178
+21,[MT] ツFORMIツ™,4586b39,12215170
+22,[MT] Pisulik,rkqdwyn,9881195
+23,[MT] Whisper,452nerq,8354743
+24,[MT] /7a/7a,y7yxqq,4905343
+25,[MT]Мир,xn39p25,4160838
+26,[MT] Valore,26b8k5,0
+27,[MT] Радик,qx8wp6,0
+28,[MT] ⓓⓔⓩⓨⓢ ツ,ywnyn53,0
+29,[MT] Ookami,n5bgmk2,0
+30,[MT] Minato,wme4xkp,0
+31,[MT] Gamma,dr9w56,0
+32,[МТ] Rabbit,2kw75e2,0
+33,[МТ] VoL4oHoK,rnkgemn,0
+34,[MT] ябудулучшим,b5k4w49,0
+35,[MT] Zayа,2k9y8rk,0
+36,[MT] Samurai,xnr4x68,0
+37,[MT] BlueHeart,392ydk6,0
+38,[MT] Fluffy,7wyyyw,0
+39,[MT] ★Ka1RooT★,qwwqxr,0
+40,[MT] lansel,k9w6mkr,0
+41,[MT] RussianBoy,59697gx,0
+42,[MT] BlackHeart,k5xwq59,0
+43,[MT] alex. bay,n5qwwk8,0
+44,[MT] [S]A[B]R[I],mqgp36w,0
+45,[МТ] Enfeel,459qd2m,0
+46,[MT] Сокол,452n39q,0
+47,[MT] SOVA,deqbx28,0

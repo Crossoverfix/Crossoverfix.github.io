@@ -12,3 +12,74 @@ a, a:hover {
   cursor: pointer;
   color: inherit;
 }
+
+/* line 15, ../sass/style.scss */
+.table {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 25px;
+  border: solid 1px red;
+}
+/* line 22, ../sass/style.scss */
+.table__name {
+  width: 15%;
+  min-height: 1px;
+}
+/* line 25, ../sass/style.scss */
+.table__name div {
+  min-height: 30px;
+  max-height: 30px;
+  border-left: solid 2px blue;
+  border-right: solid 2px blue;
+  border-bottom: 1px solid gray;
+}
+/* line 31, ../sass/style.scss */
+.table__name div span {
+  display: inline-block;
+  width: 45%;
+}
+/* line 37, ../sass/style.scss */
+.table__damage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 70%;
+  min-height: 1px;
+  overflow: auto;
+}
+/* line 44, ../sass/style.scss */
+.table__damage div {
+  border-right: solid 2px blue;
+  width: 125px;
+  flex-shrink: 0;
+}
+/* line 48, ../sass/style.scss */
+.table__damage div span {
+  min-height: 30px;
+  max-height: 30px;
+  border-bottom: 1px solid gray;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+/* line 58, ../sass/style.scss */
+.table__total {
+  width: 15%;
+  min-height: 1px;
+}
+/* line 61, ../sass/style.scss */
+.table__total div {
+  border-left: solid 2px blue;
+  border-right: solid 2px blue;
+}
+/* line 64, ../sass/style.scss */
+.table__total div span {
+  border-bottom: 1px solid gray;
+  display: block;
+  width: 100%;
+  text-align: right;
+  min-height: 30px;
+  max-height: 30px;
+}

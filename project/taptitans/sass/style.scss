@@ -12,7 +12,66 @@ a,a:hover{
   cursor: pointer;
   color: inherit;
 }
-
+.table{
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 25px;
+  border: solid 1px red;
+  &__name{
+    width: 15%;
+    min-height: 1px;
+    div{
+      min-height: 30px;
+      max-height: 30px;
+      border-left: solid 2px blue;
+      border-right: solid 2px blue;
+      border-bottom: 1px solid gray;
+      span{
+        display: inline-block;
+        width: 45%;
+      }
+    }
+  }
+  &__damage{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width: 70%;
+    min-height: 1px;
+    overflow: auto;
+    div{
+      border-right: solid 2px blue;
+      width: 125px;
+      flex-shrink: 0;
+      span{
+        min-height: 30px;
+        max-height: 30px;
+        border-bottom: 1px solid gray;
+        display: block;
+        width: 100%;
+        text-align: right;
+      }
+    }
+  }
+  &__total{
+    width: 15%;
+    min-height: 1px;
+    div{
+      border-left: solid 2px blue;
+      border-right: solid 2px blue;
+      span{
+        border-bottom: 1px solid gray;
+        display: block;
+        width: 100%;
+        text-align: right;
+        min-height: 30px;
+        max-height: 30px;
+      }
+    }
+  }
+}
 #input-info{
 
 }
