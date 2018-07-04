@@ -1,0 +1,453 @@
+/* line 1, ../sass/_btn.scss */
+.button {
+  width: 215px;
+  height: 37px;
+  background-color: #ffc000;
+  position: relative;
+  font-family: "Glober";
+  font-size: 16px;
+  color: #2a292a;
+  font-weight: bold;
+  padding-top: 6px;
+  cursor: pointer;
+  transition: color 1s;
+}
+/* line 12, ../sass/_btn.scss */
+.button:hover {
+  color: #ffc000;
+  background-color: #2a292a;
+}
+/* line 15, ../sass/_btn.scss */
+.button:hover:before {
+  background-color: #ffc000;
+}
+/* line 18, ../sass/_btn.scss */
+.button:hover:after {
+  background-color: #ffc000;
+}
+/* line 22, ../sass/_btn.scss */
+.button:before {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 20px;
+  left: 0;
+  top: calc(50% - 1px);
+}
+/* line 32, ../sass/_btn.scss */
+.button:after {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 20px;
+  right: 0;
+  top: calc(50% - 1px);
+}
+
+/* line 43, ../sass/_btn.scss */
+.button__nav {
+  background-color: #2a292a;
+  padding-top: 16px;
+  flex-grow: 1;
+  text-align: center;
+  letter-spacing: 0.7px;
+  font-family: "Glober";
+  font-size: 13px;
+  position: relative;
+  color: white;
+  transition: color 1s;
+}
+/* line 53, ../sass/_btn.scss */
+.button__nav:hover {
+  background-color: #ffc000;
+  color: #2a292a;
+}
+/* line 56, ../sass/_btn.scss */
+.button__nav:hover:before {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 10px;
+  left: 0;
+  top: calc(50% - 1px);
+}
+/* line 66, ../sass/_btn.scss */
+.button__nav:hover:after {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 10px;
+  right: 0;
+  top: calc(50% - 1px);
+}
+/* line 77, ../sass/_btn.scss */
+.button__nav:before {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 10px;
+  left: 0;
+  top: calc(50% - 1px);
+}
+/* line 87, ../sass/_btn.scss */
+.button__nav:after {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 10px;
+  right: 0;
+  top: calc(50% - 1px);
+}
+/* line 97, ../sass/_btn.scss */
+.button__nav.active {
+  background-color: #ffc000;
+  color: #2a292a;
+}
+
+/* line 102, ../sass/_btn.scss */
+.button__collapse {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 37px;
+  transform: translateX(-50%);
+  transition: color 1s;
+}
+/* line 111, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__primary:hover {
+  color: #ffc000;
+  background-color: #2a292a;
+}
+/* line 114, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__primary:hover:before {
+  background-color: #ffc000;
+}
+/* line 117, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__primary:hover:after {
+  background-color: #ffc000;
+}
+/* line 122, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__secondary {
+  background-color: #2a292a;
+}
+/* line 124, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__secondary img:first-child {
+  display: none;
+}
+/* line 127, ../sass/_btn.scss */
+.button__collapse:hover .button__collapse__secondary img:last-child {
+  display: block;
+}
+/* line 132, ../sass/_btn.scss */
+.button__collapse__primary {
+  width: 215px;
+  background-color: #ffc000;
+  position: relative;
+  font-family: "Glober";
+  font-size: 16px;
+  color: #2a292a;
+  font-weight: bold;
+  padding-top: 11px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: color 1s;
+}
+/* line 143, ../sass/_btn.scss */
+.button__collapse__primary:before {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 20px;
+  left: 0;
+  top: calc(50% - 1px);
+}
+/* line 153, ../sass/_btn.scss */
+.button__collapse__primary:after {
+  transition: color 1s;
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  height: 2px;
+  width: 20px;
+  right: 0;
+  top: calc(50% - 1px);
+}
+/* line 164, ../sass/_btn.scss */
+.button__collapse__secondary {
+  height: 23px;
+  width: 23px;
+  border-radius: 13px;
+  background-color: #ffc000;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 173, ../sass/_btn.scss */
+.button__collapse__secondary img:first-child {
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 177, ../sass/_btn.scss */
+.button__collapse__secondary img:last-child {
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@font-face {
+  font-family: "Glober";
+  src: url("../font/GloberRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../font/GloberBold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 5, ../sass/style.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 1000px;
+}
+
+/* line 12, ../sass/style.scss */
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* line 17, ../sass/style.scss */
+button, button:focus {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+/* line 22, ../sass/style.scss */
+#header {
+  height: 114px;
+  width: 100%;
+  background: url("../img/header_bg.jpg") no-repeat;
+  background-position: center;
+}
+/* line 27, ../sass/style.scss */
+#header .button {
+  vertical-align: top;
+  margin-top: 40px;
+  margin-left: 39px;
+}
+/* line 32, ../sass/style.scss */
+#header .ico {
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  background-color: #18a2bd;
+  position: relative;
+  display: inline-block;
+  margin-right: 3px;
+}
+/* line 40, ../sass/style.scss */
+#header .ico img {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 46, ../sass/style.scss */
+.container {
+  width: 1100px;
+  min-height: 1px;
+  margin: 0 auto;
+}
+
+/* line 52, ../sass/style.scss */
+.header__logo {
+  display: inline-block;
+  width: 200px;
+  margin: 6px 0 0 20px;
+}
+/* line 56, ../sass/style.scss */
+.header__logo img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+/* line 60, ../sass/style.scss */
+.header__logo span {
+  font-family: "Glober";
+  font-size: 14px;
+  color: #2a292a;
+  letter-spacing: 0.09px;
+}
+/* line 66, ../sass/style.scss */
+.header__number {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 34px;
+  margin-left: 373px;
+}
+/* line 71, ../sass/style.scss */
+.header__number span {
+  font-family: "Glober";
+  font-size: 14px;
+  color: #2a292a;
+}
+/* line 75, ../sass/style.scss */
+.header__number a {
+  display: block;
+  cursor: pointer;
+  height: 27px;
+}
+/* line 79, ../sass/style.scss */
+.header__number a span {
+  font-family: "Glober";
+  font-size: 26px;
+  color: #18a2bd;
+  line-height: 27px;
+  vertical-align: bottom;
+}
+
+/* line 88, ../sass/style.scss */
+#nav-menu {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 97, ../sass/style.scss */
+#hello {
+  height: 459px;
+  width: 100%;
+  background: url("../img/banner.jpg") no-repeat;
+  background-size: auto 480px;
+  background-position: top center;
+  padding-top: 20px;
+}
+
+/* line 106, ../sass/style.scss */
+.hello__header {
+  background-color: #18a2bd;
+  display: block;
+  padding: 23px 0 9px 18px;
+}
+/* line 110, ../sass/style.scss */
+.hello__header h1 {
+  font-family: "Glober";
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* line 118, ../sass/style.scss */
+.hello__content {
+  background-color: white;
+  padding: 15px 0 15px 18px;
+  width: 638px;
+  position: relative;
+}
+/* line 123, ../sass/style.scss */
+.hello__content h2 {
+  margin: 0;
+  font-family: "Glober";
+  font-size: 26px;
+  font-weight: bold;
+  color: #18a2bd;
+  text-transform: uppercase;
+}
+/* line 130, ../sass/style.scss */
+.hello__content p {
+  font-family: "Glober";
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a292a;
+  margin: 5px 0 14px 0;
+  text-transform: uppercase;
+}
+/* line 137, ../sass/style.scss */
+.hello__content ul {
+  padding-left: 7px;
+  border-left: solid 2px;
+  list-style-type: none;
+  margin: -7px 0 72px 12px;
+}
+/* line 142, ../sass/style.scss */
+.hello__content ul li {
+  font-family: "Glober";
+  font-size: 16px;
+  color: #2a292a;
+  line-height: 18px;
+  margin-bottom: 13px;
+}
+
+/* line 151, ../sass/style.scss */
+#video-about {
+  background-color: #18a2bd;
+  width: 100%;
+  height: 98px;
+  padding-top: 50px;
+}
+/* line 156, ../sass/style.scss */
+#video-about div.container {
+  position: relative;
+}
+/* line 158, ../sass/style.scss */
+#video-about div.container:before {
+  content: "";
+  position: absolute;
+  width: 313px;
+  height: 150px;
+  top: -180px;
+  left: -176px;
+  background: url("../img/odeyalo.png") no-repeat;
+}
+/* line 167, ../sass/style.scss */
+#video-about div.container h2 {
+  font-family: "Glober";
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+  font-size: 26px;
+  margin: 18px 0 0 18px;
+  text-transform: uppercase;
+}
+/* line 175, ../sass/style.scss */
+#video-about div.container p {
+  font-family: "Glober";
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 0 19px;
+}

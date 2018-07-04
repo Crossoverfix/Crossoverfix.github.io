@@ -1,0 +1,15 @@
+@mixin text($font-size,$color){
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size;
+  color: $color;
+}
+@mixin centred {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin text-gr($font-size){
+  font-family: "Glober";
+  font-size: $font-size;
+}
