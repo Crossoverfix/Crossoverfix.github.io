@@ -13,8 +13,39 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+
 </head>
 <body>
+<div id="pop-up__parent">
+    <div id="pop-up"></div>
+    <div id="call-back">
+        <a class="close-pop-up">
+            <img alt="close" src="img/close.svg">
+        </a>
+        <div class="call-back__header">
+            <h2>Оставте Ваши контактные данные для обсуждения деталей сотрудничества</h2>
+        </div>
+        <div class="call-back__body">
+            <form>
+                <div class="call-back__input">
+                    <input placeholder="Имя" name="name" type="text">
+                </div>
+                <div class="call-back__input">
+                    <input placeholder="Email" name="email" type="email">
+                </div>
+                <div class="call-back__input">
+                    <select id="country" class="call-back__select">
+                        <option value="ru">Россия +7</option>
+                        <option value="ua">Украина +380</option>
+                        <option value="by">Белорусь +375</option>
+                    </select>
+                    <input placeholder="Номер телефона" name="tel-number" type="tel">
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
 <header>
     <div id="header">
             <div class="container">
@@ -31,7 +62,7 @@
                     </a>
                     <span>Отдел по работе с дистрибьюторами</span>
                 </div>
-                <button class="button">
+                <button class="button" onclick="popUp(callBack())">
                     ЗАКАЗАТЬ ЗВОНОК
                 </button>
             </div>
@@ -89,5 +120,6 @@
 
 </footer>
 <script src="js/script.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>

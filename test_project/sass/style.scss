@@ -81,7 +81,7 @@ button,button:focus{
       span{
         @include text-gr(26px);
         color: $c-blue;
-        line-height: 27px;
+        line-height: 31px;
         vertical-align: bottom;
       }
     }
@@ -180,6 +180,88 @@ button,button:focus{
       color: white;
       text-transform: uppercase;
       margin: 0 0 0 19px;
+    }
+  }
+}
+#pop-up__parent{
+  z-index: 100;
+}
+#pop-up{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+}
+#call-back{
+  z-index: 101;
+  display: none;
+  @include centred;
+  width: 500px;
+}
+.close-pop-up{
+position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  right: 10px;
+}
+.call-back{
+  &__header{
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    padding: 15px 25px 5px 15px;
+    box-sizing: border-box;
+    h2{
+      margin: 0;
+      @include text-gr(16px);
+      color: $c-dark;
+    }
+  }
+  &__body{
+    background-color: #eaf2f7;
+    form{
+      padding: 10px 0 20px 0;
+      button{
+        margin: 25px auto 10px auto;
+        display: block;
+      }
+    }
+  }
+  &__select{
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    @include text-gr(14px);
+    color: $c-dark;
+  }
+  &__input{
+    display: block;
+    width: calc(100% - 50px);
+    height: 35px;
+    margin: 10px auto;
+    position: relative;
+    input{
+      outline: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: solid 1px #c7d3dc;
+      padding: 0 10px 0 15px;
+      box-sizing: border-box;
+      @include text-gr(15px);
+      color: $c-dark;
+    }
+    input[name="tel-number"]{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% - 120px);
     }
   }
 }
