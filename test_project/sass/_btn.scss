@@ -6,7 +6,6 @@
   @include text-gr(16px);
   color: $c-dark;
   font-weight: bold;
-  padding-top: 6px;
   cursor: pointer;
   transition: color 1s;
   &:hover{
@@ -42,7 +41,7 @@
 }
 .button__nav{
   background-color: $c-dark;
-  padding-top: 16px;
+  padding-top: 14px;
   flex-grow: 1;
   text-align: center;
   letter-spacing: 0.7px;
@@ -106,6 +105,7 @@
   bottom: 37px;
   transform: translateX(-50%);
   transition: color 1s;
+  text-align: center;
   &:hover{
     .button__collapse__primary{
       &:hover{
@@ -136,8 +136,8 @@
     @include text-gr(16px);
     color: $c-dark;
     font-weight: bold;
-    padding-top: 11px;
-    padding-bottom: 7px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     cursor: pointer;
     transition: color 1s;
     &:before{

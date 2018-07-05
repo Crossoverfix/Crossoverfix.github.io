@@ -1,12 +1,18 @@
 @font-face {
   font-family: "Glober";
-  src: url("../font/GloberRegular.otf");
+  src: url("../font/globerregularf.woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Glober";
-  src: url("../font/GloberBold.otf");
+  src: url("../font/globerboldf.woff");
   font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../font/globerlightf.woff");
+  font-weight: 300;
   font-style: normal;
 }

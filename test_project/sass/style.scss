@@ -27,7 +27,8 @@ button,button:focus{
   .button{
     vertical-align: top;
     margin-top: 40px;
-    margin-left: 39px;
+    float: right;
+    margin-right: 10px;
   }
   .ico{
     height: 26px;
@@ -61,6 +62,7 @@ button,button:focus{
       @include text-gr(14px);
       color: $c-dark;
       letter-spacing: 0.09px;
+      white-space: nowrap;
     }
   }
   &__number{
@@ -113,6 +115,7 @@ button,button:focus{
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
+      white-space: nowrap;
     }
   }
   &__content{
