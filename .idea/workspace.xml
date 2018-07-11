@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35985638-2fb8-43e6-a061-af47af8e9286" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="35985638-2fb8-43e6-a061-af47af8e9286" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react_app/slider/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="561">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <marker date="1531065469884" expanded="true" signature="333:400" ph="{...}" />
@@ -40,20 +38,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Slider.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Slider.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react_app/slider/src/components/Slider.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="89" column="51" lean-forward="true" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
+            <state relative-caret-position="102">
+              <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#317#771#0" expanded="false" />
                 <element signature="n#!!block;n#componentDidMount#0;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#componentWillUnmount#0;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#intervalBetweenSlides#0;n#Slider#0" expanded="false" />
-                <element signature="n#!!block;n#toggleAutoPlay#0;n#Slider#0" expanded="false" />
-                <element signature="n#!!block;n#nextOne#0;n#Slider#0" expanded="false" />
-                <element signature="n#!!block;n#prevOne#0;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#dots#0;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#isActive#0;n#Slider#0" expanded="false" />
                 <element signature="n#!!block;n#renderDots#0;n#Slider#0" expanded="false" />
@@ -141,7 +136,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/react_app/slider/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1024" />
     <option name="y" value="19" />
     <option name="width" value="597" />
@@ -365,15 +360,15 @@
       <workItem from="1530957225055" duration="3531000" />
       <workItem from="1530964332893" duration="8674000" />
       <workItem from="1530973094608" duration="695000" />
-      <workItem from="1531048600659" duration="12030000" />
+      <workItem from="1531048600659" duration="12423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30269000" />
+    <option name="totallyTimeSpent" value="30662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -577,35 +572,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/react_app/slider/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1531065469884" expanded="true" signature="333:400" ph="{...}" />
+            <marker date="1531065469884" expanded="true" signature="433:466" ph="{...}" />
+            <marker date="1531065469884" expanded="true" signature="550:640" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/react_app/slider/src/components/Slider.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="89" column="51" lean-forward="true" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
+        <state relative-caret-position="102">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#317#771#0" expanded="false" />
             <element signature="n#!!block;n#componentDidMount#0;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#componentWillUnmount#0;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#intervalBetweenSlides#0;n#Slider#0" expanded="false" />
-            <element signature="n#!!block;n#toggleAutoPlay#0;n#Slider#0" expanded="false" />
-            <element signature="n#!!block;n#nextOne#0;n#Slider#0" expanded="false" />
-            <element signature="n#!!block;n#prevOne#0;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#dots#0;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#isActive#0;n#Slider#0" expanded="false" />
             <element signature="n#!!block;n#renderDots#0;n#Slider#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react_app/slider/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1531065469884" expanded="true" signature="333:400" ph="{...}" />
-            <marker date="1531065469884" expanded="true" signature="433:466" ph="{...}" />
-            <marker date="1531065469884" expanded="true" signature="550:640" ph="{...}" />
           </folding>
         </state>
       </provider>

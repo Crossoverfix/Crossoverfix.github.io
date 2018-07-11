@@ -45,6 +45,7 @@ function callBack() {
     }
     function validEmail() {
         var $valid = /.+@.+\\..+/i;
+	var $testVar = $input.email.val();
         if ($input.email.val().length < 6){
             $input.email.css("border","solid 1px #ff0000");
         } else if($input.email.val().search($valid) == -1){
