@@ -27,14 +27,31 @@ function callBack() {
     $input.email = $callBack.find('input[name="email"]');
     $input.telNumber = $callBack.find('input[name="tel-number"]');
     $input.submit = $callBack.find('button[type="submit"]');
+    $(function () {
+        maskPhone()
+    })
+    function maskPhone(){
+        var $country = $("#country option:selected").val();
+        switch ($country){
+            case "ru":
+                $input.telNumber.mask("+7(999) 999-99-99");
+                break;
+            case "ua":
+                $input.telNumber.mask("+380(999) 999-99-99");
+                break;
+            case "by":
+                $input.telNumber.mask("+375(999) 999-99-99");
+                break;
+        };
+        $("#country").change(function () {
+            maskPhone();
+        });
+    }
     $input.name.change(function () {
         validName();
     });
     $input.email.change(function () {
         validEmail();
-    });
-    $input.telNumber.change(function () {
-        validTelNumber();
     });
     function validName() {
         if ($input.name.val().length < 3){
@@ -44,18 +61,19 @@ function callBack() {
         }
     }
     function validEmail() {
-        var $valid = /.+@.+\\..+/i;
-	var $testVar = $input.email.val();
-        if ($input.email.val().length < 6){
-            $input.email.css("border","solid 1px #ff0000");
-        } else if($input.email.val().search($valid) == -1){
-            alert($input.email.val().search($valid));
-        } else {
-            $input.email.css("border","solid 1px #008000");
-        }
+      if ($input.email.val().length > 6){
+          if ($input.email.val().match(/@/i) !== null){
+              if ($input.email.val().match(/\./) !== null){
+                  var test = $input.email.val().match(/\./);
+                  $input.email.css("border","solid 1px #008000");
+              } else {
+                  $input.email.css("border","solid 1px #ff0000");
+              }
+          } else {
+              $input.email.css("border","solid 1px #ff0000");
+          }
+      } else {
+          $input.email.css("border","solid 1px #ff0000");
+      }
     }
-    function validTelNumber() {
-
-    }
-
 };

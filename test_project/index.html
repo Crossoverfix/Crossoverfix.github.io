@@ -16,7 +16,7 @@
 
 </head>
 <body>
-<div id="pop-up__parent">
+<div id="pop-up__parent ">
     <div id="pop-up"></div>
     <div id="call-back">
         <a class="close-pop-up">
@@ -78,7 +78,7 @@
         <a class="button__nav">КОНТАКТЫ</a>
     </div>
 </header>
-<div>
+<main>
     <div id="hello">
     <div class="container">
         <div class="hello__header">
@@ -107,15 +107,232 @@
             </a>
         </div>
     </div>
-</div>
+    </div>
     <div id="video-about">
-        <div class="container">
-            <h2>Посмотрите короткое видео
-            </h2>
-            <p>чтобы узнать подробнее о нашем предложение для Дистрибьюторов</p>
+        <div class="video-about__header">
+            <div class="container">
+                <h2 class="head-line-text">Посмотрите короткое видео</h2>
+                <p class="sub-line-text">чтобы узнать подробнее о нашем предложение для Дистрибьюторов</p>
+            </div>
+        </div>
+        <div class="video-about__body">
+                <div class="container">
+                    <div class="video-about__body__video">
+                        <div class="video-about__body__video__header">
+                            ОБРАЩЕНИЕ генерального директора ООО «ДОНСОН» Андрея Волосского
+                        </div>
+                        <div class="video-about__body__video__content">
+                        </div>
+                    </div>
+                    <div class="video-about__body__call-back">
+                        <div class="video-about__body__call-back__header">
+                            Оставьте Ваши контактные данные
+                            для обсуждения деталей сотрудничества
+                        </div>
+                        <form class="video-about__body__call-back__form" id="video-about__call-back">
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="email" name="email" placeholder="Email">
+                            <select name="sity">
+                                <option>Выберите ваш город</option>
+                                <option>Москва</option>
+                                <option>Курск</option>
+                                <option>Ростов</option>
+                            </select>
+                            <input type="tel" name="number" placeholder="Телефон">
+                            <input id="check-experience" class="check-box" type="checkbox" name="experience">
+                            <div class="check-box__wrapper">
+                                <span>Опыт продажи текстиля</span>
+                                <label for="check-experience" class="check-box__ratio">
+                                    <div class="check-box__select"></div>
+                                    <span>--</span>
+                                    <span>+</span>
+                                </label>
+                            </div>
+                            <button class="button" type="submit">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="about-us">
+        <div class="about-us__header header-block">
+            <div class="container">
+                <h2 class="head-line-text">О НАС</h2>
+                <p class="sub-line-text">ООО «Донсон» специализируется на производстве и оптовой продаже текстиля
+                    для сна по всей России</p>
+            </div>
+        </div>
+        <div class="about-us__body">
+            <div class="flex-container">
+                <div class="about-us__body__info">
+                    <h2>ООО «Донсон» является дочерней компанией завода
+                        ООО ПКФ «БАЛАКОМ» – один из крупнейших
+                        комплексов полного цикла (от производства
+                        наполнителя до упаковки) по производству текстиля
+                        на территории СНГ, работает с 1996 года
+                    </h2>
+                    <ul>
+                        <li>Производственный <b>комплекс 3,5га</b>
+                        </li>
+                        <li>Производим и продаем
+                            <b>190 тыс. ед продукции в месяц</b>
+                        </li>
+                        <li>Штат сотрудников <b>более 450 человек</b>
+                        </li>
+                        <li>Работаем на современном
+                            <b>немецком и австрийское оборудование</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-us__body__video">
+                    <div class="about-us__body__video__header">Производство одеял на ООО ПКФ «БАЛКОМ»
+                    </div>
+                    <div class="about-us__body__video__ico"></div>
+                </div>
+            </div>
+            <div class="about-us__body__partner container">
+                <h2>Nano наполнитель QuadroAir®</h2>
+                <img align="left" alt="partner_logo" src="img/partner_ico.png">
+                <span>В качестве наполнителя мы используем запатентованное Nano волокно нового поколения QuadroAir® с четырьмя пустотами, имеет уникальную технологию производства, которой владеет наше производство
+Волокно не вызывает аллергических реакций, хорошо отводит влагу, не накапливает пыль, удачно сочетает теплозащитные и вентилирующие свойства. QuadroAir® имеет упруго-эластичную структуру, что позволяет изделиям быстро и легко восстанавливать свою форму после смятия, оставаться в сухости и комфорте
+                </span>
+            </div>
+            <div class="about-us__body__our-product container">
+                <h2>НАША ПРОДУКЦИЯ
+                </h2>
+                <h3>Мы производим высококачественную сертифицированную продукцию</h3>
+                <button type="button" class="button-resp">Получить каталог продукции и цены на почту</button>
+            </div>
+            <div class="about-us__body__category flex-container">
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">ПОСТЕЛЬНОЕ БЕЛЬЕ</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_1.jpg">
+                    </div>
+                </a>
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">ОДЕЯЛА</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_2.jpg">
+                    </div>
+                </a>
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">ПОДУШКИ</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_3.jpg">
+                    </div>
+                </a>
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">ПОКРЫВАЛА</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_4.jpg">
+                    </div>
+                </a>
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">НАМАТРАСНИКИ</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_5.jpg">
+                    </div>
+                </a>
+                <a href="#" class="about-us__body__category__card">
+                    <div class="header">ПРЕДЛОЖЕНИЕ ДЛЯ ГОСТИНИЦ</div>
+                    <div class="img-wrapper">
+                        <img alt="prev" src="img/category_6.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="about-us__body__certificate container">
+                <div class="first">
+                    <h2>Сертификация производства по системе управления качеством ISO 9001:2008</h2>
+                    <button class="button-blue">ПОСМОТРЕТЬ</button>
+                </div>
+                <div class="second">
+                    <h2>Международный сертификат соответствия OEKO TEX</h2>
+                    <button class="button-blue">ПОСМОТРЕТЬ</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <div id="us-info">
+        <div class="us-info__header">
+            <h2>Мы предоставим Вам готовую стратегию развития текстильного
+                бизнеса для Вашего Региона и научим зарабатывать
+            </h2>
+            <h3>от 500 тыс.руб. в месяц на оптовых продажах
+            </h3>
+        </div>
+        <div class="us-info__body">
+            <div class="container">
+                <div class="us-info__body__start">
+                    <h2>Давайте начнем сотрудничество!
+                    </h2>
+                    <ol>
+                        <li>
+                            <ul>
+                                <span>План заработка</span>
+                                <li>Вышлем на почту проверенный на нашем опыте план работы в регионе для заработка от 500 тыс. руб. в месяц, начиная с 1-ого месяца
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <span>Дорожная карта</span>
+                                <li>Заключим договор
+                                    и разработаем
+                                    дорожную карту развития для вашего региона
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <span>Начало работы</span>
+                                <li>Обеспечим  Вас всем необходимым для старта:
+                                    Предоставим схему
+                                    быстрого старта
+                                    Поможем собрать
+                                    команду профессионалов
+                                    Проведем 2-х недельное
+                                    обучение Вас и команды
+                                    профессионалов
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <span>Сопровождение</span>
+                                <li>Закрепим за Вами персонального менеджера, который будет помогать Вам наращивать объем продаж в вашем регионе
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="us-info__body__call-back">
+                    <h2>Получить план заработка 500 тыс. руб. в мес. на почту</h2>
+                    <form>
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="email" name="email" placeholder="Email">
+                        <select name="sity">
+                            <option>Выберите ваш город</option>
+                            <option>Москва</option>
+                            <option>Курск</option>
+                            <option>Ростов</option>
+                        </select>
+                        <input id="check-experience__us-info" class="check-box" type="checkbox" name="experience">
+                        <div class="check-box__wrapper">
+                            <span>Опыт продажи текстиля</span>
+                            <label for="check-experience__us-info" class="check-box__ratio">
+                                <div class="check-box__select"></div>
+                                <span>--</span>
+                                <span>+</span>
+                            </label>
+                        </div>
+                        <button class="button" type="submit">ПОЛУЧИТЬ ПЛАН</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 <footer>
 
 </footer>
