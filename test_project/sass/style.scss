@@ -16,6 +16,10 @@ div{
   margin: 0;
   padding: 0;
 }
+u{
+  text-decoration: none;
+  border-bottom: 1px dashed #222428;
+}
 a,a:hover{
   text-decoration: none;
   cursor: pointer;
@@ -530,6 +534,7 @@ position: absolute;
         height: 60px;
         width: 100%;
         @include text-gr(16px);
+        color: #555555;
         line-height: 60px;
         padding-left: 20px;
         box-sizing: border-box;
@@ -588,7 +593,7 @@ position: absolute;
     }
   }
   &__body{
-    padding-top: 35px;
+    padding: 35px 0 15px 0;
     background: url("../img/bg_us_info.png")no-repeat top center;
     background-size: 100%;
     &__start{
@@ -604,7 +609,7 @@ position: absolute;
         z-index: 1;
         display: flex;
         justify-content: space-between;
-        margin:0;
+        margin:0 0 40px 0;
         padding: 10px 0;
         &:before{
           content: "";
@@ -617,21 +622,399 @@ position: absolute;
           background-color: #c7d3dc;
           z-index: -1;
         }
-        li{
+        > li{
           box-sizing: border-box;
           width: 25%;
-          border-left: 20px solid $c-yelow;
+          position: relative;
+          z-index: 1;
+          &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            height: 140px;
+            width: 20px;
+            background-color: $c-yelow;
+            top: 0;
+            left: -20px;
+          }
           ul{
             margin: 0;
-            padding: 0 0 0 40px;
+            padding: 0 35px 0 25px;
+            list-style-type: none;
             span{
-
+              @include text-gr(16px);
+              color: $c-dark;
+              margin-bottom: 25px;
+              text-transform: uppercase;
+              display: block;
+              position: relative;
+              top: 8px;
             }
             li{
-
+              @include text-gr(16px);
+              color: $c-dark;
+              position: relative;
+              p{
+                margin: 0;
+                &:before{
+                  content: "";
+                  position: relative;
+                  display: inline-block;
+                  width: 7px;
+                  height: 7px;
+                  top: -3px;
+                  margin-right: 6px;
+                  border-radius: 5px;
+                  background-color: #c7d3dc;
+                }
+              }
+              &:before{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 30px;
+                top: 10px;
+                left: -40px;
+                background-color: $c-dark;
+              }
             }
           }
         }
+      }
+    }
+    &__call-back{
+      h2{
+        @include text-gr(23px);
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      form{
+        .check-box__wrapper{
+          display: inline-block;
+          margin: 0;
+        }
+        button{
+          width: 235px;
+        }
+        input,select{
+          margin-bottom: 15px;
+          margin-right: 7px;
+          width: 235px;
+          height: 36px;
+          @include text-gr(16px);
+          color: $c-dark;
+          line-height: 36px;
+          border: solid 1px #c7d3dc;
+          padding-left: 15px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+.chart{
+  &__header{
+    height: 142px;
+    background-color: $c-blue;
+    padding-top: 25px;
+    box-sizing: border-box;
+    h2{
+      @include text-gr(26px);
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      width: 100%;
+      padding: 0 30%;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+      line-height: 30px;
+    }
+    h3{
+      @include text-gr(23px);
+      color: white;
+      text-align: center;
+    }
+  }
+  &__body{
+    padding-top: 70px;
+    background: url("../img/bg_chart.png")no-repeat top center;
+    background-size: 100%;
+    &__text-block{
+      padding-top: 20px;
+      width: 490px;
+      display: inline-block;
+      h2{
+        @include text-gr(23px);
+        font-weight: bold;
+        color: $c-dark;
+        margin-bottom: 25px;
+      }
+      p{
+        @include text-gr(16px);
+        color: $c-dark;
+        margin-bottom: 65px;
+      }
+    }
+    &__diagram{
+      display: inline-block;
+      position: relative;
+      float: right;
+      margin-right: 115px;
+      height: 350px;
+      width: 350px;
+      background: url("../img/chart_diogram.png")no-repeat center;
+      background-size: contain;
+      span{
+        display: block;
+        width: 135px;
+        @include text-gr(14px);
+        color: $c-dark;
+        position: absolute;
+        &:nth-child(1){
+          width: 100px;
+          top: -45px;
+          left: calc(50% - 29px);
+        }
+        &:nth-child(2){
+          width: 100px;
+          top: 10%;
+          left: calc(100% - 20px);
+        }
+        &:nth-child(3){
+          width: 140px;
+          top: 23%;
+          left: 100%;
+        }
+        &:nth-child(4){
+          top: calc(50% - 18px);
+          left: calc(100% + 20px);
+        }
+        &:nth-child(5){
+          top: 64%;
+          left: 100%;
+        }
+        &:nth-child(6){
+            top: 80%;
+            left: 95%;
+        }
+        &:nth-child(7){
+          top: calc(100% + 10px);
+          left: calc(50% - 16px);
+        }
+        &:nth-child(8){
+          top: 80%;
+          left: 0;
+        }
+        &:nth-child(9){
+          top: 64%;
+          left: -75px;
+        }
+        &:nth-child(10){
+          top: calc(50% - 18px);
+          left: -95px;
+        }
+        &:nth-child(11){
+          top: 29%;
+          left: -90px;
+        }
+        &:nth-child(12){
+          top: 10%;
+          left: -60px;
+        }
+      }
+    }
+  }
+}
+.call-back-info{
+  &__header{
+    height: 90px;
+    background-color: $c-yelow;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 33%;
+    h2{
+      @include text-gr(26px);
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &__body{
+    padding: 20px 0;
+    background: url("../img/bg_call_back_info.png")no-repeat top center;
+    background-size: cover;
+    &__text{
+      width: 670px;
+      h2{
+        @include text-gr(26px);
+        color: white;
+        margin-bottom: 15px;
+      }
+      ul{
+        padding: 15px 0 10px 25px;
+        border-left: 20px solid $c-yelow;
+        list-style-type: none;
+        margin-bottom: 35px;
+        @include text-gr(16px);
+        color: white;
+        span{
+          position: relative;
+          margin-bottom: 25px;
+          display: block;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            width: 30px;
+            height: 2px;
+            background-color: white;
+          }
+        }
+        li{
+          margin-bottom: 12px;
+          position: relative;
+          &:before{
+            content: "";
+            position: relative;
+            display: inline-block;
+            top: -2px;
+            width: 6px;
+            height: 6px;
+            border-radius: 5px;
+            background-color: #c7d3dc;
+            margin-right: 7px;
+          }
+        }
+        h2{
+          @include text-gr(23px);
+          color: white;
+          font-weight: bold;
+          position: relative;
+          margin-top: 20px;
+          left: 15px;
+        }
+      }
+
+    }
+    form{
+       button{
+         display: block;
+         width: 235px;
+       }
+       input,select{
+         margin-bottom: 15px;
+         margin-right: 7px;
+         width: 235px;
+         height: 36px;
+         @include text-gr(16px);
+         color: $c-dark;
+         line-height: 36px;
+         border: solid 1px #c7d3dc;
+         padding-left: 15px;
+         box-sizing: border-box;
+       }
+     }
+  }
+}
+.contact-us{
+  &__header{
+    background-color: $c-blue;
+    width: 100%;
+    box-sizing: border-box;
+    height: 140px;
+    padding-top: 40px;
+    h2{
+      @include text-gr(26px);
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+    h3{
+      @include text-gr(23px);
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &__body{
+    background: url("../img/bg_contact_us.png")no-repeat top center;
+    background-size: auto 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &__download{
+      position: relative;
+      margin-bottom: 180px;
+      &__image{
+        position: absolute;
+        width: 481px;
+        height: 290px;
+        background: url(../img/book_images.png) no-repeat center;
+        background-size: 481px;
+        z-index: 11;
+        top: -45px;
+        left: -120px;
+      }
+      &__text{
+        width: 490px;
+        height: 90px;
+        position: relative;
+        z-index: 1;
+        left: 220px;
+        padding: 10px 0 0 100px;
+        box-sizing: border-box;
+        span{
+          @include text-gr(16px);
+          color: $c-dark;
+          font-weight: bold;
+          display: block;
+        }
+        &__ico{
+          width: 70px;
+          height: 60px;
+          background-color: $c-blue;
+          position: absolute;
+          bottom: -55px;
+          left: 140px;
+          img{
+            width: 70%;
+            @include centred;
+          }
+        }
+        .opacity-bg{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          background-color: white;
+          opacity: 0.57;
+        }
+      }
+    }
+    &__address{
+      h3{
+        @include text-gr(16px);
+        font-weight: bold;
+        color: $c-dark;
+        margin-bottom: 3px;
+      }
+      p{
+        @include text-gr(16px);
+        color: $c-dark;
+        margin: 0 0 12px 0;
+      }
+      h2{
+        @include text-gr(38px);
+        font-weight: bold;
+        color: $c-dark;
+        margin-top: 8px;
+        margin-bottom: 5px;
+      }
+      button{
+
       }
     }
   }
