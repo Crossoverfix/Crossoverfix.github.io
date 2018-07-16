@@ -1519,3 +1519,107 @@ button, button:focus {
   margin-top: 8px;
   margin-bottom: 5px;
 }
+
+/* line 1022, ../sass/style.scss */
+#footer {
+  background: url("../img/bg_us_info.png") no-repeat top center;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* line 1028, ../sass/style.scss */
+.footer__body {
+  justify-content: space-between;
+}
+/* line 1031, ../sass/style.scss */
+.footer__body__logo img {
+  height: 50px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 1036, ../sass/style.scss */
+.footer__body__logo span {
+  display: block;
+}
+/* line 1041, ../sass/style.scss */
+.footer__body__ico-bar a {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+/* line 1047, ../sass/style.scss */
+.footer__body__ico-bar a img {
+  width: 100%;
+}
+/* line 1052, ../sass/style.scss */
+.footer__body__contacts {
+  position: relative;
+}
+/* line 1054, ../sass/style.scss */
+.footer__body__contacts h4 {
+  font-family: "Glober",sans-serif;
+  font-size: 14px;
+  color: #2a292a;
+}
+/* line 1058, ../sass/style.scss */
+.footer__body__contacts a {
+  display: block;
+}
+/* line 1060, ../sass/style.scss */
+.footer__body__contacts a .ico {
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  background-color: #18a2bd;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  margin-right: 3px;
+}
+/* line 1069, ../sass/style.scss */
+.footer__body__contacts a .ico img {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 1074, ../sass/style.scss */
+.footer__body__contacts a span {
+  font-family: "Glober",sans-serif;
+  font-size: 23px;
+  color: #18a2bd;
+  display: inline-block;
+  line-height: 30px;
+}
+/* line 1081, ../sass/style.scss */
+.footer__body__contacts button {
+  font-family: "Glober",sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2a292a;
+  border-bottom: dashed 1px #2a292a;
+  background-color: transparent;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+/* line 1094, ../sass/style.scss */
+.footer__body__link-bar {
+  justify-content: center;
+  padding-top: 40px;
+}
+/* line 1097, ../sass/style.scss */
+.footer__body__link-bar a {
+  font-family: "Glober",sans-serif;
+  font-size: 14px;
+  margin: 0 20px;
+  color: #a2aeb8;
+  text-decoration: underline;
+  cursor: pointer;
+}
