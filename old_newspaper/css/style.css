@@ -1,0 +1,79 @@
+/* line 4, ../sass/style.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* line 10, ../sass/style.scss */
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* line 15, ../sass/style.scss */
+.link-to-content {
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 21, ../sass/style.scss */
+.link-to-content a {
+  text-decoration: none;
+  display: block;
+  margin: 21px 0;
+}
+
+/* line 28, ../sass/style.scss */
+.content__wrap {
+  background-color: #f9fcff;
+  padding-right: 20px;
+  height: 200px;
+  width: 550px;
+  display: flex;
+  box-shadow: 0 4px 20px 0 rgba(75, 101, 129, 0.2);
+}
+/* line 35, ../sass/style.scss */
+.content__wrap h2, .content__wrap span, .content__wrap p {
+  font-family: "Open sans",sans-serif;
+}
+/* line 38, ../sass/style.scss */
+.content__wrap h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 44, ../sass/style.scss */
+.content__wrap span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+/* line 50, ../sass/style.scss */
+.content__wrap p {
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+/* line 57, ../sass/style.scss */
+.content__text {
+  padding: 10px;
+}
+/* line 60, ../sass/style.scss */
+.content__img {
+  overflow: hidden;
+  min-width: 220px;
+  width: 220px;
+  height: 200px;
+  margin-right: 15px;
+}
+/* line 66, ../sass/style.scss */
+.content__img img {
+  height: 100%;
+}

@@ -1,0 +1,39 @@
+/* line 5, ../sass/style.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 1000px;
+}
+
+/* line 12, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 15, ../sass/style.scss */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 19, ../sass/style.scss */
+u {
+  text-decoration: none;
+  border-bottom: 1px dashed #222428;
+}
+
+/* line 23, ../sass/style.scss */
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* line 28, ../sass/style.scss */
+button, button:focus {
+  border: none;
+  padding: 0;
+  outline: none;
+}

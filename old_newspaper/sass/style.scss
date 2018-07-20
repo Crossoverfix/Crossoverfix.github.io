@@ -1,0 +1,37 @@
+@import "var";
+@import "mixin";
+@import "btn";
+@import "font";
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 1000px;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+u{
+  text-decoration: none;
+  border-bottom: 1px dashed #222428;
+}
+a,a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+button,button:focus{
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.content{
+  &__header{}
+  &__body{}
+  &__footer{}
+}
