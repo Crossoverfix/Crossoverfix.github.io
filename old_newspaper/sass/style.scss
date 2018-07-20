@@ -7,18 +7,16 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  min-height: 1000px;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
+}
+p,h1,h2,h3,h4,h5,h6,span{
+  @include text-global;
+  color: $c-text-d;
 }
 div{
-  margin: 0;
-  padding: 0;
-}
-u{
-  text-decoration: none;
-  border-bottom: 1px dashed #222428;
+  box-sizing: border-box;
 }
 a,a:hover{
   text-decoration: none;
@@ -30,8 +28,197 @@ button,button:focus{
   padding: 0;
   outline: none;
 }
+.container{
+  margin: 0 auto;
+  width: 1024px;
+  min-height: 1px;
+  position: relative;
+  padding: 55px 45px;
+  background-color: $c-background-d;
+}
+.row{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: double 20px $c-border-d;
+}
 .content{
-  &__header{}
-  &__body{}
+  &__header{
+    height: 100px;
+    width: 100%;
+    border: dashed 1px $c-border-d;
+  }
+  &__body{
+    &__pages{
+      &__header{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        h1{
+          text-align: center;
+          font-size: 28px;
+          font-weight: bold;
+          width: 100%;
+          line-height: 50px;
+        }
+      }
+      &__wrapper{
+        width: 100%;
+        min-height: 1px;
+      }
+      &__card{
+        margin-bottom: 10px;
+        width: 100%;
+        min-height: 1px;
+        overflow: hidden;
+        &-mini{
+          margin-bottom: 7px;
+        }
+        span,p,h1,h2,h3,h4,h5,h6{
+          color: inherit;
+        }
+      }
+      &__line{
+        &-first,&-second,&-third{
+          display: inline-block;
+          padding: 0 10px;
+          min-height: 1px;
+          vertical-align: top;
+        }
+      }
+    }
+
+  }
   &__footer{}
+}
+
+//стили карточек
+.cs{
+  &-bg{
+    padding: 0;
+    .img-wrapper{
+      width: 100%;
+      img{
+        width: 100%
+      }
+    }
+  }
+  &-mt{
+    &-1{
+      border: dashed 2px $c-border-d;
+      padding: 10px;
+      .content__body__pages__card-mini{
+        border: dotted 3px $c-border-d;
+        padding: 12px;
+      }
+    }
+  }
+  &-1{
+    background-color: $c-background-dd;
+    color: $c-text-dw;
+    position: relative;
+    padding: 13px;
+    & p{
+      word-break: break-all;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border: solid 2px wheat;
+      box-sizing: border-box;
+    }
+  }
+  &-2{
+    padding: 0 4px 4px 4px;
+    border-radius: 4px;
+    background-color: $c-background-dd;
+    color: $c-background-dd;
+    h2{
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 2px 5px;
+      background-color: $c-background-d;
+      font-size: 22px;
+    }
+    p{
+      padding: 10px;
+      border-radius: 6px;
+      background-color: $c-background-d;
+      word-break: break-all;
+    }
+
+  }
+  &-3{
+    background-color: $c-background-dd;
+    color: $c-text-dw;
+    position: relative;
+    padding: 13px;
+    text-align: center;
+    border-radius: 9px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border: solid 2px wheat;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+  }
+  &-4{
+    color: $c-text-d;
+    background-color: #fff9eb;
+    padding: 5px;
+    border: dashed 3px $c-background-dd;
+    & p{
+      word-break: break-all;
+    }
+  }
+  &-5{
+    padding: 10px;
+    border: double 15px $c-border-d;
+    background-color: #fff9eb;
+    text-align: center;
+  }
+  &-6{
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+}
+
+//размеры колонок
+.wrapper{
+  &-t1{
+    .content__body__pages__line{
+      &-first{
+        width: 186px;
+      }
+      &-second,&-third{
+        width: 340px;
+      }
+    }
+  }
+  &-t2{
+    .content__body__pages__line{
+      &-first{}
+      &-second{}
+      &-third{}
+    }
+  }
+  &-t3{
+    .content__body__pages__line{
+      &-first{}
+      &-second{}
+      &-third{}
+    }
+  }
 }

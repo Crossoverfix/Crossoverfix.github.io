@@ -1,4 +1,4 @@
-/* line 4, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 body {
   height: 100%;
   margin: 0;
@@ -6,74 +6,221 @@ body {
   overflow-x: hidden;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 14, ../sass/style.scss */
+p, h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Open Sans', sans-serif;
+  color: #553826;
+}
+
+/* line 18, ../sass/style.scss */
+div {
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/style.scss */
 a, a:hover {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
 }
 
-/* line 15, ../sass/style.scss */
-.link-to-content {
-  margin: 50px auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-/* line 21, ../sass/style.scss */
-.link-to-content a {
-  text-decoration: none;
-  display: block;
-  margin: 21px 0;
+/* line 26, ../sass/style.scss */
+button, button:focus {
+  border: none;
+  padding: 0;
+  outline: none;
 }
 
-/* line 28, ../sass/style.scss */
-.content__wrap {
-  background-color: #f9fcff;
-  padding-right: 20px;
-  height: 200px;
-  width: 550px;
-  display: flex;
-  box-shadow: 0 4px 20px 0 rgba(75, 101, 129, 0.2);
+/* line 31, ../sass/style.scss */
+.container {
+  margin: 0 auto;
+  width: 1024px;
+  min-height: 1px;
+  position: relative;
+  padding: 55px 45px;
+  background-color: #f6edd0;
 }
-/* line 35, ../sass/style.scss */
-.content__wrap h2, .content__wrap span, .content__wrap p {
-  font-family: "Open sans",sans-serif;
-}
-/* line 38, ../sass/style.scss */
-.content__wrap h2 {
-  font-size: 24px;
-  font-weight: 800;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 44, ../sass/style.scss */
-.content__wrap span {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 20px;
-}
-/* line 50, ../sass/style.scss */
-.content__wrap p {
-  color: gray;
-  font-size: 16px;
-  margin-bottom: 0px;
-}
-/* line 57, ../sass/style.scss */
-.content__text {
+
+/* line 39, ../sass/style.scss */
+.row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   padding: 10px;
+  border: double 20px #837048;
 }
-/* line 60, ../sass/style.scss */
-.content__img {
-  overflow: hidden;
-  min-width: 220px;
-  width: 220px;
-  height: 200px;
-  margin-right: 15px;
+
+/* line 47, ../sass/style.scss */
+.content__header {
+  height: 100px;
+  width: 100%;
+  border: dashed 1px #837048;
+}
+/* line 54, ../sass/style.scss */
+.content__body__pages__header {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+/* line 58, ../sass/style.scss */
+.content__body__pages__header h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  line-height: 50px;
 }
 /* line 66, ../sass/style.scss */
-.content__img img {
-  height: 100%;
+.content__body__pages__wrapper {
+  width: 100%;
+  min-height: 1px;
+}
+/* line 70, ../sass/style.scss */
+.content__body__pages__card {
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 1px;
+  overflow: hidden;
+}
+/* line 75, ../sass/style.scss */
+.content__body__pages__card-mini {
+  margin-bottom: 7px;
+}
+/* line 78, ../sass/style.scss */
+.content__body__pages__card span, .content__body__pages__card p, .content__body__pages__card h1, .content__body__pages__card h2, .content__body__pages__card h3, .content__body__pages__card h4, .content__body__pages__card h5, .content__body__pages__card h6 {
+  color: inherit;
+}
+/* line 83, ../sass/style.scss */
+.content__body__pages__line-first, .content__body__pages__line-second, .content__body__pages__line-third {
+  display: inline-block;
+  padding: 0 10px;
+  min-height: 1px;
+  vertical-align: top;
+}
+
+/* line 98, ../sass/style.scss */
+.cs-bg {
+  padding: 0;
+}
+/* line 100, ../sass/style.scss */
+.cs-bg .img-wrapper {
+  width: 100%;
+}
+/* line 102, ../sass/style.scss */
+.cs-bg .img-wrapper img {
+  width: 100%;
+}
+/* line 108, ../sass/style.scss */
+.cs-mt-1 {
+  border: dashed 2px #837048;
+  padding: 10px;
+}
+/* line 111, ../sass/style.scss */
+.cs-mt-1 .content__body__pages__card-mini {
+  border: dotted 3px #837048;
+  padding: 12px;
+}
+/* line 117, ../sass/style.scss */
+.cs-1 {
+  background-color: #553924;
+  color: #fffdf2;
+  position: relative;
+  padding: 13px;
+}
+/* line 122, ../sass/style.scss */
+.cs-1 p {
+  word-break: break-all;
+}
+/* line 125, ../sass/style.scss */
+.cs-1:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: solid 2px wheat;
+  box-sizing: border-box;
+}
+/* line 136, ../sass/style.scss */
+.cs-2 {
+  padding: 0 4px 4px 4px;
+  border-radius: 4px;
+  background-color: #553924;
+  color: #553924;
+}
+/* line 141, ../sass/style.scss */
+.cs-2 h2 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 5px;
+  background-color: #f6edd0;
+  font-size: 22px;
+}
+/* line 150, ../sass/style.scss */
+.cs-2 p {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f6edd0;
+  word-break: break-all;
+}
+/* line 158, ../sass/style.scss */
+.cs-3 {
+  background-color: #553924;
+  color: #fffdf2;
+  position: relative;
+  padding: 13px;
+  text-align: center;
+  border-radius: 9px;
+}
+/* line 165, ../sass/style.scss */
+.cs-3:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: solid 2px wheat;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+/* line 177, ../sass/style.scss */
+.cs-4 {
+  color: #553826;
+  background-color: #fff9eb;
+  padding: 5px;
+  border: dashed 3px #553924;
+}
+/* line 182, ../sass/style.scss */
+.cs-4 p {
+  word-break: break-all;
+}
+/* line 186, ../sass/style.scss */
+.cs-5 {
+  padding: 10px;
+  border: double 15px #837048;
+  background-color: #fff9eb;
+  text-align: center;
+}
+/* line 192, ../sass/style.scss */
+.cs-6 {
+  border: dotted 3px #837048;
+  padding: 12px;
+}
+
+/* line 202, ../sass/style.scss */
+.wrapper-t1 .content__body__pages__line-first {
+  width: 186px;
+}
+/* line 205, ../sass/style.scss */
+.wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
+  width: 340px;
 }
