@@ -1019,3 +1019,87 @@ position: absolute;
     }
   }
 }
+#footer{
+  background: url("../img/bg_us_info.png")no-repeat top center;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer__body{
+  justify-content: space-between;
+  &__logo{
+    img{
+      height: 50px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    span{
+      display: block;
+    }
+  }
+  &__ico-bar{
+    a{
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      margin: 0 15px;
+      cursor: pointer;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &__contacts{
+    position: relative;
+    h4{
+      @include text-gr(14px);
+      color: $c-dark;
+    }
+    a{
+      display: block;
+      .ico{
+        height: 26px;
+        width: 26px;
+        border-radius: 13px;
+        background-color: $c-blue;
+        position: relative;
+        top:3px;
+        display: inline-block;
+        margin-right: 3px;
+        img{
+          width: 75%;
+          @include centred;
+        }
+      }
+      span{
+        @include text-gr(23px);
+        color: $c-blue;
+        display: inline-block;
+        line-height: 30px;
+      }
+    }
+    button{
+      @include text-gr(14px);
+      font-weight: bold;
+      color: $c-dark;
+      border-bottom: dashed 1px $c-dark;
+      background-color: transparent;
+      position: relative;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+  }
+  &__link-bar{
+    justify-content: center;
+    padding-top: 40px;
+    a{
+      @include text-gr(14px);
+      margin: 0 20px;
+      color: #a2aeb8;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
