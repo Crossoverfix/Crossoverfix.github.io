@@ -7,6 +7,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: $c-background-d;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
@@ -27,6 +28,45 @@ button,button:focus{
   border: none;
   padding: 0;
   outline: none;
+}
+#pop-up{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  .pop-up__shadow{
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+#nav-bar{
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  button{
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+#pop-up__content{
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  .content__body__pages__card{
+    max-width: 650px;
+  }
 }
 .container{
   margin: 0 auto;
@@ -72,6 +112,7 @@ button,button:focus{
         width: 100%;
         min-height: 1px;
         overflow: hidden;
+        cursor: pointer;
         &-mini{
           margin-bottom: 7px;
         }
