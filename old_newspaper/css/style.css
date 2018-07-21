@@ -74,18 +74,61 @@ button, button:focus {
 }
 
 /* line 62, ../sass/style.scss */
+#pages-nav {
+  position: relative;
+  width: 100%;
+  padding: 0 45%;
+  z-index: 1;
+  top: 45px;
+}
+/* line 68, ../sass/style.scss */
+#pages-nav button {
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 auto;
+}
+/* line 73, ../sass/style.scss */
+#pages-nav button:last-child {
+  float: right;
+}
+
+/* line 78, ../sass/style.scss */
+#status-bar {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* line 86, ../sass/style.scss */
+#status-bar span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 92, ../sass/style.scss */
 #pop-up__content {
   position: absolute;
   left: 50%;
   top: 120px;
+  width: 100%;
+  height: 100%;
   transform: translateX(-50%);
 }
-/* line 67, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 #pop-up__content .content__body__pages__card {
   max-width: 650px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* line 71, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .container {
   margin: 0 auto;
   width: 1024px;
@@ -95,7 +138,7 @@ button, button:focus {
   background-color: #f6edd0;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .row {
   height: 100%;
   width: 100%;
@@ -104,19 +147,27 @@ button, button:focus {
   border: double 20px #837048;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .content__header {
   height: 100px;
   width: 100%;
   border: dashed 1px #837048;
 }
-/* line 94, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
+.content__body__pages {
+  display: none;
+}
+/* line 131, ../sass/style.scss */
+.content__body__pages.active {
+  display: block;
+}
+/* line 134, ../sass/style.scss */
 .content__body__pages__header {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
 }
-/* line 98, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .content__body__pages__header h1 {
   text-align: center;
   font-size: 28px;
@@ -124,12 +175,12 @@ button, button:focus {
   width: 100%;
   line-height: 50px;
 }
-/* line 106, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .content__body__pages__wrapper {
   width: 100%;
   min-height: 1px;
 }
-/* line 110, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .content__body__pages__card {
   margin-bottom: 10px;
   width: 100%;
@@ -137,15 +188,15 @@ button, button:focus {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 116, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .content__body__pages__card-mini {
   margin-bottom: 7px;
 }
-/* line 119, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .content__body__pages__card span, .content__body__pages__card p, .content__body__pages__card h1, .content__body__pages__card h2, .content__body__pages__card h3, .content__body__pages__card h4, .content__body__pages__card h5, .content__body__pages__card h6 {
   color: inherit;
 }
-/* line 124, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .content__body__pages__line-first, .content__body__pages__line-second, .content__body__pages__line-third {
   display: inline-block;
   padding: 0 10px;
@@ -153,40 +204,40 @@ button, button:focus {
   vertical-align: top;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .cs-bg {
   padding: 0;
 }
-/* line 141, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .cs-bg .img-wrapper {
   width: 100%;
 }
-/* line 143, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .cs-bg .img-wrapper img {
   width: 100%;
 }
-/* line 149, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .cs-mt-1 {
   border: dashed 2px #837048;
   padding: 10px;
 }
-/* line 152, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .cs-mt-1 .content__body__pages__card-mini {
   border: dotted 3px #837048;
   padding: 12px;
 }
-/* line 158, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .cs-1 {
   background-color: #553924;
   color: #fffdf2;
   position: relative;
   padding: 13px;
 }
-/* line 163, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .cs-1 p {
   word-break: break-all;
 }
-/* line 166, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .cs-1:before {
   content: "";
   position: absolute;
@@ -197,14 +248,14 @@ button, button:focus {
   border: solid 2px wheat;
   box-sizing: border-box;
 }
-/* line 177, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .cs-2 {
   padding: 0 4px 4px 4px;
   border-radius: 4px;
   background-color: #553924;
   color: #553924;
 }
-/* line 182, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .cs-2 h2 {
   display: inline-block;
   position: relative;
@@ -214,14 +265,14 @@ button, button:focus {
   background-color: #f6edd0;
   font-size: 22px;
 }
-/* line 191, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .cs-2 p {
   padding: 10px;
   border-radius: 6px;
   background-color: #f6edd0;
   word-break: break-all;
 }
-/* line 199, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .cs-3 {
   background-color: #553924;
   color: #fffdf2;
@@ -230,7 +281,7 @@ button, button:focus {
   text-align: center;
   border-radius: 9px;
 }
-/* line 206, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .cs-3:before {
   content: "";
   position: absolute;
@@ -242,35 +293,35 @@ button, button:focus {
   box-sizing: border-box;
   border-radius: 8px;
 }
-/* line 218, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .cs-4 {
   color: #553826;
   background-color: #fff9eb;
   padding: 5px;
   border: dashed 3px #553924;
 }
-/* line 223, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .cs-4 p {
   word-break: break-all;
 }
-/* line 227, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .cs-5 {
   padding: 10px;
   border: double 15px #837048;
   background-color: #fff9eb;
   text-align: center;
 }
-/* line 233, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .cs-6 {
   border: dotted 3px #837048;
   padding: 12px;
 }
 
-/* line 243, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-first {
   width: 186px;
 }
-/* line 246, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
   width: 340px;
 }
