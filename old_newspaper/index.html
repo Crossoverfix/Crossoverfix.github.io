@@ -17,29 +17,77 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="pop-up">
+    <div class="pop-up__shadow"></div>
+    <div id="nav-bar">
+        <button type="button">prev</button>
+        <button type="button">next</button>
+    </div>
+    <div id="status-bar">
+        <span>0</span> / <span>0</span>
+    </div>
+    <div id="pop-up__content"></div>
+</div>
 <header>
-
+    <div class="header">
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <div class="header__text">
+            <img alt="emblem" src="img/emblem_ri.svg">
+            <div class="header__text__wrapper">
+                <img alt="logo" src="img/Logo.svg">
+                <!--<h1>российская империя</h1>-->
+                <!--<h2>в эпоху правления императора николая второго</h2>-->
+            </div>
+            <img alt="emblem" src="img/emblem_n2.svg">
+        </div>
+    </div>
 </header>
 <main>
-    <div id="pop-up">
-        <div class="pop-up__shadow"></div>
-        <div id="nav-bar">
-            <button type="button">prev</button>
-            <button type="button">next</button>
-        </div>
-        <div id="status-bar">
-            <span>0</span> / <span>0</span>
-        </div>
-        <div id="pop-up__content"></div>
-    </div>
     <div id="pages-nav">
         <button type="button">prev</button>
         <button type="button">next</button>
     </div>
     <div id="newspaper" class="container">
+        <div class="container__frame"></div>
         <div class="row">
             <div class="content__header">
-
+                <div class="content__header__nav-bar">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a class="active" href="#"><span>Историческая справка</span></a>
+                    <a href="#"><span>Календарь</span></a>
+                    <a href="#"><span>Отзывы</span></a>
+                    <a href="#"><span>Новости</span></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="content__header__page-bar">
+                    <div class="content__header__page-bar__frame"></div>
+                    <div class="content__header__page-bar__wrapper">
+                        <button class="prev-one">
+                            <img alt="arrow" src="#" >
+                            <span>0</span>
+                        </button>
+                        <button class="next-one">
+                            <img alt="arrow" src="#" >
+                            <span>0</span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="content__body">
                 <div class="content__body__pages active">

@@ -7,7 +7,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: $c-background-d;
+  background-color: $c-body-bg;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
@@ -24,6 +24,68 @@ button,button:focus{
   border: none;
   padding: 0;
   outline: none;
+}
+.header{
+  width: 1024px;
+  margin: 0 auto;
+  height: 100px;
+  padding:10px 35px 0 35px;
+  position: relative;
+  &__social-link{
+    position: absolute;
+    left: 35px;
+    top:50%;
+    a{
+      color: $c-text-d;
+      font-size: 16px;
+      margin-right: 14px;
+    }
+  }
+  &__text{
+    display: block;
+    position: relative;
+    margin: 10px auto 0 auto;
+    max-height: 100px;
+    width: 660px;
+    &__wrapper{
+      width: 410px;
+      height: 80px;
+      margin: 0 auto;
+      img{
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%);
+      }
+    }
+    img{
+      position: absolute;
+      height: 100%;
+      &:first-child{
+        top: 0;
+        left: 0;
+      }
+      &:last-child{
+        top:0;
+        right: 0;
+      }
+    }
+  }
+  &__call-back{
+    position: absolute;
+    right: 35px;
+    top:50%;
+    i{
+      color: $c-text-d;
+      font-size: 16px;
+      margin-right: 4px;
+    }
+    span{
+      color: $c-text-d;
+      text-decoration: underline;
+      font-size: 14px;
+      @include text-global;
+    }
+  }
 }
 #pop-up{
   display: none;
@@ -57,6 +119,7 @@ button,button:focus{
 }
 #pages-nav{
   position: relative;
+  display: none;
   width: 100%;
   padding: 0 45%;
   z-index: 1;
@@ -102,24 +165,89 @@ button,button:focus{
 }
 .container{
   margin: 0 auto;
-  width: 1024px;
+  width: 1004px;
   min-height: 1px;
   position: relative;
-  padding: 55px 45px;
-  background-color: $c-background-d;
+  padding: 15px;
+  background-color: $c-body-bg;
+  &__frame{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background:
+            url("../img/frame/Asset_7.svg")0 0 no-repeat,
+            url("../img/frame/Asset_8.svg")100% 0 no-repeat,
+            url("../img/frame/Asset_9.svg")0 100% no-repeat,
+            url("../img/frame/Asset_10.svg")100% 100% no-repeat,
+            url("../img/frame/Asset_19.svg")50% 15px repeat-x,
+            url("../img/frame/Asset_18.svg") left 50% bottom 15px repeat-x
+  ;
+    background-size: 68px,68px,68px,68px,50% 5px,50% 5px;
+  }
 }
 .row{
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 10px;
-  border: double 20px $c-border-d;
+  padding: 22px;
+  background-color: $c-content-bg;
 }
 .content{
   &__header{
-    height: 100px;
-    width: 100%;
-    border: dashed 1px $c-border-d;
+    position: relative;
+    width: 830px;
+    margin: 0 auto;
+    height: 125px;
+    padding-top: 50px;
+    &__nav-bar{
+      display: block;
+      position: absolute;
+      top:0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
+      margin-bottom: 30px;
+      i{
+        margin: 0 10px;
+      }
+      a{
+        margin: 0 6px;
+        @include text-global;
+        font-size: 18px;
+        color: $c-text-d;
+        text-decoration: underline;
+        &.active{
+          color: $c-text-red;
+        }
+      }
+    }
+    &__page-bar{
+      width: 100%;
+      height: 50px;
+      padding: 10px 60px;
+      position: relative;
+      &__frame{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:
+                url("../img/frame/Asset_4.svg")0 0 no-repeat,
+                url("../img/frame/Asset_3.svg")100% 0 no-repeat,
+                url("../img/frame/Asset_5.svg")0 7px no-repeat,
+                url("../img/frame/Asset_6.svg")left 0 bottom 9px no-repeat;
+        background-size: 80px 50px,80px 50px,100% 5px, 100% 5px;
+      }
+      &__wrapper{
+        background-color: $c-white-bg;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   &__body{
     &__pages{
@@ -144,6 +272,7 @@ button,button:focus{
         min-height: 1px;
       }
       &__card{
+        position: relative;
         margin-bottom: 10px;
         width: 100%;
         min-height: 1px;
@@ -264,8 +393,6 @@ button,button:focus{
     padding: 24px;
     background-color: $c-background-d;
     text-align: center;
-    color: $c-text-d;
-    @include text-herold-normal;
     background:
     url("../img/3/3_l_u_1.svg")0 0 no-repeat,
     url("../img/3/3_r_u.svg")100% 0 no-repeat,
@@ -287,6 +414,62 @@ button,button:focus{
   &-6{
     border: dotted 3px $c-border-d;
     padding: 12px;
+  }
+}
+
+//стили шрифтов
+.fs{
+  &-1{
+    @include text-global;
+    color: $c-text-d;
+  }
+  &-2{
+    @include text-arnold-bocklinc;
+    color: $c-text-d;
+  }
+  &-3{
+    @include text-herold-normal;
+    color: $c-text-d;
+  }
+  &-4{
+    @include text-accuratist;
+    color: $c-text-d;
+  }
+  &-5{
+    @include text-elizabeta-modern;
+    color: $c-text-d;
+  }
+  &-6{
+    @include text-eveagita;
+    color: $c-text-d;
+  }
+  &-7{
+    @include text-goudy-decor-shodwnc;
+    color: $c-text-d;
+  }
+  &-8{
+    @include text-herold-bold;
+    color: $c-text-d;
+  }
+  &-9{
+    @include text-monti-decor-b;
+    color: $c-text-d;
+  }
+  &-10{
+    @include text-petrarka;
+    color: $c-text-d;
+  }
+  &-11{
+    @include text-proletariat;
+    color: $c-text-d;
+  }
+  &-12{
+    @include text-rodeo-bold;
+    color: $c-text-d;
+  }
+  &-13{
+    @include text-windsor;
+    color: $c-text-d;
   }
 }
 
