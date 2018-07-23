@@ -1,3 +1,75 @@
+@font-face {
+  font-family: 'accuratist';
+  src: url("../font/accuratist-font.eot") format("embedded-opentype"), url("../font/accuratist-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arnold-bocklinc';
+  src: url("../font/arnold-bocklinc-font.eot") format("embedded-opentype"), url("../font/arnold-bocklinc-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elizabeta-modern';
+  src: url("../font/elizabeta-modern-font.eot") format("embedded-opentype"), url("../font/elizabeta-modern-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'eveagita';
+  src: url("../font/eveagita-font.eot") format("embedded-opentype"), url("../font/eveagita-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'windsor';
+  src: url("../font/windsor-font.eot") format("embedded-opentype"), url("../font/windsor-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'goudy-decor-shodwnc';
+  src: url("../font/goudy-decor-shodwnc-font.eot") format("embedded-opentype"), url("../font/goudy-decor-shodwnc-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'herold-bold';
+  src: url("../font/herold-bold-font.eot") format("embedded-opentype"), url("../font/herold-bold-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'herold-normal';
+  src: url("../font/herold-normal-font.eot") format("embedded-opentype"), url("../font/herold-normal-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'monti-decor-b';
+  src: url("../font/monti-decor-b-font.eot") format("embedded-opentype"), url("../font/monti-decor-b-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'petrarka';
+  src: url("../font/petrarka-font.eot") format("embedded-opentype"), url("../font/petrarka-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proletariat';
+  src: url("../font/proletariat-font.eot") format("embedded-opentype"), url("../font/proletariat-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rodeo-bold';
+  src: url("../font/rodeo-bold-font.eot") format("embedded-opentype"), url("../font/rodeo-bold-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 5, ../sass/style.scss */
 body {
   height: 100%;
@@ -13,31 +85,25 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* line 15, ../sass/style.scss */
-p, h1, h2, h3, h4, h5, h6, span {
-  font-family: 'Open Sans', sans-serif;
-  color: #553826;
-}
-
-/* line 19, ../sass/style.scss */
 div {
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 a, a:hover {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 button, button:focus {
   border: none;
   padding: 0;
   outline: none;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 #pop-up {
   display: none;
   position: fixed;
@@ -47,7 +113,7 @@ button, button:focus {
   top: 0;
   z-index: 100;
 }
-/* line 40, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 #pop-up .pop-up__shadow {
   background-color: black;
   opacity: 0.6;
@@ -58,14 +124,14 @@ button, button:focus {
   top: 0;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 #nav-bar {
   position: absolute;
   left: 50%;
   top: 40px;
   transform: translateX(-50%);
 }
-/* line 55, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 #nav-bar button {
   background-color: white;
   font-size: 20px;
@@ -73,7 +139,7 @@ button, button:focus {
   margin: 5px;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 #pages-nav {
   position: relative;
   width: 100%;
@@ -81,19 +147,19 @@ button, button:focus {
   z-index: 1;
   top: 45px;
 }
-/* line 68, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 #pages-nav button {
   background-color: white;
   font-size: 20px;
   padding: 5px;
   margin: 0 auto;
 }
-/* line 73, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 #pages-nav button:last-child {
   float: right;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 #status-bar {
   position: absolute;
   left: 50%;
@@ -103,14 +169,14 @@ button, button:focus {
   font-weight: bold;
   font-size: 25px;
 }
-/* line 86, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 #status-bar span {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 #pop-up__content {
   position: absolute;
   left: 50%;
@@ -119,7 +185,7 @@ button, button:focus {
   height: 100%;
   transform: translateX(-50%);
 }
-/* line 99, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 #pop-up__content .content__body__pages__card {
   max-width: 650px;
   position: absolute;
@@ -128,7 +194,7 @@ button, button:focus {
   transform: translateX(-50%);
 }
 
-/* line 107, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .container {
   margin: 0 auto;
   width: 1024px;
@@ -138,7 +204,7 @@ button, button:focus {
   background-color: #f6edd0;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .row {
   height: 100%;
   width: 100%;
@@ -147,27 +213,27 @@ button, button:focus {
   border: double 20px #837048;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .content__header {
   height: 100px;
   width: 100%;
   border: dashed 1px #837048;
 }
-/* line 129, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .content__body__pages {
   display: none;
 }
-/* line 131, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .content__body__pages.active {
   display: block;
 }
-/* line 134, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .content__body__pages__header {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
 }
-/* line 138, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .content__body__pages__header h1 {
   text-align: center;
   font-size: 28px;
@@ -175,12 +241,12 @@ button, button:focus {
   width: 100%;
   line-height: 50px;
 }
-/* line 146, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .content__body__pages__wrapper {
   width: 100%;
   min-height: 1px;
 }
-/* line 150, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .content__body__pages__card {
   margin-bottom: 10px;
   width: 100%;
@@ -188,15 +254,15 @@ button, button:focus {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 156, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .content__body__pages__card-mini {
   margin-bottom: 7px;
 }
-/* line 159, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .content__body__pages__card span, .content__body__pages__card p, .content__body__pages__card h1, .content__body__pages__card h2, .content__body__pages__card h3, .content__body__pages__card h4, .content__body__pages__card h5, .content__body__pages__card h6 {
   color: inherit;
 }
-/* line 164, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .content__body__pages__line-first, .content__body__pages__line-second, .content__body__pages__line-third {
   display: inline-block;
   padding: 0 10px;
@@ -204,40 +270,40 @@ button, button:focus {
   vertical-align: top;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .cs-bg {
   padding: 0;
 }
-/* line 181, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .cs-bg .img-wrapper {
   width: 100%;
 }
-/* line 183, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .cs-bg .img-wrapper img {
   width: 100%;
 }
-/* line 189, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .cs-mt-1 {
   border: dashed 2px #837048;
   padding: 10px;
 }
-/* line 192, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .cs-mt-1 .content__body__pages__card-mini {
   border: dotted 3px #837048;
   padding: 12px;
 }
-/* line 198, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .cs-1 {
   background-color: #553924;
   color: #fffdf2;
   position: relative;
   padding: 13px;
 }
-/* line 203, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .cs-1 p {
   word-break: break-all;
 }
-/* line 206, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .cs-1:before {
   content: "";
   position: absolute;
@@ -248,14 +314,14 @@ button, button:focus {
   border: solid 2px wheat;
   box-sizing: border-box;
 }
-/* line 217, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .cs-2 {
   padding: 0 4px 4px 4px;
   border-radius: 4px;
   background-color: #553924;
   color: #553924;
 }
-/* line 222, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .cs-2 h2 {
   display: inline-block;
   position: relative;
@@ -265,14 +331,14 @@ button, button:focus {
   background-color: #f6edd0;
   font-size: 22px;
 }
-/* line 231, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .cs-2 p {
   padding: 10px;
   border-radius: 6px;
   background-color: #f6edd0;
   word-break: break-all;
 }
-/* line 239, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .cs-3 {
   background-color: #553924;
   color: #fffdf2;
@@ -281,7 +347,7 @@ button, button:focus {
   text-align: center;
   border-radius: 9px;
 }
-/* line 246, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .cs-3:before {
   content: "";
   position: absolute;
@@ -293,35 +359,44 @@ button, button:focus {
   box-sizing: border-box;
   border-radius: 8px;
 }
-/* line 258, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .cs-4 {
   color: #553826;
   background-color: #fff9eb;
   padding: 5px;
   border: dashed 3px #553924;
 }
-/* line 263, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .cs-4 p {
   word-break: break-all;
 }
-/* line 267, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .cs-5 {
-  padding: 10px;
-  border: double 15px #837048;
-  background-color: #fff9eb;
+  padding: 24px;
+  background-color: #f6edd0;
   text-align: center;
+  color: #553826;
+  font-family: 'herold-normal';
+  font-weight: normal;
+  font-style: normal;
+  background: url("../img/3/3_l_u_1.svg") 0 0 no-repeat, url("../img/3/3_r_u.svg") 100% 0 no-repeat, url("../img/3/3_r_d.svg") 100% 100% no-repeat, url("../img/3/3_l_d.svg") 0 100% no-repeat, url("../img/3/3_h.svg") 0 0 repeat-x, url("../img/3/3_h.svg") 0 100% repeat-x, url("../img/3/3_v.svg") 0 0 repeat-y, url("../img/3/3_v.svg") 100% 0 repeat-y;
+  background-size: 45px 45px,45px 45px,45px 45px,45px 45px,20px 15px,20px 15px,15px 20px,15px 20px;
 }
-/* line 273, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
+.cs-5 * {
+  background-color: #fff9ed;
+}
+/* line 287, ../sass/style.scss */
 .cs-6 {
   border: dotted 3px #837048;
   padding: 12px;
 }
 
-/* line 283, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-first {
   width: 186px;
 }
-/* line 286, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
   width: 340px;
 }

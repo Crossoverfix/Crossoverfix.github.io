@@ -12,10 +12,6 @@ body{
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
-p,h1,h2,h3,h4,h5,h6,span{
-  @include text-global;
-  color: $c-text-d;
-}
 div{
   box-sizing: border-box;
 }
@@ -265,10 +261,28 @@ button,button:focus{
     }
   }
   &-5{
-    padding: 10px;
-    border: double 15px $c-border-d;
-    background-color: #fff9eb;
+    padding: 24px;
+    background-color: $c-background-d;
     text-align: center;
+    color: $c-text-d;
+    @include text-herold-normal;
+    background:
+    url("../img/3/3_l_u_1.svg")0 0 no-repeat,
+    url("../img/3/3_r_u.svg")100% 0 no-repeat,
+    url("../img/3/3_r_d.svg")100% 100% no-repeat,
+    url("../img/3/3_l_d.svg")0 100% no-repeat,
+    url("../img/3/3_h.svg")0 0 repeat-x,
+    url("../img/3/3_h.svg")0 100% repeat-x,
+    url("../img/3/3_v.svg")0 0 repeat-y,
+    url("../img/3/3_v.svg")100% 0 repeat-y
+    //url("../img/3/3_l_u_1.svg"),
+    //url("../img/3/3_l_u_1.svg"),
+    //url("../img/3/3_l_u_1.svg")
+    ;
+    background-size: 45px 45px,45px 45px,45px 45px,45px 45px,20px 15px,20px 15px,15px 20px,15px 20px;
+    & *{
+      background-color: #fff9ed;
+    }
   }
   &-6{
     border: dotted 3px $c-border-d;

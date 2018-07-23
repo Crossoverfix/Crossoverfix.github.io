@@ -2,6 +2,7 @@ $(document).ready(function () {
     var $popUp = $("#pop-up");
     var $contentViev = $("#pop-up__content");
     var $pages = $(".content__body__pages");
+    var $allCards = $(".content__body__pages__card");
     var $cards = $(".content__body__pages:visible").find(".content__body__pages__card");
     var $pagesPrev = $("#pages-nav button:first-child");
     var $pagesNext = $("#pages-nav button:last-child");
