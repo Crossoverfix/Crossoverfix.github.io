@@ -37,7 +37,7 @@ button,button:focus{
     top:50%;
     a{
       color: $c-text-d;
-      font-size: 16px;
+      font-size: 18px;
       margin-right: 14px;
     }
   }
@@ -168,7 +168,7 @@ button,button:focus{
   width: 1004px;
   min-height: 1px;
   position: relative;
-  padding: 15px;
+  padding: 16px;
   background-color: $c-body-bg;
   &__frame{
     position: absolute;
@@ -177,14 +177,23 @@ button,button:focus{
     top:0;
     left: 0;
     background:
-            url("../img/frame/Asset_7.svg")0 0 no-repeat,
-            url("../img/frame/Asset_8.svg")100% 0 no-repeat,
-            url("../img/frame/Asset_9.svg")0 100% no-repeat,
-            url("../img/frame/Asset_10.svg")100% 100% no-repeat,
-            url("../img/frame/Asset_19.svg")50% 15px repeat-x,
-            url("../img/frame/Asset_18.svg") left 50% bottom 15px repeat-x
-  ;
-    background-size: 68px,68px,68px,68px,50% 5px,50% 5px;
+            url("../img/frame_site/frome_l_u.svg")0 0 no-repeat,
+            url("../img/frame_site/frome_r_u.svg")100% 0 no-repeat,
+            url("../img/frame_site/frome_r_d.svg")0 100% no-repeat,
+            url("../img/frame_site/frome_l_d.svg")100% 100% no-repeat,
+            url("../img/frame_site/frome_top.svg")1px 15px no-repeat,
+            url("../img/frame_site/frome_down.svg")left 1px bottom 15px no-repeat,
+            url("../img/frame_site/frame_c.svg")8px 630px no-repeat,
+            url("../img/frame_site/frame_c.svg")right 8px top 630px no-repeat,
+            url("../img/frame_site/frame_c_u.svg")13px 578px no-repeat,
+            url("../img/frame_site/frame_c_u.svg")right 13px top 578px no-repeat,
+            url("../img/frame_site/frame_c_d.svg")13px 775px no-repeat,
+            url("../img/frame_site/frame_c_d.svg")right 13px top 775px no-repeat,
+            url("../img/frame_site/line_l_u.svg")15px 67px no-repeat,
+            url("../img/frame_site/line_r_u.svg")right 15px top 67px no-repeat,
+            url("../img/frame_site/line_l_d.svg")15px 817px no-repeat,
+            url("../img/frame_site/line_r_d.svg")right 15px top 817px no-repeat;
+    background-size: 68px 68px,68px 68px,68px 68px,68px 68px,98% 5px,98% 5px,20px 135px,20px 135px,10px 42px,10px 42px,10px 42px,10px 42px,6px 512px,6px 512px,6px 100%,6px 100%;
   }
 }
 .row{
@@ -252,6 +261,7 @@ button,button:focus{
           cursor: pointer;
           margin: 0 21px;
           position: relative;
+          z-index: 1;
           &:first-child{
             float: left;
           }
@@ -328,7 +338,33 @@ button,button:focus{
   }
   &__footer{}
 }
-
+.footer{
+  width: 930px;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+  height: 102px;
+  white-space: nowrap;
+  img{
+    height: 100%;
+    margin-right: 18px;
+  }
+  a,p{
+    @include text-global;
+    font-size: 14px;
+    color: $c-text-d;
+  }
+  &__first-b,&__second-b,&__third-b{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+  }
+  &__first-b{
+    margin-right: 100px;
+  }
+  &__third-b{
+    float: right;
+  }
+}
 //стили карточек
 .cs{
   &-bg{
