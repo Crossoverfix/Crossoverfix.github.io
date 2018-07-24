@@ -245,11 +245,11 @@ button,button:focus{
         height: 100%;
         width: 100%;
         background:
-                url("../img/frame/Asset_4.svg")0 0 no-repeat,
-                url("../img/frame/Asset_3.svg")100% 0 no-repeat,
-                url("../img/frame/Asset_5.svg")0 7px no-repeat,
-                url("../img/frame/Asset_6.svg")left 0 bottom 9px no-repeat;
-        background-size: 80px 50px,80px 50px,100% 5px, 100% 5px;
+                url("../img/frame_header/Asset_left.svg")0 0 no-repeat,
+                url("../img/frame_header/Asset_right.svg")100% 0 no-repeat,
+                url("../img/frame_header/Asset_up.svg")75px 5px no-repeat,
+                url("../img/frame_header/Asset_down.svg")left 75px bottom 7px no-repeat;
+        background-size: 80px 50px,80px 50px,680px 5px, 680px 5px;
       }
       &__wrapper{
         background-color: $c-white-bg;
@@ -318,11 +318,11 @@ button,button:focus{
         min-height: 1px;
         overflow: hidden;
         cursor: pointer;
+        p,span{
+          @include text-global;
+        }
         &-mini{
           margin-bottom: 7px;
-        }
-        span,p,h1,h2,h3,h4,h5,h6{
-          color: inherit;
         }
       }
       &__line{
@@ -387,13 +387,26 @@ button,button:focus{
     }
   }
   &-1{
+    p,span{
+      color: $c-text-dw;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-dw;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
     background-color: $c-background-dd;
     color: $c-text-dw;
     position: relative;
     padding: 13px;
-    & p{
-      word-break: break-all;
-    }
     &:before{
       content: "";
       position: absolute;
@@ -406,30 +419,50 @@ button,button:focus{
     }
   }
   &-2{
+    p,span{
+      border-radius: 4px;
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+      padding: 8px 4px;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      padding: 3px 5px;
+      letter-spacing: normal;
+      display: inline-block;
+    }
     padding: 0 4px 4px 4px;
     border-radius: 4px;
     background-color: $c-background-dd;
-    color: $c-background-dd;
-    h2{
-      display: inline-block;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 2px 5px;
-      background-color: $c-background-d;
-      font-size: 22px;
+    text-align: center;
+    & *{
+      background-color: $c-content-bg;
     }
-    p{
-      padding: 10px;
-      border-radius: 6px;
-      background-color: $c-background-d;
-      word-break: break-all;
-    }
-
   }
   &-3{
+    p,span{
+      color: $c-text-dw;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-dw;
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 6px;
+      letter-spacing: normal;
+    }
     background-color: $c-background-dd;
-    color: $c-text-dw;
     position: relative;
     padding: 13px;
     text-align: center;
@@ -447,15 +480,41 @@ button,button:focus{
     }
   }
   &-4{
-    color: $c-text-d;
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
     background-color: #fff9eb;
     padding: 5px;
     border: dashed 3px $c-background-dd;
-    & p{
-      word-break: break-all;
-    }
   }
   &-5{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
     padding: 24px;
     background-color: $c-background-d;
     text-align: center;
@@ -478,6 +537,249 @@ button,button:focus{
     }
   }
   &-6{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-7{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-8{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-9{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-10{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-11{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-12{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-13{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-14{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-15{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-16{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-17{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
+    border: dotted 3px $c-border-d;
+    padding: 12px;
+  }
+  &-18{
+    p,span{
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 14px;
+      word-break: normal;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    h2{
+      color: $c-text-d;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0;
+      letter-spacing: normal;
+    }
     border: dotted 3px $c-border-d;
     padding: 12px;
   }
@@ -486,56 +788,58 @@ button,button:focus{
 //стили шрифтов
 .fs{
   &-1{
-    @include text-global;
-    color: $c-text-d;
+    h2{@include text-global;}
   }
   &-2{
-    @include text-arnold-bocklinc;
-    color: $c-text-d;
+    h2{@include text-arnold-bocklinc;}
   }
   &-3{
-    @include text-herold-normal;
-    color: $c-text-d;
+    h2{@include text-herold-normal;}
   }
   &-4{
-    @include text-accuratist;
-    color: $c-text-d;
+    h2{@include text-accuratist;}
   }
   &-5{
-    @include text-elizabeta-modern;
-    color: $c-text-d;
+    h2{@include text-elizabeta-modern;}
   }
   &-6{
-    @include text-eveagita;
-    color: $c-text-d;
+    h2{@include text-eveagita;}
   }
   &-7{
-    @include text-goudy-decor-shodwnc;
-    color: $c-text-d;
+    h2{@include text-goudy-decor-shodwnc;}
   }
   &-8{
-    @include text-herold-bold;
-    color: $c-text-d;
+    h2{@include text-herold-bold;}
   }
   &-9{
-    @include text-monti-decor-b;
-    color: $c-text-d;
+    h2{@include text-monti-decor-b;}
   }
   &-10{
-    @include text-petrarka;
-    color: $c-text-d;
+    h2{@include text-petrarka;}
   }
   &-11{
-    @include text-proletariat;
-    color: $c-text-d;
+    h2{@include text-proletariat;}
   }
   &-12{
-    @include text-rodeo-bold;
-    color: $c-text-d;
+    h2{@include text-rodeo-bold;}
   }
   &-13{
-    @include text-windsor;
-    color: $c-text-d;
+    h2{@include text-windsor;}
+  }
+  &-14{
+    h2{@include text-windsor;}
+  }
+  &-15{
+    h2{@include text-windsor;}
+  }
+  &-16{
+    h2{@include text-windsor;}
+  }
+  &-17{
+    h2{@include text-windsor;}
+  }
+  &-18{
+    h2{@include text-windsor;}
   }
 }
 
