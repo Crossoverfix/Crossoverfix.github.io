@@ -3,15 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 preserveAspectRatio="none" viewBox="0 0 7 7" style="enable-background:new 0 0 7 7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFEFD6;}
-	.st1{fill:#623C25;}
+	.st0{fill:#623C25;}
 </style>
-<title>5_u</title>
-<rect y="0" class="st0" width="7" height="7"/>
 <g id="Layer_2_1_">
 	<g id="Layer_1-2">
-		<rect y="5.1" class="st1" width="7" height="1.9"/>
-		<rect y="0" class="st1" width="7" height="3.4"/>
+		<rect y="5.1" class="st0" width="7" height="1.9"/>
+		<rect class="st0" width="7" height="3.4"/>
 	</g>
 </g>
 </svg>

@@ -502,10 +502,10 @@ button,button:focus{
     position: relative;
     background:
     url("../img/Frame_card/1/1_h.svg")0 0 repeat-x,
-    url("../img/Frame_card/1/1_h.svg")0 100% repeat-x,
-    url("../img/Frame_card/1/1_v.svg")0 10px repeat-y,
-    url("../img/Frame_card/1/1_v.svg")100% 10px repeat-y;
-    background-size: 20px 10px,20px 10px,10px 20px,10px 20px;
+    url("../img/Frame_card/1/1_h.svg")0 100% repeat-x;
+
+    background-size: 20px 10px;
+    background-color: $c-content-bg;
     & *{
       position: relative;
     }
@@ -518,6 +518,18 @@ button,button:focus{
       top: 10px;
       border: solid 1px $c-background-dd;
       background-color: $c-white-bg;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 20px);
+      background:
+              url("../img/Frame_card/1/1_v.svg")0 10px repeat-y,
+              url("../img/Frame_card/1/1_v.svg")100% 10px repeat-y;
+      background-size: 10px 20px;
     }
   }
   &-5{
@@ -538,18 +550,39 @@ button,button:focus{
       letter-spacing: normal;
     }
     padding: 26px;
+    position: relative;
     background:
     url("../img/Frame_card/2/2_l_u.svg")0 0 no-repeat,
     url("../img/Frame_card/2/2_r_u.svg")100%  0 no-repeat,
     url("../img/Frame_card/2/2_l_d.svg")0 100% no-repeat,
-    url("../img/Frame_card/2/2_r_d.svg")100% 100% no-repeat,
-    url("../img/Frame_card/2/2_u.svg")44px 1px repeat-x,
-    url("../img/Frame_card/2/2_d.svg")left 44px bottom 1px repeat-x,
-    url("../img/Frame_card/2/2_l.svg")0 34px repeat-y,
-    url("../img/Frame_card/2/2_r.svg")100% 34px repeat-y;
-    background-size: 45px 34px,45px 34px,45px 34px,45px 34px,22px 12px,22px 12px,15px 18px,15px 18px;
+    url("../img/Frame_card/2/2_r_d.svg")100% 100% no-repeat;
+    background-size: 45px 34px;
     background-color: $c-content-bg;
     text-align: center;
+    &:before{
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 45px;
+       height: 100%;
+       width: calc(100% - 90px);
+      background:
+              url("../img/Frame_card/2/2_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/2/2_d.svg")0 100% round no-repeat;
+      background-size: 22px 12px;
+     }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 34px;
+      left: 0;
+      height: calc(100% - 68px);
+      width: 100%;
+      background:
+              url("../img/Frame_card/2/2_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/2/2_r.svg")100% 0 no-repeat round;
+      background-size: 14px 19px;
+    }
   }
   &-6{
     p,span{
@@ -565,31 +598,46 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      padding: 8px 0 0 8px;
+      padding: 12px 0 8px 0;
       text-align: center;
       letter-spacing: normal;
     }
-    padding: 13px;
+    padding: 22px;
     position: relative;
     z-index: 1;
+    box-shadow: inset 0 0 0 0 red;
+    background:
+            url("../img/Frame_card/3/3_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/3/3_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/3/3_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/3/3_r_d.svg")100% 100% no-repeat;
+    background-size: 35px 35px;
     background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
-      width: 100%;
+      width: calc(100% - 68px);
       height: 100%;
       top:0;
-      left:0;
+      left: 34px;
+      box-shadow: -37px 0px 0 -18px $c-white-bg, 37px 0px 0 -18px $c-white-bg;
       background:
-              url("../img/Frame_card/3/3_l_u.svg")0 0 no-repeat,
-              url("../img/Frame_card/3/3_r_u.svg")100% 0 no-repeat,
-              url("../img/Frame_card/3/3_l_d.svg")0 100% no-repeat,
-              url("../img/Frame_card/3/3_r_d.svg")100% 100% no-repeat,
-              url("../img/Frame_card/3/3_h.svg")50% 1px repeat-x,
-              url("../img/Frame_card/3/3_h.svg")left 50% bottom 1px repeat-x,
-              url("../img/Frame_card/3/3_v.svg")2px 0 repeat-y,
-              url("../img/Frame_card/3/3_v.svg")right 2px top 0 repeat-y;
-      background-size: 35px 35px,35px 35px,35px 35px,35px 35px,252px 14px,252px 14px,14px 155px,14px 155px;
+              url(../img/Frame_card/3/3_h.svg) 50% 1px repeat-x,
+              url(../img/Frame_card/3/3_h.svg) left 50% bottom 1.5px repeat-x;
+      background-size: 252px 13.5px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 68px);
+      top:34px;
+      left:0;
+      box-shadow: 0px -37px 0 -18px $c-white-bg, 0px 37px 0 -18px $c-white-bg;
+      background:
+              url("../img/Frame_card/3/3_v.svg")2px 50% repeat-y,
+              url("../img/Frame_card/3/3_v.svg")right 2px top 50% repeat-y;
+      background-size:14px 170px;
     }
     & *{
       position: relative;
@@ -615,17 +663,39 @@ button,button:focus{
       letter-spacing: normal;
     }
     padding: 16px;
+    position: relative;
     background:
             url("../img/Frame_card/5/5_l_u.svg")0 0 no-repeat,
             url("../img/Frame_card/5/5_r_u.svg")100% 0 no-repeat,
             url("../img/Frame_card/5/5_l_d.svg")0 100% no-repeat,
-            url("../img/Frame_card/5/5_r_d.svg")100% 100% no-repeat,
-            url("../img/Frame_card/5/5_u.svg")0 0 repeat-x,
-            url("../img/Frame_card/5/5_d.svg")0 100% repeat-x,
-            url("../img/Frame_card/5/5_l.svg")0 0 repeat-y,
-            url("../img/Frame_card/5/5_r.svg")100% 0 repeat-y;
-    background-size: 23px 21px,21px 21px,23px 22px,21px 22px,100% 7px,100% 7px,7px 100%,7px 100%;
+            url("../img/Frame_card/5/5_r_d.svg")100% 100% no-repeat;
+
+    background-size: 21px 21px;
     background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: calc(100% - 40px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/5/5_u.svg")0 0 repeat-x,
+              url("../img/Frame_card/5/5_d.svg")0 100% repeat-x;
+      background-size: 100% 7px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 20px;
+      left:0;
+      width: 100%;
+      height: calc(100% - 40px);
+      background:
+              url("../img/Frame_card/5/5_l.svg")0 0 repeat-y,
+              url("../img/Frame_card/5/5_r.svg")100% 0 repeat-y;
+      background-size:7px 100%;
+    }
   }
   &-8{
     p,span{
@@ -640,7 +710,7 @@ button,button:focus{
       color: $c-text-d;
       font-size: 21px;
       line-height: 21px;
-      margin-bottom: 5px;
+      padding-bottom: 5px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -665,46 +735,102 @@ button,button:focus{
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
+      padding: 8px;
     }
     h2{
       color: $c-text-d;
       font-size: 20px;
       line-height: 20px;
       text-align: center;
-      margin-bottom: 5px;
+      padding: 8px;
       letter-spacing: normal;
     }
-    padding: 22px;
+    & *{
+      background-color: $c-white-bg;
+    }
+    padding: 13px;
+    position: relative;
     background:
             url("../img/Frame_card/7/7_l_u.svg")0 0 no-repeat,
             url("../img/Frame_card/7/7_r_u.svg")100% 0 no-repeat,
             url("../img/Frame_card/7/7_l_d.svg")0 100% no-repeat,
-            url("../img/Frame_card/7/7_r_d.svg")100% 100% no-repeat,
-            url("../img/Frame_card/7/7_u.svg")30px 0 repeat-x,
-            url("../img/Frame_card/7/7_d.svg")30px 100% repeat-x,
-            url("../img/Frame_card/7/7_l.svg")0 30px repeat-y,
-            url("../img/Frame_card/7/7_r.svg")100% 30px repeat-y;
-    background-size: 30px 30px,30px 30px,30px 30px,30px 30px,18px 12px,18px 14px,14px 20px,14px 20px;
-    background-color: $c-white-bg;
+            url("../img/Frame_card/7/7_r_d.svg")100% 100% no-repeat;
+    background-size: 28px 30px,28px 29px,28px 28px,28px 27px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 28px;
+      width: calc(100% - 56px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/7/7_u.svg")0 0 repeat-x,
+              url("../img/Frame_card/7/7_d.svg")0 100% repeat-x;
+      background-size: 20px 12px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 52px);
+      background:
+              url("../img/Frame_card/7/7_l.svg")0 0 repeat-y,
+              url("../img/Frame_card/7/7_r.svg")100% 0 repeat-y;
+      background-size: 13px 20px;
+    }
   }
   &-10{
     p,span{
-      color: $c-text-d;
+      color: $c-text-dw;
       font-size: 14px;
       line-height: 14px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
+      padding: 8px;
     }
     h2{
-      color: $c-text-d;
+      padding: 10px 5px;
+      text-align: center;
+      color: $c-text-dw;
       font-size: 18px;
       line-height: 18px;
       margin: 0;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    position: relative;
+    padding: 18px;
+    background-color: $c-content-bg;
+    & *{
+      background-color: $c-red-bg;
+    }
+    &:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background:
+              url("../img/Frame_card/8/8_h.svg")0 0 round no-repeat,
+              url("../img/Frame_card/8/8_h.svg")0 100% round no-repeat ;
+      background-size: 16px 16px;
+    }
+    &:after{
+      position: absolute;
+      top: 16px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: calc(100% - 32px);
+      background:
+              url("../img/Frame_card/8/8_h.svg")0 0 no-repeat round,
+              url("../img/Frame_card/8/8_h.svg")100% 0 no-repeat round;
+      background-size: 16px 16px;
+    }
   }
   &-11{
     p,span{
@@ -719,11 +845,37 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    position: relative;
+    padding: 19px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background:
+              url("../img/Frame_card/9/9_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/9/9_r.svg")100% 0 no-repeat round;
+      background-size: 10px 58px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      width: calc(100% - 20px);
+      height: 100%;
+      top: 0;
+      left: 10px;
+      background:
+              url("../img/Frame_card/9/9_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/9/9_d.svg")0 100% round no-repeat;
+      background-size:58px 10px;
+    }
   }
   &-12{
     p,span{
@@ -738,11 +890,43 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    padding: 24px;
+    position: relative;
+    background:
+            url("../img/Frame_card/10/10_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/10/10_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/10/10_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/10/10_r_d.svg")100% 100% no-repeat;
+    background-size: 30px 30px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      width: calc(100% - 60px);
+      height: 100%;
+      top: 0;
+      left: 30px;
+      background:
+              url("../img/Frame_card/10/10_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/10/10_d.svg")0 100% round no-repeat;
+      background-size: 45px 15px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 60px);
+      top: 30px;
+      left: 0;
+      background:
+              url("../img/Frame_card/10/10_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/10/10_r.svg")100% 0 no-repeat round;
+      background-size: 15px 45px;
+    }
   }
   &-13{
     p,span{
@@ -872,7 +1056,7 @@ button,button:focus{
     h2{@include text-herold-normal;}
   }
   &-4{
-    h2{@include text-accuratist;}
+    h2{@include text-rodeo-bold;}
   }
   &-5{
     h2{@include text-elizabeta-modern;}
@@ -896,7 +1080,7 @@ button,button:focus{
     h2{@include text-proletariat;}
   }
   &-12{
-    h2{@include text-rodeo-bold;}
+    h2{@include text-windsor;}
   }
   &-13{
     h2{@include text-windsor;}
