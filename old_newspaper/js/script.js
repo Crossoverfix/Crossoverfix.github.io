@@ -3,21 +3,32 @@ $(document).ready(function () {
     var $contentViev = $("#pop-up__content");
     var $pages = $(".content__body__pages");
     var $allCards = $(".content__body__pages__card");
-    var $cards = $(".content__body__pages:visible").find(".content__body__pages__card");
-    var $pagesPrev = $("#pages-nav button:first-child");
-    var $pagesNext = $("#pages-nav button:last-child");
-    $pagesPrev.click(function () {
+    var $cards = $allCards.not(".content__body__pages__card:hidden");
+    var $nav = {};
+    $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
+    $nav.prev.count = $nav.prev.find("span");
+    $nav.next = $(".content__header__page-bar__wrapper button.next-one");
+    $nav.next.count = $nav.next.find("span");
+    $nav.prev.count.html($pages.index($pages.not(".content__body__pages:hidden")));
+    $nav.next.count.html($pages.index($pages.not(".content__body__pages:hidden")) + 2);
+    if ($pages.index($pages.not(".content__body__pages:hidden")) == 0){
+        $nav.prev.css('display','none');
+    } else if($pages.index($pages.not(".content__body__pages:hidden")) == $pages.length - 1){
+        $nav.next.css('display','none');
+    }
+    $nav.prev.click(function () {
         leafPages('prev');
     });
-    $pagesNext.click(function () {
+    $nav.next.click(function () {
         leafPages('next');
     });
-    $cards.click(function () {
+    $allCards.click(function () {
         var $cardIndex = $($cards).index(this);
         showPopUp($cardIndex);
     });
     function leafPages($directions) {
-        var $pagesIndex = $($pages).index(".active");
+        var $pagesActive = $pages.not(".content__body__pages:hidden");
+        var $pagesIndex = $($pages).index($pagesActive);
         var $tempoPages = $pagesIndex;
         if ($directions == 'prev'){
             if($pagesIndex <= 0){
@@ -34,8 +45,23 @@ $(document).ready(function () {
         } else {
             alert('error');
         }
-        $pages.eq($pagesIndex).removeClass('active');
+        if($tempoPages == 0){
+            $nav.prev.css('display','none');
+            $nav.next.count.html($tempoPages + 2);
+        } else if ($tempoPages == $pages.length - 1){
+            $nav.prev.count.html($tempoPages);
+            $nav.next.css('display','none');
+        } else {
+            $nav.next.css('display','block');
+            $nav.prev.css('display','block');
+            $nav.prev.count.html($tempoPages);
+            $nav.next.count.html($tempoPages + 2);
+        }
+        $pagesActive.removeClass('active');
         $pages.eq($tempoPages).addClass('active');
+        $cards = $allCards.not(".content__body__pages__card:hidden");
+        $contentViev.empty();
+
     }
     function showPopUp($index) {
         var $prevOne = $("#nav-bar button:first-child");
@@ -43,16 +69,19 @@ $(document).ready(function () {
         var $statusActive = $("#status-bar span:first-child");
         var $statusMax = $("#status-bar span:last-child");
         $popUp.css('display','block');
+        var $tempIndex = $index;
         var $tempCard = $cards.eq($index).clone();
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
-        var $tempIndex = $index;
         $statusActive.html($tempIndex + 1);
         $statusMax.html($cards.length);
-        $prevOne.click(function () {
+        $prevOne.unbind();
+        $nextOne.unbind();
+        $(document).unbind('keydown');
+        $prevOne.bind('click', function () {
             leafCard('prev');
         })
-        $nextOne.click(function () {
+        $nextOne.bind('click',function () {
             leafCard('next');
         })
         function removeDelay() {
@@ -104,6 +133,7 @@ $(document).ready(function () {
                 alert('error');
             }
             $statusActive.html($tempIndex + 1);
+            return false;
         }
         $('.pop-up__shadow').click(function () {
             closePopUp();

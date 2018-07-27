@@ -920,7 +920,7 @@ button, button:focus {
 }
 /* line 807, ../sass/style.scss */
 .cs-10 * {
-  background-color: #a12220;
+  background-color: #A43722;
 }
 /* line 810, ../sass/style.scss */
 .cs-10:before {
@@ -1040,8 +1040,11 @@ button, button:focus {
 }
 /* line 931, ../sass/style.scss */
 .cs-13 {
-  border: dotted 3px #837048;
-  padding: 12px;
+  padding: 35px;
+  position: relative;
+  background: url("../img/Frame_card/4/4_l_u.svg") 0 0 no-repeat, url("../img/Frame_card/4/4_r_u.svg") 100% 0 no-repeat, url("../img/Frame_card/4/4_l_d.svg") 0 100% no-repeat, url("../img/Frame_card/4/4_r_d.svg") 100% 100% no-repeat;
+  background-size: 40px 40px;
+  background-color: #FFEFD6;
 }
 /* line 932, ../sass/style.scss */
 .cs-13 p, .cs-13 span {
@@ -1055,17 +1058,43 @@ button, button:focus {
 /* line 940, ../sass/style.scss */
 .cs-13 h2 {
   color: #533625;
-  font-size: 18px;
-  line-height: 18px;
-  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-align: center;
   letter-spacing: normal;
 }
-/* line 950, ../sass/style.scss */
-.cs-14 {
-  border: dotted 3px #837048;
-  padding: 12px;
+/* line 957, ../sass/style.scss */
+.cs-13:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: 100%;
+  background: url("../img/Frame_card/4/4_h.svg") 0 0 round no-repeat, url("../img/Frame_card/4/4_h.svg") 0 100% round no-repeat;
+  background-size: 40px 20px;
 }
-/* line 951, ../sass/style.scss */
+/* line 969, ../sass/style.scss */
+.cs-13:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: url("../img/Frame_card/4/4_v.svg") 0 0 no-repeat round, url("../img/Frame_card/4/4_v.svg") 100% 0 no-repeat round;
+  background-size: 20px 40px;
+}
+/* line 982, ../sass/style.scss */
+.cs-14 {
+  padding: 27px;
+  position: relative;
+  background: url("../img/Frame_card/11/11_l_u.svg") 0 0 no-repeat, url("../img/Frame_card/11/11_r_u.svg") 100% 0 no-repeat, url("../img/Frame_card/11/11_l_d.svg") 0 100% no-repeat, url("../img/Frame_card/11/11_r_d.svg") 100% 100% no-repeat;
+  background-size: 30px 30px;
+  background-color: #FFEFD6;
+}
+/* line 983, ../sass/style.scss */
 .cs-14 p, .cs-14 span {
   color: #533625;
   font-size: 14px;
@@ -1074,42 +1103,99 @@ button, button:focus {
   letter-spacing: normal;
   margin-bottom: 0;
 }
-/* line 959, ../sass/style.scss */
+/* line 991, ../sass/style.scss */
 .cs-14 h2 {
   color: #533625;
   font-size: 18px;
   line-height: 18px;
-  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
   letter-spacing: normal;
 }
-/* line 969, ../sass/style.scss */
-.cs-15 {
-  border: dotted 3px #837048;
-  padding: 12px;
+/* line 1008, ../sass/style.scss */
+.cs-14:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: calc(100% - 60px);
+  height: 100%;
+  background: url("../img/Frame_card/11/11_u.svg") 0 0 round no-repeat, url("../img/Frame_card/11/11_d.svg") 0 100% round no-repeat;
+  background-size: 65px 13px,65px 12px;
 }
-/* line 970, ../sass/style.scss */
+/* line 1020, ../sass/style.scss */
+.cs-14:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: url("../img/Frame_card/11/11_l.svg") 0 0 no-repeat round, url("../img/Frame_card/11/11_r.svg") 100% 0 no-repeat round;
+  background-size: 13px 65px;
+}
+/* line 1033, ../sass/style.scss */
+.cs-15 {
+  padding: 8px;
+  position: relative;
+  background: url("../img/Frame_card/12/12_l_u.svg") 0 0 no-repeat, url("../img/Frame_card/12/12_r_u.svg") 100% 0 no-repeat, url("../img/Frame_card/12/12_l_d.svg") 0 100% no-repeat, url("../img/Frame_card/12/12_r_d.svg") 100% 100% no-repeat;
+  background-size: 26px 26px;
+  background-color: #FFEFD6;
+}
+/* line 1034, ../sass/style.scss */
 .cs-15 p, .cs-15 span {
-  color: #533625;
+  color: #fffdf2;
   font-size: 14px;
   line-height: 14px;
   word-break: normal;
   letter-spacing: normal;
+  padding: 12px;
   margin-bottom: 0;
 }
-/* line 978, ../sass/style.scss */
+/* line 1043, ../sass/style.scss */
 .cs-15 h2 {
-  color: #533625;
+  color: #fffdf2;
   font-size: 18px;
   line-height: 18px;
-  margin: 0;
+  padding: 12px 8px 8px 8px;
+  text-align: center;
   letter-spacing: normal;
 }
-/* line 988, ../sass/style.scss */
-.cs-16 {
-  border: dotted 3px #837048;
-  padding: 12px;
+/* line 1060, ../sass/style.scss */
+.cs-15:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: calc(100% - 52px);
+  height: 100%;
+  background: url("../img/Frame_card/12/12_u.svg") 0 0 round no-repeat, url("../img/Frame_card/12/12_d.svg") 0 100% round no-repeat;
+  background-size: 14px 7px;
 }
-/* line 989, ../sass/style.scss */
+/* line 1072, ../sass/style.scss */
+.cs-15:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 52px);
+  background: url("../img/Frame_card/12/12_l.svg") 0 0 no-repeat round, url("../img/Frame_card/12/12_r.svg") 100% 0 no-repeat round;
+  background-size: 7px 14px;
+}
+/* line 1084, ../sass/style.scss */
+.cs-15 * {
+  background-color: #553924;
+}
+/* line 1088, ../sass/style.scss */
+.cs-16 {
+  padding: 22px;
+  position: relative;
+  background: url("../img/Frame_card/15/15_l_u.svg") 0 0 no-repeat, url("../img/Frame_card/15/15_r_u.svg") 100% 0 no-repeat, url("../img/Frame_card/15/15_l_d.svg") 0 100% no-repeat, url("../img/Frame_card/15/15_r_d.svg") 100% 100% no-repeat;
+  background-size: 30px 30px;
+  background-color: #FFEFD6;
+}
+/* line 1089, ../sass/style.scss */
 .cs-16 p, .cs-16 span {
   color: #533625;
   font-size: 14px;
@@ -1118,20 +1204,46 @@ button, button:focus {
   letter-spacing: normal;
   margin-bottom: 0;
 }
-/* line 997, ../sass/style.scss */
+/* line 1097, ../sass/style.scss */
 .cs-16 h2 {
   color: #533625;
   font-size: 18px;
   line-height: 18px;
-  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
   letter-spacing: normal;
 }
-/* line 1007, ../sass/style.scss */
-.cs-17 {
-  border: dotted 3px #837048;
-  padding: 12px;
+/* line 1114, ../sass/style.scss */
+.cs-16:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: calc(100% - 60px);
+  height: 100%;
+  background: url("../img/Frame_card/15/15_u.svg") 0 0 round no-repeat, url("../img/Frame_card/15/15_d.svg") 0 100% round no-repeat;
+  background-size: 32px 12px;
 }
-/* line 1008, ../sass/style.scss */
+/* line 1126, ../sass/style.scss */
+.cs-16:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: url("../img/Frame_card/15/15_l.svg") 0 0 no-repeat round, url("../img/Frame_card/15/15_r.svg") 100% 0 no-repeat round;
+  background-size: 14px 32px;
+}
+/* line 1139, ../sass/style.scss */
+.cs-17 {
+  padding: 20px;
+  position: relative;
+  background: url("../img/Frame_card/16/16_l_u.svg") 0 0 no-repeat, url("../img/Frame_card/16/16_r_u.svg") 100% 0 no-repeat, url("../img/Frame_card/16/16_l_d.svg") 0 100% no-repeat, url("../img/Frame_card/16/16_r_d.svg") 100% 100% no-repeat;
+  background-size: 25px 25px;
+  background-color: #FFEFD6;
+}
+/* line 1140, ../sass/style.scss */
 .cs-17 p, .cs-17 span {
   color: #533625;
   font-size: 14px;
@@ -1140,149 +1252,162 @@ button, button:focus {
   letter-spacing: normal;
   margin-bottom: 0;
 }
-/* line 1016, ../sass/style.scss */
+/* line 1148, ../sass/style.scss */
 .cs-17 h2 {
   color: #533625;
   font-size: 18px;
   line-height: 18px;
-  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
   letter-spacing: normal;
 }
-/* line 1026, ../sass/style.scss */
-.cs-18 {
-  border: dotted 3px #837048;
-  padding: 12px;
+/* line 1165, ../sass/style.scss */
+.cs-17:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 24px;
+  width: calc(100% - 48px);
+  height: 100%;
+  background: url("../img/Frame_card/16/16_u.svg") 0 0 round no-repeat, url("../img/Frame_card/16/16_d.svg") 0 100% round no-repeat;
+  background-size: 15px 12px;
 }
-/* line 1027, ../sass/style.scss */
-.cs-18 p, .cs-18 span {
-  color: #533625;
-  font-size: 14px;
-  line-height: 14px;
-  word-break: normal;
-  letter-spacing: normal;
-  margin-bottom: 0;
-}
-/* line 1035, ../sass/style.scss */
-.cs-18 h2 {
-  color: #533625;
-  font-size: 18px;
-  line-height: 18px;
-  margin: 0;
-  letter-spacing: normal;
+/* line 1177, ../sass/style.scss */
+.cs-17:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 48px);
+  background: url("../img/Frame_card/16/16_l.svg") 0 0 no-repeat round, url("../img/Frame_card/16/16_r.svg") 100% 0 no-repeat round;
+  background-size: 12px 15px;
 }
 
-/* line 1050, ../sass/style.scss */
+/* line 1195, ../sass/style.scss */
 .fs-1 h2 {
   font-family: 'Open Sans', sans-serif;
 }
-/* line 1053, ../sass/style.scss */
+/* line 1198, ../sass/style.scss */
 .fs-2 h2 {
   font-family: 'arnold-bocklinc';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1056, ../sass/style.scss */
+/* line 1201, ../sass/style.scss */
 .fs-3 h2 {
   font-family: 'herold-normal';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1059, ../sass/style.scss */
+/* line 1204, ../sass/style.scss */
 .fs-4 h2 {
   font-family: 'rodeo-bold';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1062, ../sass/style.scss */
+/* line 1207, ../sass/style.scss */
 .fs-5 h2 {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1065, ../sass/style.scss */
+/* line 1210, ../sass/style.scss */
 .fs-6 h2 {
   font-family: 'eveagita';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1068, ../sass/style.scss */
+/* line 1213, ../sass/style.scss */
 .fs-7 h2 {
   font-family: 'goudy-decor-shodwnc';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1071, ../sass/style.scss */
+/* line 1216, ../sass/style.scss */
 .fs-8 h2 {
   font-family: 'herold-bold',cursive;
   font-weight: normal;
   font-style: normal;
 }
-/* line 1074, ../sass/style.scss */
+/* line 1219, ../sass/style.scss */
 .fs-9 h2 {
   font-family: 'monti-decor-b';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1077, ../sass/style.scss */
+/* line 1222, ../sass/style.scss */
 .fs-10 h2 {
   font-family: 'petrarka';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1080, ../sass/style.scss */
+/* line 1225, ../sass/style.scss */
 .fs-11 h2 {
   font-family: 'proletariat';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1083, ../sass/style.scss */
+/* line 1228, ../sass/style.scss */
 .fs-12 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1086, ../sass/style.scss */
+/* line 1231, ../sass/style.scss */
 .fs-13 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1089, ../sass/style.scss */
+/* line 1234, ../sass/style.scss */
 .fs-14 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1092, ../sass/style.scss */
+/* line 1237, ../sass/style.scss */
 .fs-15 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1095, ../sass/style.scss */
+/* line 1240, ../sass/style.scss */
 .fs-16 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1098, ../sass/style.scss */
+/* line 1243, ../sass/style.scss */
 .fs-17 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
-/* line 1101, ../sass/style.scss */
+/* line 1246, ../sass/style.scss */
 .fs-18 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 1109, ../sass/style.scss */
+/* line 1254, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-first {
   width: 186px;
 }
-/* line 1112, ../sass/style.scss */
+/* line 1257, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
   width: 340px;
+}
+/* line 1264, ../sass/style.scss */
+.wrapper-t2 .content__body__pages__line-first, .wrapper-t2 .content__body__pages__line-second, .wrapper-t2 .content__body__pages__line-third {
+  width: 288px;
+}
+/* line 1271, ../sass/style.scss */
+.wrapper-t3 .content__body__pages__line-first, .wrapper-t3 .content__body__pages__line-third {
+  width: 243px;
+}
+/* line 1274, ../sass/style.scss */
+.wrapper-t3 .content__body__pages__line-second {
+  width: 380px;
 }

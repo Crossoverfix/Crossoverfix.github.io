@@ -230,7 +230,7 @@ button,button:focus{
         color: $c-text-d;
         text-decoration: underline;
         &.active{
-          color: $c-text-red;
+          color: $c-red;
         }
       }
     }
@@ -805,7 +805,7 @@ button,button:focus{
     padding: 18px;
     background-color: $c-content-bg;
     & *{
-      background-color: $c-red-bg;
+      background-color: $c-red;
     }
     &:before{
       position: absolute;
@@ -939,13 +939,45 @@ button,button:focus{
     }
     h2{
       color: $c-text-d;
-      font-size: 18px;
-      line-height: 18px;
-      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    padding: 35px;
+    position: relative;
+    background:
+            url("../img/Frame_card/4/4_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/4/4_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/4/4_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/4/4_r_d.svg")100% 100% no-repeat;
+    background-size: 40px 40px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 40px;
+      width: calc(100% - 80px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/4/4_h.svg")0 0 round no-repeat,
+              url("../img/Frame_card/4/4_h.svg")0 100% round no-repeat;
+      background-size: 40px 20px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 80px);
+      background:
+              url("../img/Frame_card/4/4_v.svg")0 0 no-repeat round,
+              url("../img/Frame_card/4/4_v.svg")100% 0 no-repeat round;
+      background-size: 20px 40px;
+    }
   }
   &-14{
     p,span{
@@ -960,30 +992,98 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    padding: 27px;
+    position: relative;
+    background:
+            url("../img/Frame_card/11/11_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/11/11_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/11/11_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/11/11_r_d.svg")100% 100% no-repeat;
+    background-size: 30px 30px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30px;
+      width: calc(100% - 60px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/11/11_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/11/11_d.svg")0 100% round no-repeat;
+      background-size: 65px 13px,65px 12px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 60px);
+      background:
+              url("../img/Frame_card/11/11_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/11/11_r.svg")100% 0 no-repeat round;
+      background-size: 13px 65px;
+    }
   }
   &-15{
     p,span{
-      color: $c-text-d;
+      color: $c-text-dw;
       font-size: 14px;
       line-height: 14px;
       word-break: normal;
       letter-spacing: normal;
+      padding: 12px;
       margin-bottom: 0;
     }
     h2{
-      color: $c-text-d;
+      color: $c-text-dw;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      padding: 12px 8px 8px 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    padding: 8px;
+    position: relative;
+    background:
+            url("../img/Frame_card/12/12_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/12/12_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/12/12_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/12/12_r_d.svg")100% 100% no-repeat;
+    background-size: 26px 26px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 26px;
+      width: calc(100% - 52px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/12/12_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/12/12_d.svg")0 100% round no-repeat;
+      background-size: 14px 7px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 52px);
+      background:
+              url("../img/Frame_card/12/12_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/12/12_r.svg")100% 0 no-repeat round;
+      background-size: 7px 14px;
+    }
+    & *{
+      background-color: $c-background-dd;
+    }
   }
   &-16{
     p,span{
@@ -998,11 +1098,43 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
+    padding: 22px;
+    position: relative;
+    background:
+            url("../img/Frame_card/15/15_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/15/15_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/15/15_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/15/15_r_d.svg")100% 100% no-repeat;
+    background-size: 30px 30px;
+    background-color: $c-content-bg;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30px;
+      width: calc(100% - 60px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/15/15_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/15/15_d.svg")0 100% round no-repeat;
+      background-size: 32px 12px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 100%;
+      height:calc(100% - 60px);
+      background:
+              url("../img/Frame_card/15/15_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/15/15_r.svg")100% 0 no-repeat round;
+      background-size:14px 32px;
+    }
   }
   &-17{
     p,span{
@@ -1017,30 +1149,43 @@ button,button:focus{
       color: $c-text-d;
       font-size: 18px;
       line-height: 18px;
-      margin: 0;
+      margin-bottom: 8px;
+      text-align: center;
       letter-spacing: normal;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
-  }
-  &-18{
-    p,span{
-      color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
-      word-break: normal;
-      letter-spacing: normal;
-      margin-bottom: 0;
+    padding: 20px;
+    position: relative;
+    background:
+            url("../img/Frame_card/16/16_l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/16/16_r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/16/16_l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/16/16_r_d.svg")100% 100% no-repeat;
+    background-size: 25px 25px;
+    background-color: $c-content-bg;
+    &:before{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 24px;
+      width: calc(100% - 48px);
+      height: 100%;
+      background:
+              url("../img/Frame_card/16/16_u.svg")0 0 round no-repeat,
+              url("../img/Frame_card/16/16_d.svg")0 100% round no-repeat;
+      background-size: 15px 12px;
     }
-    h2{
-      color: $c-text-d;
-      font-size: 18px;
-      line-height: 18px;
-      margin: 0;
-      letter-spacing: normal;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 48px);
+      background:
+              url("../img/Frame_card/16/16_l.svg")0 0 no-repeat round,
+              url("../img/Frame_card/16/16_r.svg")100% 0 no-repeat round;
+      background-size: 12px 15px;
     }
-    border: dotted 3px $c-border-d;
-    padding: 12px;
   }
 }
 
@@ -1116,16 +1261,19 @@ button,button:focus{
   }
   &-t2{
     .content__body__pages__line{
-      &-first{}
-      &-second{}
-      &-third{}
+      &-first,&-second,&-third{
+        width: 288px;
+      }
     }
   }
   &-t3{
     .content__body__pages__line{
-      &-first{}
-      &-second{}
-      &-third{}
+      &-first,&-third{
+        width: 243px;
+      }
+      &-second{
+        width: 380px;
+      }
     }
   }
 }
