@@ -152,7 +152,7 @@ button,button:focus{
   position: absolute;
   left: 50%;
   top: 140px;
-  width: 650px;
+  width: 520px;
   height: 500px;
   transform: translateX(-50%);
   .content__body__pages__card{
@@ -297,6 +297,15 @@ button,button:focus{
             margin: 0 4px;
           }
         }
+        h1{
+          @include text-herold-bold;
+          font-size: 24px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          text-align: center;
+          line-height: normal;
+          color: $c-text-d;
+        }
       }
     }
   }
@@ -381,6 +390,178 @@ button,button:focus{
   }
   &__third-b{
     float: right;
+  }
+}
+.welcome__body{
+  position: relative;
+  z-index: 2;
+}
+#about{
+  width: 800px;
+  position: relative;
+  margin:45px auto;
+  background: url("../img/frame_site/separ.svg")50% 100% no-repeat;
+  background-size: 800px 9px;
+}
+.about{
+  margin-left: 50px;
+  height: 500px;
+  width: 430px;
+  position: relative;
+  padding-bottom: 9px;
+  &:before{
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: -250px;
+    height: 100%;
+    width: 290px;
+    background: url("../img/nikolay.png")no-repeat;
+    background-size: contain;
+  }
+  h1{
+    @include text-petrarka;
+    color: $c-text-dg;
+    font-size: 34px;
+    letter-spacing: 1.9px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  p{
+    @include text-global;
+    color: $c-text-d;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+}
+#reforms{
+  margin-bottom: 50px;
+  h2{
+    @include text-petrarka;
+    color: $c-text-d;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+}
+.reforms__body{
+  width: 884px;
+  margin: 0 auto;
+  position: relative;
+  background: url("../img/frame_site/separ.svg")50% 100% no-repeat;
+  background-size: 830px 9px;
+  a{
+    vertical-align: top;
+    display: inline-block;
+    width: calc((100% - 170px) / 3);
+    margin: 0 27px 35px 27px;
+    position: relative;
+    padding-top: 35px;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 135px;
+      width: 20px;
+      background: url("../img/frame_site/frame_c.svg")0 0 no-repeat;
+      background-size: 100% 100%;
+      transform: rotate(90deg);
+      top: -55px;
+      left: 45%;
+    }
+    div{
+      height: 150px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+    span{
+      display: block;
+      width: 100%;
+      @include text-petrarka;
+      color: $c-text-d;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
+#news{
+  width: 830px;
+  margin: 0 auto;
+  position: relative;
+  h2{
+    @include text-petrarka;
+    color: $c-text-d;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+  }
+  & > a{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    @include text-global;
+    color: $c-text-dg;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration:underline;
+    letter-spacing: 1.5px;
+    i{
+      margin-left: 5px;
+    }
+  }
+}
+.news__body{
+  a{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    position: relative;
+    margin-bottom: 35px;
+    &:nth-child(2n){
+      margin-left: 124px;
+      &:before{
+        content: "";
+        position: absolute;
+        height: 135px;
+        width: 20px;
+        background: url("../img/frame_site/frame_c.svg")0 0 no-repeat;
+        background-size: 100% 100%;
+        top: 50%;
+        left: -86px;
+        transform: translateY(-50%);
+      }
+    }
+    span{
+      @include text-global;
+      color: $c-text-dg;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    h3{
+      @include text-global;
+      color: $c-text-d;
+      font-size: 18px;
+      letter-spacing: 0.75px;
+      line-height: 24px;
+      margin: 8px 0;
+    }
   }
 }
 //стили карточек
