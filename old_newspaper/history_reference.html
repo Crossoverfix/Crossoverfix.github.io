@@ -19,14 +19,37 @@
 <body>
 <div id="pop-up">
     <div class="pop-up__shadow"></div>
-    <div id="nav-bar">
-        <button type="button">prev</button>
-        <button type="button">next</button>
+    <div class="pop-up__wrapper">
+        <button type="button" class="btn-close"></button>
+        <div class="pop-up__nav">
+            <div id="nav-bar">
+                <button type="button"><img alt="arrows" src="img/arrow_L.svg"></button>
+                <button type="button"><img alt="arrows" src="img/arrow_R.svg"></button>
+            </div>
+            <div id="status-bar">
+                <span>0</span> / <span>0</span>
+            </div>
+        </div>
+        <div id="pop-up__content"></div>
     </div>
-    <div id="status-bar">
-        <span>0</span> / <span>0</span>
+    <div id="pop-up__call-back">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <input type="text" name="userAbout" placeholder="О себе">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <label>
+                <input  type="checkbox" name="userCapcha">
+                <span>Я не робот</span>
+            </label>
+            <button class="button" type="submit">Отправить</button>
+        </form>
     </div>
-    <div id="pop-up__content"></div>
 </div>
 <header>
     <div class="header">
@@ -62,11 +85,11 @@
         <div class="row">
             <div class="content__header">
                 <div class="content__header__nav-bar">
-                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                     <a class="active" href="#"><span>Историческая справка</span></a>
                     <a href="#"><span>Календарь</span></a>
                     <a href="#"><span>Отзывы</span></a>
-                    <a href="#"><span>Новости</span></a>
+                    <a href="news.html"><span>Новости</span></a>
                     <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <div class="content__header__page-bar">
@@ -511,6 +534,7 @@
         </div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 <script src="js/history_card.js"></script>
 </body>
 </html>

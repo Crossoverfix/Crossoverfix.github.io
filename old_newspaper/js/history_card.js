@@ -69,6 +69,7 @@ $(document).ready(function () {
         var $statusActive = $("#status-bar span:first-child");
         var $statusMax = $("#status-bar span:last-child");
         $popUp.css('display','block');
+        $contentViev.css('display','block');
         var $tempIndex = $index;
         var $tempCard = $cards.eq($index).clone();
         var $oldTempCard;
@@ -155,6 +156,7 @@ $(document).ready(function () {
         })
         function closePopUp() {
             $contentViev.empty();
+            $contentViev.css('display','none');
             $popUp.css('display','none');
         }
     }
