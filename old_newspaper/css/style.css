@@ -341,11 +341,6 @@ button, button:focus {
   font-size: 26px;
   line-height: 18px;
 }
-/* line 199, ../sass/style.scss */
-#pop-up__content .content__body__pages__card.mini-card.cs-mt-1:before, #pop-up__content .content__body__pages__card.mini-card.cs-mt-1-fill:before {
-  height: calc(100% - 120px);
-  top: 60px;
-}
 /* line 203, ../sass/style.scss */
 #pop-up__content .content__body__pages__card.mini-card.cs-mt-1 h2, #pop-up__content .content__body__pages__card.mini-card.cs-mt-1-fill h2 {
   font-size: 24px;
@@ -1399,7 +1394,7 @@ button, button:focus {
   position: relative;
   z-index: 1;
   background: url("../img/Frame_card/20/mini_o_u.svg") 0 0 no-repeat, url("../img/Frame_card/20/mini_o_d.svg") 0 100% no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 35px;
   padding: 20px;
   text-align: center;
 }
@@ -1439,7 +1434,7 @@ button, button:focus {
   position: relative;
   z-index: 1;
   background: url("../img/Frame_card/20/mini_f_u.svg") 0 0 no-repeat, url("../img/Frame_card/20/mini_f_d.svg") 0 100% no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 35px;
   padding: 20px;
   text-align: center;
 }

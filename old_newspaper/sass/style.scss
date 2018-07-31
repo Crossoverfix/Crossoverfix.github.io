@@ -196,10 +196,10 @@ button,button:focus{
       }
     }
     &.cs-mt-1,&.cs-mt-1-fill{
-      &:before{
-        height: calc(100% - 120px);
-        top: 60px;
-      }
+      //&:before{
+      //  height: calc(100% - 120px);
+      //  top: 60px;
+      //}
       h2{
         font-size: 24px;
         margin: 10px 0;
@@ -1139,7 +1139,7 @@ button,button:focus{
       background:
               url("../img/Frame_card/20/mini_o_u.svg")0 0 no-repeat,
               url("../img/Frame_card/20/mini_o_d.svg")0 100% no-repeat;
-      background-size: 100% auto;
+      background-size: 100% 35px;
       padding: 20px;
       text-align: center;
       &:before{
@@ -1175,7 +1175,7 @@ button,button:focus{
       background:
               url("../img/Frame_card/20/mini_f_u.svg")0 0 no-repeat,
               url("../img/Frame_card/20/mini_f_d.svg")0 100% no-repeat;
-      background-size: 100% auto;
+      background-size: 100% 35px;
       padding: 20px;
       text-align: center;
       &:before{
