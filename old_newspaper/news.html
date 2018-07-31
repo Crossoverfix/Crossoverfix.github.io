@@ -21,6 +21,21 @@
     <div class="pop-up__shadow"></div>
     <div id="pop-up__content"></div>
     <div id="pop-up__call-back">
+    <div class="pop-up__header">
+        <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+        <button class="btn-close" type="button"></button>
+    </div>
+    <form>
+        <input type="text" name="userName" placeholder="Представтесь">
+        <input type="email" name="userEmail" placeholder="E-mail">
+        <input type="text" name="userSubject" placeholder="Тема комментария">
+        <input type="text" name="userAbout" placeholder="О себе">
+        <textarea placeholder="Текст" name="userComments"></textarea>
+        <div class="recapcha"></div>
+        <button class="button" type="submit">Отправить</button>
+    </form>
+</div>
+    <div id="pop-up__call-us">
         <div class="pop-up__header">
             <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
             <button class="btn-close" type="button"></button>
@@ -29,12 +44,8 @@
             <input type="text" name="userName" placeholder="Представтесь">
             <input type="email" name="userEmail" placeholder="E-mail">
             <input type="text" name="userSubject" placeholder="Тема комментария">
-            <input type="text" name="userAbout" placeholder="О себе">
             <textarea placeholder="Текст" name="userComments"></textarea>
-            <label>
-                <input  type="checkbox" name="userCapcha">
-                <span>Я не робот</span>
-            </label>
+            <div class="recapcha"></div>
             <button class="button" type="submit">Отправить</button>
         </form>
     </div>
@@ -52,19 +63,19 @@
                 <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
             </a>
         </div>
-        <div class="header__call-back">
+        <div key="call-back" class="header__call-back">
             <a href="#">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>Написать</span>
             </a>
         </div>
-        <div class="header__text">
+        <a href="#" class="header__text">
             <img alt="emblem" src="img/emblem_ri.svg">
             <div class="header__text__wrapper">
                 <img alt="logo" src="img/Logo.svg">
             </div>
             <img alt="emblem" src="img/emblem_n2.svg">
-        </div>
+        </a>
     </div>
 </header>
 <main>
@@ -73,11 +84,11 @@
         <div class="row">
             <div class="content__header">
                 <div class="content__header__nav-bar">
-                    <a class="active" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                     <a href="history_reference.html"><span>Историческая справка</span></a>
                     <a href="#"><span>Календарь</span></a>
                     <a href="comments.html"><span>Отзывы</span></a>
-                    <a href="news.html"><span>Новости</span></a>
+                    <a class="active" href="news.html"><span>Новости</span></a>
                     <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <div class="content__header__page-bar">
@@ -164,7 +175,7 @@
 <footer>
     <div class="footer">
         <div class="footer__first-b">
-            <img align="left" alt="logo" src="img/gerb.png">
+            <img align="left" alt="logo" src="img/gerb.svg">
             <div class="footer__text">
                 <p>Российская империя в эпоху</p>
                 <p>правления Императора Николая II</p>
@@ -172,15 +183,34 @@
             </div>
         </div>
         <div class="footer__second-b">
-            <img align="left" alt="logo" src="img/tagansk.png">
+            <img src="img/fond.svg">
+        </div>
+        <div class="footer__third-b">
+            <img align="left" alt="logo" src="img/tagansk.svg">
             <p>При поддержке</p>
             <p>ЗАО “Таганский ряд”</p>
         </div>
-        <div class="footer__third-b">
-            <a style="text-decoration: underline;font-weight: bold" href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
-            <p>© Все права защищены 2018г.</p>
-            <p>ЗАО “Таганский ряд”</p>
+    </div>
+    <div class="footer__bottom">
+        <p>© Все права защищены 2018г. ЗАО “Таганский ряд”</p>
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
         </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
     </div>
 </footer>
 <script src="js/script.js"></script>

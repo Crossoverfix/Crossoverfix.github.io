@@ -40,7 +40,7 @@ $(document).ready(function () {
             if($pagesIndex >= $pages.length - 1){
                 $tempoPages = 0;
             } else {
-                $tempoPages += 1;
+                $tempoPages++;
             }
         } else {
             alert('error');
@@ -103,6 +103,7 @@ $(document).ready(function () {
                     $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
                     $tempCard.animate({left:'50%',opacity:'1'},1000);
                     $tempCard.css("position","relative");
+                    $contentViev.stop();
                     if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
                         $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
                     } else {
@@ -120,6 +121,7 @@ $(document).ready(function () {
                     $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
                     $tempCard.animate({left:'50%',opacity:'1'},1000);
                     $tempCard.css("position","relative");
+                    $contentViev.stop();
                     if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
                         $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
                     } else {
@@ -139,6 +141,7 @@ $(document).ready(function () {
                     $oldTempCard.animate({left:'200%',opacity:'0'},1000);
                     $tempCard.animate({left:'50%',opacity:'1'},1000);
                     $tempCard.css("position","relative");
+                    $contentViev.stop();
                     if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
                         $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
                     } else {
@@ -156,6 +159,7 @@ $(document).ready(function () {
                     $oldTempCard.animate({left:'200%',opacity:'0'},1000);
                     $tempCard.animate({left:'50%',opacity:'1'},1000);
                     $tempCard.css("position","relative");
+                    $contentViev.stop();
                     if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
                         $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
                     } else {
@@ -169,6 +173,10 @@ $(document).ready(function () {
             $statusActive.html($tempIndex + 1);
             return false;
         }
+        var $closedPop = $('button.btn-close');
+        $closedPop.click(function () {
+            closePopUp();
+        })
         $('.pop-up__shadow').click(function () {
             closePopUp();
         })

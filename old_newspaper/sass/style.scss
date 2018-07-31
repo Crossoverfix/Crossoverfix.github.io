@@ -144,7 +144,7 @@ button,button:focus{
   width: 350px;
   height: 54px;
   box-sizing: border-box;
-  margin: 0 auto 45px auto;
+  margin: 0 auto 25px auto;
   background: url("../img/frame_site/fraim_pop_up_all.svg")no-repeat;
   background-size: 100% 100%;
   padding: 16px 37px;
@@ -183,6 +183,34 @@ button,button:focus{
   overflow: hidden;
   width: 100%;
   padding-bottom: 30px;
+  .content__body__pages__card.mini-card{
+    width: 250px;
+    height: 250px;
+    padding: 32px 14px;
+    &.cs-mt-one{
+      padding: 25px 14px;
+      height: 70px;
+      h2{
+        font-size: 26px;
+        line-height: 18px;
+      }
+    }
+    &.cs-mt-1,&.cs-mt-1-fill{
+      &:before{
+        height: calc(100% - 120px);
+        top: 60px;
+      }
+      h2{
+        font-size: 24px;
+        margin: 10px 0;
+        line-height: 26px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+  }
   .content__body__pages__card{
     max-width: 450px;
     position: relative;
@@ -217,6 +245,8 @@ button,button:focus{
   width: 610px;
   border-radius: 5px;
   transform: translate(-50%, -50%);
+  background: url("../img/emblem_ri_bg.svg")right 25px bottom 0 no-repeat;
+  background-size: 242px 242px;
   background-color: $c-content-bg;
   .pop-up__header{
     margin-bottom: 32px;
@@ -255,6 +285,9 @@ button,button:focus{
       font-size: 14px;
       font-style: italic;
       line-height: 19px;
+      &:focus{
+        outline-style: none;
+      }
       &:nth-child(2),&:nth-child(4){
         margin-left: 30px;
       }
@@ -273,28 +306,106 @@ button,button:focus{
       font-size: 14px;
       font-style: italic;
       line-height: 19px;
+      &:focus{
+        outline-style: none;
+      }
     }
-    label{
+   .recapcha{
+     width: 300px;
+     height: 75px;
+     margin: 0 auto 30px auto;
+     display: block;
+     box-sizing: border-box;
+     background: url(../img/recaptcha.png)no-repeat;
+     background-size: contain;
+   }
+  }
+}
+#pop-up__call-us{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 564px;
+  width: 610px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background: url("../img/emblem_ri_bg.svg")right 25px bottom 0 no-repeat;
+  background-size: 242px 242px;
+  background-color: $c-content-bg;
+  .pop-up__header{
+    margin-bottom: 32px;
+    h2{
+      box-sizing: border-box;
+      padding-top: 23px;
+      @include text-herold-bold;
+      color: $c-text-d;
+      margin: 30px auto 0 auto;
+      width: 507px;
+      height: 61px;
+      font-size: 23px;
+      letter-spacing: 1.67px;
+      line-height: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      background: url("../img/frame_site/fraim_pop_up_all.svg")0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  form{
+    padding: 0 50px;
+    margin-bottom: 55px;
+    input{
+      height: 42px;
+      width: 236px;
+      border: 1px solid $c-text-dg;
+      border-radius: 9px;
+      background-color: $c-white-bg;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      &:focus{
+        outline-style: none;
+      }
+      @include text-global;
+      color: $c-text-dg;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 19px;
+      &:nth-child(2){
+        margin-left: 30px;
+      }
+      &:nth-child(3){
+        width: 99%;
+      }
+    }
+    textarea{
+      height: 90px;
+      width: 100%;
+      border: 1px solid $c-text-dg;
+      border-radius: 9px;
+      background-color: $c-white-bg;
+      margin-bottom: 20px;
+      padding: 20px 0 0 20px;
+      box-sizing: border-box;
+      @include text-global;
+      color: $c-text-dg;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 19px;
+      &:focus{
+        outline-style: none;
+      }
+    }
+    .recapcha{
       width: 300px;
       height: 75px;
       margin: 0 auto 30px auto;
       display: block;
-      border: 1px solid $c-text-dg;
-      border-radius: 9px;
-      background-color: $c-white-bg;
-      padding-top: 15px;
-      padding-left: 10px;
       box-sizing: border-box;
-      input{
-        vertical-align:middle ;
-        height: 45px;
-        width: 45px;
-      }
-      span{
-        vertical-align:super;
-        margin-left: 10px;
-      }
-
+      background: url(../img/recaptcha.png)no-repeat;
+      background-size: contain;
     }
   }
 }
@@ -466,8 +577,61 @@ button,button:focus{
         p,span{
           @include text-global;
         }
-        &-mini{
-          margin-bottom: 7px;
+        a.youtube{
+          @include text-global;
+          font-size: 14px;
+          position: relative;
+          display: inline-block;
+          background-color: transparent;
+          text-align: center;
+          padding: 10px 0;
+          margin-left: 30px;
+          text-decoration: underline;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 16px;
+            top: 12px;
+            left: -27px;
+            background: url("../img/youtube.svg")no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+        &__mini-wrap{
+          position: relative;
+          padding: 20px;
+          margin-bottom: 10px;
+          background:
+                  url("../img/Frame_card/19/l_u.svg")0 0 no-repeat,
+                  url("../img/Frame_card/19/r_u.svg")100% 0 no-repeat,
+                  url("../img/Frame_card/19/l_d.svg")0 100% no-repeat,
+                  url("../img/Frame_card/19/r_d.svg")100% 100% no-repeat;
+          background-size: 25px 25px;
+          &:before{
+            content: "";
+            position: absolute;
+            width: calc(100% - 50px);
+            height: 100%;
+            top: 0;
+            left: 25px;
+            background:
+                    url("../img/Frame_card/19/h.svg")50% 0 repeat no-repeat,
+                    url("../img/Frame_card/19/h.svg")50% 100% repeat no-repeat;
+            background-size: 170px 12px;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 50px);
+            top: 25px;
+            left: 0;
+            background:
+                    url("../img/Frame_card/19/v_l.svg")0 0 no-repeat repeat,
+                    url("../img/Frame_card/19/v_r.svg")100% 0 no-repeat repeat;
+            background-size: 13px 130px;
+          }
         }
       }
       &__line{
@@ -484,6 +648,36 @@ button,button:focus{
   &__footer{}
 }
 .footer{
+  &__bottom{
+    position: relative;
+    display: block;
+    width: 930px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    p{
+      float: left;
+    }
+    > a{
+      float: right;
+      vertical-align: top;
+      margin-right: 90px;
+      text-decoration: underline;
+      font-weight: 600;
+      @include text-global;
+      font-size: 14px;
+      color: $c-text-d;
+    }
+    .header__call-back{
+      position: relative;
+      float: right;
+      vertical-align: top;
+    }
+    .header__social-link{
+      position: relative;
+      display: inline-block;
+      margin-left: 40px;
+    }
+  }
   width: 930px;
   margin: 0 auto;
   padding: 10px 0 30px 0;
@@ -503,11 +697,15 @@ button,button:focus{
     height: 100%;
     vertical-align: top;
   }
+  &__second-b{
+    margin-left: 25px;
+  }
   &__first-b{
     margin-right: 100px;
   }
   &__third-b{
     float: right;
+    margin-right: 130px;
   }
 }
 .welcome__body{
@@ -640,8 +838,13 @@ button,button:focus{
     line-height: 19px;
     text-decoration:underline;
     letter-spacing: 1.5px;
-    i{
+    padding-right: 15px;
+    img{
       margin-left: 5px;
+      position: absolute;
+      top: 5px;
+      right: -3px;
+      width: 11px;
     }
   }
 }
@@ -729,7 +932,7 @@ button,button:focus{
           background: url("../img/frame_site/frame_c.svg")0 0 no-repeat;
           background-size: 100% 100%;
           top: 50%;
-          left: -86px;
+          left: -78px;
           transform: translateY(-50%);
         }
       }
@@ -845,9 +1048,9 @@ button,button:focus{
         &:before{
           content: "";
           position: absolute;
-          width: 17px;
-          height: 17px;
-          background: url("../img/arrow_forward2.svg")no-repeat;
+          width: 26px;
+          height: 20px;
+          background: url("../img/answer.svg")no-repeat;
           background-size: 100% 100%;
           top:0;
           left: -45px;
@@ -912,12 +1115,93 @@ button,button:focus{
     }
   }
   &-mt{
+    &-one{
+      display: block;
+      position: relative;
+      background: url("../img/Frame_card/20/20.svg")0 0 no-repeat;
+      padding: 9px 10px;
+      width: 100%;
+      min-height: 46px;
+      background-size: 100% auto;
+      h2{
+        @include text-herold-normal;
+        text-align: center;
+        color: $c-text-d;
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 13px;
+      }
+    }
     &-1{
-      border: dashed 2px $c-border-d;
-      padding: 10px;
-      .content__body__pages__card-mini{
-        border: dotted 3px $c-border-d;
-        padding: 12px;
+      display: block;
+      position: relative;
+      z-index: 1;
+      background:
+              url("../img/Frame_card/20/mini_o_u.svg")0 0 no-repeat,
+              url("../img/Frame_card/20/mini_o_d.svg")0 100% no-repeat;
+      background-size: 100% auto;
+      padding: 20px;
+      text-align: center;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 60px);
+        top: 30px;
+        left: 0;
+        background: url("../img/Frame_card/20/mini_o_c.svg")0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      h2{
+        display: block;
+        position: relative;
+        @include text-elizabeta-modern;
+        font-size: 18px;
+        line-height: 19px;
+        margin: 4px 0;
+        color: $c-text-d;
+      }
+      p{
+        position: relative;
+        @include text-global;
+        font-size: 12px;
+        line-height: 13px;
+        color: $c-text-d;
+      }
+    }
+    &-1-fill{
+      position: relative;
+      z-index: 1;
+      background:
+              url("../img/Frame_card/20/mini_f_u.svg")0 0 no-repeat,
+              url("../img/Frame_card/20/mini_f_d.svg")0 100% no-repeat;
+      background-size: 100% auto;
+      padding: 20px;
+      text-align: center;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 60px);
+        top: 30px;
+        left: 0;
+        background: url("../img/Frame_card/20/mini_f_c.svg")0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      h2{
+        position: relative;
+        @include text-elizabeta-modern;
+        font-size: 18px;
+        line-height: 19px;
+        margin: 4px 0;
+        color: $c-text-dw;
+      }
+      p{
+        position: relative;
+        @include text-global;
+        font-size: 12px;
+        line-height: 13px;
+        color: $c-text-dw;
       }
     }
   }
@@ -937,6 +1221,9 @@ button,button:focus{
       margin: 0;
       letter-spacing: normal;
       text-transform: uppercase;
+    }
+    a{
+      color: $c-text-dw;
     }
     background-color: $c-background-dd;
     color: $c-text-dw;
@@ -972,6 +1259,9 @@ button,button:focus{
       letter-spacing: normal;
       display: inline-block;
     }
+    a{
+      color: $c-text-dw;
+    }
     padding: 0 4px 4px 4px;
     border-radius: 4px;
     background-color: $c-background-dd;
@@ -995,6 +1285,9 @@ button,button:focus{
       line-height: 28px;
       margin-bottom: 6px;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-dw;
     }
     background-color: $c-background-dd;
     position: relative;
@@ -1029,6 +1322,9 @@ button,button:focus{
       line-height: 18px;
       margin-bottom: 10px;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     padding: 20px;
     position: relative;
@@ -1081,6 +1377,9 @@ button,button:focus{
       margin-bottom: 8px;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     padding: 26px;
     position: relative;
     background:
@@ -1131,6 +1430,9 @@ button,button:focus{
       padding-top: 12px;
       text-align: center;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     padding: 22px;
     position: relative;
@@ -1192,6 +1494,9 @@ button,button:focus{
       text-align: center;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     padding: 16px;
     position: relative;
     background:
@@ -1243,6 +1548,9 @@ button,button:focus{
       text-align: center;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     padding: 13px;
     background:
             url("../img/Frame_card/6/6_l_u.svg")0 0 no-repeat,
@@ -1272,6 +1580,9 @@ button,button:focus{
       text-align: center;
       padding: 8px;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     & *{
       background-color: $c-white-bg;
@@ -1328,6 +1639,9 @@ button,button:focus{
       margin: 0;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-dw;
+    }
     position: relative;
     padding: 18px;
     background-color: $c-content-bg;
@@ -1375,6 +1689,9 @@ button,button:focus{
       text-align: center;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     position: relative;
     padding: 19px;
     background-color: $c-content-bg;
@@ -1417,6 +1734,9 @@ button,button:focus{
       margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     padding: 24px;
     position: relative;
@@ -1467,6 +1787,9 @@ button,button:focus{
       text-align: center;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     padding: 35px;
     position: relative;
     background:
@@ -1515,6 +1838,9 @@ button,button:focus{
       margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     padding: 27px;
     position: relative;
@@ -1565,6 +1891,9 @@ button,button:focus{
       padding: 12px 8px 8px 8px;
       text-align: center;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-dw;
     }
     padding: 8px;
     position: relative;
@@ -1618,6 +1947,9 @@ button,button:focus{
       text-align: center;
       letter-spacing: normal;
     }
+    a{
+      color: $c-text-d;
+    }
     padding: 22px;
     position: relative;
     background:
@@ -1666,6 +1998,9 @@ button,button:focus{
       margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+    }
+    a{
+      color: $c-text-d;
     }
     padding: 20px;
     position: relative;
