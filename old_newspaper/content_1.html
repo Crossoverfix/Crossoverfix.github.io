@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Newspaper</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="pop-up">
+    <div class="pop-up__shadow"></div>
+    <div class="pop-up__wrapper">
+        <button type="button" class="btn-close"></button>
+        <div class="pop-up__nav">
+            <div id="nav-bar">
+                <button type="button"><img alt="arrows" src="img/arrow_L.svg"></button>
+                <button type="button"><img alt="arrows" src="img/arrow_R.svg"></button>
+            </div>
+            <div id="status-bar">
+                <span>0</span> / <span>0</span>
+            </div>
+        </div>
+        <div id="pop-up__content"></div>
+    </div>
+    <div id="pop-up__call-back">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <input type="text" name="userAbout" placeholder="О себе">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div id="pop-up__call-us">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="header">
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="#" class="header__text">
+            <img alt="emblem" src="img/emblem_ri.svg">
+            <div class="header__text__wrapper">
+                <img alt="logo" src="img/Logo.svg">
+            </div>
+            <img alt="emblem" src="img/emblem_n2.svg">
+        </a>
+    </div>
+</header>
+<main>
+    <div id="newspaper" class="container">
+        <div class="container__frame"></div>
+        <div class="row">
+            <div class="content__header">
+                <div class="content__header__nav-bar">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a class="active" href="content_1.html"><span>Историческая справка</span></a>
+                    <a href="#"><span>Календарь</span></a>
+                    <a href="comments.html"><span>Отзывы</span></a>
+                    <a href="news.html"><span>Новости</span></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="content__header__page-bar">
+                    <div class="content__header__page-bar__frame"></div>
+                    <div class="content__header__page-bar__wrapper">
+                        <a href="content_2.html" class="next-one">
+                            <img alt="arrow" src="img/arrow_R.svg" >
+                            <span>2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__body">
+                <div class="content__body__pages active">
+                    <div class="content__body__pages__header">
+                        <h1>Денежная реформа</h1>
+                    </div>
+                    <div class="content__body__pages__wrapper wrapper-t1">
+                        <div class="content__body__pages__line-first">
+                            <div class="content__body__pages__card cs-bg">
+                                <div class="img-wrapper">
+                                    <img alt="img" src="img/fphoto/card/denejnaya/money_1@3x.png">
+                                </div>
+                            </div>
+                            <div class="content__body__pages__card mini-card cs-mt-one">
+                                <h2>ЦИФРЫ И ДОСТИЖЕНИЯ</h2>
+                            </div>
+                            <div class="content__body__pages__card__mini-wrap">
+                                <div class="content__body__pages__card mini-card cs-mt-1">
+                                    <h2>Золотая</h2>
+                                    <h3>Наличность</h3>
+                                    <p>за 3 года реформы увеоичилась на</p>
+                                    <h2><strong>365%</strong></h2>
+                                </div>
+                                <div class="content__body__pages__card mini-card cs-mt-1">
+                                    <h3>Золотое обеспечение рубля</h3>
+                                    <p>за 3 года реформы увеоичилась на</p>
+                                    <h2><strong>168%</strong></h2>
+                                </div>
+                                <div class="content__body__pages__card mini-card cs-mt-1-fill">
+                                    <h2>Бюджет</h2>
+                                    <p>в 1894-1914 гг. вырос на</p>
+                                    <h2><strong>291.6%</strong></h2>
+                                    <p>достиг</p>
+                                    <h2>3,5<span>МЛРД<br>РУБ</span></h2>
+
+                                </div>
+                                <div class="content__body__pages__card mini-card cs-mt-1">
+                                    <h2>Золотой запас</h2>
+                                    <p>в 1894-1914 гг. увеличился на</p>
+                                    <h2><strong>247.5%</strong></h2>
+                                    <p>достиг</p>
+                                    <h2>1,604<span>МЛРД<br>РУБ</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__body__pages__line-second">
+                            <div class="content__body__pages__card cs-6 fs-8">
+                                <h2>ИМПЕРАТОР НИКОЛАЙ II</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                            <div class="content__body__pages__card cs-1 fs-4">
+                                <h2>ЗОЛОТОЙ ВЕК РУБЛЯ</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                            <div class="content__body__pages__card cs-2 fs-3">
+                                <h2>&#171;ИМПЕРИАЛ&#187; ДЛЯ ИМПЕРИИ</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                            <div class="content__body__pages__card cs-bg">
+                                <div class="img-wrapper">
+                                    <img alt="img" src="img/fphoto/card/denejnaya/money_2@3x.png">
+                                </div>
+                            </div>
+                            <div class="content__body__pages__card cs-15 fs-3">
+                                <h2>БАНКОВСКИЙ СЕКТОР ЭКОНОМИКИ</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                            <div class="content__body__pages__card cs-9 fs-4">
+                                <h2>СБЕРКАССЫ ДЛЯ НАРОДА</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content__body__pages__line-third">
+                            <div class="content__body__pages__card cs-bg">
+                                <div class="img-wrapper">
+                                    <img alt="img" src="img/fphoto/card/denejnaya/money_5@3x.png">
+                                </div>
+                            </div>
+                            <div class="content__body__pages__card cs-bg">
+                                <div class="img-wrapper">
+                                    <img alt="img" src="img/fphoto/card/denejnaya/money_4@3x.png">
+                                </div>
+                            </div>
+                            <div class="content__body__pages__card cs-13 fs-8">
+                                <h2>РАСВЕТ МЕЛКОГО КРЕДИТА</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. Таким образом рамки и место обучения кадров
+                                </p>
+                            </div>
+                            <div class="content__body__pages__card cs-3 fs-8">
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной
+                                </p>
+                                <h2>ДОСТОИНСТВО РУССКОЙ ВАЛЮТЫ</h2>
+                                <p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__first-b">
+            <img align="left" alt="logo" src="img/gerb.svg">
+            <div class="footer__text">
+                <p>Российская империя в эпоху</p>
+                <p>правления Императора Николая II</p>
+                <a href="WWW.ЭПОХА-НИКОЛАЯ-2.РФ">WWW.ЭПОХА-НИКОЛАЯ-2.РФ</a>
+            </div>
+        </div>
+        <div class="footer__second-b">
+            <img src="img/fond.svg">
+        </div>
+        <div class="footer__third-b">
+            <img align="left" alt="logo" src="img/tagansk.svg">
+            <p>При поддержке</p>
+            <p>ЗАО “Таганский ряд”</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© Все права защищены 2018г. ЗАО “Таганский ряд”</p>
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/history_card.js"></script>
+</body>
+</html>

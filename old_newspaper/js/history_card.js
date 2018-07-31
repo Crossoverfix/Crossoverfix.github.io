@@ -4,24 +4,24 @@ $(document).ready(function () {
     var $pages = $(".content__body__pages");
     var $allCards = $(".content__body__pages__card");
     var $cards = $allCards.not(".content__body__pages__card:hidden");
-    var $nav = {};
-    $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
-    $nav.prev.count = $nav.prev.find("span");
-    $nav.next = $(".content__header__page-bar__wrapper button.next-one");
-    $nav.next.count = $nav.next.find("span");
-    $nav.prev.count.html($pages.index($pages.not(".content__body__pages:hidden")));
-    $nav.next.count.html($pages.index($pages.not(".content__body__pages:hidden")) + 2);
-    if ($pages.index($pages.not(".content__body__pages:hidden")) == 0){
-        $nav.prev.css('display','none');
-    } else if($pages.index($pages.not(".content__body__pages:hidden")) == $pages.length - 1){
-        $nav.next.css('display','none');
-    }
-    $nav.prev.click(function () {
-        leafPages('prev');
-    });
-    $nav.next.click(function () {
-        leafPages('next');
-    });
+    // var $nav = {};
+    // $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
+    // $nav.prev.count = $nav.prev.find("span");
+    // $nav.next = $(".content__header__page-bar__wrapper button.next-one");
+    // $nav.next.count = $nav.next.find("span");
+    // $nav.prev.count.html($pages.index($pages.not(".content__body__pages:hidden")));
+    // $nav.next.count.html($pages.index($pages.not(".content__body__pages:hidden")) + 2);
+    // if ($pages.index($pages.not(".content__body__pages:hidden")) == 0){
+    //     $nav.prev.css('display','none');
+    // } else if($pages.index($pages.not(".content__body__pages:hidden")) == $pages.length - 1){
+    //     $nav.next.css('display','none');
+    // }
+    // $nav.prev.click(function () {
+    //     leafPages('prev');
+    // });
+    // $nav.next.click(function () {
+    //     leafPages('next');
+    // });
     $allCards.click(function () {
         var $cardIndex = $($cards).index(this);
         showPopUp($cardIndex);
