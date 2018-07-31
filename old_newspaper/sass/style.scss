@@ -588,6 +588,9 @@ button,button:focus{
         p,span{
           @include text-global;
         }
+        h3{
+          @include text-global;
+        }
         a.youtube{
           @include text-global;
           font-size: 14px;
@@ -611,7 +614,7 @@ button,button:focus{
         }
         &__mini-wrap{
           position: relative;
-          padding: 20px;
+          padding: 14px;
           margin-bottom: 10px;
           background:
                   url("../img/Frame_card/19/l_u.svg")0 0 no-repeat,
@@ -1171,7 +1174,7 @@ button,button:focus{
         position: relative;
         @include text-elizabeta-modern;
         font-size: 16px;
-        line-height: 16px;
+        line-height: 17px;
         margin: 1px;
         color: $c-text-d;
         strong{
@@ -1196,9 +1199,10 @@ button,button:focus{
       p{
         position: relative;
         @include text-global;
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 11px;
+        line-height: 10px;
         color: $c-text-d;
+        margin-bottom: 3px;
       }
     }
     &-1-fill{
@@ -1224,7 +1228,7 @@ button,button:focus{
         position: relative;
         @include text-elizabeta-modern;
         font-size: 16px;
-        line-height: 16px;
+        line-height: 17px;
         margin: 1px;
         color: $c-text-dw;
         strong{
@@ -1248,9 +1252,10 @@ button,button:focus{
       p{
         position: relative;
         @include text-global;
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 11px;
+        line-height: 10px;
         color: $c-text-dw;
+        margin-bottom: 3px;
       }
     }
   }
@@ -1430,7 +1435,7 @@ button,button:focus{
     a{
       color: $c-text-d;
     }
-    padding: 26px;
+    padding: 18px;
     position: relative;
     background:
     url("../img/Frame_card/2/2_l_u.svg")0 0 no-repeat,
@@ -1938,12 +1943,19 @@ button,button:focus{
     }
     h2{
       color: $c-text-dw;
-      padding: 12px 8px 0 8px;
+      padding: 6px 8px 0 8px;
       text-align: center;
       letter-spacing: normal;
     }
     a{
       color: $c-text-dw;
+    }
+    h3{
+      color: $c-text-dw;
+      padding: 12px 8px 0 8px;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: normal;
     }
     padding: 8px;
     position: relative;
@@ -2104,6 +2116,7 @@ button,button:focus{
   &-4{
     h2{@include text-rodeo-bold;
     font-size: 27px;
+      line-height: 24px;
     }
   }
   &-5{
