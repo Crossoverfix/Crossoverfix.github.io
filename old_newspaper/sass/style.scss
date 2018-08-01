@@ -1173,7 +1173,7 @@ button,button:focus{
         display: block;
         position: relative;
         @include text-elizabeta-modern;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 17px;
         margin: 1px;
         color: $c-text-d;
@@ -1191,8 +1191,8 @@ button,button:focus{
         display: block;
         position: relative;
         @include text-elizabeta-modern;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 10px;
+        line-height: 13px;
         margin: 0;
         color: $c-text-d;
       }
@@ -1227,7 +1227,7 @@ button,button:focus{
       h2{
         position: relative;
         @include text-elizabeta-modern;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 17px;
         margin: 1px;
         color: $c-text-dw;
@@ -1244,8 +1244,8 @@ button,button:focus{
       h3{
         position: relative;
         @include text-elizabeta-modern;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 10px;
+        line-height: 13px;
         margin: 0;
         color: $c-text-dw;
       }
@@ -2155,6 +2155,7 @@ button,button:focus{
   &-12{
     h2{@include text-windsor;
     font-size: 28px;
+      line-height: 24px;
     }
   }
 }

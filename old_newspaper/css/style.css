@@ -1439,7 +1439,7 @@ button, button:focus {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 17px;
   margin: 1px;
   color: #533625;
@@ -1462,8 +1462,8 @@ button, button:focus {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 10px;
+  line-height: 13px;
   margin: 0;
   color: #533625;
 }
@@ -1502,7 +1502,7 @@ button, button:focus {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 17px;
   margin: 1px;
   color: #fffdf2;
@@ -1524,8 +1524,8 @@ button, button:focus {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 10px;
+  line-height: 13px;
   margin: 0;
   color: #fffdf2;
 }
@@ -2457,25 +2457,26 @@ button, button:focus {
   font-weight: normal;
   font-style: normal;
   font-size: 28px;
+  line-height: 24px;
 }
 
-/* line 2166, ../sass/style.scss */
+/* line 2167, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-first {
   width: 186px;
 }
-/* line 2169, ../sass/style.scss */
+/* line 2170, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
   width: 340px;
 }
-/* line 2176, ../sass/style.scss */
+/* line 2177, ../sass/style.scss */
 .wrapper-t2 .content__body__pages__line-first, .wrapper-t2 .content__body__pages__line-second, .wrapper-t2 .content__body__pages__line-third {
   width: 288px;
 }
-/* line 2183, ../sass/style.scss */
+/* line 2184, ../sass/style.scss */
 .wrapper-t3 .content__body__pages__line-first, .wrapper-t3 .content__body__pages__line-third {
   width: 243px;
 }
-/* line 2186, ../sass/style.scss */
+/* line 2187, ../sass/style.scss */
 .wrapper-t3 .content__body__pages__line-second {
   width: 380px;
 }
