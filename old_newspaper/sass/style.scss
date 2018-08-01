@@ -201,24 +201,24 @@ button,button:focus{
         top: 60px;
       }
       h2{
-        font-size: 28px;
-        margin: 10px 0;
-        line-height: 26px;
+        font-size: 28px!important;
+        margin: 10px 0!important;
+        line-height: 26px!important;
         strong{
-          font-size: 38px;
+          font-size: 38px!important;
         }
         span{
-          font-size: 14px;
-          line-height: 14px;
+          font-size: 14px!important;
+          line-height: 14px!important;
         }
       }
       h3{
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 24px!important;
+        line-height: 26px!important;
       }
       p{
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 20px!important;
+        line-height: 22px!important;
       }
     }
   }
@@ -614,37 +614,40 @@ button,button:focus{
         }
         &__mini-wrap{
           position: relative;
-          padding: 14px;
+          padding: 10px;
           margin-bottom: 10px;
           background:
                   url("../img/Frame_card/19/l_u.svg")0 0 no-repeat,
                   url("../img/Frame_card/19/r_u.svg")100% 0 no-repeat,
                   url("../img/Frame_card/19/l_d.svg")0 100% no-repeat,
                   url("../img/Frame_card/19/r_d.svg")100% 100% no-repeat;
-          background-size: 25px 25px;
+          background-size: 15px 15px;
           &:before{
             content: "";
             position: absolute;
-            width: calc(100% - 50px);
+            width: calc(100% - 28px);
             height: 100%;
             top: 0;
-            left: 25px;
+            left: 14px;
             background:
                     url("../img/Frame_card/19/h.svg")50% 0 repeat no-repeat,
                     url("../img/Frame_card/19/h.svg")50% 100% repeat no-repeat;
-            background-size: 170px 11px;
+            background-size: 150px 7px;
           }
           &:after{
             content: "";
             position: absolute;
             width: 100%;
-            height: calc(100% - 50px);
-            top: 25px;
+            height: calc(100% - 28px);
+            top: 14px;
             left: 0;
             background:
                     url("../img/Frame_card/19/v_l.svg")0 0 no-repeat repeat,
                     url("../img/Frame_card/19/v_r.svg")100% 0 no-repeat repeat;
-            background-size: 11px 130px;
+            background-size: 7px 130px;
+          }
+          .mini-card:last-child{
+            margin-bottom: 0;
           }
         }
       }
@@ -1116,7 +1119,9 @@ button,button:focus{
     }
   }
 }
-
+.mini-card{
+  min-height: 65px;
+}
 //стили карточек
 .cs{
   &-bg{
@@ -2156,6 +2161,238 @@ button,button:focus{
     h2{@include text-windsor;
     font-size: 28px;
       line-height: 24px;
+    }
+  }
+}
+
+//размеры шрифтов
+.sf{
+  &-ttu{
+    text-transform: uppercase!important;
+  }
+  &-b{
+    font-weight: bold!important;
+    b{
+      font-weight: bold!important;
+    }
+  }
+  &-ta{
+    text-align: center!important;
+  }
+  &-pd-0{
+    padding: 0;
+  }
+  &-pd-1{
+    padding: 0 1px;
+  }
+  &-pd-2{
+    padding: 0 2px;
+  }
+  &-pd-3{
+    padding: 0 3px;
+  }
+  &-pd-4{
+    padding: 0 4px;
+  }
+  &-pd-5{
+    padding: 0 5px;
+  }
+  &-mr-0{
+    margin: 0;
+  }
+  &-mr-1{
+    margin: 1px 0;
+  }
+  &-mr-2{
+    margin: 2px 0;
+  }
+  &-mr-3{
+    margin: 3px 0;
+  }
+  &-mr-4{
+    margin: 4px 0;
+  }
+  &-mr-5{
+    margin: 5px 0;
+  }
+  &-f6{
+    font-size: 6px;
+    line-height: 6px;
+    b{
+      font-size: 8px;
+      line-height: 8px;
+      font-weight: normal;
+    }
+  }
+  &-f7{
+    font-size: 7px;
+    line-height: 7px;
+    b{
+      font-size: 9px;
+      line-height: 9px;
+      font-weight: normal;
+    }
+  }
+  &-f8{
+    font-size: 8px;
+    line-height: 8px;
+    b{
+      font-size: 10px;
+      line-height: 10px;
+      font-weight: normal;
+    }
+  }
+  &-f9{
+    font-size: 9px;
+    line-height: 9px;
+    b{
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: normal;
+    }
+  }
+  &-f10{
+    font-size: 10px;
+    line-height: 10px;
+    b{
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: normal;
+    }
+  }
+  &-f11{
+    font-size: 11px;
+    line-height: 11px;
+    b{
+      font-size: 13px;
+      line-height: 13px;
+      font-weight: normal;
+    }
+  }
+  &-f12{
+    font-size: 12px;
+    line-height: 12px;
+    b{
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: normal;
+    }
+  }
+  &-f13{
+    font-size: 13px;
+    line-height: 13px;
+    b{
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: normal;
+    }
+  }
+  &-f14{
+    font-size: 14px;
+    line-height: 14px;
+    b{
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+    }
+  }
+  &-f16{
+    font-size: 16px;
+    line-height: 16px;
+    b{
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: normal;
+    }
+  }
+  &-f18{
+    font-size: 18px;
+    line-height: 18px;
+    b{
+      font-size: 21px;
+      line-height: 21px;
+      font-weight: normal;
+    }
+  }
+  &-f20{
+    font-size: 20px;
+    line-height: 20px;
+    b{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: normal;
+    }
+  }
+  &-f22{
+    font-size: 22px;
+    line-height: 22px;
+    b{
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: normal;
+    }
+  }
+  &-f26{
+    font-size: 26px;
+    line-height: 26px;
+    b{
+      font-size: 29px;
+      line-height: 29px;
+      font-weight: normal;
+    }
+  }
+  &-f28{
+    font-size: 28px;
+    line-height: 28px;
+    b{
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+  }
+  &-f32{
+    font-size: 32px;
+    line-height: 32px;
+    b{
+      font-size: 35px;
+      line-height: 35px;
+      font-weight: normal;
+    }
+  }
+  &-f34{
+    font-size: 34px;
+    line-height: 34px;
+    b{
+      font-size: 37px;
+      line-height: 37px;
+      font-weight: normal;
+    }
+  }
+  &-f38{
+    font-size: 38px;
+    line-height: 38px;
+    b{
+      font-size: 41px;
+      line-height: 41px;
+      font-weight: normal;
+    }
+  }
+  &-f42{
+    font-size: 42px;
+    line-height: 42px;
+    b{
+      font-size: 46px;
+      line-height: 46px;
+      font-weight: normal;
+    }
+  }
+  &-f48{
+    font-size: 48px;
+    line-height: 48px;
+    b{
+      font-size: 52px;
+      line-height: 52px;
+      font-weight: normal;
     }
   }
 }
