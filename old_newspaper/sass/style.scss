@@ -1177,7 +1177,7 @@ button,button:focus{
       span{
         display: inline-block;
         text-align: left;
-        margin-left: 1px;
+        margin-left: 4px;
         vertical-align: top;
       }
       p,span{
@@ -1208,7 +1208,7 @@ button,button:focus{
         vertical-align: top;
         display: inline-block;
         text-align: left;
-        margin-left: 1px;
+        margin-left: 4px;
       }
       p,span{
         position: relative;
@@ -1447,7 +1447,7 @@ button,button:focus{
     a{
       color: $c-text-d;
     }
-    padding: 22px;
+    padding: 17px;
     position: relative;
     z-index: 1;
     box-shadow: inset 0 0 0 0 red;
@@ -1518,7 +1518,7 @@ button,button:focus{
             url("../img/Frame_card/5/5_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/5/5_r_d.svg")100% 100% no-repeat;
 
-    background-size: 21px 21px;
+    background-size: 22px 22px;
     background-color: $c-content-bg;
     &:before{
       content: "";
@@ -2123,20 +2123,23 @@ button,button:focus{
   &-ttn{
     @include text-global;
   }
-  &-ttu{
-    text-transform: uppercase!important;
-    font-family: 'elizabeta-modern'!important;
-    margin: 2px 0;
-  }
   &-b{
     font-weight: bold!important;
-    margin: 1px 0;
+    margin: 2px 0;
     b{
       font-weight: bold!important;
     }
   }
+  &-ttu{
+    text-transform: uppercase!important;
+    font-family: 'elizabeta-modern'!important;
+    margin: 3px 0!important;
+  }
   &-ta{
     text-align: center!important;
+  }
+  &-va{
+    vertical-align: middle!important;
   }
   &-pd-0{
     padding: 0;
@@ -2169,152 +2172,35 @@ button,button:focus{
     margin: 3px 0;
   }
   &-mr-4{
-    margin: 4px 0;
+    margin: 4px 0!important;
   }
   &-mr-5{
-    margin: 5px 0;
+    margin: 5px 0!important;
   }
-  &-f6{
-    font-size: 6px;
-    line-height: 7px;
+  &-f48{
+    font-size: 48px;
+    line-height: 49px;
     b{
-      font-size: 8px;
-      line-height: 9px;
+      font-size: 52px;
+      line-height: 53px;
       font-weight: normal;
     }
   }
-  &-f7{
-    font-size: 7px;
-    line-height: 8px;
+  &-f42{
+     font-size: 42px;
+     line-height: 43px;
+     b{
+       font-size: 46px;
+       line-height: 47px;
+       font-weight: normal;
+     }
+   }
+  &-f38{
+    font-size: 38px;
+    line-height: 39px;
     b{
-      font-size: 9px;
-      line-height: 10px;
-      font-weight: normal;
-    }
-  }
-  &-f8{
-    font-size: 8px;
-    line-height: 9px;
-    b{
-      font-size: 10px;
-      line-height: 11px;
-      font-weight: normal;
-    }
-  }
-  &-f9{
-    font-size: 9px;
-    line-height: 10px;
-    b{
-      font-size: 11px;
-      line-height: 12px;
-      font-weight: normal;
-    }
-  }
-  &-f10{
-    font-size: 11px;
-    line-height: 10px;
-    b{
-      font-size: 12px;
-      line-height: 13px;
-      font-weight: normal;
-    }
-  }
-  &-f11{
-    font-size: 11px;
-    line-height: 12px;
-    b{
-      font-size: 13px;
-      line-height: 14px;
-      font-weight: normal;
-    }
-  }
-  &-f12{
-    font-size: 12px;
-    line-height: 13px;
-    b{
-      font-size: 14px;
-      line-height: 15px;
-      font-weight: normal;
-    }
-  }
-  &-f13{
-    font-size: 13px;
-    line-height: 14px;
-    b{
-      font-size: 15px;
-      line-height: 16px;
-      font-weight: normal;
-    }
-  }
-  &-f14{
-    font-size: 14px;
-    line-height: 15px;
-    b{
-      font-size: 16px;
-      line-height: 17px;
-      font-weight: normal;
-    }
-  }
-  &-f16{
-    font-size: 16px;
-    line-height: 17px;
-    b{
-      font-size: 18px;
-      line-height: 19px;
-      font-weight: normal;
-    }
-  }
-  &-f18{
-    font-size: 18px;
-    line-height: 19px;
-    b{
-      font-size: 21px;
-      line-height: 22px;
-      font-weight: normal;
-    }
-  }
-  &-f20{
-    font-size: 20px;
-    line-height: 21px;
-    b{
-      font-size: 24px;
-      line-height: 25px;
-      font-weight: normal;
-    }
-  }
-  &-f22{
-    font-size: 22px;
-    line-height: 23px;
-    b{
-      font-size: 25px;
-      line-height: 26px;
-      font-weight: normal;
-    }
-  }
-  &-f26{
-    font-size: 26px;
-    line-height: 27px;
-    b{
-      font-size: 29px;
-      line-height: 30px;
-      font-weight: normal;
-    }
-  }
-  &-f28{
-    font-size: 28px;
-    line-height: 29px;
-    b{
-      font-size: 30px;
-      line-height: 31px;
-      font-weight: normal;
-    }
-  }
-  &-f32{
-    font-size: 32px;
-    line-height: 33px;
-    b{
-      font-size: 35px;
-      line-height: 36px;
+      font-size: 41px;
+      line-height: 42px;
       font-weight: normal;
     }
   }
@@ -2327,30 +2213,147 @@ button,button:focus{
       font-weight: normal;
     }
   }
-  &-f38{
-    font-size: 38px;
-    line-height: 39px;
+  &-f32{
+    font-size: 32px;
+    line-height: 33px;
     b{
-      font-size: 41px;
-      line-height: 42px;
+      font-size: 35px;
+      line-height: 36px;
       font-weight: normal;
     }
   }
-  &-f42{
-    font-size: 42px;
-    line-height: 43px;
+  &-f28{
+    font-size: 28px;
+    line-height: 29px;
     b{
-      font-size: 46px;
-      line-height: 47px;
+      font-size: 30px;
+      line-height: 31px;
       font-weight: normal;
     }
   }
-  &-f48{
-    font-size: 48px;
-    line-height: 49px;
+  &-f26{
+    font-size: 26px;
+    line-height: 27px;
     b{
-      font-size: 52px;
-      line-height: 53px;
+      font-size: 29px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+  }
+  &-f22{
+    font-size: 22px;
+    line-height: 23px;
+    b{
+      font-size: 25px;
+      line-height: 26px;
+      font-weight: normal;
+    }
+  }
+  &-f20{
+    font-size: 20px;
+    line-height: 21px;
+    b{
+      font-size: 24px;
+      line-height: 25px;
+      font-weight: normal;
+    }
+  }
+  &-f18{
+    font-size: 18px;
+    line-height: 19px;
+    b{
+      font-size: 21px;
+      line-height: 22px;
+      font-weight: normal;
+    }
+  }
+  &-f16{
+    font-size: 16px;
+    line-height: 17px;
+    b{
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: normal;
+    }
+  }
+  &-f14{
+    font-size: 14px;
+    line-height: 15px;
+    b{
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: normal;
+    }
+  }
+  &-f13{
+    font-size: 13px;
+    line-height: 14px;
+    b{
+      font-size: 17px;
+      line-height: 18px;
+      font-weight: normal;
+    }
+  }
+  &-f12{
+    font-size: 12px;
+    line-height: 13px;
+    b{
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: normal;
+    }
+  }
+  &-f11{
+    font-size: 11px;
+    line-height: 12px;
+    b{
+      font-size: 13px;
+      line-height: 14px;
+      font-weight: normal;
+    }
+  }
+  &-f10{
+    font-size: 10px;
+    line-height: 11px;
+    b{
+      font-size: 12px;
+      line-height: 13px;
+      font-weight: normal;
+    }
+  }
+  &-f9{
+    font-size: 9px;
+    line-height: 10px;
+    b{
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: normal;
+    }
+  }
+  &-f8{
+    font-size: 8px;
+    line-height: 9px;
+    b{
+      font-size: 10px;
+      line-height: 11px;
+      font-weight: normal;
+    }
+  }
+  &-f7{
+    font-size: 7px;
+    line-height: 8px;
+    b{
+      font-size: 9px;
+      line-height: 10px;
+      font-weight: normal;
+    }
+  }
+  &-f6{
+    font-size: 6px;
+    line-height: 7px;
+    b{
+      font-size: 8px;
+      line-height: 9px;
       font-weight: normal;
     }
   }
