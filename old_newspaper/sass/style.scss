@@ -1174,40 +1174,15 @@ button,button:focus{
         background: url("../img/Frame_card/20/mini_o_c.svg")0 0 no-repeat;
         background-size: 100% 100%;
       }
-      h2{
-        display: block;
-        position: relative;
-        @include text-elizabeta-modern;
-        font-size: 14px;
-        line-height: 17px;
-        margin: 1px;
-        color: $c-text-d;
-        strong{
-          font-size: 20px;
-        }
-        span{
-          font-size: 8px;
-          line-height: 8px;
-          display: inline-block;
-          font-weight: bold;
-        }
+      span{
+        display: inline-block;
+        text-align: left;
+        margin-left: 1px;
+        vertical-align: top;
       }
-      h3{
-        display: block;
+      p,span{
         position: relative;
-        @include text-elizabeta-modern;
-        font-size: 10px;
-        line-height: 13px;
-        margin: 0;
         color: $c-text-d;
-      }
-      p{
-        position: relative;
-        @include text-global;
-        font-size: 11px;
-        line-height: 10px;
-        color: $c-text-d;
-        margin-bottom: 3px;
       }
     }
     &-1-fill{
@@ -1229,46 +1204,23 @@ button,button:focus{
         background: url("../img/Frame_card/20/mini_f_c.svg")0 0 no-repeat;
         background-size: 100% 100%;
       }
-      h2{
-        position: relative;
-        @include text-elizabeta-modern;
-        font-size: 14px;
-        line-height: 17px;
-        margin: 1px;
-        color: $c-text-dw;
-        strong{
-          font-size: 20px;
-        }
-        span{
-          font-size: 8px;
-          line-height: 8px;
-          display: inline-block;
-          font-weight: bold;
-        }
+      span{
+        vertical-align: top;
+        display: inline-block;
+        text-align: left;
+        margin-left: 1px;
       }
-      h3{
+      p,span{
         position: relative;
-        @include text-elizabeta-modern;
-        font-size: 10px;
-        line-height: 13px;
-        margin: 0;
         color: $c-text-dw;
-      }
-      p{
-        position: relative;
-        @include text-global;
-        font-size: 11px;
-        line-height: 10px;
-        color: $c-text-dw;
-        margin-bottom: 3px;
       }
     }
   }
   &-1{
     p,span{
       color: $c-text-dw;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1304,8 +1256,8 @@ button,button:focus{
     p,span{
       border-radius: 4px;
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1318,6 +1270,7 @@ button,button:focus{
       padding: 6px 7px;
       letter-spacing: normal;
       display: inline-block;
+      max-width: 75%;
     }
     a{
       color: $c-text-dw;
@@ -1333,8 +1286,8 @@ button,button:focus{
   &-3{
     p,span{
       color: $c-text-dw;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1369,8 +1322,8 @@ button,button:focus{
   &-4{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: break-all;
       font-weight: 600;
       letter-spacing: normal;
@@ -1423,8 +1376,8 @@ button,button:focus{
   &-5{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1478,8 +1431,8 @@ button,button:focus{
   &-6{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1540,8 +1493,8 @@ button,button:focus{
   &-7{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1595,8 +1548,8 @@ button,button:focus{
   &-8{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1627,8 +1580,8 @@ button,button:focus{
   &-9{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1684,8 +1637,8 @@ button,button:focus{
   &-10{
     p,span{
       color: $c-text-dw;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1736,8 +1689,8 @@ button,button:focus{
   &-11{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1783,8 +1736,8 @@ button,button:focus{
   &-12{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1835,8 +1788,8 @@ button,button:focus{
   &-13{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1887,8 +1840,8 @@ button,button:focus{
   &-14{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -1939,8 +1892,8 @@ button,button:focus{
   &-15{
     p,span{
       color: $c-text-dw;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       padding: 6px 12px;
@@ -2002,8 +1955,8 @@ button,button:focus{
   &-16{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -2054,8 +2007,8 @@ button,button:focus{
   &-17{
     p,span{
       color: $c-text-d;
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 10px;
+      line-height: 11px;
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
@@ -2167,11 +2120,17 @@ button,button:focus{
 
 //размеры шрифтов
 .sf{
+  &-ttn{
+    @include text-global;
+  }
   &-ttu{
     text-transform: uppercase!important;
+    font-family: 'elizabeta-modern'!important;
+    margin: 2px 0;
   }
   &-b{
     font-weight: bold!important;
+    margin: 1px 0;
     b{
       font-weight: bold!important;
     }
@@ -2217,181 +2176,181 @@ button,button:focus{
   }
   &-f6{
     font-size: 6px;
-    line-height: 6px;
+    line-height: 7px;
     b{
       font-size: 8px;
-      line-height: 8px;
+      line-height: 9px;
       font-weight: normal;
     }
   }
   &-f7{
     font-size: 7px;
-    line-height: 7px;
+    line-height: 8px;
     b{
       font-size: 9px;
-      line-height: 9px;
+      line-height: 10px;
       font-weight: normal;
     }
   }
   &-f8{
     font-size: 8px;
-    line-height: 8px;
+    line-height: 9px;
     b{
       font-size: 10px;
-      line-height: 10px;
+      line-height: 11px;
       font-weight: normal;
     }
   }
   &-f9{
     font-size: 9px;
-    line-height: 9px;
+    line-height: 10px;
     b{
       font-size: 11px;
-      line-height: 11px;
+      line-height: 12px;
       font-weight: normal;
     }
   }
   &-f10{
-    font-size: 10px;
+    font-size: 11px;
     line-height: 10px;
     b{
       font-size: 12px;
-      line-height: 12px;
+      line-height: 13px;
       font-weight: normal;
     }
   }
   &-f11{
     font-size: 11px;
-    line-height: 11px;
+    line-height: 12px;
     b{
       font-size: 13px;
-      line-height: 13px;
+      line-height: 14px;
       font-weight: normal;
     }
   }
   &-f12{
     font-size: 12px;
-    line-height: 12px;
+    line-height: 13px;
     b{
       font-size: 14px;
-      line-height: 14px;
+      line-height: 15px;
       font-weight: normal;
     }
   }
   &-f13{
     font-size: 13px;
-    line-height: 13px;
+    line-height: 14px;
     b{
       font-size: 15px;
-      line-height: 15px;
+      line-height: 16px;
       font-weight: normal;
     }
   }
   &-f14{
     font-size: 14px;
-    line-height: 14px;
+    line-height: 15px;
     b{
       font-size: 16px;
-      line-height: 16px;
+      line-height: 17px;
       font-weight: normal;
     }
   }
   &-f16{
     font-size: 16px;
-    line-height: 16px;
+    line-height: 17px;
     b{
       font-size: 18px;
-      line-height: 18px;
+      line-height: 19px;
       font-weight: normal;
     }
   }
   &-f18{
     font-size: 18px;
-    line-height: 18px;
+    line-height: 19px;
     b{
       font-size: 21px;
-      line-height: 21px;
+      line-height: 22px;
       font-weight: normal;
     }
   }
   &-f20{
     font-size: 20px;
-    line-height: 20px;
+    line-height: 21px;
     b{
       font-size: 24px;
-      line-height: 24px;
+      line-height: 25px;
       font-weight: normal;
     }
   }
   &-f22{
     font-size: 22px;
-    line-height: 22px;
+    line-height: 23px;
     b{
       font-size: 25px;
-      line-height: 25px;
+      line-height: 26px;
       font-weight: normal;
     }
   }
   &-f26{
     font-size: 26px;
-    line-height: 26px;
+    line-height: 27px;
     b{
       font-size: 29px;
-      line-height: 29px;
+      line-height: 30px;
       font-weight: normal;
     }
   }
   &-f28{
     font-size: 28px;
-    line-height: 28px;
+    line-height: 29px;
     b{
       font-size: 30px;
-      line-height: 30px;
+      line-height: 31px;
       font-weight: normal;
     }
   }
   &-f32{
     font-size: 32px;
-    line-height: 32px;
+    line-height: 33px;
     b{
       font-size: 35px;
-      line-height: 35px;
+      line-height: 36px;
       font-weight: normal;
     }
   }
   &-f34{
     font-size: 34px;
-    line-height: 34px;
+    line-height: 35px;
     b{
       font-size: 37px;
-      line-height: 37px;
+      line-height: 38px;
       font-weight: normal;
     }
   }
   &-f38{
     font-size: 38px;
-    line-height: 38px;
+    line-height: 39px;
     b{
       font-size: 41px;
-      line-height: 41px;
+      line-height: 42px;
       font-weight: normal;
     }
   }
   &-f42{
     font-size: 42px;
-    line-height: 42px;
+    line-height: 43px;
     b{
       font-size: 46px;
-      line-height: 46px;
+      line-height: 47px;
       font-weight: normal;
     }
   }
   &-f48{
     font-size: 48px;
-    line-height: 48px;
+    line-height: 49px;
     b{
       font-size: 52px;
-      line-height: 52px;
+      line-height: 53px;
       font-weight: normal;
     }
   }
