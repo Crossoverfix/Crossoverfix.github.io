@@ -1225,10 +1225,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-dw;
-      font-size: 18px;
-      line-height: 18px;
       margin-bottom: 5px;
       text-align: center;
       letter-spacing: normal;
@@ -1263,11 +1261,10 @@ button,button:focus{
       margin-bottom: 0;
       padding: 8px 4px;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      line-height: 18px;
       margin: 0;
-      padding: 6px 7px;
+      padding: 2px 7px;
       letter-spacing: normal;
       display: inline-block;
       max-width: 75%;
@@ -1289,15 +1286,11 @@ button,button:focus{
       font-size: 10px;
       line-height: 11px;
       word-break: normal;
-      letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-dw;
-      font-size: 28px;
-      line-height: 28px;
       margin-bottom: 6px;
-      letter-spacing: normal;
     }
     a{
       color: $c-text-dw;
@@ -1329,10 +1322,9 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
       text-align: center;
-      line-height: 18px;
       margin-bottom: 10px;
       letter-spacing: normal;
     }
@@ -1346,7 +1338,6 @@ button,button:focus{
     url("../img/Frame_card/1/1_h.svg")0 100% repeat-x;
 
     background-size: 20px 10px;
-    background-color: $c-content-bg;
     & *{
       position: relative;
     }
@@ -1373,6 +1364,56 @@ button,button:focus{
       background-size: 10px 20px;
     }
   }
+  &-4-fill{
+    p,span{
+      color: $c-text-dw;
+      font-size: 10px;
+      line-height: 11px;
+      word-break: break-all;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    h2,h3{
+      color: $c-text-dw;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    a{
+      color: $c-text-dw;
+    }
+    padding: 20px;
+    position: relative;
+    background:
+            url("../img/Frame_card/1/1_h.svg")0 0 repeat-x,
+            url("../img/Frame_card/1/1_h.svg")0 100% repeat-x;
+
+    background-size: 20px 10px;
+    & *{
+      position: relative;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: calc(100% - 22px);
+      height: calc(100% - 22px);
+      left: 10px;
+      top: 10px;
+      border: solid 1px $c-background-dd;
+      background-color: $c-background-dd;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 20px);
+      background:
+              url("../img/Frame_card/1/1_v.svg")0 10px repeat-y,
+              url("../img/Frame_card/1/1_v.svg")100% 10px repeat-y;
+      background-size: 10px 20px;
+    }
+  }
   &-5{
     p,span{
       color: $c-text-d;
@@ -1383,10 +1424,8 @@ button,button:focus{
       margin-bottom: 0;
       font-weight: 600;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      font-size: 18px;
-      line-height: 18px;
       margin-bottom: 8px;
       letter-spacing: normal;
     }
@@ -1401,7 +1440,6 @@ button,button:focus{
     url("../img/Frame_card/2/2_l_d.svg")0 100% no-repeat,
     url("../img/Frame_card/2/2_r_d.svg")100% 100% no-repeat;
     background-size: 45px 34px;
-    background-color: $c-content-bg;
     text-align: center;
     &:before{
        content: "";
@@ -1436,11 +1474,11 @@ button,button:focus{
       word-break: normal;
       letter-spacing: normal;
       margin-bottom: 0;
-      padding: 12px;
+      padding: 6px;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      padding-top: 12px;
+      padding-top: 6px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -1457,7 +1495,6 @@ button,button:focus{
             url("../img/Frame_card/3/3_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/3/3_r_d.svg")100% 100% no-repeat;
     background-size: 35px 35px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1499,11 +1536,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 6px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -1519,7 +1553,6 @@ button,button:focus{
             url("../img/Frame_card/5/5_r_d.svg")100% 100% no-repeat;
 
     background-size: 22px 22px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1554,9 +1587,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      line-height: 21px;
       padding-bottom: 5px;
       text-align: center;
       letter-spacing: normal;
@@ -1575,7 +1607,6 @@ button,button:focus{
             url("../img/Frame_card/6/6_v.svg")0 0 no-repeat,
             url("../img/Frame_card/6/6_v.svg")100% 0 no-repeat;
     background-size: 19px 19px,19px 19px,19px 19px,19px 19px,100% 4px,100% 4px,4px 100%,4px 100%;
-    background-color: $c-content-bg;
   }
   &-9{
     p,span{
@@ -1587,9 +1618,8 @@ button,button:focus{
       margin-bottom: 0;
       padding: 8px;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      line-height: 20px;
       text-align: center;
       padding: 8px;
       letter-spacing: normal;
@@ -1608,7 +1638,6 @@ button,button:focus{
             url("../img/Frame_card/7/7_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/7/7_r_d.svg")100% 100% no-repeat;
     background-size: 28px 30px,28px 29px,28px 28px,28px 27px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1644,11 +1673,10 @@ button,button:focus{
       margin-bottom: 0;
       padding: 8px;
     }
-    h2{
+    h2,h3{
       padding: 10px 5px;
       text-align: center;
       color: $c-text-dw;
-      line-height: 18px;
       margin: 0;
       letter-spacing: normal;
     }
@@ -1695,10 +1723,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      line-height: 18px;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -1707,7 +1733,6 @@ button,button:focus{
     }
     position: relative;
     padding: 19px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1742,11 +1767,11 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+      margin-bottom: 6px;
     }
     a{
       color: $c-text-d;
@@ -1759,7 +1784,6 @@ button,button:focus{
             url("../img/Frame_card/10/10_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/10/10_r_d.svg")100% 100% no-repeat;
     background-size: 30px 30px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1794,11 +1818,11 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+      margin-bottom: 6px;
     }
     a{
       color: $c-text-d;
@@ -1811,7 +1835,6 @@ button,button:focus{
             url("../img/Frame_card/4/4_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/4/4_r_d.svg")100% 100% no-repeat;
     background-size: 31px 31px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1846,11 +1869,11 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
+      margin-bottom: 6px;
     }
     a{
       color: $c-text-d;
@@ -1862,8 +1885,7 @@ button,button:focus{
             url("../img/Frame_card/11/11_r_u.svg")100% 0 no-repeat,
             url("../img/Frame_card/11/11_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/11/11_r_d.svg")100% 100% no-repeat;
-    background-size: 30px 30px;
-    background-color: $c-content-bg;
+    background-size: 32px 30px,30px 31px,30px 30px,31px 30px;
     &:before{
       content: "";
       position: absolute;
@@ -1894,28 +1916,18 @@ button,button:focus{
       color: $c-text-dw;
       font-size: 10px;
       line-height: 11px;
-      word-break: normal;
-      letter-spacing: normal;
       padding: 6px 12px;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
+      padding-top: 12px;
       color: $c-text-dw;
-      padding: 6px 8px 0 8px;
       text-align: center;
-      letter-spacing: normal;
     }
     a{
       color: $c-text-dw;
     }
-    h3{
-      color: $c-text-dw;
-      padding: 12px 8px 0 8px;
-      font-size: 16px;
-      text-align: center;
-      letter-spacing: normal;
-    }
-    padding: 8px;
+    padding:8px;
     position: relative;
     background:
             url("../img/Frame_card/12/12_l_u.svg")0 0 no-repeat,
@@ -1923,7 +1935,6 @@ button,button:focus{
             url("../img/Frame_card/12/12_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/12/12_r_d.svg")100% 100% no-repeat;
     background-size: 26px 26px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -1961,9 +1972,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -1978,7 +1988,6 @@ button,button:focus{
             url("../img/Frame_card/15/15_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/15/15_r_d.svg")100% 100% no-repeat;
     background-size: 30px 30px;
-    background-color: $c-content-bg;
     &:before{
       content: "";
       position: absolute;
@@ -2013,9 +2022,8 @@ button,button:focus{
       letter-spacing: normal;
       margin-bottom: 0;
     }
-    h2{
+    h2,h3{
       color: $c-text-d;
-      margin-bottom: 8px;
       text-align: center;
       letter-spacing: normal;
     }
@@ -2030,7 +2038,6 @@ button,button:focus{
             url("../img/Frame_card/16/16_l_d.svg")0 100% no-repeat,
             url("../img/Frame_card/16/16_r_d.svg")100% 100% no-repeat;
     background-size: 25px 25px;
-    background-color: $c-content-bg;
     &:before{
       position: absolute;
       content: "";
@@ -2065,7 +2072,6 @@ button,button:focus{
   }
   &-2{
     h2{@include text-arnold-bocklinc;
-    font-size: 20px;
     }
   }
   &-3{
@@ -2073,8 +2079,6 @@ button,button:focus{
   }
   &-4{
     h2{@include text-rodeo-bold;
-    font-size: 27px;
-      line-height: 24px;
     }
   }
   &-5{
@@ -2082,8 +2086,6 @@ button,button:focus{
   }
   &-6{
     h2{@include text-eveagita;
-    font-size: 45px;
-    line-height: 30px;
     }
   }
   &-7{
@@ -2091,35 +2093,34 @@ button,button:focus{
   }
   &-8{
     h2{@include text-herold-bold;
-    font-size: 25px
     }
   }
   &-9{
     h2{@include text-monti-decor-b;
-    font-size: 24px;
     }
   }
   &-10{
     h2{@include text-petrarka;
-    font-size: 30px;
-      line-height: 20px;
     }
   }
   &-11{
     h2{@include text-proletariat;
-    font-size: 26px;
     }
   }
   &-12{
     h2{@include text-windsor;
-    font-size: 28px;
-      line-height: 24px;
     }
   }
 }
 
 //размеры шрифтов
 .sf{
+  &-ln-fix{
+    line-height: 1;
+  }
+  &-pt{
+    padding-top: 6px;
+  }
   &-ttn{
     @include text-global;
   }
@@ -2176,6 +2177,21 @@ button,button:focus{
   }
   &-mr-5{
     margin: 5px 0!important;
+  }
+  &-lt-half{
+    letter-spacing: 0.5px;
+  }
+  &-lt-1{
+    letter-spacing: 1px;
+  }
+  &-lt-2{
+    letter-spacing: 2px;
+  }
+  &-lt-3{
+    letter-spacing: 3px;
+  }
+  &-lt-4{
+    letter-spacing: 4px;
   }
   &-f48{
     font-size: 48px;
