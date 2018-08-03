@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   .header{
     width: 768px;
     &__text{
@@ -121,6 +121,27 @@
       line-height: 35px;
     }
   }
+  #comments{
+    width: 600px;
+  }
+  .comments{
+    &__card{
+      &__header{
+        height: 80px;
+        div{
+          &:first-of-type{
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+  #news-card{
+    width: 675px;
+  }
+  .news-card__footer a{
+    max-width: 38%;
+  }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 768px){
 }

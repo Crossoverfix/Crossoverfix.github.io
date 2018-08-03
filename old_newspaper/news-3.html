@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Newspaper</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="pop-up">
+    <div class="pop-up__shadow"></div>
+    <div id="pop-up__content"></div>
+    <div id="pop-up__call-back">
+    <div class="pop-up__header">
+        <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+        <button class="btn-close" type="button"></button>
+    </div>
+    <form>
+        <input type="text" name="userName" placeholder="Представтесь">
+        <input type="email" name="userEmail" placeholder="E-mail">
+        <input type="text" name="userSubject" placeholder="Тема комментария">
+        <input type="text" name="userAbout" placeholder="О себе">
+        <textarea placeholder="Текст" name="userComments"></textarea>
+        <div class="recapcha"></div>
+        <button class="button" type="submit">Отправить</button>
+    </form>
+</div>
+    <div id="pop-up__call-us">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="header">
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="#" class="header__text">
+            <img alt="emblem" src="img/emblem_ri.svg">
+            <div class="header__text__wrapper">
+                <img alt="logo" src="img/Logo.svg">
+            </div>
+            <img alt="emblem" src="img/emblem_n2.svg">
+        </a>
+    </div>
+</header>
+<main>
+    <div id="welcome" class="container">
+        <div class="container__frame"></div>
+        <div class="row">
+            <div class="content__header">
+                <div class="content__header__nav-bar">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a href="content_1.html"><span>Историческая справка</span></a>
+                    <a href="#"><span>Календарь</span></a>
+                    <a href="comments.html"><span>Отзывы</span></a>
+                    <a class="active" href="news.html"><span>Новости</span></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="content__header__page-bar">
+                    <div class="content__header__page-bar__frame"></div>
+                    <div class="content__header__page-bar__wrapper">
+                        <h1>Новости</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome__body">
+                <div id="news-card">
+                    <div class="news-card__header">
+                      <span>08 октября 2018</span>
+                      <span>Автор: <b>Владислав Майоров</b></span>
+                      <h2>КАЛЕНДАРЬ ОБ ИМПЕРАТОРЕ НИКОЛАЕ II – ГЛАВНАЯ ТЕМА ХХV РОЖДЕСТВЕНСКИХ ОБРАЗОВАТЕЛЬНЫХ ЧТЕНИЙ</h2>
+                    </div>
+                    <div class="news-card__body">
+                        <p>
+                        </p>
+                        <div class="news-card__body__slider">
+                            <div id="slider-content-watch">
+
+                            </div>
+                            <div id="slider-nav-bar">
+                                <button><img src="img/arrow_L.svg"></button>
+                                <button><img src="img/arrow_R.svg"></button>
+                                <div class="content">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div id="slider-all-content">
+                                <img src="img/fphoto/news/1/index.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card__footer">
+                        <a href="#">
+                            <img src="img/arrow_L.svg">
+                            <h3>
+                                НРАВСТВЕННЫЕ ОСНОВЫ РЕФОРМ ИМПЕРАТОРА НИКОЛАЯ II
+                            </h3>
+                        </a>
+                        <a href="#">
+                            <img src="img/arrow_R.svg">
+                            <h3>
+                                КОНФЕРЕНЦИЯ «УРАЛ В СУДЬБЕ РОМАНОВЫХ» – В ВЕДУЩЕМ ЭКОНОМИЧЕСКОМ ВУЗЕ РЕГИОНА
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__first-b">
+            <img align="left" alt="logo" src="img/gerb.svg">
+            <div class="footer__text">
+                <p>Российская империя в эпоху</p>
+                <p>правления Императора Николая II</p>
+                <a href="WWW.ЭПОХА-НИКОЛАЯ-2.РФ">WWW.ЭПОХА-НИКОЛАЯ-2.РФ</a>
+            </div>
+        </div>
+        <div class="footer__second-b">
+            <img src="img/fond.svg">
+        </div>
+        <div class="footer__third-b">
+            <img align="left" alt="logo" src="img/tagansk.svg">
+            <p>При поддержке</p>
+            <p>ЗАО “Таганский ряд”</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© Все права защищены 2018г. ЗАО “Таганский ряд”</p>
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

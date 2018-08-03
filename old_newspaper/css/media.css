@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* line 2, ../sass/media.scss */
   .header {
     width: 768px;
@@ -135,5 +135,29 @@
   .cs-mt-one h2 {
     font-size: 21px;
     line-height: 35px;
+  }
+
+  /* line 124, ../sass/media.scss */
+  #comments {
+    width: 600px;
+  }
+
+  /* line 129, ../sass/media.scss */
+  .comments__card__header {
+    height: 80px;
+  }
+  /* line 132, ../sass/media.scss */
+  .comments__card__header div:first-of-type {
+    width: 400px;
+  }
+
+  /* line 139, ../sass/media.scss */
+  #news-card {
+    width: 675px;
+  }
+
+  /* line 142, ../sass/media.scss */
+  .news-card__footer a {
+    max-width: 38%;
   }
 }
