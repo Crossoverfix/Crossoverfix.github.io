@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Newspaper</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="pop-up">
+    <div class="pop-up__shadow"></div>
+    <div id="pop-up__content"></div>
+    <div id="pop-up__call-back">
+    <div class="pop-up__header">
+        <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+        <button class="btn-close" type="button"></button>
+    </div>
+    <form>
+        <input type="text" name="userName" placeholder="Представтесь">
+        <input type="email" name="userEmail" placeholder="E-mail">
+        <input type="text" name="userSubject" placeholder="Тема комментария">
+        <input type="text" name="userAbout" placeholder="О себе">
+        <textarea placeholder="Текст" name="userComments"></textarea>
+        <div class="recapcha"></div>
+        <button class="button" type="submit">Отправить</button>
+    </form>
+</div>
+    <div id="pop-up__call-us">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="header">
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="#" class="header__text">
+            <img alt="emblem" src="img/emblem_ri.svg">
+            <div class="header__text__wrapper">
+                <img alt="logo" src="img/Logo.svg">
+            </div>
+            <img alt="emblem" src="img/emblem_n2.svg">
+        </a>
+    </div>
+</header>
+<main>
+    <div id="welcome" class="container">
+        <div class="container__frame"></div>
+        <div class="row">
+            <div class="content__header">
+                <div class="content__header__nav-bar">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a href="content_1.html"><span>Историческая справка</span></a>
+                    <a href="#"><span>Календарь</span></a>
+                    <a href="comments.html"><span>Отзывы</span></a>
+                    <a class="active" href="news.html"><span>Новости</span></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="content__header__page-bar">
+                    <div class="content__header__page-bar__frame"></div>
+                    <div class="content__header__page-bar__wrapper">
+                        <h1>Новости</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome__body">
+                <div id="news">
+                    <div class="news-card__header">
+                      <span>08 октября 2018</span>
+                      <span>Автор: <b>Владислав Майоров</b></span>
+                      <h2>КАЛЕНДАРЬ ОБ ИМПЕРАТОРЕ НИКОЛАЕ II – ГЛАВНАЯ ТЕМА ХХV РОЖДЕСТВЕНСКИХ ОБРАЗОВАТЕЛЬНЫХ ЧТЕНИЙ</h2>
+                    </div>
+                    <div class="news-card__body">
+                        <p>
+                            Идея и содержание календаря «Россия в эпоху правления Императора Николая II (1894-2017 гг.). Реформы. Преобразования. Достижения», подготовленного и изданного под руководством ктитора прихода святого мученика Иоанна Воина и президента Свердловского регионального общественного благотворительного фонда «Таганский» Ивана Денисовича Вилкина, определили главную тему Регионального этапа ХХV Международных Рождественских образовательных чтений «1917-2017 годы: Уроки столетия».
+                        </p>
+                        <p>
+                            Это второе, проводимое в Екатеринбурге, масштабное мероприятие в рамках Международных Рождественских образовательных чтений, совместно организуемое Екатеринбургской епархией, Аппаратом полномочного представителя Президента Российской Федерации в Уральском федеральном округе, Правительством Свердловской области и Министерством образования Свердловской области.
+                        </p>
+                        <p>
+                            К 1915-1916 годам реформа народного просвещения вышла на свой завершающий этап. Была создана стройная система народного образования, включавшая:
+                        </p>
+                        <div class="news-card__body__list">
+                            <ol>
+                                <li>
+                                    3-4-летний цикл начального образования;
+                                </li>
+                                <li>
+                                    4-летний цикл посленачального образования (это первые четыре класса гимназий, курс высших начальных училищ или соответствующих профессиональных учебных заведений;
+                                </li>
+                                <li>
+                                    4-летний цикл полного среднего образования;
+                                </li>
+                                <li>
+                                    высшее образование (университетское или специального типа);
+                                </li>
+                                <li>
+                                    систему образования для взрослых.
+                                </li>
+                            </ol>
+                            <ul>
+                                <li>
+                                    3-4-летний цикл начального образования;
+                                </li>
+                                <li>
+                                    4-летний цикл посленачального образования (это первые четыре класса гимназий, курс высших начальных училищ или соответствующих профессиональных учебных заведений;
+                                </li>
+                                <li>
+                                    4-летний цикл полного среднего образования;
+                                </li>
+                                <li>
+                                    высшее образование (университетское или специального типа);
+                                </li>
+                                <li>
+                                    систему образования для взрослых.
+                                </li>
+                            </ul>
+                        </div>
+                        <p>
+                            Влиятельный и авторитетный журнал «Вестник Европы» писал в 1913 году: «Неслышно, почти неуследимо совершается громадный факт: Россия из безграмотной становится грамотной. Вся почва громадной российской равнины как бы расступилась и приняла в себя семена образования – и сразу на всем пространстве зазеленела, зашелестела молодая поросль».
+                        </p>
+                        <p>
+                            Если мы внимательно познакомимся с успехами наших предков в других отраслях жизни перелистаем следующие страницы нашего календаря, то удивление будет только возрастать. А вместе с удивлением все громче звучит вопрос: а что дала нам революция, если спустя сто лет мы не достигаем тогдашнего качества жизни? Хочу процитировать Святейшего Патриарха – его слова произнесенные вчера на открытии Всемирного русского народного собора: «следует помнить и о том, что слепое перенесение на русскую почву чуждых мировоззренческих моделей и политических образцов, без учета национальной специфики и духовно-культурного контекста, нередко, а лучше сказать, почти всегда приводило к масштабным потрясениям и трагедиям, как это случилось в нашей стране в начале и в конце минувшего столетия».
+                        </p>
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>1912</td>
+                                <td>В целом млн. тонн</td>
+                                <td>На душу населения, Кг</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            <tr>
+                                <td>США</td>
+                                <td>27,07</td>
+                                <td>285</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <div class="news-card__body__slider">
+                            <div id="slider-content-watch">
+
+                            </div>
+                            <div id="slider-nav-bar">
+                                <button><img></button>
+                                <button><img></button>
+                                <div class="content">
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div id="slider-all-content">
+                                <img src="img/fphoto/news/1/index.jpg">
+                                <img src="img/fphoto/news/1/1.jpg">
+                                <img src="img/fphoto/news/1/05_1.jpg">
+                                <img src="img/fphoto/news/1/00main_0.jpg">
+                                <img src="img/fphoto/news/1/01_1.jpg">
+                                <img src="img/fphoto/news/1/02_1.jpg">
+                                <img src="img/fphoto/news/1/03_1.jpg">
+                                <img src="img/fphoto/news/1/04_1.jpg">
+                            </div>
+                        </div>
+                        <p>
+                            Если мы внимательно познакомимся с успехами наших предков в других отраслях жизни перелистаем следующие страницы нашего календаря, то удивление будет только возрастать. А вместе с удивлением все громче звучит вопрос: а что дала нам революция, если спустя сто лет мы не достигаем тогдашнего качества жизни? Хочу процитировать Святейшего Патриарха – его слова произнесенные вчера на открытии Всемирного русского народного собора: «следует помнить и о том, что слепое перенесение на русскую почву чуждых мировоззренческих моделей и политических образцов, без учета национальной специфики и духовно-культурного контекста, нередко, а лучше сказать, почти всегда приводило к масштабным потрясениям и трагедиям, как это случилось в нашей стране в начале и в конце минувшего столетия».
+                        </p>
+                    </div>
+                    <div class="news-card__footer">
+                        <a href="#">
+                            <img src="img/arrow_L.svg">
+                            <h3>
+                                НРАВСТВЕННЫЕ ОСНОВЫ РЕФОРМ ИМПЕРАТОРА НИКОЛАЯ II
+                            </h3>
+                        </a>
+                        <a href="#">
+                            <img src="img/arrow_R.svg">
+                            <h3>
+                                КОНФЕРЕНЦИЯ «УРАЛ В СУДЬБЕ РОМАНОВЫХ» – В ВЕДУЩЕМ ЭКОНОМИЧЕСКОМ ВУЗЕ РЕГИОНА
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__first-b">
+            <img align="left" alt="logo" src="img/gerb.svg">
+            <div class="footer__text">
+                <p>Российская империя в эпоху</p>
+                <p>правления Императора Николая II</p>
+                <a href="WWW.ЭПОХА-НИКОЛАЯ-2.РФ">WWW.ЭПОХА-НИКОЛАЯ-2.РФ</a>
+            </div>
+        </div>
+        <div class="footer__second-b">
+            <img src="img/fond.svg">
+        </div>
+        <div class="footer__third-b">
+            <img align="left" alt="logo" src="img/tagansk.svg">
+            <p>При поддержке</p>
+            <p>ЗАО “Таганский ряд”</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© Все права защищены 2018г. ЗАО “Таганский ряд”</p>
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

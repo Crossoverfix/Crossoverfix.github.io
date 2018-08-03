@@ -1325,6 +1325,61 @@ button,button:focus{
 .mini-card{
   min-height: 65px;
 }
+.news-card{
+  &__header{
+    span{
+      b{
+
+      }
+    }
+    h2{}
+  }
+  &__body{
+    p{}
+    h2{}
+    h3{}
+    &__list{
+      ol{
+        li{}
+      }
+      ul{
+        li{}
+      }
+    }
+    &__slider{
+
+    }
+
+  }
+  &__footer{
+    a{
+      img{}
+      h3{}
+    }
+  }
+}
+#slider{
+  &-content-watch{
+
+  }
+  &-nav-bar{
+    button{
+      img{
+
+      }
+    }
+    .content{
+      label{
+
+      }
+    }
+  }
+  &-all-content{
+    img{
+
+    }
+  }
+}
 //стили карточек
 .cs{
   &-bg{
