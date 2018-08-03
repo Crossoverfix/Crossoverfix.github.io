@@ -674,6 +674,7 @@ button,button:focus{
     &__nav-bar{
       display: block;
       position: absolute;
+      z-index: 5;
       top:0;
       left: 50%;
       transform: translateX(-50%);
@@ -684,6 +685,12 @@ button,button:focus{
         margin: 0 10px;
       }
       a,label{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         margin: 0 6px;
         @include text-global;
         font-size: 18px;
@@ -691,6 +698,89 @@ button,button:focus{
         text-decoration: underline;
         &.active{
           color: $c-red;
+        }
+      }
+      label{
+        cursor: pointer;
+        span{
+          position: relative;
+          &:before{
+            content: "";
+            height: 25px;
+            display: none;
+            width: 25px;
+            background-color: $c-content-bg;
+            position: absolute;
+            top: 32px;
+            left: 50%;
+            transform: rotate(45deg);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+          }
+        }
+        div{
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 20px;
+          width: 1024px;
+          background-color: $c-content-bg;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+          ol{
+            padding: 0;
+            list-style-type: none;
+            counter-reset: numb;
+            margin: 0;
+            li{
+              @include text-global;
+              color: $c-text-dg;
+              font-size: 14px;
+              line-height: 19px;
+              padding-top: 4px;
+              padding-left: 35px;
+              display: inline-block;
+              position: relative;
+              text-align: left;
+              width: calc((100% - 220px) / 4);
+              margin-right: 15px;
+              vertical-align: top;
+              margin-bottom: 3px;
+              &:before{
+                content: counter(numb)".";
+                counter-increment: numb;
+                position: absolute;
+                top:0;
+                left:0;
+                @include text-arnold-bocklinc;
+                color: $c-text-d;
+                font-size: 18px;
+                line-height: 29px;
+              }
+              a{
+                @include text-global;
+                color: $c-text-d;
+                text-align: left;
+                font-size: 15px;
+                line-height: 18px;
+                text-decoration: none;
+                margin: 0;
+                &:hover{
+                  color: $c-red;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+        input{
+          display: none;
+          &:checked ~ span:before{
+            display: block;
+          }
+          &:checked ~ div{
+            display: block;
+          }
         }
       }
     }
