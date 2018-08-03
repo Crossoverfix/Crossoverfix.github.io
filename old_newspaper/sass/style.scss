@@ -683,7 +683,7 @@ button,button:focus{
       i{
         margin: 0 10px;
       }
-      a{
+      a,label{
         margin: 0 6px;
         @include text-global;
         font-size: 18px;
@@ -1380,6 +1380,11 @@ button,button:focus{
       line-height: 19px;
     }
     &__list{
+      &.one{
+        ol,ul{
+          width: 100%;
+        }
+      }
       ol,ul{
         width: 45%;
       }
