@@ -1,6 +1,126 @@
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 768px){
+  .header{
+    width: 768px;
+    &__text{
+      width: 470px;
+      top: 9px;
+      &__wrapper{
+        height: 60px;
+      }
+    }
+  }
+  .container{
+    width: 750px;
+  }
+  .content{
+    &__header{
+      width: 668px;
+      &__page-bar{
+        &__frame{
+          background-size: 80px 50px,80px 50px,515px 5px, 515px 5px;
+        }
+      }
+    }
+  }
+  #about{
+    width: 675px;
+    background-size: 675px 7px;
+  }
+  .about{
+    width: 360px;
+    height: 560px;
+    &:before{
+      background-position: 0 100%;
+      bottom: 5px;
+    }
+  }
+  .reforms{
+    &__body{
+      width: 675px;
+      a{
+        width: calc((100% - 68px) / 2);
+        margin: 0 16px 35px 16px;
+        div{
+          height: 190px;
+        }
+      }
+    }
+  }
+  #news{
+    width: 675px;
+  }
+  .news{
+    &__body{
+      a{
+        width: 300px;
+        &:nth-child(2n){
+          margin-left: 65px;
+          &:before{
+            left: -46px;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    width: 740px;
+    height: 85px;
+    a,p{
+      font-size: 12px;
+    }
+    &__first-b{
+      margin-right: 70px;
+    }
+    &__bottom{
+      height: 60px;
+      width: 740px;
+      p{
+        width: 185px;
+      }
+      > a{
+        position: relative;
+        top: 15px;
+      }
+    }
+  }
+  .wrapper{
+    &-t1{
+      .content__body__pages__line{
+        &-first{
+         width: 220px;
+        }
+        &-second{
+          width: 450px;
+        }
+        &-third{
+          width: 85%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+    &-t2{
+      .content__body__pages__line{
+        &-first,&-second,&-third{
+          width: 100%;
+        }
+      }
+    }
+    &-t3{
+      .content__body__pages__line{
+        &-first,&-second,&-third{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cs-mt-one{
+    min-height: 55px;
+    h2{
+      font-size: 21px;
+      line-height: 35px;
+    }
+  }
 }
-@media screen and (max-width: 991px){
-}
-@media screen and (max-width: 767px){
+@media screen and (max-width: 320px){
 }

@@ -876,6 +876,10 @@ button,button:focus{
     padding-bottom: 30px;
     p{
       float: left;
+      @include text-global;
+      color: $c-text-d;
+      font-size: 14px;
+      line-height: 19px;
     }
     > a{
       float: right;
@@ -919,9 +923,11 @@ button,button:focus{
   }
   &__second-b{
     margin-left: 25px;
+    float: left;
   }
   &__first-b{
     margin-right: 100px;
+    float: left;
   }
   &__third-b{
     float: right;
