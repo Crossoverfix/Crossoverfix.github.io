@@ -934,7 +934,7 @@ button, button:focus {
   height: 25px;
   display: none;
   width: 25px;
-  background-color: #FFEFD6;
+  background-color: #FFF7ED;
   position: absolute;
   top: 32px;
   left: 50%;
@@ -949,8 +949,8 @@ button, button:focus {
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
-  width: 1024px;
-  background-color: #FFEFD6;
+  width: 935px;
+  background-color: #FFF7ED;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 /* line 730, ../sass/style.scss */

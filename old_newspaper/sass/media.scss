@@ -1,3 +1,4 @@
+@import "var";
 @media screen and (max-width: 1024px){
   .header{
     width: 768px;
@@ -142,6 +143,68 @@
   .news-card__footer a{
     max-width: 38%;
   }
+  .content__header__nav-bar label div{
+    width: 730px;
+    ol li{
+      width: calc((100% - 165px) / 3);
+    }
+  }
 }
 @media screen and (max-width: 768px){
+  .header{
+    width: 320px;
+    padding: 5px 10px;
+    height: 120px;
+    &__social-link{
+      position: absolute;
+      top: auto;
+      bottom: 3px;
+    }
+    &__call-back{
+      position: absolute;
+      top: auto;
+      bottom: 3px;
+    }
+    &__text{
+      width: 300px;
+      img{
+        display: none;
+      }
+      &__wrapper{
+        height: 55px;
+        img{
+          display: block!important;
+        }
+      }
+    }
+  }
+  .container{
+    width: 320px;
+  }
+  .row{
+    padding: 10px;
+  }
+  .content{
+    &__header{
+      width: 268px;
+      &__page-bar{
+        padding: 0;
+        &__frame{
+          display: none;
+        }
+      }
+      &__nav-bar{
+        position: relative;
+        padding: 0 15px 15px 15px;
+        height: 1px;
+        background-color:$c-white-bg;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+        a,label{
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+  }
 }

@@ -709,7 +709,7 @@ button,button:focus{
             height: 25px;
             display: none;
             width: 25px;
-            background-color: $c-content-bg;
+            background-color: $c-white-bg;
             position: absolute;
             top: 32px;
             left: 50%;
@@ -724,8 +724,8 @@ button,button:focus{
           left: 50%;
           transform: translateX(-50%);
           padding: 20px;
-          width: 1024px;
-          background-color: $c-content-bg;
+          width: 935px;
+          background-color: $c-white-bg;
           box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
           ol{
             padding: 0;
