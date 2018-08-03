@@ -38,6 +38,7 @@
   .reforms{
     &__body{
       width: 675px;
+      background-size: 675px 7px;
       a{
         width: calc((100% - 68px) / 2);
         margin: 0 16px 35px 16px;
@@ -187,24 +188,225 @@
   .content{
     &__header{
       width: 268px;
+      height: auto;
       &__page-bar{
         padding: 0;
+        &__wrapper{
+          background-color: transparent;
+          a{
+            top: -25px;
+          }
+        }
         &__frame{
           display: none;
         }
       }
       &__nav-bar{
         position: relative;
-        padding: 0 15px 15px 15px;
-        height: 1px;
+        padding: 0 15px;
+        height: 180px;
         background-color:$c-white-bg;
         overflow: hidden;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+        a:first-of-type{
+          margin-top: 20px;
+        }
         a,label{
           display: block;
           text-align: left;
+          i{
+            margin: 0;
+          }
         }
       }
     }
+    &__body{
+      &__pages{
+        &__wrapper{
+          margin-top: 30px;
+        }
+        &__header{
+          h1{
+            margin-top: 10px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+  #about{
+    margin: 0 auto 25px auto;
+    width: 270px;
+    background-size: 265px 5px;
+  }
+  .about{
+    margin-left: 5px;
+    width: 265px;
+    height: 750px;
+    &:before{
+      display: none;
+    }
+    h2{
+      font-size: 28px;
+      letter-spacing: 0.9px;
+      line-height: 25px;
+      margin-bottom: 16px;
+    }
+  }
+  .reforms{
+    &__body{
+      width: 268px;
+      background-size: 265px 5px;
+      a{
+        width: 260px;
+        margin: 0 3px 35px 3px;
+        div{
+          height: 165px;
+        }
+      }
+    }
+  }
+  #reforms{
+    margin-bottom: 0;
+  }
+  #news{
+    width: 268px;
+    h2{
+      text-align: left;
+      margin: 15px 0 25px 0;
+    }
+  }
+  .news{
+    &__body{
+      a{
+        width: 268px;
+        &:nth-child(2n){
+          margin-left: 0;
+          &:before{
+            display: none;
+          }
+        }
+        div{
+          height: 170px;
+        }
+      }
+    }
+    &__pages{
+      width: 264px;
+    }
+  }
+  #comments{
+    width: 268px;
+    margin: 0 auto 25px auto;
+  }
+  .comments{
+    &__card{
+      &__header{
+        height: 140px;
+        div{
+          &:last-of-type{
+            text-align: left;
+            float: left;
+          }
+          h2{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    width: 320px;
+    &__first-b,&__second-b,&__third-b{
+      float: none;
+      display: block;
+      margin: 20px auto;
+    }
+    &__first-b{
+      padding-left: 28px;
+    }
+    &__second-b{
+      padding-left: 96px;
+    }
+    &__third-b{
+      padding-left: 180px;
+      position: relative;
+      img{
+        position: absolute;
+        height: 55px;
+        top: 0;
+        left: 0;
+      }
+    }
+    &__bottom{
+      top: 140px;
+      width: 320px;
+      height: 100px;
+      .header__social-link{
+        margin-left: 0;
+        top: 10px;
+      }
+      .header__call-back{
+        top: 30px;
+        right: 15px;
+        bottom: auto;
+      }
+      > a{
+        top: 13px;
+      }
+    }
+  }
+  #news-card{
+    width: 268px;
+  }
+  .news-card{
+    &__header{
+      span{
+        &:last-of-type{
+          float: left;
+        }
+      }
+    }
+    &__footer{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      a{
+        max-width: 100%;
+        margin-bottom: 20px;
+        &:last-of-type{
+          float: left;
+        }
+      }
+    }
+  }
+  .wrapper{
+    &-t1{
+      .content__body__pages__line{
+          &-first,&-second,&-third{
+            width: 100%;
+          }
+      }
+    }
+    &-t2{
+      .content__body__pages__line{
+        &-first,&-second,&-third{
+          width: 100%;
+        }
+      }
+    }
+    &-t3{
+      .content__body__pages__line{
+        &-first,&-second,&-third{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cs-mt-one{
+    min-height: 70px;
+   h2{
+     font-size: 25px;
+     line-height: 45px;
+   }
   }
 }
