@@ -592,16 +592,31 @@
     height: 100%;
     top: 0;
     padding: 10px;
+    overflow: auto;
   }
 
-  /* line 521, ../sass/media.scss */
+  /* line 522, ../sass/media.scss */
   .pop-up__nav {
     width: 100%;
     margin: 60px auto 10px auto;
   }
 
-  /* line 526, ../sass/media.scss */
+  /* line 527, ../sass/media.scss */
   #pop-up__content .content__body__pages__card.mini-card {
     width: 100%;
+  }
+  /* line 530, ../sass/media.scss */
+  #pop-up__content .content__body__pages__card.cs-bg .img-wrapper {
+    overflow: auto;
+  }
+  /* line 532, ../sass/media.scss */
+  #pop-up__content .content__body__pages__card.cs-bg .img-wrapper img {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  /* line 538, ../sass/media.scss */
+  #pop-up {
+    position: absolute;
   }
 }

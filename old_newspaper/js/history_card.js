@@ -98,41 +98,43 @@ $(document).ready(function () {
             leafCard('next');
         })
         function watchContent($place) {
-            if($place == 'page'){
-                $popUpWrapp.css('width','');
-                $contentViev.stop();
-                $contentViev.css("height",$tempCard.outerHeight() + 30);
-                if($tempCard.hasClass('cs-bg')){
-                    if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
-                        $popUpWrapp.css('width',$tempCard.find('img').outerWidth() + 60);
-                    } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
-                        $tempCard.css('height','500');
-                        $contentViev.css("height",$tempCard.outerHeight() + 30);
+            if($(window).width() > '767'){
+                if($place == 'page'){
+                    $popUpWrapp.css('width','');
+                    $contentViev.stop();
+                    $contentViev.css("height",$tempCard.outerHeight() + 30);
+                    if($tempCard.hasClass('cs-bg')){
+                        if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
+                            $popUpWrapp.css('width',$tempCard.find('img').outerWidth() + 60);
+                        } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
+                            $tempCard.css('height','500');
+                            $contentViev.css("height",$tempCard.outerHeight() + 30);
+                        }
+                    } else {
+                        if($tempCard.outerHeight() > 500){
+                            $popUpWrapp.css('width',$tempCard.outerHeight());
+                            $tempCard.css('max-width',$tempCard.outerHeight() - 60);
+                            $contentViev.css("height",$tempCard.outerHeight() + 30);
+                        }
                     }
-                } else {
-                    if($tempCard.outerHeight() > 500){
-                        $popUpWrapp.css('width',$tempCard.outerHeight());
-                        $tempCard.css('max-width',$tempCard.outerHeight() - 60);
-                        $contentViev.css("height",$tempCard.outerHeight() + 30);
-                    }
-                }
-            } else if($place == 'leafCard'){
-                $popUpWrapp.animate({width:510},500);
-                if($tempCard.hasClass('cs-bg')){
-                    if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
-                        $popUpWrapp.animate({width:$tempCard.find('img').outerWidth() + 60},500);
-                    } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
-                        $tempCard.animate({height:500},500);
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},500);
-                    }
-                } else {
-                    if($tempCard.outerHeight() > 500){
-                        $contentViev.stop();
-                        $popUpWrapp.stop();
-                        $popUpWrapp.animate({width:$tempCard.outerHeight()},250 , function () {
-                            $contentViev.animate({height:$tempCard.outerHeight() + 30},300);
-                        });
-                        $tempCard.animate({maxWidth:$tempCard.outerHeight() - 60},500);
+                } else if($place == 'leafCard'){
+                    $popUpWrapp.animate({width:510},500);
+                    if($tempCard.hasClass('cs-bg')){
+                        if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
+                            $popUpWrapp.animate({width:$tempCard.find('img').outerWidth() + 60},500);
+                        } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
+                            $tempCard.animate({height:500},500);
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},500);
+                        }
+                    } else {
+                        if($tempCard.outerHeight() > 500){
+                            $contentViev.stop();
+                            $popUpWrapp.stop();
+                            $popUpWrapp.animate({width:$tempCard.outerHeight()},250 , function () {
+                                $contentViev.animate({height:$tempCard.outerHeight() + 30},300);
+                            });
+                            $tempCard.animate({maxWidth:$tempCard.outerHeight() - 60},500);
+                        }
                     }
                 }
             }

@@ -517,6 +517,7 @@
     height: 100%;
     top: 0;
     padding: 10px;
+    overflow: auto;
   }
   .pop-up__nav{
     width: 100%;
@@ -526,5 +527,15 @@
     .content__body__pages__card.mini-card{
       width: 100%;
     }
+    .content__body__pages__card.cs-bg .img-wrapper{
+      overflow: auto;
+      img{
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+  #pop-up{
+    position: absolute;
   }
 }
