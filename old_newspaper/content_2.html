@@ -62,6 +62,13 @@
             <button class="button" type="submit">Отправить</button>
         </form>
     </div>
+    <div id="pop-up__calendar">
+        <div class="pop-up__header">
+            <h2>В этот день</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <h2 id="calendar-text"></h2>
+    </div>
 </div>
 <header>
     <div class="header">
@@ -410,7 +417,12 @@
                 </div>
             </div>
             <div class="content__footer">
-
+                <div id="calendar">
+                    <button id="number7" onclick="calendarPopUp('7')"></button>
+                    <button id="number12" onclick="calendarPopUp('12')"></button>
+                    <button id="number17" onclick="calendarPopUp('17')"></button>
+                    <img src="img/calendar.png">
+                </div>
             </div>
         </div>
     </div>
