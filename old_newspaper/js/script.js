@@ -23,7 +23,7 @@ $(document).ready(function () {
         $collapseCard.unbind();
         $collapseCardBtn.unbind();
         $collapseCard.prop('checked',false);
-        $collapseBtn.css({'position':'absolute','left':'100%','top':'-130px'});
+        $collapseBtn.css({'position':'absolute','left':'85%','top':'10px'});
         $collapseNav.animate({padding:'20px 15px',height:"show"},400);
         $collapseBtn.unbind();
         $collapseCard.change(function () {
@@ -41,7 +41,11 @@ $(document).ready(function () {
         });
         $collapseBtn.click(function () {
             $collapseNav.animate({padding:'0px 15px',height:"hide"},400);
-            $collapseBtn.css({'position':'relative','left':'0','top':'-30px'});
+            if($collapseNav.parent().parent().hasClass("clone")){
+                $collapseBtn.css({'position':'relative','left':'0','top':'10px'});
+            } else {
+                $collapseBtn.css({'position':'relative','left':'0','top':'120px'});
+            }
             $collapseCardBtn.css('display','none');
             $collapseBtn.unbind();
             $collapseBtn.click(function () {

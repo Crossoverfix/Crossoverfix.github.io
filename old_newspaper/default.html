@@ -17,11 +17,40 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+        <div id="pop-up__calendar">
+    <div class="pop-up__header">
+        <h2>В этот день</h2>
+        <button class="btn-close" type="button"></button>
+    </div>
+    <h2 id="calendar-text"></h2>
+</div>
+
+        <button id="collapse-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <button id="collapse-card">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <a href="calendar.html"><span>Календарь</span></a>
+
+        <div class="content__footer">
+            <div id="calendar">
+                <button id="number7" onclick="calendarPopUp('7')"></button>
+                <button id="number12" onclick="calendarPopUp('12')"></button>
+                <button id="number17" onclick="calendarPopUp('17')"></button>
+                <img src="img/calendar.png">
+            </div>
+        </div>
+
         <span>&#171;   &#187;</span>
+
         <p class="sf-ttu sf-f32">
             I<span class="sf-f13"><b>МЕСТО</b><br>в мире</span>
         </p>
+
         <span>млрд<br>руб</span>
+
        <div class="content__body__pages__wrapper wrapper-t1">
     <div class="content__body__pages__line-first">
         <div class="content__body__pages__card cs-bg">
@@ -134,6 +163,7 @@
         </div>
     </div>
 </div>
+
         <div class="content__body__pages__card__mini-wrap">
             <div class="content__body__pages__card mini-card cs-mt-1-fill">
                 <p class="sf-b sf-ttu sf-f11">
@@ -204,5 +234,6 @@
                 </p>
             </div>
         </div>
+
 </body>
 </html>

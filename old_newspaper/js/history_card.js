@@ -5,6 +5,9 @@ $(document).ready(function () {
     var $allCards = $(".content__body__pages__card");
     var $cards = $allCards.not(".content__body__pages__card:hidden");
     var $popUpWrapp = $(".pop-up__wrapper");
+    var $newNav = $("#clone-nav");
+    var $oldNav = $(".content__header");
+    var $headerText = $(".content__body__pages__header h1");
     // var $nav = {};
     // $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
     // $nav.prev.count = $nav.prev.find("span");
@@ -27,6 +30,11 @@ $(document).ready(function () {
         var $cardIndex = $($cards).index(this);
         showPopUp($cardIndex);
     });
+    if($(window).width() <= '767'){
+        $oldNav.appendTo($newNav);
+        $headerText.appendTo(".content__header__page-bar__wrapper");
+        showPopUp(0);
+    }
     function leafPages($directions) {
         var $pagesActive = $pages.not(".content__body__pages:hidden");
         var $pagesIndex = $($pages).index($pagesActive);
@@ -70,6 +78,7 @@ $(document).ready(function () {
         var $statusActive = $("#status-bar span:first-child");
         var $statusMax = $("#status-bar span:last-child");
         $popUp.css('display','block');
+        $(".pop-up__wrapper").css('display','block');
         $contentViev.css('display','block');
         var $tempIndex = $index;
         var $tempCard = $cards.eq($index).clone();
@@ -242,6 +251,7 @@ $(document).ready(function () {
             $contentViev.empty();
             $contentViev.css('display','none');
             $popUp.css('display','none');
+            $(".pop-up__wrapper").css('display','none');
         }
     }
 })
