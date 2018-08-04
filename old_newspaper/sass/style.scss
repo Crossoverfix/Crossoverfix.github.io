@@ -1748,8 +1748,10 @@ button,button:focus{
     width: 510px;
     height: 330px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
-    //background-color: gray;
-    //border: solid 1px $c-text-dg;
+    overflow: hidden;
+    img{
+     height: 100%;
+    }
   }
   &-nav-bar{
     position: relative;
@@ -1787,6 +1789,9 @@ button,button:focus{
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
         overflow: hidden;
+        img{
+          width: 100%;
+        }
       }
     }
   }
