@@ -7,9 +7,9 @@ $(document).ready(function () {
     var $collapseNav = $(".content__header__nav-bar");
     var $collapseCard = $collapseNav.find('input[type="checkbox"]');
     var $collapseCardBtn = $("#collapse-card");
-    if($(window).width() <= '767'){
-        $collapseNav.animate({height:'hide'},0);
-    }
+    // if($(window).width() <= '767'){
+    //     $collapseNav.animate({height:'hide'},0);
+    // }
     $collapseBtn.click(function () {
         collapseMenu();
     })

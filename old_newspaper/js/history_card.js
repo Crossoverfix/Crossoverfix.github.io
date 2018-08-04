@@ -30,11 +30,11 @@ $(document).ready(function () {
         var $cardIndex = $($cards).index(this);
         showPopUp($cardIndex);
     });
-    if($(window).width() <= '767'){
-        $oldNav.appendTo($newNav);
-        $headerText.appendTo(".content__header__page-bar__wrapper");
-        showPopUp(0);
-    }
+    // if($(window).width() <= '767'){
+    //     $oldNav.appendTo($newNav);
+    //     $headerText.appendTo(".content__header__page-bar__wrapper");
+    //     showPopUp(0);
+    // }
     function leafPages($directions) {
         var $pagesActive = $pages.not(".content__body__pages:hidden");
         var $pagesIndex = $($pages).index($pagesActive);
