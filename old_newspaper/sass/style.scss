@@ -1824,8 +1824,12 @@ display: none;
   .content__header__page-bar{
     position: absolute;
     top: 40px;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     &__frame{
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       width: 300px;
       z-index: 2;
@@ -1843,7 +1847,7 @@ display: none;
       height: 30px;
       position: relative;
       top: 5px;
-      left: 44px;
+      left: 55px;
       h1{
         width: 110px;
         margin: 0px auto;

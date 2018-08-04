@@ -522,4 +522,9 @@
     width: 100%;
     margin: 60px auto 10px auto;
   }
+  #pop-up__content{
+    .content__body__pages__card.mini-card{
+      width: 100%;
+    }
+  }
 }
