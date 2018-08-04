@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Newspaper</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="pop-up">
+    <div class="pop-up__shadow"></div>
+    <div id="pop-up__content"></div>
+    <div id="pop-up__call-back">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <input type="text" name="userAbout" placeholder="О себе">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div id="pop-up__call-us">
+        <div class="pop-up__header">
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <button class="btn-close" type="button"></button>
+        </div>
+        <form>
+            <input type="text" name="userName" placeholder="Представтесь">
+            <input type="email" name="userEmail" placeholder="E-mail">
+            <input type="text" name="userSubject" placeholder="Тема комментария">
+            <textarea placeholder="Текст" name="userComments"></textarea>
+            <div class="recapcha"></div>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="header">
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="#" class="header__text">
+            <img alt="emblem" src="img/emblem_ri.svg">
+            <div class="header__text__wrapper">
+                <img alt="logo" src="img/Logo.svg">
+            </div>
+            <img alt="emblem" src="img/emblem_n2.svg">
+        </a>
+    </div>
+</header>
+<main>
+    <div id="welcome" class="container">
+        <div class="container__frame"></div>
+        <div class="row">
+            <div class="content__header">
+                <div class="content__header__nav-bar">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <label>
+                        <input type="checkbox">
+                        <span>Историческая справка</span>
+                        <div>
+                            <ol>
+                                <li><a href="content_1.html">Денежная реформа</a></li>
+                                <li><a href="content_2.html">Аграрная реформа</a></li>
+                                <li><a href="content_3.html">Индустриализация страны</a></li>
+                                <li><a href="content_4.html">Электрификация страны</a></li>
+                                <li><a href="content_5.html">Ведущая энергетическая страна</a></li>
+                                <li><a href="content_6.html">Народное здравоохранение</a></li>
+                                <li><a href="content_7.html">Научный прорыв</a></li>
+                                <li><a href="content_8.html">Русское географическое общество</a></li>
+                                <li><a href="content_9.html">Народное образование</a></li>
+                                <li><a href="content_10.html">Правовое государство</a></li>
+                                <li><a href="content_11.html">Внешняя и внутреняя торговля</a></li>
+                                <li><a href="content_12.html">Водные и сухопутные пути сообщения</a></li>
+                                <li><a href="content_13.html">Спортивное движение</a></li>
+                                <li><a href="content_14.html">Военная реформа</a></li>
+                                <li><a href="content_15.html">Верховный главнокомандующий</a></li>
+                                <li><a href="content_16.html">Религиозная и церковная жизнь</a></li>
+                                <li><a href="content_17.html">Рельсы империи</a></li>
+                                <li><a href="content_18.html">Почта, телеграф, телефон</a></li>
+                                <li><a href="content_19.html">Благотворительность и меценатство</a></li>
+                                <li><a href="content_20.html">Рождение русской авиации</a></li>
+                                <li><a href="content_21.html">Внешняя политика</a></li>
+                                <li><a href="content_22.html">У истоков миротворества</a></li>
+                                <li><a href="content_23.html">Царская семья</a></li>
+                                <li><a href="content_24.html">Слово об императоре</a></li>
+                            </ol>
+                        </div>
+                    </label>
+                    <a class="active" href="calendar.html"><span>Календарь</span></a>
+                    <a href="comments.html"><span>Отзывы</span></a>
+                    <a href="news.html"><span>Новости</span></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="welcome__body">
+                <div id="calendar-big">
+                    <button id="number7" onclick="calendarPopUp('7')"></button>
+                    <button id="number12" onclick="calendarPopUp('12')"></button>
+                    <button id="number17" onclick="calendarPopUp('17')"></button>
+                    <img src="img/calendar-big.png">
+                </div>
+                <div id="news">
+                    <h2>Анонсы</h2>
+                    <a href="news.html">Архив<img alt="arrows" src="img/arrow_forward2.svg"></a>
+                    <div class="news__body">
+                        <a href="news.html">
+                            <div>
+                                <img alt="news" src="img/news_info.jpg">
+                            </div>
+                            <span>08 октября | 2018</span>
+                            <h3>Конференция «Урал в судьбе Романовых»</h3>
+                            <p>В Уральском государственном экономическом университете прошла Межрегиональная научно-практическая конференция «Урал в судьбе Романовых», посвященная подготовке к 100-летию со дня гибели царской семьи. </p>
+                        </a>
+                        <a href="news.html">
+                            <div>
+                                <img alt="news" src="img/news_info.jpg">
+                            </div>
+                            <span>19 сентября | 2017</span>
+                            <h3>НРАВСТВЕННЫЕ ОСНОВЫ РЕФОРМ ИМПЕРАТОРА НИКОЛАЯ II</h3>
+                            <p>Темой доклада Владислава Майорова стали «Нравственные основы реформ Императора Николая II». Приведем его основные тезисы.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__first-b">
+            <img align="left" alt="logo" src="img/gerb.svg">
+            <div class="footer__text">
+                <p>Российская империя в эпоху</p>
+                <p>правления Императора Николая II</p>
+                <a href="WWW.ЭПОХА-НИКОЛАЯ-2.РФ">WWW.ЭПОХА-НИКОЛАЯ-2.РФ</a>
+            </div>
+        </div>
+        <div class="footer__second-b">
+            <img src="img/fond.svg">
+        </div>
+        <div class="footer__third-b">
+            <img align="left" alt="logo" src="img/tagansk.svg">
+            <p>При поддержке</p>
+            <p>ЗАО “Таганский ряд”</p>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© Все права защищены 2018г. ЗАО “Таганский ряд”</p>
+        <div class="header__social-link">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div key="call-back" class="header__call-back">
+            <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Написать</span>
+            </a>
+        </div>
+        <a href="mailto:office@taganka-e.ru">office@taganka-e.ru</a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

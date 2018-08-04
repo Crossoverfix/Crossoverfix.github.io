@@ -150,8 +150,33 @@
       width: calc((100% - 165px) / 3);
     }
   }
+  #calendar-big{
+    height: 360px;
+    background-size: 660px 9px;
+  }
+  #calendar{
+    height: 160px;
+    #number{
+      &7{
+        top: 79px;
+        left: 384px;
+      }
+      &12{
+        top: 79px;
+        left: 543px;
+      }
+      &17{
+        top: 112px;
+        left: 40px;
+      }
+    }
+    button{
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .header{
     width: 320px;
     padding: 5px 10px;
@@ -202,9 +227,12 @@
         }
       }
       &__nav-bar{
-        position: relative;
+        position: absolute;
+        height: auto;
+        top: -145px;
+        left: 50%;
         padding: 0 15px;
-        height: 180px;
+        width: 99vw;
         background-color:$c-white-bg;
         overflow: hidden;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
@@ -212,10 +240,42 @@
           margin-top: 20px;
         }
         a,label{
+          padding-left: 10px;
+          position: relative;
           display: block;
           text-align: left;
+          text-decoration: none;
           i{
             margin: 0;
+          }
+          &:before{
+            content: "\f054";
+            font-family: FontAwesome;
+            font-size: 16px;
+            color: $c-text-d;
+            margin-right: 6px;
+          }
+        }
+        label{
+          &:before{
+            margin-right: 2px;
+          }
+          div{
+            top: -87px;
+            left: 49%;
+            position: relative;
+            z-index: 3;
+            width: 100vw;
+            padding-top: 50px;
+            ol{
+              li{
+                width: 100%;
+                padding-left: 15px;
+                a{
+                  margin-top: 0!important;
+                }
+              }
+            }
           }
         }
       }
@@ -408,5 +468,34 @@
      font-size: 25px;
      line-height: 45px;
    }
+  }
+  #calendar{
+    height: 100px;
+    #number{
+      &7{
+        top: 32px;
+        left: 153px;;
+      }
+      &12 {
+        top: 32px;
+        left: 215px;
+      }
+        &17{
+          top: 45px;
+          left: 16px;
+      }
+    }
+    button{
+      width: 14px;
+      height: 14px;
+    }
+  }
+  #calendar-big{
+    height: 160px;
+    background-size: 257px 5px;
+    margin-top: 0;
+  }
+  #collapse-btn{
+    display: block;
   }
 }
