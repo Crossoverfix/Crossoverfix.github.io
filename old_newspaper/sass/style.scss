@@ -1782,6 +1782,7 @@ button,button:focus{
       margin: 0 auto;
       white-space: nowrap;
       overflow: hidden;
+      position: relative;
       div{
         cursor: pointer;
         display: inline-block;
