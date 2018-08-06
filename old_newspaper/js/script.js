@@ -7,6 +7,15 @@ $(document).ready(function () {
     var $collapseNav = $(".content__header__nav-bar");
     var $collapseCard = $collapseNav.find('input[type="checkbox"]');
     var $collapseCardBtn = $("#collapse-card");
+    var $mobilColapseBtn = $("#collapse__button");
+    var $mobilNavMenu = $("#mobil-menu");
+    var $mobilCloseBtn = $mobilNavMenu.find(".mobil-menu__close");
+    $mobilCloseBtn.click(function () {
+        $mobilNavMenu.css({display:'none'});
+    })
+    $mobilColapseBtn.click(function () {
+       $mobilNavMenu.css({display:'block'});
+    });
     // if($(window).width() <= '767'){
     //     $collapseNav.animate({height:'hide'},0);
     // }
