@@ -1749,6 +1749,7 @@ button,button:focus{
     height: 330px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     overflow: hidden;
+    white-space: nowrap;
     img{
      height: 100%;
     }
@@ -1779,18 +1780,20 @@ button,button:focus{
       height: 100px;
       width: calc(100% - 110px);
       margin: 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
       div{
         cursor: pointer;
         display: inline-block;
         height: 100%;
-        width: calc((100% - 52px) / 4);
+        width: calc((100% - 40px) / 4);
         margin: 0 5px;
         background-color: gray;
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
         overflow: hidden;
         img{
-          width: 100%;
+          height: 100%;
         }
       }
     }
