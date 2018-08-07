@@ -8,6 +8,8 @@ $(document).ready(function () {
     var $mobilToggler = $('#mobil-watch');
     $mobilToggler.click(function () {
         $('meta[name="viewport"]').prop('content', 'width=1200');
+        $('#newspaper .content__body__pages').css('display','block');
+        $('#newspaper .content__footer').css('display','block');
     })
     var $newNav = $("#clone-nav");
     var $oldNav = $(".content__header");
