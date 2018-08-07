@@ -28,13 +28,11 @@ $(document).ready(function () {
     // });
     $allCards.click(function () {
         var $cardIndex = $($cards).index(this);
-        showPopUp($cardIndex);
+        showPopUp($cardIndex,'screen');
     });
-    // if($(window).width() <= '767'){
-    //     $oldNav.appendTo($newNav);
-    //     $headerText.appendTo(".content__header__page-bar__wrapper");
-    //     showPopUp(0);
-    // }
+    if($(window).width() <= '767'){
+        showPopUp(0,'mobil');
+    }
     function leafPages($directions) {
         var $pagesActive = $pages.not(".content__body__pages:hidden");
         var $pagesIndex = $($pages).index($pagesActive);
@@ -72,16 +70,35 @@ $(document).ready(function () {
         $contentViev.empty();
 
     }
-    function showPopUp($index) {
-        var $prevOne = $("#nav-bar button:first-child");
-        var $nextOne = $("#nav-bar button:last-child");
-        var $statusActive = $("#status-bar span:first-child");
-        var $statusMax = $("#status-bar span:last-child");
-        $popUp.css('display','block');
-        $(".pop-up__wrapper").css('display','block');
-        $contentViev.css('display','block');
-        var $tempIndex = $index;
-        var $tempCard = $cards.eq($index).clone();
+    function showPopUp($index,$device) {
+        if($device == 'mobil'){
+            var $prevOne = $("#mobil-cards__nav button:first-of-type");
+            var $nextOne = $("#mobil-cards__nav button:last-of-type");
+            var $statusActive = $("#mobil-cards__status span:first-of-type");
+            var $statusMax = $("#mobil-cards__status span:last-of-type");
+            $popUp.css('display','none');
+            $(".pop-up__wrapper").css('display','none');
+            $contentViev.css('display','none');
+            $contentViev = $("#mobil__watch-area");
+            $cards = $allCards;
+            var $tempIndex = 0;
+            var $tempCard = $cards.eq(0).clone();
+            $index = 0;
+            $tempCard.appendTo($contentViev);
+            $tempCard.css({left:'50%'})
+        } else if($device == 'screen'){
+            var $prevOne = $("#nav-bar button:first-child");
+            var $nextOne = $("#nav-bar button:last-child");
+            var $statusActive = $("#status-bar span:first-child");
+            var $statusMax = $("#status-bar span:last-child");
+            $popUp.css('display','block');
+            $(".pop-up__wrapper").css('display','block');
+            $contentViev.css('display','block');
+            var $tempIndex = $index;
+            var $tempCard = $cards.eq($index).clone();
+        } else {
+            alert('error');
+        }
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
         $contentViev.css("height",$tempCard.outerHeight() + 30);
@@ -92,10 +109,18 @@ $(document).ready(function () {
         $nextOne.unbind();
         $(document).unbind('keydown');
         $prevOne.bind('click', function () {
-            leafCard('prev');
+            if($(window).width() <= '767'){
+                leafCard('prev','mobil');
+            } else {
+                leafCard('prev','screen');
+            }
         })
         $nextOne.bind('click',function () {
-            leafCard('next');
+            if($(window).width() <= '767'){
+                leafCard('next','mobil');
+            } else {
+                leafCard('next','screen');
+            }
         })
         function watchContent($place) {
             if($(window).width() > '767'){
@@ -144,88 +169,174 @@ $(document).ready(function () {
             $tempCard.appendTo($contentViev);
             watchContent('page');
         }
-        function leafCard($direction) {
-            if ($direction == 'prev'){
-                if($tempIndex <= 0){
-                    $tempIndex = $cards.length - 1;
-                    $oldTempCard = $tempCard;
-                    $contentViev.css("height",$oldTempCard.outerHeight() + 30);
-                    $oldTempCard.css("position","absolute");
-                    $tempCard = $cards.eq($tempIndex).clone();
-                    $tempCard.css({'left':'200%','opacity':'0'});
-                    $tempCard.appendTo($contentViev);
-                    $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
-                    $tempCard.animate({left:'50%',opacity:'1'},1000);
-                    $tempCard.css("position","relative");
-                    $contentViev.stop();
-                    if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+        function leafCard($direction,$devices) {
+            if($devices == 'screen'){
+                if ($direction == 'prev'){
+                    if($tempIndex <= 0){
+                        $tempIndex = $cards.length - 1;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight() + 30);
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
                     } else {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        $tempIndex--;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight() + 30);
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
                     }
-                    setTimeout(removeDelay,1000);
+                } else if ($direction == 'next'){
+                    if($tempIndex >= $cards.length - 1){
+                        $tempIndex = 0;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight() + 30);
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'-200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
+                    } else {
+                        $tempIndex += 1;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight() + 30);
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'-200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
+                    }
                 } else {
-                    $tempIndex--;
-                    $oldTempCard = $tempCard;
-                    $contentViev.css("height",$oldTempCard.outerHeight() + 30);
-                    $oldTempCard.css("position","absolute");
-                    $tempCard = $cards.eq($tempIndex).clone();
-                    $tempCard.css({'left':'200%','opacity':'0'});
-                    $tempCard.appendTo($contentViev);
-                    $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
-                    $tempCard.animate({left:'50%',opacity:'1'},1000);
-                    $tempCard.css("position","relative");
-                    $contentViev.stop();
-                    if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
-                    } else {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
-                    }
-                    setTimeout(removeDelay,1000);
+                    alert('error');
                 }
-            } else if ($direction == 'next'){
-                if($tempIndex >= $cards.length - 1){
-                    $tempIndex = 0;
-                    $oldTempCard = $tempCard;
-                    $contentViev.css("height",$oldTempCard.outerHeight() + 30);
-                    $oldTempCard.css("position","absolute");
-                    $tempCard = $cards.eq($tempIndex).clone();
-                    $tempCard.css({'left':'-200%','opacity':'0'});
-                    $tempCard.appendTo($contentViev);
-                    $oldTempCard.animate({left:'200%',opacity:'0'},1000);
-                    $tempCard.animate({left:'50%',opacity:'1'},1000);
-                    $tempCard.css("position","relative");
-                    $contentViev.stop();
-                    if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                $statusActive.html($tempIndex + 1);
+                return false;
+            } else if ($devices == 'mobil'){
+                if ($direction == 'prev'){
+                    if($tempIndex <= 0){
+                        $tempIndex = $cards.length - 1;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight());
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
                     } else {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        $tempIndex--;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight());
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'-200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
                     }
-                    setTimeout(removeDelay,1000);
+                } else if ($direction == 'next'){
+                    if($tempIndex >= $cards.length - 1){
+                        $tempIndex = 0;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight());
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'-200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
+                    } else {
+                        $tempIndex += 1;
+                        $oldTempCard = $tempCard;
+                        $contentViev.css("height",$oldTempCard.outerHeight());
+                        $oldTempCard.css("position","absolute");
+                        $tempCard = $cards.eq($tempIndex).clone();
+                        $tempCard.css({'left':'-200%','opacity':'0'});
+                        $tempCard.appendTo($contentViev);
+                        $oldTempCard.animate({left:'200%',opacity:'0'},1000);
+                        $tempCard.animate({left:'50%',opacity:'1'},1000);
+                        $tempCard.css("position","relative");
+                        $contentViev.stop();
+                        if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
+                        } else {
+                            $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
+                        }
+                        setTimeout(removeDelay,1000);
+                    }
                 } else {
-                    $tempIndex += 1;
-                    $oldTempCard = $tempCard;
-                    $contentViev.css("height",$oldTempCard.outerHeight() + 30);
-                    $oldTempCard.css("position","absolute");
-                    $tempCard = $cards.eq($tempIndex).clone();
-                    $tempCard.css({'left':'-200%','opacity':'0'});
-                    $tempCard.appendTo($contentViev);
-                    $oldTempCard.animate({left:'200%',opacity:'0'},1000);
-                    $tempCard.animate({left:'50%',opacity:'1'},1000);
-                    $tempCard.css("position","relative");
-                    $contentViev.stop();
-                    if ($oldTempCard.outerHeight() > $tempCard.outerHeight()) {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},1600);
-                    } else {
-                        $contentViev.animate({height:$tempCard.outerHeight() + 30},700);
-                    }
-                    setTimeout(removeDelay,1000);
+                    alert('error');
                 }
+                $statusActive.html($tempIndex + 1);
+                return false;
             } else {
-                alert('error');
+                alert('error on leafCard');
             }
-            $statusActive.html($tempIndex + 1);
-            return false;
         }
         var $closedPop = $('button.btn-close');
         $closedPop.click(function () {

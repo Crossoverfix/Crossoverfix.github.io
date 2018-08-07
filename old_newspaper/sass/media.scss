@@ -153,6 +153,24 @@
   #calendar-big{
     height: 360px;
     background-size: 660px 9px;
+    #number{
+      &7{
+        top: 135px;
+        left: 472px;
+      }
+      &12{
+        top: 170px;
+        left: 291px;
+      }
+      &17{
+        top: 206px;
+        left: 110px;
+      }
+    }
+    button{
+      width: 91px;
+      height: 35px;
+    }
   }
   #calendar{
     height: 160px;
@@ -207,12 +225,12 @@
     padding: 10px;
   }
   .welcome__body{
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .content{
     &__header{
       width: 100%;
-      height: 60px;
+      height: 20px;
       padding: 0;
       margin: 0;
       &__nav-bar{
@@ -224,6 +242,9 @@
     }
     &__body{
       &__pages{
+        &.active{
+          display: none;
+        }
         &__wrapper{
           margin-top: 30px;
         }
@@ -237,16 +258,19 @@
     }
   }
   #about{
-    margin: 0 auto 25px auto;
+    margin: 0 auto 20px auto;
     width: 270px;
     background-size: 265px 5px;
   }
   .about{
     margin-left: 5px;
     width: 265px;
-    height: 750px;
+    height: 980px;
     &:before{
-      display: none;
+      height: 300px;
+      width: 100%;
+      background-position: 50% 100%;
+      right: 0;
     }
     h1{
       text-align: center;
@@ -256,7 +280,7 @@
       font-size: 28px;
       letter-spacing: 0.9px;
       line-height: 25px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
   }
   .reforms{
@@ -265,15 +289,18 @@
       background-size: 265px 5px;
       a{
         width: 260px;
-        margin: 0 3px 35px 3px;
+        margin: 0 3px 10px 3px;
         div{
-          height: 165px;
+          height: 164px;
         }
       }
     }
   }
   #reforms{
     margin-bottom: 0;
+    h2{
+      margin-bottom: 15px;
+    }
   }
   #news{
     width: 268px;
@@ -284,6 +311,11 @@
   }
   .news{
     &__body{
+      &.all{
+        a{
+          margin-bottom: 55px;
+        }
+      }
       a{
         width: 268px;
         &:nth-child(2n){
@@ -299,6 +331,7 @@
     }
     &__pages{
       width: 264px;
+      margin: 15px auto;
     }
   }
   #comments{
@@ -440,6 +473,24 @@
     height: 160px;
     background-size: 257px 5px;
     margin-top: 0;
+    #number{
+      &7{
+        top: 53px;
+        left: 188px;
+      }
+      &12{
+        top: 67px;
+        left: 117px;
+      }
+      &17{
+        top: 81px;
+        left: 44px;
+      }
+    }
+    button{
+      width: 35px;
+      height: 14px;
+    }
   }
   #collapse-btn{
     display: block;
@@ -471,6 +522,89 @@
     position: absolute;
   }
   #collapse__button{
+    display: block;
+  }
+  #slider-content-watch{
+    width: 245px;
+    height: 300px;
+  }
+  #slider-nav-bar .content{
+    width: calc(100% - 70px);
+    div{
+      width: calc((100% - 20px) / 2);
+    }
+  }
+  #pop-up__call-us{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform:translate(0,0);
+    height: 600px;
+  }
+  #pop-up__call-us .pop-up__header h2{
+    width: 320px;
+    font-size: 20px;
+  }
+  #pop-up__call-us form{
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
+    input{
+      width: 100%;
+      &:nth-child(2){
+        margin-left: 0;
+      }
+    }
+  }
+  #pop-up .pop-up__shadow{
+    position: fixed;
+  }
+  #pop-up__call-back{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform:translate(0,0);
+    height: 660px;
+    form{
+      width: 320px;
+      padding: 0;
+      margin: 0 auto;
+      input{
+        width: 100%;
+        &:nth-child(2){
+          margin-left: 0;
+        }
+        &:nth-child(4){
+          margin-left: 0;
+        }
+      }
+    }
+    .pop-up__header h2{
+      width: 320px;
+      font-size: 20px;
+    }
+  }
+  #pop-up__calendar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    height: 660px;
+    .pop-up__header{
+      margin-bottom: 0px;
+      h2{
+        width: 320px;
+        font-size: 20px;
+      }
+    }
+  }
+  .content__body__pages__header h1{
+    display: none;
+  }
+  .content__mobil{
     display: block;
   }
 }
