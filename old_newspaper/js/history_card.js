@@ -7,6 +7,16 @@ $(document).ready(function () {
     var $popUpWrapp = $(".pop-up__wrapper");
     var $mobilToggler = $('#mobil-watch');
     var $mobilTogglerBack = $('#toggler-mobil');
+    // var $event;
+    // var element = $("body");
+    // var $touch = new Hammer(element);
+    // $touch.get("swipe");
+    // $touch.on('swipeleft',function () {
+    //     $event = 'left';
+    // });
+    // $touch.on('swiperight',function () {
+    //     $event = 'right';
+    // });
     $mobilToggler.click(function () {
         $('meta[name="viewport"]').prop('content', 'width=1200');
         $('#newspaper .content__body__pages').css('display','block');
@@ -128,24 +138,40 @@ $(document).ready(function () {
         $statusMax.html($cards.length);
         $prevOne.unbind();
         $nextOne.unbind();
-        $(document).unbind('keydown');
-        var element = document.getElementById('mobil__watch-area');
-        var $touch = new Hammer(element);
-        $touch.get("swipe");
-        $touch.on('swipeleft',function() {
+        // $touch.on('change', function () {
+        //     if($event == 'left'){
+        //         if($(window).width() <= '767'){
+        //             leafCard('prev','mobil');
+        //         } else {
+        //             leafCard('prev','screen');
+        //         }
+        //     } else if($event == 'right'){
+        //         if($(window).width() <= '767'){
+        //             leafCard('next','mobil');
+        //         } else {
+        //             leafCard('next','screen');
+        //         }
+        //     } else {
+        //         alert('error on event');
+        //     }
+        //     $event.unbind();
+        // })
+        $($contentViev).unbind();
+        $($contentViev).hammer().bind('swipeleft',function () {
             if($(window).width() <= '767'){
                 leafCard('prev','mobil');
             } else {
                 leafCard('prev','screen');
             }
-        });
-        $touch.on('swiperight',function() {
+        })
+        $($contentViev).hammer().bind('swiperight',function () {
             if($(window).width() <= '767'){
                 leafCard('next','mobil');
             } else {
                 leafCard('next','screen');
             }
-        });
+        })
+        $(document).unbind('keydown');
         $prevOne.bind('click', function () {
             if($(window).width() <= '767'){
                 leafCard('prev','mobil');
