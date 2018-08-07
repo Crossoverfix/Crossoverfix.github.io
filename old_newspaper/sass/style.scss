@@ -2199,6 +2199,12 @@ display: none;
     margin-right: 5px;
   }
 }
+#test-cord{
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 200;
+}
 //стили карточек
 .cs{
   &-bg{

@@ -12,16 +12,23 @@ $(document).ready(function () {
         $('#newspaper .content__body__pages').css('display','block');
         $('#newspaper .content__footer').css('display','block');
         $mobilTogglerBack.css('display','block');
+        $allCards.unbind();
+        $allCards.click(function () {
+            var $cardIndex = $($allCards).index(this);
+            $contentViev.empty();
+            togglerBack($cardIndex);
+        });
     })
     $mobilTogglerBack.click(function () {
+        togglerBack();
+    })
+    function togglerBack($index) {
         $('meta[name="viewport"]').prop('content', 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no');
         $('#newspaper .content__body__pages').css('display','none');
         $('#newspaper .content__footer').css('display','none');
         $mobilTogglerBack.css('display','none');
-    })
-    var $newNav = $("#clone-nav");
-    var $oldNav = $(".content__header");
-    var $headerText = $(".content__body__pages__header h1");
+        showPopUp($index,'mobil');
+    }
     // var $nav = {};
     // $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
     // $nav.prev.count = $nav.prev.find("span");
@@ -94,10 +101,10 @@ $(document).ready(function () {
             $(".pop-up__wrapper").css('display','none');
             $contentViev.css('display','none');
             $contentViev = $("#mobil__watch-area");
+            $contentViev.css('display','block');
             $cards = $allCards;
-            var $tempIndex = 0;
+            var $tempIndex = $index;
             var $tempCard = $cards.eq(0).clone();
-            $index = 0;
             $tempCard.appendTo($contentViev);
             $tempCard.css({left:'50%'})
         } else if($device == 'screen'){
@@ -122,6 +129,23 @@ $(document).ready(function () {
         $prevOne.unbind();
         $nextOne.unbind();
         $(document).unbind('keydown');
+        var element = document.getElementById('mobil__watch-area');
+        var $touch = new Hammer(element);
+        $touch.get("swipe");
+        $touch.on('swipeleft',function() {
+            if($(window).width() <= '767'){
+                leafCard('prev','mobil');
+            } else {
+                leafCard('prev','screen');
+            }
+        });
+        $touch.on('swiperight',function() {
+            if($(window).width() <= '767'){
+                leafCard('next','mobil');
+            } else {
+                leafCard('next','screen');
+            }
+        });
         $prevOne.bind('click', function () {
             if($(window).width() <= '767'){
                 leafCard('prev','mobil');
@@ -366,12 +390,20 @@ $(document).ready(function () {
         })
         $(document).keydown(function (e) {
             if (e.which == "37"){
-                leafCard('prev');
+                if($(window).width() <= '767'){
+                    leafCard('prev','mobil');
+                } else {
+                    leafCard('prev','screen');
+                }
             };
         })
         $(document).keydown(function (e) {
             if (e.which == "39"){
-                leafCard('next');
+                if($(window).width() <= '767'){
+                    leafCard('next','mobil');
+                } else {
+                    leafCard('next','screen');
+                }
             };
         })
         function closePopUp() {
