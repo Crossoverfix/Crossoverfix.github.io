@@ -7,16 +7,6 @@ $(document).ready(function () {
     var $popUpWrapp = $(".pop-up__wrapper");
     var $mobilToggler = $('#mobil-watch');
     var $mobilTogglerBack = $('#toggler-mobil');
-    // var $event;
-    // var element = $("body");
-    // var $touch = new Hammer(element);
-    // $touch.get("swipe");
-    // $touch.on('swipeleft',function () {
-    //     $event = 'left';
-    // });
-    // $touch.on('swiperight',function () {
-    //     $event = 'right';
-    // });
     $mobilToggler.click(function () {
         $('meta[name="viewport"]').prop('content', 'width=1200');
         $('#newspaper .content__body__pages').css('display','block');
@@ -25,7 +15,6 @@ $(document).ready(function () {
         $allCards.unbind();
         $allCards.click(function () {
             var $cardIndex = $($allCards).index(this);
-            $contentViev.empty();
             togglerBack($cardIndex);
         });
     })
@@ -37,69 +26,18 @@ $(document).ready(function () {
         $('#newspaper .content__body__pages').css('display','none');
         $('#newspaper .content__footer').css('display','none');
         $mobilTogglerBack.css('display','none');
+        $contentViev.empty();
+        if($index == null){
+            $index = 0;
+        }
         showPopUp($index,'mobil');
     }
-    // var $nav = {};
-    // $nav.prev = $(".content__header__page-bar__wrapper button.prev-one");
-    // $nav.prev.count = $nav.prev.find("span");
-    // $nav.next = $(".content__header__page-bar__wrapper button.next-one");
-    // $nav.next.count = $nav.next.find("span");
-    // $nav.prev.count.html($pages.index($pages.not(".content__body__pages:hidden")));
-    // $nav.next.count.html($pages.index($pages.not(".content__body__pages:hidden")) + 2);
-    // if ($pages.index($pages.not(".content__body__pages:hidden")) == 0){
-    //     $nav.prev.css('display','none');
-    // } else if($pages.index($pages.not(".content__body__pages:hidden")) == $pages.length - 1){
-    //     $nav.next.css('display','none');
-    // }
-    // $nav.prev.click(function () {
-    //     leafPages('prev');
-    // });
-    // $nav.next.click(function () {
-    //     leafPages('next');
-    // });
     $allCards.click(function () {
         var $cardIndex = $($cards).index(this);
         showPopUp($cardIndex,'screen');
     });
     if($(window).width() <= '767'){
         showPopUp(0,'mobil');
-    }
-    function leafPages($directions) {
-        var $pagesActive = $pages.not(".content__body__pages:hidden");
-        var $pagesIndex = $($pages).index($pagesActive);
-        var $tempoPages = $pagesIndex;
-        if ($directions == 'prev'){
-            if($pagesIndex <= 0){
-                $tempoPages = $pages.length - 1;
-            } else {
-                $tempoPages--;
-            }
-        } else if ($directions == 'next'){
-            if($pagesIndex >= $pages.length - 1){
-                $tempoPages = 0;
-            } else {
-                $tempoPages++;
-            }
-        } else {
-            alert('error');
-        }
-        if($tempoPages == 0){
-            $nav.prev.css('display','none');
-            $nav.next.count.html($tempoPages + 2);
-        } else if ($tempoPages == $pages.length - 1){
-            $nav.prev.count.html($tempoPages);
-            $nav.next.css('display','none');
-        } else {
-            $nav.next.css('display','block');
-            $nav.prev.css('display','block');
-            $nav.prev.count.html($tempoPages);
-            $nav.next.count.html($tempoPages + 2);
-        }
-        $pagesActive.removeClass('active');
-        $pages.eq($tempoPages).addClass('active');
-        $cards = $allCards.not(".content__body__pages__card:hidden");
-        $contentViev.empty();
-
     }
     function showPopUp($index,$device) {
         if($device == 'mobil'){
@@ -138,24 +76,6 @@ $(document).ready(function () {
         $statusMax.html($cards.length);
         $prevOne.unbind();
         $nextOne.unbind();
-        // $touch.on('change', function () {
-        //     if($event == 'left'){
-        //         if($(window).width() <= '767'){
-        //             leafCard('prev','mobil');
-        //         } else {
-        //             leafCard('prev','screen');
-        //         }
-        //     } else if($event == 'right'){
-        //         if($(window).width() <= '767'){
-        //             leafCard('next','mobil');
-        //         } else {
-        //             leafCard('next','screen');
-        //         }
-        //     } else {
-        //         alert('error on event');
-        //     }
-        //     $event.unbind();
-        // })
         $($contentViev).unbind();
         $($contentViev).hammer().bind('swipeleft',function () {
             if($(window).width() <= '767'){
