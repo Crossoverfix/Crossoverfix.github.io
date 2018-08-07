@@ -6,10 +6,18 @@ $(document).ready(function () {
     var $cards = $allCards.not(".content__body__pages__card:hidden");
     var $popUpWrapp = $(".pop-up__wrapper");
     var $mobilToggler = $('#mobil-watch');
+    var $mobilTogglerBack = $('#toggler-mobil');
     $mobilToggler.click(function () {
         $('meta[name="viewport"]').prop('content', 'width=1200');
         $('#newspaper .content__body__pages').css('display','block');
         $('#newspaper .content__footer').css('display','block');
+        $mobilTogglerBack.css('display','block');
+    })
+    $mobilTogglerBack.click(function () {
+        $('meta[name="viewport"]').prop('content', 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no');
+        $('#newspaper .content__body__pages').css('display','none');
+        $('#newspaper .content__footer').css('display','none');
+        $mobilTogglerBack.css('display','none');
     })
     var $newNav = $("#clone-nav");
     var $oldNav = $(".content__header");

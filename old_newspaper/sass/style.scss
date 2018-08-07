@@ -2123,6 +2123,8 @@ display: none;
     }
   }
   &__watch{
+    position: relative;
+    z-index: 13;
     @include text-global;
     color: $c-text-d;
     background-color: transparent;
@@ -2174,10 +2176,27 @@ display: none;
     width: 100%;
     position: relative;
     min-height: 1px;
-    margin-bottom: 30px;
     .content__body__pages__card{
       transform: translateX(-50%);
     }
+  }
+}
+#toggler-mobil{
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  @include text-global;
+  color: $c-text-d;
+  font-size: 36px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 111;
+  width: 300px;
+  i{
+    font-size: 36px;
+    color: $c-text-d;
+    margin-right: 5px;
   }
 }
 //стили карточек
