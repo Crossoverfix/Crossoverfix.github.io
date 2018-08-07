@@ -607,4 +607,9 @@
   .content__mobil{
     display: block;
   }
+  #newspaper{
+    .content__footer{
+      display: none;
+    }
+  }
 }

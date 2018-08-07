@@ -5,6 +5,10 @@ $(document).ready(function () {
     var $allCards = $(".content__body__pages__card");
     var $cards = $allCards.not(".content__body__pages__card:hidden");
     var $popUpWrapp = $(".pop-up__wrapper");
+    var $mobilToggler = $('#mobil-watch');
+    $mobilToggler.click(function () {
+        $('meta[name="viewport"]').prop('content', 'width=1200');
+    })
     var $newNav = $("#clone-nav");
     var $oldNav = $(".content__header");
     var $headerText = $(".content__body__pages__header h1");

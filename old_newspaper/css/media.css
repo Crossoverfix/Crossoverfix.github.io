@@ -718,4 +718,9 @@
   .content__mobil {
     display: block;
   }
+
+  /* line 611, ../sass/media.scss */
+  #newspaper .content__footer {
+    display: none;
+  }
 }
