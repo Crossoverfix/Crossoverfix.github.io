@@ -3124,22 +3124,21 @@ display: none;
   }
   &-18{
     position: relative;
-    padding: 10px;
+    padding: 65px 10px 10px 10px;
     overflow: visible;
-    margin-top: 65px;
     background:
-            url("../img/Frame_card/23/o.svg")0 0 no-repeat,
-            url("../img/Frame_card/23/o.svg")100% 0 no-repeat,
+            url("../img/Frame_card/23/o.svg")0 65px no-repeat,
+            url("../img/Frame_card/23/o.svg")100% 65px no-repeat,
             url("../img/Frame_card/23/o.svg")0 100% no-repeat,
             url("../img/Frame_card/23/o.svg")100% 100% no-repeat;
     background-size: 8px 8px;
     &:before{
       content: "";
       position: absolute;
-      top: 7px;
+      top: 72px;
       left: 0;
       width: 100%;
-      height: calc(100% - 14px);
+      height: calc(100% - 79px);
       background:
               url("../img/Frame_card/23/v.svg")0 0 no-repeat round,
               url("../img/Frame_card/23/v.svg")100% 0 no-repeat round;
@@ -3148,10 +3147,10 @@ display: none;
     &:after{
       content: "";
       position: absolute;
-      top: -55px;
+      top: 0;
       left: 7px;
-      width: calc(100% - 14px);
-      height: calc(100% + 55px);
+      width: calc(100% - 7px);
+      height: 100%;
       background:
               url("../img/Frame_card/23/venz_u.svg")0 0 no-repeat,
               url("../img/Frame_card/23/h.svg")0 100% round no-repeat;
