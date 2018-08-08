@@ -843,19 +843,25 @@ button,button:focus{
           top: 2px;
           right: 5px;
           z-index: 2;
+          width: 35px;
+          height: 22px;
+          background-color: transparent;
           cursor: pointer;
           i{
             color: $c-text-d;
             font-size: 18px;
             top: 1px;
-            right: 0;
+            right: 3px;
           }
         }
         input{
           &:focus{
             display: block;
             width: 600px;
-            outline-color: $c-text-d;
+            outline: none;
+            border: solid 1px $c-text-d;
+            border-radius: 3px;
+            z-index: 1;
             & ~ button{
               display: block;
               i{
@@ -866,11 +872,13 @@ button,button:focus{
               display: none;
             }
           }
+          border: solid 1px transparent;
+          border-radius: 3px;
+          z-index: -1;
           @include text-global;
           color: $c-text-d;
           font-size: 14px;
           background-color: $c-white-bg;
-          z-index: 1;
           transition: all linear 0.5s;
           display: none;
           top: 0;
@@ -879,7 +887,6 @@ button,button:focus{
           height: 24px;
           padding:0 5px;
           position: absolute;
-          border: none;
         }
       }
     }
@@ -1932,14 +1939,14 @@ display: none;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
-  }
-  &__search{
-    color: $c-text-d;
-    font-size: 20px;
-    background-color: transparent;
-    position: absolute;
-    top: 15px;
-    right: 14px;
+    .content__header__nav-bar__search{
+      color: $c-text-d;
+      font-size: 20px;
+      background-color: transparent;
+      position: absolute;
+      top: 15px;
+      right: 14px;
+    }
   }
   &__close{
     color: $c-text-d;
@@ -2174,12 +2181,6 @@ display: none;
     color: $c-text-dw;
     margin-right: 5px;
   }
-}
-#test-cord{
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  z-index: 200;
 }
 //стили карточек
 .cs{

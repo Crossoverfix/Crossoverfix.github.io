@@ -278,6 +278,13 @@
       margin: 0;
       &__nav-bar{
         display: none;
+        &__search {
+          input{
+            &:focus{
+              width: 280px;
+            }
+          }
+        }
       }
       &__page-bar{
         display: none;
