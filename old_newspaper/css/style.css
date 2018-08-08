@@ -3684,432 +3684,433 @@ button, button:focus {
 .cs-19 p {
   font-size: 12px;
   padding: 3px 12px 12px 12px;
+  text-align: center;
   color: #7C6742;
 }
 
-/* line 3242, ../sass/style.scss */
+/* line 3243, ../sass/style.scss */
 .fs-1 h2 {
   font-family: 'Open Sans', sans-serif;
 }
-/* line 3245, ../sass/style.scss */
+/* line 3246, ../sass/style.scss */
 .fs-2 h2 {
   font-family: 'arnold-bocklinc';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3249, ../sass/style.scss */
+/* line 3250, ../sass/style.scss */
 .fs-3 h2 {
   font-family: 'herold-normal';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3252, ../sass/style.scss */
+/* line 3253, ../sass/style.scss */
 .fs-4 h2 {
   font-family: 'rodeo-bold';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3256, ../sass/style.scss */
+/* line 3257, ../sass/style.scss */
 .fs-5 h2 {
   font-family: 'elizabeta-modern';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3259, ../sass/style.scss */
+/* line 3260, ../sass/style.scss */
 .fs-6 h2 {
   font-family: 'eveagita';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3263, ../sass/style.scss */
+/* line 3264, ../sass/style.scss */
 .fs-7 h2 {
   font-family: 'goudy-decor-shodwnc';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3266, ../sass/style.scss */
+/* line 3267, ../sass/style.scss */
 .fs-8 h2 {
   font-family: 'herold-bold',cursive;
   font-weight: normal;
   font-style: normal;
 }
-/* line 3270, ../sass/style.scss */
+/* line 3271, ../sass/style.scss */
 .fs-9 h2 {
   font-family: 'monti-decor-b';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3274, ../sass/style.scss */
+/* line 3275, ../sass/style.scss */
 .fs-10 h2 {
   font-family: 'petrarka';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3278, ../sass/style.scss */
+/* line 3279, ../sass/style.scss */
 .fs-11 h2 {
   font-family: 'proletariat';
   font-weight: normal;
   font-style: normal;
 }
-/* line 3282, ../sass/style.scss */
+/* line 3283, ../sass/style.scss */
 .fs-12 h2 {
   font-family: 'windsor';
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 3289, ../sass/style.scss */
+/* line 3290, ../sass/style.scss */
 .sf-ln-fix {
   line-height: 1;
 }
-/* line 3292, ../sass/style.scss */
+/* line 3293, ../sass/style.scss */
 .sf-pt {
   padding-top: 6px;
 }
-/* line 3295, ../sass/style.scss */
+/* line 3296, ../sass/style.scss */
 .sf-ttn {
   font-family: 'Open Sans', sans-serif;
 }
-/* line 3298, ../sass/style.scss */
+/* line 3299, ../sass/style.scss */
 .sf-b {
   font-weight: bold !important;
   margin: 2px 0;
 }
-/* line 3301, ../sass/style.scss */
+/* line 3302, ../sass/style.scss */
 .sf-b b {
   font-weight: bold !important;
 }
-/* line 3305, ../sass/style.scss */
+/* line 3306, ../sass/style.scss */
 .sf-ttu {
   text-transform: uppercase !important;
   font-family: "elizabeta-modern" !important;
   margin: 3px 0 !important;
 }
-/* line 3310, ../sass/style.scss */
+/* line 3311, ../sass/style.scss */
 .sf-ta {
   text-align: center !important;
 }
-/* line 3313, ../sass/style.scss */
+/* line 3314, ../sass/style.scss */
 .sf-va {
   vertical-align: middle !important;
 }
-/* line 3316, ../sass/style.scss */
+/* line 3317, ../sass/style.scss */
 .sf-pd-0 {
   padding: 0;
 }
-/* line 3319, ../sass/style.scss */
+/* line 3320, ../sass/style.scss */
 .sf-pd-1 {
   padding: 0 1px;
 }
-/* line 3322, ../sass/style.scss */
+/* line 3323, ../sass/style.scss */
 .sf-pd-2 {
   padding: 0 2px;
 }
-/* line 3325, ../sass/style.scss */
+/* line 3326, ../sass/style.scss */
 .sf-pd-3 {
   padding: 0 3px;
 }
-/* line 3328, ../sass/style.scss */
+/* line 3329, ../sass/style.scss */
 .sf-pd-4 {
   padding: 0 4px;
 }
-/* line 3331, ../sass/style.scss */
+/* line 3332, ../sass/style.scss */
 .sf-pd-5 {
   padding: 0 5px;
 }
-/* line 3334, ../sass/style.scss */
+/* line 3335, ../sass/style.scss */
 .sf-mr-0 {
   margin: 0;
 }
-/* line 3337, ../sass/style.scss */
+/* line 3338, ../sass/style.scss */
 .sf-mr-1 {
   margin: 1px 0;
 }
-/* line 3340, ../sass/style.scss */
+/* line 3341, ../sass/style.scss */
 .sf-mr-2 {
   margin: 2px 0;
 }
-/* line 3343, ../sass/style.scss */
+/* line 3344, ../sass/style.scss */
 .sf-mr-3 {
   margin: 3px 0;
 }
-/* line 3346, ../sass/style.scss */
+/* line 3347, ../sass/style.scss */
 .sf-mr-4 {
   margin: 4px 0 !important;
 }
-/* line 3349, ../sass/style.scss */
+/* line 3350, ../sass/style.scss */
 .sf-mr-5 {
   margin: 5px 0 !important;
 }
-/* line 3352, ../sass/style.scss */
+/* line 3353, ../sass/style.scss */
 .sf-lt-half {
   letter-spacing: 0.5px;
 }
-/* line 3355, ../sass/style.scss */
+/* line 3356, ../sass/style.scss */
 .sf-lt-1 {
   letter-spacing: 1px;
 }
-/* line 3358, ../sass/style.scss */
+/* line 3359, ../sass/style.scss */
 .sf-lt-2 {
   letter-spacing: 2px;
 }
-/* line 3361, ../sass/style.scss */
+/* line 3362, ../sass/style.scss */
 .sf-lt-3 {
   letter-spacing: 3px;
 }
-/* line 3364, ../sass/style.scss */
+/* line 3365, ../sass/style.scss */
 .sf-lt-4 {
   letter-spacing: 4px;
 }
-/* line 3367, ../sass/style.scss */
+/* line 3368, ../sass/style.scss */
 .sf-f48 {
   font-size: 48px;
   line-height: 49px;
 }
-/* line 3370, ../sass/style.scss */
+/* line 3371, ../sass/style.scss */
 .sf-f48 b {
   font-size: 52px;
   line-height: 53px;
   font-weight: normal;
 }
-/* line 3376, ../sass/style.scss */
+/* line 3377, ../sass/style.scss */
 .sf-f42 {
   font-size: 42px;
   line-height: 43px;
 }
-/* line 3379, ../sass/style.scss */
+/* line 3380, ../sass/style.scss */
 .sf-f42 b {
   font-size: 46px;
   line-height: 47px;
   font-weight: normal;
 }
-/* line 3385, ../sass/style.scss */
+/* line 3386, ../sass/style.scss */
 .sf-f38 {
   font-size: 38px;
   line-height: 39px;
 }
-/* line 3388, ../sass/style.scss */
+/* line 3389, ../sass/style.scss */
 .sf-f38 b {
   font-size: 41px;
   line-height: 42px;
   font-weight: normal;
 }
-/* line 3394, ../sass/style.scss */
+/* line 3395, ../sass/style.scss */
 .sf-f34 {
   font-size: 34px;
   line-height: 35px;
 }
-/* line 3397, ../sass/style.scss */
+/* line 3398, ../sass/style.scss */
 .sf-f34 b {
   font-size: 37px;
   line-height: 38px;
   font-weight: normal;
 }
-/* line 3403, ../sass/style.scss */
+/* line 3404, ../sass/style.scss */
 .sf-f32 {
   font-size: 32px;
   line-height: 33px;
 }
-/* line 3406, ../sass/style.scss */
+/* line 3407, ../sass/style.scss */
 .sf-f32 b {
   font-size: 35px;
   line-height: 36px;
   font-weight: normal;
 }
-/* line 3412, ../sass/style.scss */
+/* line 3413, ../sass/style.scss */
 .sf-f28 {
   font-size: 28px;
   line-height: 29px;
 }
-/* line 3415, ../sass/style.scss */
+/* line 3416, ../sass/style.scss */
 .sf-f28 b {
   font-size: 30px;
   line-height: 31px;
   font-weight: normal;
 }
-/* line 3421, ../sass/style.scss */
+/* line 3422, ../sass/style.scss */
 .sf-f26 {
   font-size: 26px;
   line-height: 27px;
 }
-/* line 3424, ../sass/style.scss */
+/* line 3425, ../sass/style.scss */
 .sf-f26 b {
   font-size: 29px;
   line-height: 30px;
   font-weight: normal;
 }
-/* line 3430, ../sass/style.scss */
+/* line 3431, ../sass/style.scss */
 .sf-f24 {
   font-size: 24px;
   line-height: 25px;
 }
-/* line 3433, ../sass/style.scss */
+/* line 3434, ../sass/style.scss */
 .sf-f24 b {
   font-size: 27px;
   line-height: 28px;
   font-weight: normal;
 }
-/* line 3439, ../sass/style.scss */
+/* line 3440, ../sass/style.scss */
 .sf-f22 {
   font-size: 22px;
   line-height: 23px;
 }
-/* line 3442, ../sass/style.scss */
+/* line 3443, ../sass/style.scss */
 .sf-f22 b {
   font-size: 25px;
   line-height: 26px;
   font-weight: normal;
 }
-/* line 3448, ../sass/style.scss */
+/* line 3449, ../sass/style.scss */
 .sf-f20 {
   font-size: 20px;
   line-height: 21px;
 }
-/* line 3451, ../sass/style.scss */
+/* line 3452, ../sass/style.scss */
 .sf-f20 b {
   font-size: 24px;
   line-height: 25px;
   font-weight: normal;
 }
-/* line 3457, ../sass/style.scss */
+/* line 3458, ../sass/style.scss */
 .sf-f18 {
   font-size: 18px;
   line-height: 19px;
 }
-/* line 3460, ../sass/style.scss */
+/* line 3461, ../sass/style.scss */
 .sf-f18 b {
   font-size: 21px;
   line-height: 22px;
   font-weight: normal;
 }
-/* line 3466, ../sass/style.scss */
+/* line 3467, ../sass/style.scss */
 .sf-f16 {
   font-size: 16px;
   line-height: 17px;
 }
-/* line 3469, ../sass/style.scss */
+/* line 3470, ../sass/style.scss */
 .sf-f16 b {
   font-size: 18px;
   line-height: 19px;
   font-weight: normal;
 }
-/* line 3475, ../sass/style.scss */
+/* line 3476, ../sass/style.scss */
 .sf-f14 {
   font-size: 14px;
   line-height: 15px;
 }
-/* line 3478, ../sass/style.scss */
+/* line 3479, ../sass/style.scss */
 .sf-f14 b {
   font-size: 16px;
   line-height: 17px;
   font-weight: normal;
 }
-/* line 3484, ../sass/style.scss */
+/* line 3485, ../sass/style.scss */
 .sf-f13 {
   font-size: 13px;
   line-height: 14px;
 }
-/* line 3487, ../sass/style.scss */
+/* line 3488, ../sass/style.scss */
 .sf-f13 b {
   font-size: 17px;
   line-height: 18px;
   font-weight: normal;
 }
-/* line 3493, ../sass/style.scss */
+/* line 3494, ../sass/style.scss */
 .sf-f12 {
   font-size: 12px;
   line-height: 13px;
 }
-/* line 3496, ../sass/style.scss */
+/* line 3497, ../sass/style.scss */
 .sf-f12 b {
   font-size: 16px;
   line-height: 17px;
   font-weight: normal;
 }
-/* line 3502, ../sass/style.scss */
+/* line 3503, ../sass/style.scss */
 .sf-f11 {
   font-size: 11px;
   line-height: 12px;
 }
-/* line 3505, ../sass/style.scss */
+/* line 3506, ../sass/style.scss */
 .sf-f11 b {
   font-size: 13px;
   line-height: 14px;
   font-weight: normal;
 }
-/* line 3511, ../sass/style.scss */
+/* line 3512, ../sass/style.scss */
 .sf-f10 {
   font-size: 10px;
   line-height: 11px;
 }
-/* line 3514, ../sass/style.scss */
+/* line 3515, ../sass/style.scss */
 .sf-f10 b {
   font-size: 12px;
   line-height: 13px;
   font-weight: normal;
 }
-/* line 3520, ../sass/style.scss */
+/* line 3521, ../sass/style.scss */
 .sf-f9 {
   font-size: 9px;
   line-height: 10px;
 }
-/* line 3523, ../sass/style.scss */
+/* line 3524, ../sass/style.scss */
 .sf-f9 b {
   font-size: 11px;
   line-height: 12px;
   font-weight: normal;
 }
-/* line 3529, ../sass/style.scss */
+/* line 3530, ../sass/style.scss */
 .sf-f8 {
   font-size: 8px;
   line-height: 9px;
 }
-/* line 3532, ../sass/style.scss */
+/* line 3533, ../sass/style.scss */
 .sf-f8 b {
   font-size: 10px;
   line-height: 11px;
   font-weight: normal;
 }
-/* line 3538, ../sass/style.scss */
+/* line 3539, ../sass/style.scss */
 .sf-f7 {
   font-size: 7px;
   line-height: 8px;
 }
-/* line 3541, ../sass/style.scss */
+/* line 3542, ../sass/style.scss */
 .sf-f7 b {
   font-size: 9px;
   line-height: 10px;
   font-weight: normal;
 }
-/* line 3547, ../sass/style.scss */
+/* line 3548, ../sass/style.scss */
 .sf-f6 {
   font-size: 6px;
   line-height: 7px;
 }
-/* line 3550, ../sass/style.scss */
+/* line 3551, ../sass/style.scss */
 .sf-f6 b {
   font-size: 8px;
   line-height: 9px;
   font-weight: normal;
 }
 
-/* line 3562, ../sass/style.scss */
+/* line 3563, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-first {
   width: 186px;
 }
-/* line 3565, ../sass/style.scss */
+/* line 3566, ../sass/style.scss */
 .wrapper-t1 .content__body__pages__line-second, .wrapper-t1 .content__body__pages__line-third {
   width: 340px;
 }
-/* line 3572, ../sass/style.scss */
+/* line 3573, ../sass/style.scss */
 .wrapper-t2 .content__body__pages__line-first, .wrapper-t2 .content__body__pages__line-second, .wrapper-t2 .content__body__pages__line-third {
   width: 288px;
 }
-/* line 3579, ../sass/style.scss */
+/* line 3580, ../sass/style.scss */
 .wrapper-t3 .content__body__pages__line-first, .wrapper-t3 .content__body__pages__line-third {
   width: 243px;
 }
-/* line 3582, ../sass/style.scss */
+/* line 3583, ../sass/style.scss */
 .wrapper-t3 .content__body__pages__line-second {
   width: 380px;
 }
