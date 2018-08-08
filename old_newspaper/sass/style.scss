@@ -821,6 +821,67 @@ button,button:focus{
           }
         }
       }
+      &__search{
+        position: relative;
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: bottom;
+        &:hover{
+          & input{
+             display: block;
+           }
+         }
+        i{
+          position: absolute;
+          top: 3px;
+          right: 4px;
+        }
+        button{
+          display: none;
+          position: absolute;
+          top: 2px;
+          right: 5px;
+          z-index: 2;
+          cursor: pointer;
+          i{
+            color: $c-text-d;
+            font-size: 18px;
+            top: 1px;
+            right: 0;
+          }
+        }
+        input{
+          &:focus{
+            display: block;
+            width: 600px;
+            outline-color: $c-text-d;
+            & ~ button{
+              display: block;
+              i{
+                display: block;
+              }
+            }
+            & ~ i{
+              display: none;
+            }
+          }
+          @include text-global;
+          color: $c-text-d;
+          font-size: 14px;
+          background-color: $c-white-bg;
+          z-index: 1;
+          transition: all linear 0.5s;
+          display: none;
+          top: 0;
+          right: 5px;
+          width: 0px;
+          height: 24px;
+          padding:0 5px;
+          position: absolute;
+          border: none;
+        }
+      }
     }
     &__page-bar{
       width: 100%;
@@ -1731,21 +1792,6 @@ button,button:focus{
     width: 100%;
   }
 }
-#collapse-btn{
-  z-index: 6;
-  display: none;
-  background-color: transparent;
-  cursor: pointer;
-  position: relative;
-  padding: 0 2px;
-  margin: 0 auto;
-  left: 0;
-  top: 120px;
-  i{
-    color: $c-text-d;
-    font-size: 28px;
-  }
-}
 #collapse-card{
   z-index: 6;
   display: none;
@@ -1767,12 +1813,14 @@ button,button:focus{
     position: relative;
     border-radius: 5px;
     width: 510px;
-    height: 330px;
+    height: auto;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     overflow: hidden;
     white-space: nowrap;
     img{
-     height: 100%;
+     width: 100%;
+      height: auto;
+      margin-bottom: -4px;
     }
   }
   &-nav-bar{
@@ -1798,7 +1846,7 @@ button,button:focus{
       }
     }
     .content{
-      height: 100px;
+      height: auto;
       width: calc(100% - 110px);
       margin: 0 auto;
       white-space: nowrap;
@@ -1807,7 +1855,7 @@ button,button:focus{
       div{
         cursor: pointer;
         display: inline-block;
-        height: 100%;
+        height: auto;
         width: calc((100% - 40px) / 4);
         margin: 0 5px;
         background-color: gray;
@@ -1815,7 +1863,9 @@ button,button:focus{
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
         overflow: hidden;
         img{
-          height: 100%;
+          width: 100%;
+          height: auto;
+          margin-bottom: -4px;
         }
       }
     }
@@ -1823,80 +1873,6 @@ button,button:focus{
   &-all-content{
     img{
 display: none;
-    }
-  }
-}
-#clone-nav{
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 75px;
-  #collapse-btn{
-    top: 10px;
-  }
-  #collapse-card{
-  }
-  .content__header{
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .content__header__nav-bar{
-    top: 0;
-    left: 50%;
-    z-index: 5;
-    overflow: auto;
-    height: 100vh;
-  }
-  .content__header__page-bar{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    &__frame{
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      width: 300px;
-      z-index: 2;
-      height: 41px;
-      background:
-              url(../img/frame_header/Asset_left.svg) 0 0 no-repeat,
-              url(../img/frame_header/Asset_right.svg) 100% 0 no-repeat,
-              url(../img/frame_header/Asset_up.svg) 58px 4px no-repeat,
-              url(../img/frame_header/Asset_down.svg) left 57px bottom 6px no-repeat;
-      background-size: 60px 40px,60px 40px,184px 5px, 184px 5px;
-    }
-    &__wrapper{
-      background-color: $c-white-bg;
-      width: 214px;
-      height: 30px;
-      position: relative;
-      top: 5px;
-      left: 55px;
-      h1{
-        width: 110px;
-        margin: 0px auto;
-        padding-top: 3px;
-        font-size: 12px;
-        line-height: 10px;
-      }
-      a{
-        top:0;
-        z-index: 3;
-        position: absolute;
-        &:first-of-type{
-          left: -8px;
-        }
-        &:last-of-type{
-          right: -8px;
-          left: auto;
-        }
-      }
     }
   }
 }
@@ -2183,19 +2159,19 @@ display: none;
 }
 #toggler-mobil{
   display: none;
-  position: fixed;
-  top: 50px;
-  right: 50px;
+  position: relative;
+  top: 0;
+  left:0;
   @include text-global;
-  color: $c-text-d;
+  color: $c-text-dw;
   font-size: 36px;
-  background-color: transparent;
+  background-color: $c-text-d;
   cursor: pointer;
   z-index: 111;
-  width: 300px;
+  width: 100%;
   i{
     font-size: 36px;
-    color: $c-text-d;
+    color: $c-text-dw;
     margin-right: 5px;
   }
 }
@@ -3144,6 +3120,119 @@ display: none;
               url("../img/Frame_card/16/16_l.svg")0 0 no-repeat round,
               url("../img/Frame_card/16/16_r.svg")100% 0 no-repeat round;
       background-size: 12px 15px;
+    }
+  }
+  &-18{
+    position: relative;
+    padding: 10px;
+    overflow: visible;
+    margin-top: 65px;
+    background:
+            url("../img/Frame_card/23/o.svg")0 0 no-repeat,
+            url("../img/Frame_card/23/o.svg")100% 0 no-repeat,
+            url("../img/Frame_card/23/o.svg")0 100% no-repeat,
+            url("../img/Frame_card/23/o.svg")100% 100% no-repeat;
+    background-size: 8px 8px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 14px);
+      background:
+              url("../img/Frame_card/23/v.svg")0 0 no-repeat round,
+              url("../img/Frame_card/23/v.svg")100% 0 no-repeat round;
+      background-size: 7px 24px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: -55px;
+      left: 7px;
+      width: calc(100% - 14px);
+      height: calc(100% + 55px);
+      background:
+              url("../img/Frame_card/23/venz_u.svg")0 0 no-repeat,
+              url("../img/Frame_card/23/h.svg")0 100% round no-repeat;
+      background-size: 100% 60px,24px 7px;
+    }
+    h2{
+      text-align: center;
+      color: $c-text-d;
+      font-size: 20px;
+    }
+    h3{
+      text-align: center;
+      color: $c-red;
+      font-size: 14px;
+    }
+    p{
+      padding: 5px;
+      font-size: 14px;
+      line-height: 13px;
+    }
+  }
+  &-19{
+    position: relative;
+    padding: 21px;
+    background:
+            url("../img/Frame_card/22/l_u.svg")0 0 no-repeat,
+            url("../img/Frame_card/22/r_u.svg")100% 0 no-repeat,
+            url("../img/Frame_card/22/l_d.svg")0 100% no-repeat,
+            url("../img/Frame_card/22/r_d.svg")100% 100% no-repeat;
+    background-size: 45px 45px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 6px;
+      width: calc(100% - 12px);
+      height: calc(100% - 90px);
+      background:
+              url("../img/Frame_card/22/l.svg")0 0 no-repeat repeat,
+              url("../img/Frame_card/22/r.svg")100% 0 no-repeat repeat;
+      background-size: 15px 15px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 45px;
+      width: calc(100% - 90px);
+      height: calc(100% - 12px);
+      background:
+              url("../img/Frame_card/22/u.svg")0 0 repeat no-repeat,
+              url("../img/Frame_card/22/d.svg")0 100% repeat no-repeat;
+      background-size: 15px 15px;
+    }
+    .img-wrapper{
+      width: 100%;
+      img{
+        width: 100%;
+        padding: 0;
+      }
+    }
+    & *{
+      background-color: $c-white-bg;
+      padding: 12px;
+    }
+    h2{
+      text-align: center;
+      padding: 3px 12px;
+      font-size: 28px;
+      color: $c-text-dg;
+    }
+    h3{
+      text-align: center;
+      padding: 0 12px;
+      font-size: 14px;
+      color: $c-text-dg;
+    }
+    p{
+      font-size: 12px;
+      padding: 3px 12px 12px 12px;
+      color: $c-text-dg;
     }
   }
 }

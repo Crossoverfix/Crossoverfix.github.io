@@ -21,6 +21,23 @@
           background-size: 80px 50px,80px 50px,515px 5px, 515px 5px;
         }
       }
+      &__nav-bar{
+        &__search {
+          input{
+            &:focus{
+              width: 575px;
+            }
+          }
+        }
+        label{
+          div{
+            width: 730px;
+            ol li{
+              width: calc((100% - 165px) / 3);
+            }
+          }
+        }
+      }
     }
   }
   #about{
@@ -141,14 +158,25 @@
   #news-card{
     width: 675px;
   }
+  .news{
+    &__body{
+      &.all{
+        a{
+          margin-bottom: 60px;
+        }
+      }
+      a{
+        div{
+          height: 190px;
+        }
+      }
+    }
+    &__pages{
+      margin: 0 auto 20px auto;
+    }
+  }
   .news-card__footer a{
     max-width: 38%;
-  }
-  .content__header__nav-bar label div{
-    width: 730px;
-    ol li{
-      width: calc((100% - 165px) / 3);
-    }
   }
   #calendar-big{
     height: 360px;
@@ -191,6 +219,21 @@
     button{
       width: 32px;
       height: 32px;
+    }
+  }
+  #slider{
+    &-content-watch{
+      width: 460px;
+    }
+    &-nav-bar{
+      button{
+        top: 50px;
+      }
+      .content{
+        div{
+          width: calc((100% - 30px) / 3);
+        }
+      }
     }
   }
 }
@@ -303,7 +346,8 @@
     }
   }
   #news{
-    width: 268px;
+    width: 100%;
+    padding: 0 10px;
     h2{
       text-align: left;
       margin: 15px 0 25px 0;
@@ -317,7 +361,7 @@
         }
       }
       a{
-        width: 268px;
+        width: 100%;
         &:nth-child(2n){
           margin-left: 0;
           &:before{
@@ -325,17 +369,18 @@
           }
         }
         div{
-          height: 170px;
+          height: 158px;
         }
       }
     }
     &__pages{
-      width: 264px;
+      width: 100%;
       margin: 15px auto;
     }
   }
   #comments{
-    width: 268px;
+    width: 100%;
+    padding: 0 10px;
     margin: 0 auto 25px auto;
   }
   .comments{
@@ -396,7 +441,8 @@
     }
   }
   #news-card{
-    width: 268px;
+    width: 100%;
+    padding: 0 10px;
   }
   .news-card{
     &__header{
@@ -526,13 +572,17 @@
   }
   #slider-content-watch{
     width: 245px;
-    height: 300px;
+    margin: 20px auto;
   }
   #slider-nav-bar .content{
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
     div{
       width: calc((100% - 20px) / 2);
     }
+  }
+  #slider-nav-bar button{
+    top: 20px;
+    width: 22px;
   }
   #pop-up__call-us{
     position: fixed;

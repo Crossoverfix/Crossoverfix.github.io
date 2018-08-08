@@ -5,14 +5,14 @@ $(document).ready(function () {
    var $sliderNavNext = $("#slider-nav-bar").find("button:last-of-type");
    var $sliderSmallSlide = $("#slider-nav-bar .content");
    var $activSlide = $sliderContent.eq(0).clone().appendTo($watchArea);
-   watchSizeImg($activSlide);
+   // watchSizeImg($activSlide);
    var $activeIndex = 0;
     var $oldSmall;
    var $smallSlide = [];
    for (i = 0;i < $sliderContent.length;i++){
        $smallSlide[i] = $sliderContent.eq(i).clone().appendTo($sliderSmallSlide);
        $smallSlide[i].wrap('<div></div>');
-       watchSizeImg($smallSlide[i]);
+       // watchSizeImg($smallSlide[i]);
        $smallSlide[i].click(function () {
            selectSlide(this);
        })
@@ -29,7 +29,7 @@ $(document).ready(function () {
         var $oldSlide;
         var $object = $obj;
         let $tempSlides = $($object).clone().appendTo($watchArea);
-        watchSizeImg($tempSlides);
+        // watchSizeImg($tempSlides);
         $oldSlide = $activSlide;
         $activSlide = $tempSlides;
         $oldSlide.animate({marginLeft:- $activSlide.outerWidth() + 1},1000);
@@ -44,7 +44,7 @@ $(document).ready(function () {
             if ($activeIndex < $sliderContent.length - 1){
                 $activeIndex++;
                 let $tempSlides = $sliderContent.eq($activeIndex).clone().prependTo($watchArea);
-                watchSizeImg($tempSlides);
+                // watchSizeImg($tempSlides);
                 $tempSlides.css({'margin-left':- $tempSlides.outerWidth() + 1})
                 $oldSlide = $activSlide;
                 $activSlide = $tempSlides;
@@ -57,7 +57,7 @@ $(document).ready(function () {
             } else {
                 $activeIndex = 0;
                 let $tempSlides = $sliderContent.eq($activeIndex).clone().prependTo($watchArea);
-                watchSizeImg($tempSlides);
+                // watchSizeImg($tempSlides);
                 $tempSlides.css({'margin-left':- $tempSlides.outerWidth() + 1})
                 $oldSlide = $activSlide;
                 $activSlide = $tempSlides;
@@ -72,7 +72,7 @@ $(document).ready(function () {
             if ($activeIndex < $sliderContent.length - 1){
                 $activeIndex++;
                 let $tempSlides = $sliderContent.eq($activeIndex).clone().appendTo($watchArea);
-                watchSizeImg($tempSlides);
+                // watchSizeImg($tempSlides);
                 $oldSlide = $activSlide;
                 $activSlide = $tempSlides;
                 $oldSlide.animate({marginLeft:- $activSlide.outerWidth() + 1},1000);
@@ -89,7 +89,7 @@ $(document).ready(function () {
             } else {
                 $activeIndex = 0;
                 let $tempSlides = $sliderContent.eq($activeIndex).clone().appendTo($watchArea);
-                watchSizeImg($tempSlides);
+                // watchSizeImg($tempSlides);
                 $oldSlide = $activSlide;
                 $activSlide = $tempSlides;
                 $oldSlide.animate({marginLeft:- $activSlide.outerWidth()},1000);
@@ -120,7 +120,7 @@ $(document).ready(function () {
        if ($activeIndex < $sliderContent.length - 1){
            $activeIndex++;
            let $tempSlides = $sliderContent.eq($activeIndex).clone().appendTo($watchArea);
-           watchSizeImg($tempSlides);
+           // watchSizeImg($tempSlides);
            $oldSlide = $activSlide;
            $activSlide = $tempSlides;
            $oldSlide.animate({marginLeft:- $activSlide.outerWidth() + 1},1000);
@@ -137,7 +137,7 @@ $(document).ready(function () {
        } else {
            $activeIndex = 0;
            let $tempSlides = $sliderContent.eq($activeIndex).clone().appendTo($watchArea);
-           watchSizeImg($tempSlides);
+           // watchSizeImg($tempSlides);
            $oldSlide = $activSlide;
            $activSlide = $tempSlides;
            $oldSlide.animate({marginLeft:- $activSlide.outerWidth()},1000);
