@@ -16,6 +16,9 @@ $(document).ready(function () {
     $mobilColapseBtn.click(function () {
        $mobilNavMenu.css({display:'block'});
     });
+    $(window).resize(function(){
+        window.setTimeout('location.reload()', 500);
+    });
     // if($(window).width() <= '767'){
     //     $collapseNav.animate({height:'hide'},0);
     // }
