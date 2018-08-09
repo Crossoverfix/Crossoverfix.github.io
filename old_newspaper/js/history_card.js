@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var $popUp = $("#pop-up");
     var $contentViev = $("#pop-up__content");
-    var $pages = $(".content__body__pages");
     var $allCards = $(".content__body__pages__card");
     var $cards = $allCards.not(".content__body__pages__card:hidden");
     var $popUpWrapp = $(".pop-up__wrapper");
@@ -71,7 +70,7 @@ $(document).ready(function () {
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
         $contentViev.css("height",$tempCard.outerHeight() + 30);
-        watchContent('page');
+        watchContent();
         $statusActive.html($tempIndex + 1);
         $statusMax.html($cards.length);
         $prevOne.unbind();
@@ -106,52 +105,38 @@ $(document).ready(function () {
                 leafCard('next','screen');
             }
         })
-        function watchContent($place) {
+        function watchContent() {
             if($(window).width() > '767'){
-                if($place == 'page'){
                     $popUpWrapp.css('width','');
                     $contentViev.stop();
                     $contentViev.css("height",$tempCard.outerHeight() + 30);
                     if($tempCard.hasClass('cs-bg')){
-                        if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
-                            $popUpWrapp.css('width',$tempCard.find('img').outerWidth() + 60);
-                        } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
-                            $tempCard.css('height','500');
-                            $contentViev.css("height",$tempCard.outerHeight() + 30);
+                        $popUpWrapp.css('width','760px');
+                        $contentViev.css("height",'540px');
+                        $tempCard.css('width','720px');
+                        $("#pop-up__content .content__body__pages__card.cs-bg").css("height","100%")
+                        if($tempCard.find('img').outerWidth() > 720){
+                            $tempCard.find('img').css({'height':'auto','width':'100%'});
                         }
                     } else {
                         if($tempCard.outerHeight() > 500){
-                            $popUpWrapp.css('width',$tempCard.outerHeight());
-                            $tempCard.css('max-width',$tempCard.outerHeight() - 60);
-                            $contentViev.css("height",$tempCard.outerHeight() + 30);
+                            if($tempCard.outerHeight() > 760 && $(window).width() < '1023'){
+                                $popUpWrapp.css('width','760px');
+                                $tempCard.css('max-width','720px');
+                                $contentViev.css({'height':'500px','overflow':'auto'});
+                            } else {
+                                $popUpWrapp.css('width',$tempCard.outerHeight());
+                                $tempCard.css('max-width',$tempCard.outerHeight() - 60);
+                                $contentViev.css("height",$tempCard.outerHeight() + 30);
+                            }
                         }
                     }
-                } else if($place == 'leafCard'){
-                    $popUpWrapp.animate({width:510},500);
-                    if($tempCard.hasClass('cs-bg')){
-                        if ($tempCard.find('img').outerWidth() > $popUpWrapp.outerWidth() - 60){
-                            $popUpWrapp.animate({width:$tempCard.find('img').outerWidth() + 60},500);
-                        } else if($tempCard.find('img').outerWidth() < $popUpWrapp.outerWidth() / 2){
-                            $tempCard.animate({height:500},500);
-                            $contentViev.animate({height:$tempCard.outerHeight() + 30},500);
-                        }
-                    } else {
-                        if($tempCard.outerHeight() > 500){
-                            $contentViev.stop();
-                            $popUpWrapp.stop();
-                            $popUpWrapp.animate({width:$tempCard.outerHeight()},250 , function () {
-                                $contentViev.animate({height:$tempCard.outerHeight() + 30},300);
-                            });
-                            $tempCard.animate({maxWidth:$tempCard.outerHeight() - 60},500);
-                        }
-                    }
-                }
             }
         }
         function removeDelay() {
             $contentViev.empty();
             $tempCard.appendTo($contentViev);
-            watchContent('page');
+            watchContent();
         }
         function leafCard($direction,$devices) {
             if($devices == 'screen'){
