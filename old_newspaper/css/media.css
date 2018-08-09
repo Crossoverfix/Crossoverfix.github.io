@@ -765,4 +765,9 @@
   #newspaper .content__footer {
     display: none;
   }
+
+  /* line 672, ../sass/media.scss */
+  .content__mobil__pages h1 {
+    padding: 0 5px;
+  }
 }

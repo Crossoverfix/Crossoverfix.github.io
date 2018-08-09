@@ -2171,15 +2171,51 @@ display: none;
   left:0;
   @include text-global;
   color: $c-text-dw;
-  font-size: 36px;
+  font-size: 14px;
   background-color: $c-text-d;
   cursor: pointer;
   z-index: 111;
   width: 100%;
   i{
-    font-size: 36px;
+    font-size: 18px;
     color: $c-text-dw;
     margin-right: 5px;
+  }
+}
+.cards-mods{
+  position: relative;
+  header{
+    position: relative;
+    #collapse__button{
+      left: 50%;
+      transform: translateX(-130px);
+    }
+  }
+  .content__mobil__pages__nav{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+  }
+  .content__mobil__watch{
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(105px);
+    font-size: 0;
+    i{
+      font-size: 24px;
+    }
+  }
+  .content__mobil__cards{
+    margin: 15px auto 20px auto;
+  }
+  .content__mobil__pages{
+    margin-bottom: 20px;
+  }
+  .content__mobil{
+    margin-bottom: -20px;
   }
 }
 //стили карточек
