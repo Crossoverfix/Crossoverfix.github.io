@@ -120,7 +120,7 @@ $(document).ready(function () {
                         }
                     } else {
                         if($tempCard.outerHeight() > 500){
-                            if($tempCard.outerHeight() > 760 && $tempCard.hasClass('cs-19') && $(window).width() > '1022'){
+                            if($tempCard.outerHeight() > 760 && $tempCard.has('img') && $(window).width() > '1022'){
                                 $popUpWrapp.css('width','660px');
                                 $tempCard.css('max-width','620px');
                                 $contentViev.css({'height':'560px','overflow':'auto'});
