@@ -58,6 +58,81 @@
     </div>
 </div>
 <header>
+    <button id="collapse__button">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <div id="mobil-menu">
+        <input type="checkbox" id="collapse__mobil-menu">
+        <div class="mobil-menu__header">
+            <div class="mobil-menu__wrapper">
+                <button class="mobil-menu__close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <button class="mobil-menu__search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <label for="collapse__mobil-menu" class="mobil-menu__back">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    <h2>Историческая справка</h2>
+                </label>
+                <h2>Меню</h2>
+            </div>
+        </div>
+        <div class="mobil-menu__body mobil-menu__wrapper">
+            <div class="mobil-menu__body__primary-wrapper">
+                <a href="index.html">Главная</a>
+                <label for="collapse__mobil-menu">Историческая справка</label>
+                <a href="calendar.html">Календарь</a>
+                <a href="comments.html">Отзывы</a>
+                <a href="news.html">Новости</a>
+            </div>
+            <ol class="mobil-menu__body__secondary-wrapper">
+                <li><a href="content_1.html">Денежная реформа</a></li>
+                <li><a href="content_2.html">Аграрная реформа</a></li>
+                <li><a href="content_3.html">Индустриализация страны</a></li>
+                <li><a href="content_4.html">Электрификация страны</a></li>
+                <li><a href="content_5.html">Ведущая энергетическая страна</a></li>
+                <li><a href="content_6.html">Народное здравоохранение</a></li>
+                <li><a href="content_7.html">Научный прорыв</a></li>
+                <li><a href="content_8.html">Русское географическое общество</a></li>
+                <li><a href="content_9.html">Народное образование</a></li>
+                <li><a href="content_10.html">Правовое государство</a></li>
+                <li><a href="content_11.html">Внешняя и внутреняя торговля</a></li>
+                <li><a href="content_12.html">Водные и сухопутные пути сообщения</a></li>
+                <li><a href="content_13.html">Спортивное движение</a></li>
+                <li><a href="content_14.html">Военная реформа</a></li>
+                <li><a href="content_15.html">Верховный главнокомандующий</a></li>
+                <li><a href="content_16.html">Религиозная и церковная жизнь</a></li>
+                <li><a href="content_17.html">Рельсы империи</a></li>
+                <li><a href="content_18.html">Почта, телеграф, телефон</a></li>
+                <li><a href="content_19.html">Благотворительность и меценатство</a></li>
+                <li><a href="content_20.html">Рождение русской авиации</a></li>
+                <li><a href="content_21.html">Внешняя политика</a></li>
+                <li><a href="content_22.html">У истоков миротворества</a></li>
+                <li><a href="content_23.html">Царская семья</a></li>
+                <li><a href="content_24.html">Слово об императоре</a></li>
+            </ol>
+        </div>
+        <div class="mobil-menu__footer mobil-menu__wrapper">
+            <div class="header__social-link">
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div key="call-back" class="header__call-back">
+                <a href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>Написать</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="header__social-link">
             <a href="#">
@@ -90,12 +165,6 @@
         <div class="container__frame"></div>
         <div class="row">
             <div class="content__header">
-                <button id="collapse-btn">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <button id="collapse-card">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </button>
                 <div class="content__header__nav-bar">
                     <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                     <label>
@@ -277,22 +346,22 @@
                         <p>
                             Первое издание календаря на 2015-2016 годы было осуществлено в 2014 году. Календарь получил высокую оценку Московского патриархата, Императорского Дома Романовых, ряда авторитетных ученых, в частности, академика Российской академии наук Вениамина Васильевича Алексеева, который в 1988-2013 годах возглавлял  Институт истории и археологии Уральского отделения АН СССР (РАН), с 1991 года был избран на должность заместителя председателя президиума Уральского отделения РАН. Сегодня на основе страниц календаря в музее Мужского монастыря Святых Царственных Страстотерпцев на Ганиной яме создана постоянно действующая центральная экспозиция.
                         </p>
-                        <div style="display: none" class="news-card__body__slider">
-                            <div id="slider-content-watch">
-
-                            </div>
+                        <div class="news-card__body__slider">
+                            <div id="slider-content-watch"></div>
                             <div id="slider-nav-bar">
                                 <button><img src="img/arrow_L.svg"></button>
                                 <button><img src="img/arrow_R.svg"></button>
                                 <div class="content">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
+
                                 </div>
                             </div>
                             <div id="slider-all-content">
-                                <img src="img/fphoto/news/1/index.jpg">
+                                <img src="img/fphoto/news/3/1.jpg">
+                                <img src="img/fphoto/news/3/2.jpg">
+                                <img src="img/fphoto/news/3/3.jpg">
+                                <img src="img/fphoto/news/3/4.jpg">
+                                <img src="img/fphoto/news/3/5.jpg">
+                                <img src="img/fphoto/news/3/6.jpg">
                             </div>
                         </div>
                     </div>
@@ -360,5 +429,6 @@
     </div>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

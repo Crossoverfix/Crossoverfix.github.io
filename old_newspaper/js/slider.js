@@ -18,7 +18,7 @@ $(document).ready(function () {
        })
    }
    var $colSlide = $("#slider-nav-bar .content").find('div');
-   setInterval(autoPlay,6000);
+   setInterval(autoPlay,10000);
    $sliderNavPrev.click(function () {
        leafSlide('prev');
    })
