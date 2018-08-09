@@ -2218,6 +2218,31 @@ display: none;
     margin-bottom: -20px;
   }
 }
+.no-js-mods{
+  .content{
+    &__mobil{
+      //display: none;
+      &__cards{
+        display: none;
+      }
+      &__pages{
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+    }
+    &__header{
+      display: block;
+    }
+    &__body{
+      &__pages{
+        display: block!important;
+        &__header{
+          display: none;
+        }
+      }
+    }
+  }
+}
 //стили карточек
 .cs{
   &-bg{
