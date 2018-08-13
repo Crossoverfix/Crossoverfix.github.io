@@ -17,7 +17,9 @@ $(document).ready(function () {
        $mobilNavMenu.css({display:'block'});
     });
     $(window).resize(function(){
-        window.setTimeout('location.reload()', 500);
+        if($('meta[name="viewport"]').prop('content') == 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no'){
+            window.setTimeout('location.reload()', 500);
+        }
     });
     // if($(window).width() <= '767'){
     //     $collapseNav.animate({height:'hide'},0);
