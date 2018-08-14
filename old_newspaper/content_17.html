@@ -17,7 +17,7 @@
             crossorigin="anonymous"></script>
     <script src="js/hammer.js"></script>
 </head>
-<body class="cards-mods">
+<body class="mobil-mods">
 <div id="pop-up">
     <div class="pop-up__shadow"></div>
     <div class="pop-up__wrapper">
@@ -171,7 +171,7 @@
                 <span>Написать</span>
             </a>
         </div>
-        <a href="#" class="header__text">
+        <a href="index.html" class="header__text">
             <img alt="emblem" src="img/emblem_ri.svg">
             <div class="header__text__wrapper">
                 <img alt="logo" src="img/Logo.svg">
@@ -190,7 +190,7 @@
                         <a href="content_16.html">
                             <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                         </a>
-                        <h2>17</h2>
+                        <h2>Глава 17</h2>
                         <a href="content_18.html">
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </a>
@@ -198,8 +198,12 @@
                     <h1>Рельсы империи</h1>
                 </div>
                 <button id="mobil-watch" class="content__mobil__watch">
-                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-                    Обзор страницы
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <select>
+                        <option value="mobil">Мобильный вид</option>
+                        <option value="book">Электроная книга</option>
+                        <option value="paper">Газета</option>
+                    </select>
                 </button>
                 <div id="mobil-cards__nav" class="content__mobil__cards">
                     <button>
@@ -499,10 +503,13 @@
             </div>
             <div class="content__footer">
                 <div id="calendar">
-                    <button id="number7" onclick="calendarPopUp('7')"></button>
-                    <button id="number12" onclick="calendarPopUp('12')"></button>
-                    <button id="number17" onclick="calendarPopUp('17')"></button>
-                    <img src="img/calendar.png">
+                    <div class="content__header__page-bar">
+                        <div class="content__header__page-bar__frame"></div>
+                        <div class="content__header__page-bar__wrapper">
+                            <h1>Август</h1>
+                        </div>
+                    </div>
+                    <img src="img/calendar-no-hd.png">
                 </div>
             </div>
         </div>
