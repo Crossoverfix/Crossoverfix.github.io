@@ -196,9 +196,11 @@ $(document).ready(function () {
         }
         function leafCard($direction,$devices) {
             if($devices == 'screen'){
-                if ($direction == 'prev'){
-                    if($tempIndex <= 0){
-                        $tempIndex = $cards.length - 1;
+                if ($direction == 'next'){
+                    if($tempIndex >= $cards.length - 1){
+                        $tempIndex = 0;
+                        // if($tempIndex <= 0){
+                        //     $tempIndex = $cards.length - 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight() + 30);
                         $oldTempCard.css("position","absolute");
@@ -216,7 +218,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex--;
+                        $tempIndex += 1;
+                        // $tempIndex--;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight() + 30);
                         $oldTempCard.css("position","absolute");
@@ -234,9 +237,11 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     }
-                } else if ($direction == 'next'){
-                    if($tempIndex >= $cards.length - 1){
-                        $tempIndex = 0;
+                } else if ($direction == 'prev'){
+                    if($tempIndex <= 0){
+                        $tempIndex = $cards.length - 1;
+                        // if($tempIndex >= $cards.length - 1){
+                        //     $tempIndex = 0;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight() + 30);
                         $oldTempCard.css("position","absolute");
@@ -254,7 +259,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex += 1;
+                        $tempIndex--;
+                        // $tempIndex += 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight() + 30);
                         $oldTempCard.css("position","absolute");
@@ -278,9 +284,11 @@ $(document).ready(function () {
                 $statusActive.html($tempIndex + 1);
                 return false;
             } else if ($devices == 'mobil'){
-                if ($direction == 'prev'){
-                    if($tempIndex <= 0){
-                        $tempIndex = $cards.length - 1;
+                if ($direction == 'next'){
+                    if($tempIndex >= $cards.length - 1){
+                            $tempIndex = 0;
+                        // if($tempIndex <= 0){
+                        //     $tempIndex = $cards.length - 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -298,7 +306,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex--;
+                        $tempIndex += 1;
+                        // $tempIndex--;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -316,9 +325,11 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     }
-                } else if ($direction == 'next'){
-                    if($tempIndex >= $cards.length - 1){
-                        $tempIndex = 0;
+                } else if ($direction == 'prev'){
+                    if($tempIndex <= 0){
+                        $tempIndex = $cards.length - 1;
+                        // if($tempIndex >= $cards.length - 1){
+                        //     $tempIndex = 0;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -336,7 +347,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex += 1;
+                        $tempIndex--;
+                        // $tempIndex += 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
