@@ -62,6 +62,7 @@ $(document).ready(function () {
         $contentViev.empty();
         $contentViev.css('height','0');
         $contentViev = $("#mobil__watch-area");
+        $contentViev.empty();
         $allCards.unbind();
         $allCards.click(function () {
             var $cardIndex = $($cards).index(this);
