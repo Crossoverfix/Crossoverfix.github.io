@@ -277,7 +277,7 @@
   .content{
     &__header{
       width: 100%;
-      height: 20px;
+      height: 0;
       padding: 0;
       margin: 0;
       &__nav-bar{
@@ -296,13 +296,11 @@
     }
     &__body{
       &__pages{
-        &.active{
-          display: none;
-        }
         &__wrapper{
           margin-top: 30px;
         }
         &__header{
+          display: none;
           h1{
             margin-top: 10px;
             line-height: 25px;
@@ -675,5 +673,9 @@
   }
   .content__mobil__pages h1{
     padding: 0 5px;
+    margin-top: 10px;
+  }
+  .cards-mods .content__mobil__cards{
+    display: none;
   }
 }

@@ -16,11 +16,11 @@ $(document).ready(function () {
     $mobilColapseBtn.click(function () {
        $mobilNavMenu.css({display:'block'});
     });
-    $(window).resize(function(){
-        if($('meta[name="viewport"]').prop('content') == 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no'){
-            window.setTimeout('location.reload()', 500);
-        }
-    });
+    // $(window).resize(function(){
+    //     if($('meta[name="viewport"]').prop('content') == 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no'){
+    //         window.setTimeout('location.reload()', 500);
+    //     }
+    // });
     // if($(window).width() <= '767'){
     //     $collapseNav.animate({height:'hide'},0);
     // }

@@ -6,40 +6,90 @@ $(document).ready(function () {
     var $popUpWrapp = $(".pop-up__wrapper");
     var $mobilToggler = $('#mobil-watch');
     var $mobilTogglerBack = $('#toggler-mobil');
-    $mobilToggler.click(function () {
-        $('meta[name="viewport"]').prop('content', 'width=1200');
-        $('#newspaper .content__body__pages').css('display','block');
-        $('#newspaper .content__footer').css('display','block');
-        $mobilTogglerBack.css('display','block');
-        $allCards.unbind();
-        $allCards.click(function () {
-            var $cardIndex = $($allCards).index(this);
-            togglerBack($cardIndex);
-        });
+    $mobilToggler.on('change',function () {
+        if($('#mobil-watch option:selected').val() == 'mobil'){
+            $('body').removeClass();
+            $('body').addClass('mobil-mods');
+            $('#newspaper .content__body__pages').css('display','block');
+            $('#newspaper .content__footer').css('display','block');
+            $contentViev.empty();
+            $contentViev.css('height','0');
+            $allCards.unbind();
+            $allCards.click(function () {
+                var $cardIndex = $($cards).index(this);
+                $('#newspaper .content__body__pages').css('display','none');
+                $('#newspaper .content__footer').css('display','none');
+                $('body').removeClass();
+                $('body').addClass('book-mods');
+                $contentViev = $("#mobil__watch-area");
+                showPopUp($cardIndex,'mobil');
+            })
+        } else if($('#mobil-watch option:selected').val() == 'book'){
+            $('body').removeClass();
+            $('body').addClass('book-mods');
+            $('#newspaper .content__body__pages').css('display','none');
+            $('#newspaper .content__footer').css('display','none');
+            $contentViev.empty();
+            $contentViev = $("#mobil__watch-area");
+            showPopUp(0,'mobil');
+        } else if($('#mobil-watch option:selected').val() == 'paper'){
+            $('body').removeClass();
+            $('body').addClass('paper-mods');
+            $('meta[name="viewport"]').prop('content', 'width=1200');
+            $('#newspaper .content__body__pages').css('display','block');
+            $('#newspaper .content__footer').css('display','block');
+            $mobilTogglerBack.css('display','block');
+            $contentViev = $("#pop-up__content");
+            $allCards.unbind();
+            $allCards.click(function () {
+                var $cardIndex = $($cards).index(this);
+                showPopUp($cardIndex,'screen');
+            });
+        }
     })
     $mobilTogglerBack.click(function () {
         togglerBack();
     })
     function togglerBack($index) {
+        $('body').removeClass();
+        $('body').addClass('mobil-mods');
+        $('#mobil-watch option').prop('selected','false');
+        $('#mobil-watch option:first-of-type').prop('selected','true');
         $('meta[name="viewport"]').prop('content', 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no');
-        $('#newspaper .content__body__pages').css('display','none');
-        $('#newspaper .content__footer').css('display','none');
+        // $('#newspaper .content__body__pages').css('display','none');
+        // $('#newspaper .content__footer').css('display','none');
         $mobilTogglerBack.css('display','none');
         $contentViev.empty();
-        if($index == null){
-            $index = 0;
-        }
-        showPopUp($index,'mobil');
+        $contentViev.css('height','0');
+        $contentViev = $("#mobil__watch-area");
+        $allCards.unbind();
+        $allCards.click(function () {
+            var $cardIndex = $($cards).index(this);
+            $('#newspaper .content__body__pages').css('display','none');
+            $('#newspaper .content__footer').css('display','none');
+            $('body').removeClass();
+            $('body').addClass('book-mods');
+            $contentViev = $("#mobil__watch-area");
+            showPopUp($cardIndex,'mobil');
+        })
     }
     $allCards.click(function () {
         var $cardIndex = $($cards).index(this);
-        showPopUp($cardIndex,'screen');
+        if($(window).width() <= '767'){
+                showPopUp($cardIndex,'mobil');
+        } else {
+            showPopUp($cardIndex,'screen');
+        }
     });
-    if($(window).width() <= '767'){
-        showPopUp(0,'mobil');
-    }
+    // if($(window).width() <= '767'){
+    //     showPopUp(0,'mobil');
+    // }
     function showPopUp($index,$device) {
         if($device == 'mobil'){
+            $('body').removeClass();
+            $('body').addClass('book-mods');
+            $('#mobil-watch option').prop('selected','false');
+            $('#mobil-watch option:nth-child(2)').prop('selected','true');
             var $prevOne = $("#mobil-cards__nav button:first-of-type");
             var $nextOne = $("#mobil-cards__nav button:last-of-type");
             var $statusActive = $("#mobil-cards__status span:first-of-type");
@@ -49,9 +99,11 @@ $(document).ready(function () {
             $contentViev.css('display','none');
             $contentViev = $("#mobil__watch-area");
             $contentViev.css('display','block');
+            $('#newspaper .content__body__pages').css('display','none');
+            $('#newspaper .content__footer').css('display','none');
             $cards = $allCards;
             var $tempIndex = $index;
-            var $tempCard = $cards.eq(0).clone();
+            var $tempCard = $cards.eq($index).clone();
             $tempCard.appendTo($contentViev);
             $tempCard.css({left:'50%'})
         } else if($device == 'screen'){

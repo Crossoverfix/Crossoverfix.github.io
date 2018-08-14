@@ -1765,6 +1765,13 @@ button,button:focus{
   img{
     width: 100%;
   }
+  .content__header__page-bar{
+    width: 550px;
+    margin: 10px auto;
+    &__frame{
+      background-size: 80px 50px,80px 50px,400px 5px, 400px 5px;
+    }
+  }
 }
 #calendar-big{
   width: 100%;
@@ -1797,6 +1804,13 @@ button,button:focus{
   }
   img{
     width: 100%;
+  }
+  .content__header__page-bar{
+    width: 550px;
+    margin: 10px auto;
+    &__frame{
+      background-size: 80px 50px,80px 50px,400px 5px, 400px 5px;
+    }
   }
 }
 #collapse-card{
@@ -2064,8 +2078,9 @@ display: none;
 .content__mobil{
   display: none;
   width: 100%;
+  margin-bottom: -20px;
   &__pages{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     h1{
       @include text-herold-normal;
       color: $c-text-d;
@@ -2076,7 +2091,11 @@ display: none;
       line-height: 24px;
     }
     &__nav{
-      position: relative;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
       margin-bottom: 5px;
       a{
         text-decoration: none;
@@ -2089,10 +2108,10 @@ display: none;
           font-size: 20px;
         }
         &:first-of-type{
-          left: 75px;
+          left: 35px;
         }
         &:last-of-type{
-          right: 75px;
+          right: 35px;
         }
       }
       h2{
@@ -2106,25 +2125,34 @@ display: none;
     }
   }
   &__watch{
-    position: relative;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(105px);
     z-index: 13;
-    @include text-global;
     color: $c-text-d;
     background-color: transparent;
-    font-size: 14px;
     line-height: 19px;
     margin: 0 auto;
     display: block;
     cursor: pointer;
     i{
       color: $c-text-d;
-      font-size: 16px;
+      font-size: 30px;
       margin-right: 5px;
+    }
+    select{
+      position: absolute;
+      top: -2px;
+      left: -3px;
+      width: 35px;
+      height: 35px;
+      opacity: 0;
     }
   }
   &__cards{
     position: relative;
-    margin: 40px auto 20px auto;
+    margin: 15px auto 20px auto;
     button{
       position: absolute;
       background-color: transparent;
@@ -2171,7 +2199,8 @@ display: none;
   left:0;
   @include text-global;
   color: $c-text-dw;
-  font-size: 14px;
+  font-size: 24px;
+  height: 50px;
   background-color: $c-text-d;
   cursor: pointer;
   z-index: 111;
@@ -2182,7 +2211,7 @@ display: none;
     margin-right: 5px;
   }
 }
-.cards-mods{
+.mobil-mods{
   position: relative;
   header{
     position: relative;
@@ -2191,32 +2220,22 @@ display: none;
       transform: translateX(-130px);
     }
   }
-  .content__mobil__pages__nav{
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 250px;
+  .content__mobil__cards{
+    display: none;
   }
-  .content__mobil__watch{
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(105px);
-    font-size: 0;
-    i{
-      font-size: 24px;
+}
+.book-mods{
+  position: relative;
+  header{
+    position: relative;
+    #collapse__button{
+      left: 50%;
+      transform: translateX(-130px);
     }
   }
-  .content__mobil__cards{
-    margin: 15px auto 20px auto;
-  }
-  .content__mobil__pages{
-    margin-bottom: 20px;
-  }
-  .content__mobil{
-    margin-bottom: -20px;
-  }
+}
+.paper-mods{
+
 }
 .no-js-mods{
   .content{
