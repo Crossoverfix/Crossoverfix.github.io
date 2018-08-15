@@ -266,7 +266,9 @@
     }
   }
   .container{
-    width: 320px;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
   }
   .row{
     padding: 10px;
@@ -498,6 +500,7 @@
   }
   .cs-mt-one{
     min-height: 70px;
+    padding-bottom: 14%;
    h2{
      font-size: 25px;
      line-height: 45px;

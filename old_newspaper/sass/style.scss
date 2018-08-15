@@ -2263,20 +2263,22 @@ display: none;
 #mobil-watch-v2{
   position: absolute;
   top: -32px;
-  right: 25px;
+  right: calc(50% + -150px);
+  transform: translateX(-50%);
   z-index: 1;
   i{
     color: $c-text-d;
     font-size: 30px;
   }
   div{
-    position: fixed;
-    top: 85px;
+    position: absolute;
+    top: 0;
     padding-top: 40px;
     height: 140px;
     overflow: hidden;
-    right: 0;
-    width: 100%;
+    right: calc(50% + 120px);
+    transform: translateX(50%);
+    width: 100vw;
     background-color: $c-white-bg;
     z-index: -1;
     display: none;
@@ -2295,6 +2297,7 @@ display: none;
 }
 #collapse-watch{
   display: none;
+  position: absolute;
   &:checked{
     & ~ div{
       display: block;
