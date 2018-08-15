@@ -7,11 +7,63 @@ $(document).ready(function () {
     var $mobilToggler = $('#mobil-watch-v2 div input');
     var $mobilTogglerCollapse = $('#mobil-watch-v2 > input');
     var $mobilTogglerBack = $('#toggler-mobil');
-    var $watchCookie = '1';
+    function get_cookie ( cookie_name )
+    {
+        var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+
+        if ( results )
+            return ( unescape ( results[2] ) );
+        else
+            return null;
+    }
+    if(get_cookie('watchType') == 'mobil'){
+        $('body').removeClass();
+        $('body').addClass('mobil-mods');
+        $mobilTogglerCollapse.prop('checked',false);
+        $('#newspaper .content__body__pages').css('display','block');
+        $('#newspaper .content__footer').css('display','block');
+        $contentViev.empty();
+        $contentViev.css('height','0');
+        $mobilToggler.eq(0).prop('checked',true);
+        $allCards.unbind();
+        $allCards.click(function () {
+            var $cardIndex = $($cards).index(this);
+            $('#newspaper .content__body__pages').css('display','none');
+            $('#newspaper .content__footer').css('display','none');
+            $('body').removeClass();
+            $('body').addClass('book-mods');
+            $contentViev = $("#mobil__watch-area");
+            showPopUp($cardIndex,'mobil');
+        })
+    } else if(get_cookie('watchType') == 'book'){
+        $('body').removeClass();
+        $('body').addClass('book-mods');
+        $mobilToggler.eq(1).prop('checked',true);
+        $mobilTogglerCollapse.prop('checked',false);
+        $('#newspaper .content__body__pages').css('display','none');
+        $('#newspaper .content__footer').css('display','none');
+        $contentViev.empty();
+        $contentViev = $("#mobil__watch-area");
+        showPopUp(0,'mobil');
+    } else if(get_cookie('watchType') == 'paper'){
+        $('body').removeClass();
+        $('body').addClass('paper-mods');
+        $mobilToggler.eq(2).prop('checked',true);
+        $mobilTogglerCollapse.prop('checked',false);
+        $('meta[name="viewport"]').prop('content', 'width=1200');
+        $('#newspaper .content__body__pages').css('display','block');
+        $('#newspaper .content__footer').css('display','block');
+        $mobilTogglerBack.css('display','block');
+        $contentViev = $("#pop-up__content");
+        $allCards.unbind();
+        $allCards.click(function () {
+            var $cardIndex = $($cards).index(this);
+            showPopUp($cardIndex,'screen');
+        });
+    }
     $mobilToggler.on('change',function () {
         if($('#mobil-watch-v2 div input:checked').val() == 'mobil'){
-            document.cookie = "watchtype=mobil";
-            $watchCookie = document.cookie;
+            document.cookie = "watchType=mobil ; patch=/";
             $('body').removeClass();
             $('body').addClass('mobil-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -31,7 +83,6 @@ $(document).ready(function () {
             })
         } else if($('#mobil-watch-v2 div input:checked').val() == 'book'){
             document.cookie = "watchType=book ; patch=/";
-            $watchCookie = document.cookie;
             $('body').removeClass();
             $('body').addClass('book-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -42,7 +93,6 @@ $(document).ready(function () {
             showPopUp(0,'mobil');
         } else if($('#mobil-watch-v2 div input:checked').val() == 'paper'){
             document.cookie = "watchType=paper;patch=/";
-            $watchCookie = document.cookie;
             $('body').removeClass();
             $('body').addClass('paper-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -64,6 +114,7 @@ $(document).ready(function () {
     function togglerBack($index) {
         $('body').removeClass();
         $('body').addClass('mobil-mods');
+        document.cookie = "watchType=mobil ; patch=/";
         $('meta[name="viewport"]').prop('content', 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no');
         // $('#newspaper .content__body__pages').css('display','none');
         // $('#newspaper .content__footer').css('display','none');
