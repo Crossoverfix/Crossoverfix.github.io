@@ -7,8 +7,13 @@ $(document).ready(function () {
     var $mobilToggler = $('#mobil-watch-v2 div input');
     var $mobilTogglerCollapse = $('#mobil-watch-v2 > input');
     var $mobilTogglerBack = $('#toggler-mobil');
+    var $watchCookie = '1';
     $mobilToggler.on('change',function () {
         if($('#mobil-watch-v2 div input:checked').val() == 'mobil'){
+            document.cookie = "watchtype=mobil";
+            $watchCookie = document.cookie;
+            $.cookie('watchtype','mobil');
+            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('mobil-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -27,6 +32,10 @@ $(document).ready(function () {
                 showPopUp($cardIndex,'mobil');
             })
         } else if($('#mobil-watch-v2 div input:checked').val() == 'book'){
+            document.cookie = "watchType=book ; patch=/";
+            $watchCookie = document.cookie;
+            $.cookie('watchtype','book');
+            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('book-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -36,6 +45,10 @@ $(document).ready(function () {
             $contentViev = $("#mobil__watch-area");
             showPopUp(0,'mobil');
         } else if($('#mobil-watch-v2 div input:checked').val() == 'paper'){
+            document.cookie = "watchType=paper;patch=/";
+            $watchCookie = document.cookie;
+            $.cookie('watchtype','paper');
+            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('paper-mods');
             $mobilTogglerCollapse.prop('checked',false);
