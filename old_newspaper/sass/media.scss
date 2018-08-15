@@ -313,13 +313,14 @@
   }
   #about{
     margin: 0 auto 20px auto;
-    width: 270px;
-    background-size: 265px 5px;
+    width: 100%;
+    background-size: 85% 5px;
   }
   .about{
     margin-left: 5px;
-    width: 265px;
-    height: 980px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 300px;
     &:before{
       height: 300px;
       width: 100%;
@@ -339,10 +340,10 @@
   }
   .reforms{
     &__body{
-      width: 268px;
+      width: 95%;
       background-size: 265px 5px;
       a{
-        width: 260px;
+        width: 100%;
         margin: 0 3px 10px 3px;
         div{
           height: 164px;
