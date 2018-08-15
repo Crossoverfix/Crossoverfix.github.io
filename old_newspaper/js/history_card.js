@@ -12,8 +12,6 @@ $(document).ready(function () {
         if($('#mobil-watch-v2 div input:checked').val() == 'mobil'){
             document.cookie = "watchtype=mobil";
             $watchCookie = document.cookie;
-            $.cookie('watchtype','mobil');
-            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('mobil-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -34,8 +32,6 @@ $(document).ready(function () {
         } else if($('#mobil-watch-v2 div input:checked').val() == 'book'){
             document.cookie = "watchType=book ; patch=/";
             $watchCookie = document.cookie;
-            $.cookie('watchtype','book');
-            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('book-mods');
             $mobilTogglerCollapse.prop('checked',false);
@@ -47,8 +43,6 @@ $(document).ready(function () {
         } else if($('#mobil-watch-v2 div input:checked').val() == 'paper'){
             document.cookie = "watchType=paper;patch=/";
             $watchCookie = document.cookie;
-            $.cookie('watchtype','paper');
-            $watchCookie = $.cookie('watchtype');
             $('body').removeClass();
             $('body').addClass('paper-mods');
             $mobilTogglerCollapse.prop('checked',false);
