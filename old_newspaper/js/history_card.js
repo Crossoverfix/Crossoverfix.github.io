@@ -46,6 +46,9 @@ $(document).ready(function () {
             $contentViev.empty();
             $contentViev = $("#mobil__watch-area");
             showPopUp(0,'mobil');
+            $('#mobil-watch-area img').onload(function () {
+                $('#mobil-watch-area').css('height',$('#mobil-watch-area .content__body__pages__card').outerHeight() + 30);
+            })
         } else if(get_cookie('watchType') == 'paper'){
             $('body').removeClass();
             $('body').addClass('paper-mods');
@@ -186,11 +189,6 @@ $(document).ready(function () {
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
         $contentViev.css("height",$tempCard.outerHeight() + 30);
-        $tempCard.find('img').load(function () {
-            if($contentViev.css("height") != $tempCard.outerHeight() + 30){
-                $contentViev.css("height",$tempCard.outerHeight() + 30);
-            }
-        })
         watchContent();
         $statusActive.html($tempIndex + 1);
         $statusMax.html($cards.length);
