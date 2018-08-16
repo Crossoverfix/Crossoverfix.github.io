@@ -292,7 +292,6 @@
   /* line 268, ../sass/media.scss */
   .container {
     width: 100vw;
-    max-width: 480px;
     min-width: 320px;
   }
 
