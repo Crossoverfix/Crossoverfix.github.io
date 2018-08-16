@@ -22,51 +22,53 @@ $(document).ready(function () {
             $('#mobil-watch-area').css('height',$temprefr.outerHeight() + 30);
         })
     }
-    if(get_cookie('watchType') == 'mobil'){
-        $('body').removeClass();
-        $('body').addClass('mobil-mods');
-        $mobilTogglerCollapse.prop('checked',false);
-        $('#newspaper .content__body__pages').css('display','block');
-        $('#newspaper .content__footer').css('display','block');
-        $contentViev.empty();
-        $contentViev.css('height','0');
-        $mobilToggler.eq(0).prop('checked',true);
-        $allCards.unbind();
-        $allCards.click(function () {
-            var $cardIndex = $($cards).index(this);
-            $('#newspaper .content__body__pages').css('display','none');
-            $('#newspaper .content__footer').css('display','none');
+    if($(window).width() <= '767'){
+        if(get_cookie('watchType') == 'mobil'){
+            $('body').removeClass();
+            $('body').addClass('mobil-mods');
+            $mobilTogglerCollapse.prop('checked',false);
+            $('#newspaper .content__body__pages').css('display','block');
+            $('#newspaper .content__footer').css('display','block');
+            $contentViev.empty();
+            $contentViev.css('height','0');
+            $mobilToggler.eq(0).prop('checked',true);
+            $allCards.unbind();
+            $allCards.click(function () {
+                var $cardIndex = $($cards).index(this);
+                $('#newspaper .content__body__pages').css('display','none');
+                $('#newspaper .content__footer').css('display','none');
+                $('body').removeClass();
+                $('body').addClass('book-mods');
+                $contentViev = $("#mobil__watch-area");
+                showPopUp($cardIndex,'mobil');
+            })
+        } else if(get_cookie('watchType') == 'book'){
             $('body').removeClass();
             $('body').addClass('book-mods');
+            $mobilToggler.eq(1).prop('checked',true);
+            $mobilTogglerCollapse.prop('checked',false);
+            $('#newspaper .content__body__pages').css('display','none');
+            $('#newspaper .content__footer').css('display','none');
+            $contentViev.empty();
             $contentViev = $("#mobil__watch-area");
-            showPopUp($cardIndex,'mobil');
-        })
-    } else if(get_cookie('watchType') == 'book'){
-        $('body').removeClass();
-        $('body').addClass('book-mods');
-        $mobilToggler.eq(1).prop('checked',true);
-        $mobilTogglerCollapse.prop('checked',false);
-        $('#newspaper .content__body__pages').css('display','none');
-        $('#newspaper .content__footer').css('display','none');
-        $contentViev.empty();
-        $contentViev = $("#mobil__watch-area");
-        showPopUp(0,'mobil');
-        setTimeout(refrech,500);
-    } else if(get_cookie('watchType') == 'paper'){
-        $('body').removeClass();
-        $('body').addClass('paper-mods');
-        $mobilToggler.eq(2).prop('checked',true);
-        $mobilTogglerCollapse.prop('checked',false);
-        $('meta[name="viewport"]').prop('content', 'width=1200');
-        $('#newspaper .content__body__pages').css('display','block');
-        $('#newspaper .content__footer').css('display','block');
-        $mobilTogglerBack.css('display','block');
-        $contentViev = $("#pop-up__content");
-        $allCards.unbind();
-        $allCards.click(function () {
-            var $cardIndex = $($cards).index(this);
-            showPopUp($cardIndex,'screen');
-        });
+            showPopUp(0,'mobil');
+            setTimeout(refrech,500);
+        } else if(get_cookie('watchType') == 'paper'){
+            $('body').removeClass();
+            $('body').addClass('paper-mods');
+            $mobilToggler.eq(2).prop('checked',true);
+            $mobilTogglerCollapse.prop('checked',false);
+            $('meta[name="viewport"]').prop('content', 'width=1200');
+            $('#newspaper .content__body__pages').css('display','block');
+            $('#newspaper .content__footer').css('display','block');
+            $mobilTogglerBack.css('display','block');
+            $contentViev = $("#pop-up__content");
+            $allCards.unbind();
+            $allCards.click(function () {
+                var $cardIndex = $($cards).index(this);
+                showPopUp($cardIndex,'screen');
+            });
+        }
     }
     $mobilToggler.on('change',function () {
         if($('#mobil-watch-v2 div input:checked').val() == 'mobil'){
