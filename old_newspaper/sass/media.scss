@@ -682,4 +682,7 @@
   .cards-mods .content__mobil__cards{
     display: none;
   }
+  html{
+    -webkit-overflow-scrolling: touch;
+  }
 }
