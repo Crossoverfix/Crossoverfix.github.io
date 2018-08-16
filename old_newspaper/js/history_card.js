@@ -17,10 +17,9 @@ $(document).ready(function () {
             return null;
     }
     function refrech() {
-        let $temprefr = $('#mobil-watch-area .content__body__pages__card');
-        $temprefr.ready(function () {
-            $('#mobil-watch-area').css('height',$('#mobil-watch-area .content__body__pages__card').outerHeight() + 30);
-            $temprefr.unbind();
+        $('#mobil-watch-area img').ready(function () {
+            var $temprefr = $('#mobil-watch-area .content__body__pages__card');
+            $('#mobil-watch-area').css('height',$temprefr.outerHeight() + 30);
         })
     }
     if(get_cookie('watchType') == 'mobil'){
