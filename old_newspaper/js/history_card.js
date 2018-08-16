@@ -16,12 +16,6 @@ $(document).ready(function () {
         else
             return null;
     }
-    function refrech() {
-        $('#mobil-watch-area img').ready(function () {
-            var $temprefr = $('#mobil-watch-area .content__body__pages__card');
-            $('#mobil-watch-area').css('height',$temprefr.outerHeight() + 30);
-        })
-    }
     if($(window).width() <= '767'){
         if(get_cookie('watchType') == 'mobil'){
             $('body').removeClass();
@@ -52,7 +46,6 @@ $(document).ready(function () {
             $contentViev.empty();
             $contentViev = $("#mobil__watch-area");
             showPopUp(0,'mobil');
-            setTimeout(refrech,500);
         } else if(get_cookie('watchType') == 'paper'){
             $('body').removeClass();
             $('body').addClass('paper-mods');
@@ -193,6 +186,11 @@ $(document).ready(function () {
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
         $contentViev.css("height",$tempCard.outerHeight() + 30);
+        $tempCard.ready(function () {
+            if($contentViev.css("height") != $tempCard.outerHeight() + 30){
+                $contentViev.css("height",$tempCard.outerHeight() + 30);
+            }
+        })
         watchContent();
         $statusActive.html($tempIndex + 1);
         $statusMax.html($cards.length);
