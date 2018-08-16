@@ -267,7 +267,7 @@
   }
   .container{
     width: 100vw;
-    //max-width: 480px;
+    max-width: 480px;
     min-width: 320px;
   }
   .row{
@@ -683,6 +683,6 @@
     display: none;
   }
   html{
-    -webkit-overflow-scrolling: touch;
+    position: fixed;
   }
 }
