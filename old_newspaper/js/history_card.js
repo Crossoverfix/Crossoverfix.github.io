@@ -186,7 +186,7 @@ $(document).ready(function () {
         var $oldTempCard;
         $tempCard.appendTo($contentViev);
         $contentViev.css("height",$tempCard.outerHeight() + 30);
-        $tempCard.find('img').ready(function () {
+        $tempCard.find('img').load(function () {
             if($contentViev.css("height") != $tempCard.outerHeight() + 30){
                 $contentViev.css("height",$tempCard.outerHeight() + 30);
             }
