@@ -786,9 +786,4 @@
   .cards-mods .content__mobil__cards {
     display: none;
   }
-
-  /* line 685, ../sass/media.scss */
-  html {
-    position: fixed;
-  }
 }
