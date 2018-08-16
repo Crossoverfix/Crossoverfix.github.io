@@ -16,6 +16,9 @@ $(document).ready(function () {
         else
             return null;
     }
+    function refrech() {
+        $('#mobil-watch-area').css('height',$('#mobil-watch-area .content__body__pages__card').outerHeight() + 30);
+    }
     if(get_cookie('watchType') == 'mobil'){
         $('body').removeClass();
         $('body').addClass('mobil-mods');
@@ -45,6 +48,7 @@ $(document).ready(function () {
         $contentViev.empty();
         $contentViev = $("#mobil__watch-area");
         showPopUp(0,'mobil');
+        setTimeout(refrech,500);
     } else if(get_cookie('watchType') == 'paper'){
         $('body').removeClass();
         $('body').addClass('paper-mods');
@@ -347,8 +351,10 @@ $(document).ready(function () {
                 return false;
             } else if ($devices == 'mobil'){
                 if ($direction == 'prev'){
-                        if($tempIndex <= 0){
-                            $tempIndex = $cards.length - 1;
+                    if($tempIndex >= $cards.length - 1){
+                        $tempIndex = 0;
+                            // if($tempIndex <= 0){
+                            //     $tempIndex = $cards.length - 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -366,7 +372,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex--;
+                            $tempIndex += 1;
+                            // $tempIndex--;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -385,8 +392,10 @@ $(document).ready(function () {
                         setTimeout(removeDelay,1000);
                     }
                 } else if ($direction == 'next'){
-                        if($tempIndex >= $cards.length - 1){
-                            $tempIndex = 0;
+                    if($tempIndex <= 0){
+                            $tempIndex = $cards.length - 1;
+                            // if($tempIndex >= $cards.length - 1){
+                            //     $tempIndex = 0;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
@@ -404,7 +413,8 @@ $(document).ready(function () {
                         }
                         setTimeout(removeDelay,1000);
                     } else {
-                        $tempIndex += 1;
+                        $tempIndex--;
+                            // $tempIndex += 1;
                         $oldTempCard = $tempCard;
                         $contentViev.css("height",$oldTempCard.outerHeight());
                         $oldTempCard.css("position","absolute");
