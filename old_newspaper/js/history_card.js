@@ -45,6 +45,11 @@ $(document).ready(function () {
             $contentViev.empty();
             $contentViev = $("#mobil__watch-area");
             showPopUp(0,'mobil');
+            if($contentViev.find('img').outerHeight() >= 380){
+                $contentViev.css('height',$contentViev.find('img').outerHeight() + 30);
+            } else {
+                $contentViev.css('height','440px');
+            }
         } else if(get_cookie('watchType') == 'paper'){
             $('body').removeClass();
             $('body').addClass('paper-mods');
