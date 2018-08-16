@@ -7,8 +7,7 @@ $(document).ready(function () {
     var $mobilToggler = $('#mobil-watch-v2 div input');
     var $mobilTogglerCollapse = $('#mobil-watch-v2 > input');
     var $mobilTogglerBack = $('#toggler-mobil');
-    function get_cookie ( cookie_name )
-    {
+    function get_cookie ( cookie_name ) {
         var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
 
         if ( results )
