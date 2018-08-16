@@ -18,7 +18,7 @@ $(document).ready(function () {
     }
     function refrech() {
         let $temprefr = $('#mobil-watch-area .content__body__pages__card');
-        $temprefr.on('load',function () {
+        $temprefr.ready(function () {
             $('#mobil-watch-area').css('height',$('#mobil-watch-area .content__body__pages__card').outerHeight() + 30);
             $temprefr.unbind();
         })
