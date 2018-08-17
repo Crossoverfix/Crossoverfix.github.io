@@ -7,6 +7,7 @@ $(document).ready(function () {
     var $mobilToggler = $('#mobil-watch-v2 div input');
     var $mobilTogglerCollapse = $('#mobil-watch-v2 > input');
     var $mobilTogglerBack = $('#toggler-mobil');
+    var $cookieReload = false;
     function get_cookie ( cookie_name ) {
         var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
 
@@ -44,12 +45,13 @@ $(document).ready(function () {
             $('#newspaper .content__footer').css('display','none');
             $contentViev.empty();
             $contentViev = $("#mobil__watch-area");
+            $cookieReload = true;
             showPopUp(0,'mobil');
-            if($contentViev.find('img').outerHeight() >= 380){
-                $contentViev.css('height',$contentViev.find('img').outerHeight() + 30);
-            } else {
-                $contentViev.css('height','440px');
-            }
+            // if($contentViev.find('img').outerHeight() >= 380){
+            //     $contentViev.css('height',$contentViev.find('img').outerHeight() + 30);
+            // } else {
+            //     $contentViev.css('height','440px');
+            // }
         } else if(get_cookie('watchType') == 'paper'){
             $('body').removeClass();
             $('body').addClass('paper-mods');
@@ -226,6 +228,13 @@ $(document).ready(function () {
             }
         })
         function watchContent() {
+            if ($cookieReload){
+                $tempCard.find('img').on('load',function () {
+                    $contentViev.css("height",$tempCard.outerHeight() + 30);
+                    $tempCard.find('img').off('load');
+                    $cookieReload = false;
+                })
+            }
             if($(window).width() > '767'){
                     $popUpWrapp.css('width','');
                     $contentViev.stop();
