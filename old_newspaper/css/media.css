@@ -786,9 +786,20 @@
   .cards-mods .content__mobil__cards {
     display: none;
   }
+
+  /* line 685, ../sass/media.scss */
+  html {
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  /* line 689, ../sass/media.scss */
+  header {
+    position: relative;
+  }
 }
 @media screen and (min-width: 768px) and (min-height: 580px) and (max-height: 800px) {
-  /* line 687, ../sass/media.scss */
+  /* line 694, ../sass/media.scss */
   .pop-up__wrapper {
     top: 0;
     max-height: 100vh;
