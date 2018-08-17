@@ -787,10 +787,10 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (min-height: 650px) and (max-height: 800px) {
-  /* line 689, ../sass/media.scss */
+@media screen and (min-width: 768px) and (min-height: 580px) and (max-height: 800px) {
+  /* line 687, ../sass/media.scss */
   .pop-up__wrapper {
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    max-height: 100vh;
   }
 }
