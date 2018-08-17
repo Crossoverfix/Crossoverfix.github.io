@@ -4249,25 +4249,21 @@ button, button:focus {
 
 /* line 3716, ../sass/style.scss */
 .test-1 {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+  overflow-x: hidden;
 }
-/* line 3721, ../sass/style.scss */
+/* line 3719, ../sass/style.scss */
 .test-2 {
-  width: 100vw;
-  max-width: 100vw;
-  min-width: 100vw;
+  overflow-y: hidden;
 }
-/* line 3726, ../sass/style.scss */
+/* line 3722, ../sass/style.scss */
 .test-3 {
   overflow: hidden;
 }
-/* line 3729, ../sass/style.scss */
+/* line 3725, ../sass/style.scss */
 .test-4 {
-  overflow-scrolling: touch;
+  overflow-x: auto;
 }
-/* line 3732, ../sass/style.scss */
+/* line 3728, ../sass/style.scss */
 .test-5 {
   overflow: auto;
 }

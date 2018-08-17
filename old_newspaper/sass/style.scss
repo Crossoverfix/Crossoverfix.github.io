@@ -3714,20 +3714,16 @@ display: none;
 
 .test{
   &-1{
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    overflow-x: hidden;
   }
   &-2{
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 100vw;
+    overflow-y: hidden;
   }
   &-3{
     overflow: hidden;
   }
   &-4{
-    overflow-scrolling: touch;
+    overflow-x: auto;
   }
   &-5{
     overflow: auto;
