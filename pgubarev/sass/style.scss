@@ -6,3 +6,175 @@ body{
   margin: 0;
   padding: 0;
 }
+a,a:hover,a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+#header__gubarev{
+  background-color: #FFFFFF;
+  box-shadow: 0 -1px 4px 0 rgba(15,52,111,0.1), 1px 2px 4px 0 rgba(15,52,111,0.25);
+  height: 73px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .row{
+    height: 73px;
+  }
+}
+.header__gubarev{
+  &__blue-block{
+    background-color: #0F346F;
+    height: 100%;
+    h1{
+      width: 100%;
+      line-height: 72px;
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-family: "Open Sans Condensed",sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  &__social{
+    a{
+      margin: 0 12px;
+    }
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: $color-blue;
+    font-weight: bold;
+    margin: 0 0 0 50px;
+    b{
+      font-size: 20px;
+      line-height: 27px;
+      color: $color-red;
+      font-weight: bold;
+    }
+  }
+  p{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    color: $color-blue;
+    margin: 0;
+  }
+}
+#gubarev__slovo{
+  margin-top: 73px;
+  background: url("../img/Foto_Gubarev.jpg")50% 0 no-repeat;
+  background-size: 100% auto;
+  height: 555px;
+}
+.gubarev__slovo{
+  padding-top: 90px;
+  h3{
+    font-family: "Open Sans",sans-serif;
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: bold;
+    color: $color-blue;
+    position: relative;
+    margin: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 320px;
+      background: url("../img/flag.svg")no-repeat;
+      width: 62px;
+      height: 50px;
+    }
+  }
+  h2{
+    font-family: "Open Sans",sans-serif;
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: bold;
+    color: $color-red;
+    margin: 0;
+  }
+  p{
+    margin: 40px 0 20px 0;
+    font-family: "Open Sans",sans-serif;
+    color: $color-text-d;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+  }
+  span{
+    display: block;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: bold;
+    text-align: right;
+    color: $color-red;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+#nav-bar{
+  position: relative;
+  height: 47px;
+  background-color: $color-white;
+  div{
+    display: flex;
+    justify-content: center;
+  }
+  a{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: bold;
+    color: $color-blue;
+    font-size: 18px;
+    line-height: 47px;
+    margin: 0 13px;
+  }
+}
+#gubarev-accost{
+  height: 700px;
+  box-shadow: 0 -1px 4px 0 rgba(15,52,111,0.1), 1px 2px 4px 0 rgba(15,52,111,0.25);
+}
+.gubarev-accost{
+  &__foto{
+
+  }
+  &__text{
+    background-color: $color-red;
+    height: 700px;
+    padding: 50px;
+    &__wrapper{
+      height: 600px;
+      overflow-y: auto;
+      h2{
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+      h3{
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+      p{
+        font-family: "Open Sans",sans-serif;
+        font-weight: normal;
+        color: white;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

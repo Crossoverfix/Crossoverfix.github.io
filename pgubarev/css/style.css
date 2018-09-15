@@ -1,14 +1,21 @@
-/* line 6, ../sass/_mixin.scss */
-.example-class {
-  color: white;
-  background-color: red;
-  height: 100%;
-  width: 100%;
+/* line 1, ../sass/_btn.scss */
+button, button:active, button:hover, button:visited, button:focus {
+  outline: none;
+  cursor: pointer;
 }
 
-/* line 1, ../sass/_btn.scss */
-button, button:active, button:hover, button:visited {
-  outline: none;
+/* line 5, ../sass/_btn.scss */
+.btn-ghost__red {
+  background-color: transparent;
+  border: 2px solid #F04950;
+  color: #F04950;
+  font-family: "Open Sans Condensed",sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  height: 42px;
+  padding: 0 30px;
 }
 
 /* line 4, ../sass/style.scss */
@@ -16,4 +23,203 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* line 9, ../sass/style.scss */
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 13, ../sass/style.scss */
+#header__gubarev {
+  background-color: #FFFFFF;
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+  height: 73px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* line 20, ../sass/style.scss */
+#header__gubarev .row {
+  height: 73px;
+}
+
+/* line 24, ../sass/style.scss */
+.header__gubarev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 25, ../sass/style.scss */
+.header__gubarev__blue-block {
+  background-color: #0F346F;
+  height: 100%;
+}
+/* line 28, ../sass/style.scss */
+.header__gubarev__blue-block h1 {
+  width: 100%;
+  line-height: 72px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: "Open Sans Condensed",sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 40, ../sass/style.scss */
+.header__gubarev__social a {
+  margin: 0 12px;
+}
+/* line 47, ../sass/style.scss */
+.header__gubarev h2 {
+  font-family: "Open Sans Condensed",sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0F346F;
+  font-weight: bold;
+  margin: 0 0 0 50px;
+}
+/* line 54, ../sass/style.scss */
+.header__gubarev h2 b {
+  font-size: 20px;
+  line-height: 27px;
+  color: #F04950;
+  font-weight: bold;
+}
+/* line 61, ../sass/style.scss */
+.header__gubarev p {
+  font-family: "Open Sans Condensed",sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #0F346F;
+  margin: 0;
+}
+
+/* line 70, ../sass/style.scss */
+#gubarev__slovo {
+  margin-top: 73px;
+  background: url("../img/Foto_Gubarev.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+  height: 555px;
+}
+
+/* line 76, ../sass/style.scss */
+.gubarev__slovo {
+  padding-top: 90px;
+}
+/* line 78, ../sass/style.scss */
+.gubarev__slovo h3 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: bold;
+  color: #0F346F;
+  position: relative;
+  margin: 0;
+}
+/* line 86, ../sass/style.scss */
+.gubarev__slovo h3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 320px;
+  background: url("../img/flag.svg") no-repeat;
+  width: 62px;
+  height: 50px;
+}
+/* line 96, ../sass/style.scss */
+.gubarev__slovo h2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: bold;
+  color: #F04950;
+  margin: 0;
+}
+/* line 104, ../sass/style.scss */
+.gubarev__slovo p {
+  margin: 40px 0 20px 0;
+  font-family: "Open Sans",sans-serif;
+  color: rgba(3, 20, 48, 0.8);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 41px;
+}
+/* line 112, ../sass/style.scss */
+.gubarev__slovo span {
+  display: block;
+  font-family: "Open Sans Condensed",sans-serif;
+  font-weight: bold;
+  text-align: right;
+  color: #F04950;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* line 122, ../sass/style.scss */
+#nav-bar {
+  position: relative;
+  height: 47px;
+  background-color: #E7ECF1;
+}
+/* line 126, ../sass/style.scss */
+#nav-bar div {
+  display: flex;
+  justify-content: center;
+}
+/* line 130, ../sass/style.scss */
+#nav-bar a {
+  font-family: "Open Sans Condensed",sans-serif;
+  font-weight: bold;
+  color: #0F346F;
+  font-size: 18px;
+  line-height: 47px;
+  margin: 0 13px;
+}
+
+/* line 139, ../sass/style.scss */
+#gubarev-accost {
+  height: 700px;
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+}
+
+/* line 147, ../sass/style.scss */
+.gubarev-accost__text {
+  background-color: #F04950;
+  height: 700px;
+  padding: 50px;
+}
+/* line 151, ../sass/style.scss */
+.gubarev-accost__text__wrapper {
+  height: 600px;
+  overflow-y: auto;
+}
+/* line 154, ../sass/style.scss */
+.gubarev-accost__text__wrapper h2 {
+  font-family: "Open Sans",sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+/* line 162, ../sass/style.scss */
+.gubarev-accost__text__wrapper h3 {
+  font-family: "Open Sans",sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+/* line 170, ../sass/style.scss */
+.gubarev-accost__text__wrapper p {
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
 }
