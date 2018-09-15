@@ -6,11 +6,16 @@ body{
   margin: 0;
   padding: 0;
 }
+header{
+  position: relative;
+  padding-bottom: 47px;
+}
 a,a:hover,a:visited{
   text-decoration: none;
   color: inherit;
 }
 #header__gubarev{
+  z-index: 10;
   background-color: #FFFFFF;
   box-shadow: 0 -1px 4px 0 rgba(15,52,111,0.1), 1px 2px 4px 0 rgba(15,52,111,0.25);
   height: 73px;
@@ -69,9 +74,10 @@ a,a:hover,a:visited{
 }
 #gubarev__slovo{
   margin-top: 73px;
-  background: url("../img/Foto_Gubarev.jpg")50% 0 no-repeat;
-  background-size: 100% auto;
+  background: url("../img/Foto_Gubarev.jpg")0 0 no-repeat;
+  background-size:auto 100%;
   height: 555px;
+  background-color: #f5fffe;
 }
 .gubarev__slovo{
   padding-top: 90px;
@@ -120,7 +126,9 @@ a,a:hover,a:visited{
   }
 }
 #nav-bar{
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 47px;
   background-color: $color-white;
   div{
@@ -142,7 +150,15 @@ a,a:hover,a:visited{
 }
 .gubarev-accost{
   &__foto{
-
+    height: 700px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    img{
+      position: absolute;
+      top: 0;
+      left: -225px;
+    }
   }
   &__text{
     background-color: $color-red;
@@ -155,15 +171,16 @@ a,a:hover,a:visited{
         font-family: "Open Sans",sans-serif;
         font-weight: bold;
         color: white;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 24px;
+        line-height: 26px;
         margin-bottom: 15px;
+        text-transform: uppercase;
       }
       h3{
         font-family: "Open Sans",sans-serif;
         font-weight: bold;
         color: white;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
         margin-bottom: 15px;
       }
@@ -171,10 +188,16 @@ a,a:hover,a:visited{
         font-family: "Open Sans",sans-serif;
         font-weight: normal;
         color: white;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
         margin-bottom: 15px;
       }
     }
   }
+}
+#biography{
+
+}
+.biography{
+
 }
