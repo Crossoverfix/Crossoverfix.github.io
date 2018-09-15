@@ -18,6 +18,25 @@ button, button:active, button:hover, button:visited, button:focus {
   padding: 0 30px;
 }
 
+/* line 17, ../sass/_btn.scss */
+.btn-tabs {
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  color: #F04950;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+/* line 29, ../sass/_btn.scss */
+.btn-tabs.active {
+  color: #0F346F;
+}
+
 /* line 4, ../sass/style.scss */
 body {
   height: 100%;
@@ -107,7 +126,7 @@ a, a:hover, a:visited {
 /* line 75, ../sass/style.scss */
 #gubarev__slovo {
   margin-top: 73px;
-  background: url("../img/Foto_Gubarev.jpg") 0 0 no-repeat;
+  background: url("../img/slider.png") 0 0 no-repeat;
   background-size: auto 100%;
   height: 555px;
   background-color: #f5fffe;
@@ -246,4 +265,80 @@ a, a:hover, a:visited {
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 15px;
+}
+
+/* line 198, ../sass/style.scss */
+#biography {
+  padding-top: 75px;
+}
+
+/* line 202, ../sass/style.scss */
+.biography__header {
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: "Open Sans Condensed",sans-serif;
+  color: #0F346F;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 41px;
+  padding-left: 95px;
+}
+/* line 212, ../sass/style.scss */
+.biography__tabs {
+  padding-left: 95px;
+  padding-right: 180px;
+  height: 550px;
+}
+/* line 217, ../sass/style.scss */
+.biography__content {
+  height: 550px;
+}
+/* line 219, ../sass/style.scss */
+.biography__content__point {
+  float: right;
+  overflow-y: auto;
+  height: 550px;
+  width: 515px;
+  padding-right: 30px;
+  display: none;
+}
+/* line 226, ../sass/style.scss */
+.biography__content__point p {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(3, 20, 48, 0.8);
+  margin-bottom: 15px;
+}
+/* line 233, ../sass/style.scss */
+.biography__content__point.active {
+  display: block;
+}
+/* line 238, ../sass/style.scss */
+.biography__news {
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 242, ../sass/style.scss */
+.biography__news__card {
+  width: 30%;
+}
+/* line 244, ../sass/style.scss */
+.biography__news__card__img {
+  height: 225px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 248, ../sass/style.scss */
+.biography__news__card__img img {
+  width: 100%;
+}
+/* line 252, ../sass/style.scss */
+.biography__news__card p {
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 19px;
+  color: rgba(15, 52, 111, 0.6);
 }

@@ -14,3 +14,19 @@ button, button:active, button:hover, button:visited,button:focus{
   height: 42px;
   padding: 0 30px;
 }
+.btn-tabs{
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  color: $color-red;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  &.active{
+    color: $color-blue;
+  }
+}
