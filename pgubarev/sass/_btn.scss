@@ -22,10 +22,20 @@ button, button:active, button:hover, button:visited,button:focus{
   color: $color-red;
   position: relative;
   margin-bottom: 30px;
-  width: 100%;
   background-color: transparent;
   border: none;
   text-align: left;
+  display: inline-block;
+  &:before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    background: url("../img/Svg/caret_right.svg")no-repeat;
+    background-size: 10px 20px;
+    bottom: 3px;
+    right: -20px;
+  }
   &.active{
     color: $color-blue;
   }
