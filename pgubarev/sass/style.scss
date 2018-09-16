@@ -435,6 +435,12 @@ padding-top: 75px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    &.news{
+      display: flex;
+    }
+    &.blog{
+      display: none;
+    }
     &__card{
       width: 32%;
       min-width: 32%;
