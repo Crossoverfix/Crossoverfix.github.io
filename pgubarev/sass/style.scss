@@ -357,27 +357,7 @@ padding-top: 75px;
     width: 100%;
   }
 }
-#call-back{
-  background-color: $color-white;
-  padding: 40px 0;
-  button,a{
-    float: right;
-  }
-  .row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  h2{
-    font-family: "Open Sans Condensed",sans-serif;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: bold;
-    color: $color-blue;
-    padding-right: 20px;
-  }
-}
-#call-back-2{
+#call-back,#call-back-2{
   background-color: $color-white;
   padding: 40px 0;
   button,a{

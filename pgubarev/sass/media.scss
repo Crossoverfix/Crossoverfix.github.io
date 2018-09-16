@@ -1,8 +1,219 @@
 @media screen and (max-width: 1199px){
-
+  .gubarev__slovo{
+    padding-top: 50px;
+  }
+  #biography{
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .biography{
+    &__tabs{
+      padding-right: 105px;
+    }
+    &__news{
+      &__card{
+        &__img{
+          height: 195px;
+        }
+      }
+    }
+  }
+  #quote{
+    padding: 55px 0 35px 0;
+  }
+  .quote{
+    &__text{
+      padding: 35px 25px;
+    }
+  }
+  #news-blog{
+    padding-top: 45px;
+  }
+  .news-blog{
+    &__body{
+      &__card{
+        margin-bottom: 20px;
+        &__img{
+          height: 170px;
+        }
+      }
+    }
+  }
+  #team{
+    padding: 40px 0;
+  }
+  .team{
+    &__body{
+      &__card{
+        width: 310px;
+        &__face{
+          top: -130px;
+          img{
+            width: 120%;
+          }
+        }
+      }
+    }
+  }
+  #orlov .team__body__card__face img{
+    top: 130px;
+    left: 230px;
+  }
+  #gubareva-ekaterina .team__body__card__face img{
+    top: 70px;
+    left: 187px;
+  }
+  #rudenko .team__body__card__face img{
+    top: 112px;
+    left: 186px;
+    width: 85%;
+  }
+  #barhatnova .team__body__card__face img{
+    top: 130px;
+    left: 188px;
+  }
+  #berdicevskiy.team__body__card__face img{
+    top: 130px;
+    left: 190px;
+  }
+  #ciplakov .team__body__card__face img{
+    top: 130px;
+    left: 134px;
+  }
 }
 @media screen and (max-width: 991px){
-
+  .header__gubarev{
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h2{
+      margin: 0;
+    }
+  }
+  .header__gubarev__social{
+    height: 35px;
+    margin: 15px;
+  }
+  #gubarev__slovo{
+    background-position-x: 50px;
+  }
+  .gubarev__slovo{
+    h3{
+      font-size: 28px;
+      &:before{
+        left: 228px;
+      }
+    }
+    h2{
+      font-size: 26px;
+    }
+    p{
+      font-size: 24px;
+      padding-right: 440px;
+    }
+  }
+  #gubarev-accost{
+    height: auto;
+    .row{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  .gubarev-accost{
+    &__foto{
+      height: 330px;
+      img{
+        height: auto;
+        width: 100%;
+        left: 0;
+      }
+    }
+    &__text{
+      height: 450px;
+      &__wrapper{
+        height: 350px;
+      }
+    }
+  }
+  .biography{
+    &__header{
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    &__tabs{
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 80px;
+    }
+    &__content{
+      height: 280px;
+      &__point{
+        height: 270px;
+        width: 100%;
+      }
+    }
+    &__news{
+      &__card{
+        &__img{
+          height: 145px;
+        }
+      }
+    }
+  }
+  .btn-tabs{
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  #call-back,#call-back-2{
+    h2{
+      margin-bottom: 25px;
+    }
+  }
+  #call-back button, #call-back a, #call-back-2 button, #call-back-2 a{
+    float: none;
+  }
+  .news-blog{
+    &__body{
+      &__card{
+        width: 48%;
+      }
+    }
+  }
+  .team{
+    &__body{
+      &__card{
+        width: 360px;
+      }
+    }
+  }
+  #orlov .team__body__card__face img{
+    top: 130px;
+    left: 270px;
+  }
+  #gubareva-ekaterina .team__body__card__face img{
+    top: 70px;
+    left: 212px;
+  }
+  #rudenko .team__body__card__face img{
+    top: 112px;
+    left: 216px;
+    width: 85%;
+  }
+  #barhatnova .team__body__card__face img{
+    top: 130px;
+    left: 222px;
+  }
+  #berdicevskiy.team__body__card__face img{
+    top: 130px;
+    left: 190px;
+  }
+  #ciplakov .team__body__card__face img{
+    top: 130px;
+    left: 165px;
+  }
+  .footer__body__point {
+    width: 47%;
+  }
 }
 @media screen and (max-width: 767px){
 
