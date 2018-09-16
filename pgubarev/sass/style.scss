@@ -325,3 +325,118 @@ padding-top: 75px;
     }
   }
 }
+#program{
+  padding-top: 90px;
+  padding-bottom: 60px;
+  h2{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: $color-blue;
+    font-weight: bold;
+    width: 100%;
+  }
+}
+#call-back{
+  background-color: $color-white;
+  padding: 40px 0;
+  button,a{
+    float: right;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h2{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: $color-blue;
+    padding-right: 20px;
+  }
+}
+.call-back__social{
+  a{
+    width: 20px;
+    height: 20px;
+    margin: 0 13px;
+    cursor: pointer;
+    img{
+      width: 20px;
+    }
+  }
+}
+#news-blog{
+  padding-top: 90px;
+}
+.news-blog{
+  &__header{
+    width: 100%;
+    margin-bottom: 25px;
+    h2{
+      display: inline-block;
+      cursor: pointer;
+      font-family: "Open Sans Condensed",sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      color: $color-text-g;
+      border-bottom: 4px solid transparent;
+      margin: 0 6px;
+      &.active{
+        color: $color-blue;
+        border-bottom-color: $color-red;
+      }
+    }
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__card{
+      width: 32%;
+      min-width: 32%;
+      margin-bottom: 40px;
+      span{
+        font-family: "Open Sans Condensed",sans-serif;
+        color: $color-text-g;
+        font-size: 16px;
+        line-height: 17px;
+        position: relative;
+        padding-left: 21px;
+        margin-bottom: 15px;
+        display: inline-block;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          top: 5px;
+          left: 0;
+          background: url("../img/Svg/clock.svg")no-repeat;
+        }
+      }
+      p{
+        font-family: "Open Sans",sans-serif;
+        color: $color-text-d;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &__img{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__footer{
+    margin: 0 auto;
+  }
+}

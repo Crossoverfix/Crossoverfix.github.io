@@ -40,3 +40,48 @@ button, button:active, button:hover, button:visited,button:focus{
     color: $color-blue;
   }
 }
+.btn-red{
+  border: none;
+  background-color: $color-red;
+  color: white;
+  padding: 0 24px;
+  align-items: center;
+  display: flex;
+  height: 42px;
+  img{
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+  }
+  p{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+  }
+}
+.btn-refresh{
+  border: none;
+  background-color: transparent;
+  color: $color-red;
+  font-family: "Open Sans Condensed",sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  padding-left: 33px;
+  font-weight: bold;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: url("../img/Svg/repeat.svg")no-repeat;
+  }
+}
