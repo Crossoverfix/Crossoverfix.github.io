@@ -266,3 +266,170 @@
     width: 47%;
   }
 }
+@media screen and (max-width: 767px) {
+  /* line 221, ../sass/media.scss */
+  .header__gubarev__blue-block:before {
+    z-index: -1;
+    width: 110vw;
+    transform: translateX(-10%);
+  }
+
+  /* line 226, ../sass/media.scss */
+  #header__gubarev {
+    height: 150px;
+  }
+
+  /* line 229, ../sass/media.scss */
+  .header__gubarev {
+    margin-top: 10px;
+  }
+  /* line 231, ../sass/media.scss */
+  .header__gubarev__social {
+    display: none;
+  }
+
+  /* line 236, ../sass/media.scss */
+  #header__gubarev .btn-ghost__red {
+    display: none;
+  }
+
+  /* line 240, ../sass/media.scss */
+  #gubarev__slovo {
+    margin-top: 153px;
+    height: 790px;
+  }
+
+  /* line 245, ../sass/media.scss */
+  .gubarev__slovo h3 {
+    font-size: 32px;
+  }
+  /* line 248, ../sass/media.scss */
+  .gubarev__slovo h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  /* line 252, ../sass/media.scss */
+  .gubarev__slovo p {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* line 256, ../sass/media.scss */
+  .gubarev__slovo__foto {
+    top: 484px;
+    left: -129px;
+    background-size: 740px;
+  }
+
+  /* line 262, ../sass/media.scss */
+  #nav-bar {
+    display: none;
+  }
+
+  /* line 265, ../sass/media.scss */
+  #gubarev-accost {
+    margin-top: 0;
+  }
+
+  /* line 269, ../sass/media.scss */
+  .gubarev-accost__foto {
+    height: 240px;
+  }
+
+  /* line 274, ../sass/media.scss */
+  .biography__tabs {
+    margin-bottom: 20px;
+  }
+  /* line 277, ../sass/media.scss */
+  .biography__news {
+    flex-wrap: wrap;
+  }
+  /* line 279, ../sass/media.scss */
+  .biography__news__card {
+    width: 100%;
+  }
+
+  /* line 284, ../sass/media.scss */
+  .quote {
+    padding: 0 15px;
+  }
+
+  /* line 287, ../sass/media.scss */
+  .call-back__social {
+    margin: 10px 0;
+  }
+
+  /* line 291, ../sass/media.scss */
+  .news-blog__body {
+    justify-content: center;
+  }
+  /* line 293, ../sass/media.scss */
+  .news-blog__body__card {
+    width: 90%;
+  }
+
+  /* line 299, ../sass/media.scss */
+  .team__body {
+    justify-content: center;
+  }
+  /* line 301, ../sass/media.scss */
+  .team__body__card {
+    width: 320px;
+  }
+
+  /* line 306, ../sass/media.scss */
+  #orlov .team__body__card__face img {
+    top: 130px;
+    left: 240px;
+  }
+
+  /* line 310, ../sass/media.scss */
+  #gubareva-ekaterina .team__body__card__face img {
+    top: 70px;
+    left: 195px;
+  }
+
+  /* line 314, ../sass/media.scss */
+  #rudenko .team__body__card__face img {
+    top: 112px;
+    left: 190px;
+    width: 85%;
+  }
+
+  /* line 319, ../sass/media.scss */
+  #barhatnova .team__body__card__face img {
+    top: 130px;
+    left: 190px;
+  }
+
+  /* line 323, ../sass/media.scss */
+  #berdicevskiy.team__body__card__face img {
+    top: 130px;
+    left: 205px;
+  }
+
+  /* line 327, ../sass/media.scss */
+  #ciplakov .team__body__card__face img {
+    top: 130px;
+    left: 165px;
+  }
+
+  /* line 331, ../sass/media.scss */
+  .footer__header {
+    padding: 0 10px;
+  }
+
+  /* line 334, ../sass/media.scss */
+  .footer__body {
+    padding: 0 10px;
+  }
+  /* line 336, ../sass/media.scss */
+  .footer__body__point {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 574px) {
+  /* line 343, ../sass/media.scss */
+  .gubarev-accost__foto {
+    height: 66vw;
+  }
+}
