@@ -13,11 +13,15 @@ button, button:active, button:hover, button:visited,button:focus{
   text-align: center;
   height: 42px;
   padding: 0 30px;
+  &:hover{
+    background-color: $color-red;
+    color: white;
+  }
 }
 .btn-tabs{
   font-family: "Open Sans",sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 27px;
   color: $color-red;
   position: relative;
@@ -32,12 +36,18 @@ button, button:active, button:hover, button:visited,button:focus{
     height: 20px;
     width: 10px;
     background: url("../img/Svg/caret_right.svg")no-repeat;
-    background-size: 10px 20px;
-    bottom: 3px;
-    right: -20px;
+    background-size: 8px;
+    bottom: 0;
+    right: -10px;
   }
   &.active{
     color: $color-blue;
+    &:before{
+      background: url("../img/Svg/caret_right_b.svg")no-repeat;
+      background-size: 8px;
+      bottom: 0;
+      right: -10px;
+    }
   }
 }
 .btn-red{
@@ -48,6 +58,10 @@ button, button:active, button:hover, button:visited,button:focus{
   align-items: center;
   display: flex;
   height: 42px;
+  &:hover{
+    box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+    background-color: #d2363d;
+  }
   img{
     width: 18px;
     height: 18px;
@@ -75,6 +89,9 @@ button, button:active, button:hover, button:visited,button:focus{
   display: block;
   padding-left: 33px;
   font-weight: bold;
+  &:hover{
+    color: #d2363d;
+  }
   &:before{
     content: "";
     position: absolute;

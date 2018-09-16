@@ -40,4 +40,26 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: $linkTo - 110}, 1100);
         return false;
     });
+    var $quoteRadio = $(".quote__radio__imitation");
+    var $quoteText = $(".quote__text p");
+    var $quoteCount = 0;
+    $quoteRadio.on('click',function () {
+        $radioIndex = $quoteRadio.index(this);
+        $quoteRadio.removeClass('active');
+        $quoteRadio.eq($radioIndex).addClass('active');
+        $quoteText.css('display','none');
+        $quoteText.eq($radioIndex).css('display','block');
+    });
+    setInterval(quoteAuto,5000);
+    function quoteAuto() {
+        $quoteRadio.removeClass('active');
+        $quoteRadio.eq($quoteCount).addClass('active');
+        $quoteText.css('display','none');
+        $quoteText.eq($quoteCount).css('display','block');
+        if($quoteCount <= 1){
+            $quoteCount++;
+        } else {
+            $quoteCount = 0;
+        }
+    }
 })

@@ -2,6 +2,20 @@
   .gubarev__slovo{
     padding-top: 50px;
   }
+  #gubarev-accost{
+    height: 600px;
+  }
+  .gubarev-accost{
+    &__text,&__foto{
+      height: 600px;
+      img{
+        left: -200px;
+      }
+      &__wrapper{
+        height: 450px;
+      }
+    }
+  }
   #biography{
     padding-top: 35px;
     padding-bottom: 30px;
@@ -82,6 +96,9 @@
   }
 }
 @media screen and (max-width: 991px){
+  .gubarev__slovo p{
+    margin: 20px 0 10px 0;
+  }
   .header__gubarev{
     justify-content: center;
     flex-direction: column;
@@ -96,21 +113,6 @@
   }
   #gubarev__slovo{
     background-position-x: 50px;
-  }
-  .gubarev__slovo{
-    h3{
-      font-size: 28px;
-      &:before{
-        left: 228px;
-      }
-    }
-    h2{
-      font-size: 26px;
-    }
-    p{
-      font-size: 24px;
-      padding-right: 440px;
-    }
   }
   #gubarev-accost{
     height: auto;
@@ -131,7 +133,7 @@
     &__text{
       height: 450px;
       &__wrapper{
-        height: 350px;
+        height: 300px;
       }
     }
   }
@@ -141,8 +143,8 @@
       margin-bottom: 30px;
     }
     &__tabs{
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 0;
+      padding-right: 0;
       height: 80px;
     }
     &__content{

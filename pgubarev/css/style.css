@@ -17,12 +17,17 @@ button, button:active, button:hover, button:visited, button:focus {
   height: 42px;
   padding: 0 30px;
 }
+/* line 16, ../sass/_btn.scss */
+.btn-ghost__red:hover {
+  background-color: #F04950;
+  color: white;
+}
 
-/* line 17, ../sass/_btn.scss */
+/* line 21, ../sass/_btn.scss */
 .btn-tabs {
   font-family: "Open Sans",sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 27px;
   color: #F04950;
   position: relative;
@@ -32,23 +37,30 @@ button, button:active, button:hover, button:visited, button:focus {
   text-align: left;
   display: inline-block;
 }
-/* line 29, ../sass/_btn.scss */
+/* line 33, ../sass/_btn.scss */
 .btn-tabs:before {
   content: "";
   position: absolute;
   height: 20px;
   width: 10px;
   background: url("../img/Svg/caret_right.svg") no-repeat;
-  background-size: 10px 20px;
-  bottom: 3px;
-  right: -20px;
+  background-size: 8px;
+  bottom: 0;
+  right: -10px;
 }
-/* line 39, ../sass/_btn.scss */
+/* line 43, ../sass/_btn.scss */
 .btn-tabs.active {
   color: #0F346F;
 }
+/* line 45, ../sass/_btn.scss */
+.btn-tabs.active:before {
+  background: url("../img/Svg/caret_right_b.svg") no-repeat;
+  background-size: 8px;
+  bottom: 0;
+  right: -10px;
+}
 
-/* line 43, ../sass/_btn.scss */
+/* line 53, ../sass/_btn.scss */
 .btn-red {
   border: none;
   background-color: #F04950;
@@ -58,13 +70,18 @@ button, button:active, button:hover, button:visited, button:focus {
   display: flex;
   height: 42px;
 }
-/* line 51, ../sass/_btn.scss */
+/* line 61, ../sass/_btn.scss */
+.btn-red:hover {
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+  background-color: #d2363d;
+}
+/* line 65, ../sass/_btn.scss */
 .btn-red img {
   width: 18px;
   height: 18px;
   margin-right: 14px;
 }
-/* line 56, ../sass/_btn.scss */
+/* line 70, ../sass/_btn.scss */
 .btn-red p {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 18px;
@@ -75,7 +92,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin: 0;
 }
 
-/* line 66, ../sass/_btn.scss */
+/* line 80, ../sass/_btn.scss */
 .btn-refresh {
   border: none;
   background-color: transparent;
@@ -89,7 +106,11 @@ button, button:active, button:hover, button:visited, button:focus {
   padding-left: 33px;
   font-weight: bold;
 }
-/* line 78, ../sass/_btn.scss */
+/* line 92, ../sass/_btn.scss */
+.btn-refresh:hover {
+  color: #d2363d;
+}
+/* line 95, ../sass/_btn.scss */
 .btn-refresh:before {
   content: "";
   position: absolute;
@@ -144,8 +165,20 @@ a, a:hover, a:visited {
 .header__gubarev__blue-block {
   background-color: #0F346F;
   height: 100%;
+  position: relative;
 }
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
+.header__gubarev__blue-block:before {
+  content: "";
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0F346F;
+  transform: translateX(-99%);
+}
+/* line 44, ../sass/style.scss */
 .header__gubarev__blue-block h1 {
   width: 100%;
   line-height: 72px;
@@ -156,17 +189,17 @@ a, a:hover, a:visited {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 45, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .header__gubarev__social a {
   margin: 0 12px;
   height: 20px;
   width: 20px;
 }
-/* line 49, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .header__gubarev__social a img {
   width: 20px;
 }
-/* line 57, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .header__gubarev h2 {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 20px;
@@ -174,15 +207,16 @@ a, a:hover, a:visited {
   color: #0F346F;
   font-weight: bold;
   margin: 0 0 0 50px;
+  text-transform: uppercase;
 }
-/* line 64, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .header__gubarev h2 b {
   font-size: 20px;
   line-height: 27px;
   color: #F04950;
   font-weight: bold;
 }
-/* line 71, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .header__gubarev p {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 20px;
@@ -192,20 +226,31 @@ a, a:hover, a:visited {
   margin: 0;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #gubarev__slovo {
   margin-top: 73px;
-  background: url("../img/slider.png") 0 0 no-repeat;
-  background-size: auto 100%;
-  height: 555px;
   background-color: #f5fffe;
 }
+/* line 95, ../sass/style.scss */
+#gubarev__slovo .row {
+  position: relative;
+}
 
-/* line 87, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .gubarev__slovo {
   padding-top: 90px;
+  height: 550px;
 }
-/* line 89, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
+.gubarev__slovo__foto {
+  position: absolute;
+  width: 1200px;
+  height: 550px;
+  top: 0;
+  left: -395px;
+  background: url("../img/slider.png") 0 0 no-repeat;
+}
+/* line 110, ../sass/style.scss */
 .gubarev__slovo h3 {
   font-family: "Open Sans",sans-serif;
   font-size: 36px;
@@ -215,7 +260,7 @@ a, a:hover, a:visited {
   position: relative;
   margin: 0;
 }
-/* line 97, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .gubarev__slovo h3:before {
   content: "";
   position: absolute;
@@ -225,7 +270,7 @@ a, a:hover, a:visited {
   width: 62px;
   height: 50px;
 }
-/* line 107, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .gubarev__slovo h2 {
   font-family: "Open Sans",sans-serif;
   font-size: 36px;
@@ -233,8 +278,9 @@ a, a:hover, a:visited {
   font-weight: bold;
   color: #F04950;
   margin: 0;
+  text-transform: uppercase;
 }
-/* line 115, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .gubarev__slovo p {
   margin: 40px 0 20px 0;
   font-family: "Open Sans",sans-serif;
@@ -243,7 +289,7 @@ a, a:hover, a:visited {
   font-weight: 600;
   line-height: 41px;
 }
-/* line 123, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .gubarev__slovo span {
   display: block;
   font-family: "Open Sans Condensed",sans-serif;
@@ -252,9 +298,10 @@ a, a:hover, a:visited {
   color: #F04950;
   font-size: 20px;
   line-height: 27px;
+  text-transform: uppercase;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 #nav-bar {
   position: absolute;
   left: 0;
@@ -263,12 +310,12 @@ a, a:hover, a:visited {
   background-color: #E7ECF1;
   z-index: 10;
 }
-/* line 140, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 #nav-bar div {
   display: flex;
   justify-content: center;
 }
-/* line 144, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 #nav-bar a {
   font-family: "Open Sans Condensed",sans-serif;
   font-weight: bold;
@@ -277,55 +324,61 @@ a, a:hover, a:visited {
   line-height: 47px;
   margin: 0 13px;
 }
-/* line 151, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
+#nav-bar a:hover {
+  color: #F04950;
+  border-bottom: 2px solid #F04950;
+}
+/* line 178, ../sass/style.scss */
+#nav-bar a:hover img:first-child {
+  display: none;
+}
+/* line 181, ../sass/style.scss */
+#nav-bar a:hover img:last-child {
+  display: inline-block;
+}
+/* line 186, ../sass/style.scss */
 #nav-bar a img {
   height: 18px;
   width: 18px;
 }
+/* line 189, ../sass/style.scss */
+#nav-bar a img:first-child {
+  display: inline-block;
+}
+/* line 192, ../sass/style.scss */
+#nav-bar a img:last-child {
+  display: none;
+}
 
-/* line 157, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 #gubarev-accost {
+  margin-top: 50px;
   height: 700px;
   box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
 }
 
-/* line 162, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .gubarev-accost__foto {
   height: 700px;
   padding: 0;
   overflow: hidden;
   position: relative;
 }
-/* line 167, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .gubarev-accost__foto img {
   position: absolute;
   top: 0;
   left: -225px;
 }
-/* line 173, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .gubarev-accost__text {
   background-color: #F04950;
   height: 700px;
   padding: 50px;
 }
-/* line 177, ../sass/style.scss */
-.gubarev-accost__text__wrapper {
-  height: 600px;
-  overflow-y: auto;
-}
-/* line 180, ../sass/style.scss */
-.gubarev-accost__text__wrapper::-webkit-scrollbar {
-  width: 10px;
-  background-color: #A9B8D0;
-  border: 4px solid #F04950;
-}
-/* line 185, ../sass/style.scss */
-.gubarev-accost__text__wrapper::-webkit-scrollbar-thumb {
-  width: 10px;
-  background-color: #FFFFFF;
-}
-/* line 189, ../sass/style.scss */
-.gubarev-accost__text__wrapper h2 {
+/* line 219, ../sass/style.scss */
+.gubarev-accost__text h2 {
   font-family: "Open Sans",sans-serif;
   font-weight: bold;
   color: white;
@@ -334,32 +387,47 @@ a, a:hover, a:visited {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 198, ../sass/style.scss */
-.gubarev-accost__text__wrapper h3 {
+/* line 228, ../sass/style.scss */
+.gubarev-accost__text h3 {
   font-family: "Open Sans",sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: white;
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 15px;
 }
-/* line 206, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
+.gubarev-accost__text__wrapper {
+  height: 500px;
+  overflow-y: auto;
+}
+/* line 239, ../sass/style.scss */
+.gubarev-accost__text__wrapper::-webkit-scrollbar {
+  width: 10px;
+  background-color: #A9B8D0;
+  border: 4px solid #F04950;
+}
+/* line 244, ../sass/style.scss */
+.gubarev-accost__text__wrapper::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #FFFFFF;
+}
+/* line 248, ../sass/style.scss */
 .gubarev-accost__text__wrapper p {
   font-family: "Open Sans",sans-serif;
   font-weight: normal;
   color: white;
   font-size: 16px;
-  line-height: 18px;
   margin-bottom: 15px;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 #biography {
   padding-top: 75px;
   padding-bottom: 60px;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .biography__header {
   width: 100%;
   margin-bottom: 50px;
@@ -370,89 +438,87 @@ a, a:hover, a:visited {
   line-height: 41px;
   padding-left: 95px;
 }
-/* line 232, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .biography__tabs {
   padding-left: 95px;
   padding-right: 180px;
   height: 550px;
 }
-/* line 237, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .biography__content {
   height: 550px;
 }
-/* line 239, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .biography__content__point {
   float: right;
   overflow-y: auto;
   height: 550px;
-  width: 515px;
+  width: 100%;
   padding-right: 30px;
   display: none;
 }
-/* line 246, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .biography__content__point::-webkit-scrollbar {
   width: 10px;
   background-color: #A9B8D0;
   border: 4px solid white;
 }
-/* line 251, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .biography__content__point::-webkit-scrollbar-thumb {
   width: 10px;
   background-color: #0F346F;
 }
-/* line 255, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .biography__content__point p {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  line-height: 18px;
   color: rgba(3, 20, 48, 0.8);
   margin-bottom: 15px;
 }
-/* line 262, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .biography__content__point.active {
   display: block;
 }
-/* line 267, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .biography__news {
   padding-top: 35px;
   display: flex;
   justify-content: space-between;
 }
-/* line 271, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .biography__news__card {
   width: 30%;
 }
-/* line 273, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .biography__news__card__img {
   height: 225px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 277, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .biography__news__card__img img {
   width: 100%;
 }
-/* line 281, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .biography__news__card p {
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
-  font-style: italic;
   line-height: 19px;
   color: rgba(15, 52, 111, 0.6);
 }
 
-/* line 291, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 #quote {
   background-color: #E7ECF1;
   padding: 70px 0 50px 0;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .quote {
   width: 670px;
   margin: 0 auto;
 }
-/* line 298, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .quote__text {
   border: solid 5px white;
   position: relative;
@@ -460,7 +526,7 @@ a, a:hover, a:visited {
   margin-bottom: 25px;
   position: relative;
 }
-/* line 304, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .quote__text:before {
   content: "";
   position: absolute;
@@ -471,15 +537,20 @@ a, a:hover, a:visited {
   top: -15px;
   left: 30px;
 }
-/* line 314, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .quote__text p {
   font-family: "Open Sans",sans-serif;
   font-size: 20px;
   font-style: italic;
   line-height: 27px;
   color: rgba(3, 20, 48, 0.8);
+  display: none;
 }
-/* line 322, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
+.quote__text p:first-child {
+  display: block;
+}
+/* line 365, ../sass/style.scss */
 .quote h2 {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 20px;
@@ -488,12 +559,13 @@ a, a:hover, a:visited {
   color: #F04950;
   text-align: right;
   float: right;
+  text-transform: uppercase;
 }
-/* line 331, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .quote__radio {
   display: inline-block;
 }
-/* line 333, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .quote__radio__imitation {
   width: 10px;
   height: 10px;
@@ -503,17 +575,17 @@ a, a:hover, a:visited {
   display: inline-block;
   cursor: pointer;
 }
-/* line 341, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .quote__radio__imitation.active {
   background-color: #F04950;
 }
 
-/* line 347, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 #program {
   padding-top: 90px;
   padding-bottom: 60px;
 }
-/* line 350, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 #program h2 {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 30px;
@@ -524,22 +596,22 @@ a, a:hover, a:visited {
   width: 100%;
 }
 
-/* line 360, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 #call-back, #call-back-2 {
   background-color: #E7ECF1;
   padding: 40px 0;
 }
-/* line 363, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 #call-back button, #call-back a, #call-back-2 button, #call-back-2 a {
   float: right;
 }
-/* line 366, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 #call-back .row, #call-back-2 .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 371, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 #call-back h2, #call-back-2 h2 {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 20px;
@@ -549,29 +621,29 @@ a, a:hover, a:visited {
   padding-right: 20px;
 }
 
-/* line 381, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .call-back__social a {
   width: 20px;
   height: 20px;
   margin: 0 13px;
   cursor: pointer;
 }
-/* line 386, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .call-back__social a img {
   width: 20px;
 }
 
-/* line 391, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 #news-blog {
   padding-top: 90px;
 }
 
-/* line 395, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .news-blog__header {
   width: 100%;
   margin-bottom: 25px;
 }
-/* line 398, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .news-blog__header h2 {
   display: inline-block;
   cursor: pointer;
@@ -583,32 +655,32 @@ a, a:hover, a:visited {
   border-bottom: 4px solid transparent;
   margin: 0 6px;
 }
-/* line 408, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .news-blog__header h2.active {
   color: #0F346F;
   border-bottom-color: #F04950;
 }
-/* line 414, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .news-blog__body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 418, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .news-blog__body.news {
   display: flex;
 }
-/* line 421, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .news-blog__body.blog {
   display: none;
 }
-/* line 424, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 .news-blog__body__card {
   width: 32%;
   min-width: 32%;
   margin-bottom: 40px;
 }
-/* line 428, ../sass/style.scss */
+/* line 472, ../sass/style.scss */
 .news-blog__body__card span {
   font-family: "Open Sans Condensed",sans-serif;
   color: rgba(15, 52, 111, 0.6);
@@ -619,7 +691,7 @@ a, a:hover, a:visited {
   margin-bottom: 15px;
   display: inline-block;
 }
-/* line 437, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 .news-blog__body__card span:before {
   content: "";
   position: absolute;
@@ -629,39 +701,39 @@ a, a:hover, a:visited {
   left: 0;
   background: url("../img/Svg/clock.svg") no-repeat;
 }
-/* line 447, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .news-blog__body__card p {
   font-family: "Open Sans",sans-serif;
   color: rgba(3, 20, 48, 0.8);
   font-size: 18px;
   line-height: 21px;
 }
-/* line 453, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .news-blog__body__card__img {
   width: 100%;
   height: 200px;
   overflow: hidden;
   margin-bottom: 15px;
 }
-/* line 458, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .news-blog__body__card__img img {
   width: 100%;
 }
-/* line 464, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .news-blog__footer {
   margin: 0 auto;
 }
 
-/* line 468, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
 #team {
   padding: 90px 0;
 }
 
-/* line 472, ../sass/style.scss */
+/* line 516, ../sass/style.scss */
 .team__header {
   margin: 0 auto;
 }
-/* line 474, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .team__header h2 {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 30px;
@@ -670,14 +742,14 @@ a, a:hover, a:visited {
   color: #0F346F;
   padding-right: 20px;
 }
-/* line 483, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .team__body {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 488, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .team__body__card {
   width: 370px;
   overflow: hidden;
@@ -687,19 +759,23 @@ a, a:hover, a:visited {
   position: relative;
   cursor: pointer;
 }
-/* line 497, ../sass/style.scss */
-.team__body__card:hover .team__body__card__face {
-  top: -165px;
+/* line 540, ../sass/style.scss */
+.team__body__card:hover {
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
 }
-/* line 500, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
+.team__body__card:hover .team__body__card__face {
+  height: 320px;
+}
+/* line 545, ../sass/style.scss */
 .team__body__card:hover h3 {
   bottom: 80px;
 }
-/* line 503, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 .team__body__card:hover p {
   bottom: 20px;
 }
-/* line 507, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .team__body__card h3 {
   font-family: "Open Sans Condensed",sans-serif;
   color: white;
@@ -714,7 +790,7 @@ a, a:hover, a:visited {
   width: 100%;
   transition: all linear 0.2s;
 }
-/* line 521, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 .team__body__card p {
   font-family: "Open Sans Condensed",sans-serif;
   color: white;
@@ -728,7 +804,7 @@ a, a:hover, a:visited {
   transform: translateX(-50%);
   transition: all linear 0.2s;
 }
-/* line 534, ../sass/style.scss */
+/* line 579, ../sass/style.scss */
 .team__body__card__face {
   width: 120%;
   height: 400px;
@@ -740,7 +816,7 @@ a, a:hover, a:visited {
   transition: all linear 0.2s;
   transform: translateX(-50%);
 }
-/* line 544, ../sass/style.scss */
+/* line 589, ../sass/style.scss */
 .team__body__card__face img {
   width: 100%;
   position: absolute;
@@ -748,60 +824,60 @@ a, a:hover, a:visited {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 554, ../sass/style.scss */
+/* line 599, ../sass/style.scss */
 .team__footer {
   margin: 0 auto;
 }
 
-/* line 560, ../sass/style.scss */
+/* line 605, ../sass/style.scss */
 #orlov .team__body__card__face img {
   top: 105px;
   left: 255px;
 }
 
-/* line 568, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 #gubareva-ekaterina .team__body__card__face img {
   top: 70px;
   left: 225px;
 }
 
-/* line 576, ../sass/style.scss */
+/* line 621, ../sass/style.scss */
 #rudenko .team__body__card__face img {
   top: 75px;
   left: 220px;
   width: 85%;
 }
 
-/* line 585, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 #barhatnova .team__body__card__face img {
   top: 110px;
   left: 219px;
 }
 
-/* line 593, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 #berdicevskiy .team__body__card__face img {
   top: 109px;
   left: 227px;
 }
 
-/* line 601, ../sass/style.scss */
+/* line 646, ../sass/style.scss */
 #ciplakov .team__body__card__face img {
   top: 110px;
   left: 214px;
 }
 
-/* line 607, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 #footer {
   background-color: #031430;
   padding: 70px 0 40px 0;
 }
 
-/* line 612, ../sass/style.scss */
+/* line 657, ../sass/style.scss */
 .footer__header {
   width: 100%;
   margin-bottom: 35px;
 }
-/* line 615, ../sass/style.scss */
+/* line 660, ../sass/style.scss */
 .footer__header h2 {
   color: #FFFFFF;
   font-family: "Open Sans Condensed",sans-serif;
@@ -811,18 +887,18 @@ a, a:hover, a:visited {
   text-align: left;
   width: 100%;
 }
-/* line 625, ../sass/style.scss */
+/* line 670, ../sass/style.scss */
 .footer__body {
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
 }
-/* line 630, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
 .footer__body__point {
   width: 32%;
 }
-/* line 632, ../sass/style.scss */
+/* line 677, ../sass/style.scss */
 .footer__body__point h3 {
   color: #FFFFFF;
   font-family: "Open Sans Condensed",sans-serif;
@@ -832,7 +908,7 @@ a, a:hover, a:visited {
   display: block;
   margin-bottom: 15px;
 }
-/* line 641, ../sass/style.scss */
+/* line 686, ../sass/style.scss */
 .footer__body__point a {
   color: #FFFFFF;
   font-family: "Open Sans",sans-serif;
@@ -843,7 +919,7 @@ a, a:hover, a:visited {
   display: block;
   margin-bottom: 15px;
 }
-/* line 651, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 .footer__body__point a.mail:before {
   content: "";
   position: absolute;
@@ -853,7 +929,7 @@ a, a:hover, a:visited {
   left: 0;
   background: url("../img/Svg/email.svg") no-repeat;
 }
-/* line 662, ../sass/style.scss */
+/* line 707, ../sass/style.scss */
 .footer__body__point a.telephone:before {
   content: "";
   position: absolute;
@@ -863,7 +939,7 @@ a, a:hover, a:visited {
   left: 0;
   background: url("../img/Svg/call.svg") no-repeat;
 }
-/* line 673, ../sass/style.scss */
+/* line 718, ../sass/style.scss */
 .footer__body__point span {
   color: #FFFFFF;
   font-family: "Open Sans",sans-serif;
@@ -874,7 +950,7 @@ a, a:hover, a:visited {
   display: block;
   margin-bottom: 75px;
 }
-/* line 682, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 .footer__body__point span:before {
   content: "";
   position: absolute;

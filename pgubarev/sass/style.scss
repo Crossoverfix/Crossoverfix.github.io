@@ -30,6 +30,17 @@ a,a:hover,a:visited{
   &__blue-block{
     background-color: #0F346F;
     height: 100%;
+    position: relative;
+    &:before{
+      content: "";
+      height: 100%;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-blue;
+      transform: translateX(-99%);
+    }
     h1{
       width: 100%;
       line-height: 72px;
@@ -61,6 +72,7 @@ a,a:hover,a:visited{
     color: $color-blue;
     font-weight: bold;
     margin: 0 0 0 50px;
+    text-transform: uppercase;
     b{
       font-size: 20px;
       line-height: 27px;
@@ -79,13 +91,22 @@ a,a:hover,a:visited{
 }
 #gubarev__slovo{
   margin-top: 73px;
-  background: url("../img/slider.png")0 0 no-repeat;
-  background-size:auto 100%;
-  height: 555px;
   background-color: #f5fffe;
+  .row{
+    position: relative;
+  }
 }
 .gubarev__slovo{
+  &__foto{
+    position: absolute;
+    width: 1200px;
+    height: 550px;
+    top: 0;
+    left: -395px;
+    background: url("../img/slider.png")0 0 no-repeat;
+  }
   padding-top: 90px;
+  height: 550px;
   h3{
     font-family: "Open Sans",sans-serif;
     font-size: 36px;
@@ -111,6 +132,7 @@ a,a:hover,a:visited{
     font-weight: bold;
     color: $color-red;
     margin: 0;
+    text-transform: uppercase;
   }
   p{
     margin: 40px 0 20px 0;
@@ -128,6 +150,7 @@ a,a:hover,a:visited{
     color: $color-red;
     font-size: 20px;
     line-height: 27px;
+    text-transform: uppercase;
   }
 }
 #nav-bar{
@@ -148,13 +171,32 @@ a,a:hover,a:visited{
     font-size: 18px;
     line-height: 47px;
     margin: 0 13px;
+    &:hover{
+      color: $color-red;
+      border-bottom: 2px solid $color-red;
+      img{
+        &:first-child{
+          display: none;
+        }
+        &:last-child{
+          display: inline-block;
+        }
+      }
+    }
     img{
       height: 18px;
       width: 18px;
+      &:first-child{
+        display: inline-block;
+      }
+      &:last-child{
+        display: none;
+      }
     }
   }
 }
 #gubarev-accost{
+  margin-top: 50px;
   height: 700px;
   box-shadow: 0 -1px 4px 0 rgba(15,52,111,0.1), 1px 2px 4px 0 rgba(15,52,111,0.25);
 }
@@ -174,8 +216,25 @@ a,a:hover,a:visited{
     background-color: $color-red;
     height: 700px;
     padding: 50px;
+    h2{
+      font-family: "Open Sans",sans-serif;
+      font-weight: bold;
+      color: white;
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    h3{
+      font-family: "Open Sans",sans-serif;
+      font-weight: 600;
+      color: white;
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
     &__wrapper{
-      height: 600px;
+      height: 500px;
       overflow-y: auto;
       &::-webkit-scrollbar{
         width: 10px;
@@ -186,29 +245,11 @@ a,a:hover,a:visited{
         width: 10px;
         background-color: #FFFFFF;
       }
-      h2{
-        font-family: "Open Sans",sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 24px;
-        line-height: 26px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-      }
-      h3{
-        font-family: "Open Sans",sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 16px;
-        line-height: 18px;
-        margin-bottom: 15px;
-      }
       p{
         font-family: "Open Sans",sans-serif;
         font-weight: normal;
         color: white;
         font-size: 16px;
-        line-height: 18px;
         margin-bottom: 15px;
       }
     }
@@ -240,7 +281,7 @@ padding-top: 75px;
       float: right;
       overflow-y: auto;
       height: 550px;
-      width: 515px;
+      width: 100%;
       padding-right: 30px;
       display: none;
       &::-webkit-scrollbar{
@@ -255,7 +296,6 @@ padding-top: 75px;
       p{
         font-family: "Open Sans",sans-serif;
         font-size: 16px;
-        line-height: 18px;
         color: $color-text-d;
         margin-bottom: 15px;
       }
@@ -281,7 +321,6 @@ padding-top: 75px;
       p{
         font-family: "Open Sans",sans-serif;
         font-size: 14px;
-        font-style: italic;
         line-height: 19px;
         color: $color-text-g;
       }
@@ -317,6 +356,10 @@ padding-top: 75px;
       font-style: italic;
       line-height: 27px;
       color: $color-text-d;
+      display: none;
+      &:first-child{
+        display: block;
+      }
     }
   }
   h2{
@@ -327,6 +370,7 @@ padding-top: 75px;
     color: $color-red;
     text-align: right;
     float: right;
+    text-transform: uppercase;
   }
   &__radio{
     display: inline-block;
@@ -494,8 +538,9 @@ padding-top: 75px;
       position: relative;
       cursor: pointer;
       &:hover{
+        box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
         .team__body__card__face{
-          top: -165px;
+          height: 320px;
         }
           h3{
             bottom: 80px;
