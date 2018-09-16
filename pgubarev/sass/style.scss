@@ -358,6 +358,26 @@ padding-top: 75px;
     padding-right: 20px;
   }
 }
+#call-back-2{
+  background-color: $color-white;
+  padding: 40px 0;
+  button,a{
+    float: right;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h2{
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: $color-blue;
+    padding-right: 20px;
+  }
+}
 .call-back__social{
   a{
     width: 20px;
@@ -576,6 +596,93 @@ padding-top: 75px;
     img{
       top: 110px;
       left: 214px;
+    }
+  }
+}
+#footer{
+  background-color: #031430;
+  padding: 70px 0 40px 0;
+}
+.footer{
+  &__header{
+    width: 100%;
+    h2{
+      color: #FFFFFF;
+      font-family: "Open Sans Condensed",sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: left;
+      width: 100%;
+    }
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    &__point{
+      width: 32%;
+      h3{
+        color: #FFFFFF;
+        font-family: "Open Sans Condensed",sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        display: block;
+        margin-bottom: 15px;
+      }
+      a{
+        color: #FFFFFF;
+        font-family: "Open Sans",sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        position: relative;
+        padding-left: 30px;
+        display: block;
+        margin-bottom: 15px;
+        &.mail{
+          &:before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 4px;
+            left: 0;
+            background: url("../img/Svg/email.svg")no-repeat;
+          }
+        }
+        &.telephone{
+          &:before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 4px;
+            left: 0;
+            background: url("../img/Svg/call.svg")no-repeat;
+          }
+        }
+      }
+      span{
+        color: #FFFFFF;
+        font-family: "Open Sans",sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        position: relative;
+        padding-left: 30px;
+        display: block;
+        margin-bottom: 75px;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: 4px;
+          left: 0;
+          background: url("../img/Svg/location.svg")no-repeat;
+        }
+      }
     }
   }
 }
