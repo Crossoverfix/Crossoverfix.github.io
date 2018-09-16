@@ -30,4 +30,14 @@ $(document).ready(function () {
             $(".news-blog__body.blog").css('display','flex');
         }
     })
+    var $navMenu = $("#nav-bar");
+    var $link = $navMenu.find('a');
+    $link.click(function ($linkClick) {
+        var $linkHref = $(this).attr("href");
+        var $linkTo = $($linkHref).offset().top;
+        $link.removeClass('active');
+        $(this).addClass('active');
+        $('html').animate({ scrollTop: $linkTo - 110}, 1100);
+        return false;
+    });
 })
