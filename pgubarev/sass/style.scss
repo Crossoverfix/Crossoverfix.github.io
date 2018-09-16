@@ -136,6 +136,7 @@ a,a:hover,a:visited{
   bottom: 0;
   height: 47px;
   background-color: $color-white;
+  z-index: 10;
   div{
     display: flex;
     justify-content: center;
@@ -176,6 +177,15 @@ a,a:hover,a:visited{
     &__wrapper{
       height: 600px;
       overflow-y: auto;
+      &::-webkit-scrollbar{
+        width: 10px;
+        background-color: #A9B8D0;
+        border: 4px solid $color-red;
+      }
+      &::-webkit-scrollbar-thumb{
+        width: 10px;
+        background-color: #FFFFFF;
+      }
       h2{
         font-family: "Open Sans",sans-serif;
         font-weight: bold;
@@ -233,6 +243,15 @@ padding-top: 75px;
       width: 515px;
       padding-right: 30px;
       display: none;
+      &::-webkit-scrollbar{
+        width: 10px;
+        background-color: #A9B8D0;
+        border: 4px solid white;
+      }
+      &::-webkit-scrollbar-thumb{
+        width: 10px;
+        background-color: $color-blue;
+      }
       p{
         font-family: "Open Sans",sans-serif;
         font-size: 16px;
@@ -606,6 +625,7 @@ padding-top: 75px;
 .footer{
   &__header{
     width: 100%;
+    margin-bottom: 35px;
     h2{
       color: #FFFFFF;
       font-family: "Open Sans Condensed",sans-serif;
