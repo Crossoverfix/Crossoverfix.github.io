@@ -328,8 +328,11 @@ padding-top: 75px;
   }
   &__news{
     padding-top: 35px;
-    display: flex;
+    display: none;
     justify-content: space-between;
+    &.active{
+      display: flex;
+    }
     &__card{
       width: 30%;
       &__img{
@@ -373,6 +376,7 @@ padding-top: 75px;
       left: 30px;
     }
     p{
+      position: relative;
       font-family: "Open Sans",sans-serif;
       font-size: 20px;
       font-style: italic;
@@ -521,7 +525,7 @@ padding-top: 75px;
           position: absolute;
           width: 12px;
           height: 12px;
-          top: 5px;
+          top: 2px;
           left: 0;
           background: url("../img/Svg/clock.svg")no-repeat;
         }
@@ -781,6 +785,9 @@ padding-top: 75px;
   top: 0;
   left: 0;
   width: 100%;
+  label{
+    display: none;
+  }
   input{
     display: none;
     &:checked{
@@ -828,7 +835,7 @@ padding-top: 75px;
   > a{
     font-family: "Open Sans",sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 27px;
     color: $color-red;
     position: relative;

@@ -9,12 +9,15 @@ $(document).ready(function () {
     });
     var $tabs = $(".btn-tabs");
     var $tabsContent = $(".biography__content__point");
+    var $tabsNews = $(".biography__news");
     $tabs.on('click',function () {
         var $indexTabs = $($tabs).index(this);
         $tabs.removeClass('active');
         $tabsContent.removeClass('active');
+        $tabsNews.removeClass('active');
         $tabs.eq($indexTabs).addClass('active');
         $tabsContent.eq($indexTabs).addClass('active');
+        $tabsNews.eq($indexTabs).addClass('active');
     })
     var $newsBlog = $(".news-blog__header h2");
     $newsBlog.on('click',function () {
@@ -45,25 +48,34 @@ $(document).ready(function () {
     var $quoteCount = 0;
     $quoteRadio.on('click',function () {
         $radioIndex = $quoteRadio.index(this);
+        var $quoteOld = $('.quote__text :visible');
         $quoteRadio.removeClass('active');
         $quoteRadio.eq($radioIndex).addClass('active');
-        $quoteText.hide(300);
-        // $quoteText.css('display','none');
-        $quoteText.eq($radioIndex).show(300);
-        // $quoteText.eq($radioIndex).css('display','block');
+        $quoteOld.animate({'position':'absolute','right':'-300px','opacity':'0'},400,function () {
+            $quoteOld.css('display','none');
+            $quoteText.eq($radioIndex).css({'display':'block','right':'-300px'});
+            $quoteText.eq($radioIndex).animate({'position':'relative','right':'0','opacity':'1'},400);
+        });
     });
     setInterval(quoteAuto,5000);
     function quoteAuto() {
-        $quoteRadio.removeClass('active');
-        $quoteRadio.eq($quoteCount).addClass('active');
-        $quoteText.hide(300);
-        // $quoteText.css('display','none');
-        $quoteText.eq($quoteCount).show(300);
-        // $quoteText.eq($quoteCount).css('display','block');
-        if($quoteCount <= 1){
-            $quoteCount++;
-        } else {
-            $quoteCount = 0;
-        }
+    var $quoteOld = $('.quote__text :visible');
+    $quoteRadio.removeClass('active');
+    $quoteRadio.eq($quoteCount).addClass('active');
+    $quoteOld.animate({'position':'absolute','right':'-300px','opacity':'0'},400,function () {
+        $quoteOld.css('display','none');
+        $quoteText.eq($quoteCount).css({'display':'block','right':'-300px'});
+        $quoteText.eq($quoteCount).animate({'position':'relative','right':'0','opacity':'1'},400);
+    });
+    if($quoteCount <= 1){
+        $quoteCount++;
+    } else {
+        $quoteCount = 0;
     }
+}
+    var $mobilCollapser = $('#mobil-menu input');
+    var $mobilLinks = $('#mobil-menu a');
+    $mobilLinks.on('click',function () {
+        $mobilCollapser.prop('checked',false);
+    })
 })
