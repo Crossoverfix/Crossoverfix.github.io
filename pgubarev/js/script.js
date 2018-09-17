@@ -35,7 +35,16 @@ $(document).ready(function () {
     })
     var $navMenu = $("#nav-bar");
     var $link = $navMenu.find('a');
-    $link.click(function ($linkClick) {
+    var $mobilCollapser = $('#mobil-menu input');
+    var $mobilLinks = $('#mobil-menu a');
+    $mobilLinks.on('click',function () {
+        $mobilCollapser.prop('checked',false);
+        var $linkHrefMob = $(this).attr("href");
+        var $linkToMob = $($linkHrefMob).offset().top;
+        $('html').animate({ scrollTop: $linkToMob - 160}, 1100);
+        return false;
+    });
+    $link.click(function () {
         var $linkHref = $(this).attr("href");
         var $linkTo = $($linkHref).offset().top;
         $link.removeClass('active');
@@ -73,9 +82,10 @@ $(document).ready(function () {
         $quoteCount = 0;
     }
 }
-    var $mobilCollapser = $('#mobil-menu input');
-    var $mobilLinks = $('#mobil-menu a');
-    $mobilLinks.on('click',function () {
-        $mobilCollapser.prop('checked',false);
-    })
+
+    var $popUp = $("#pop-up");
+    var $popUpNews = $("#pop-up .pop-up__news");
+    var $popUpDeputat = $("#pop-up .pop-up__deputats");
+    var $popUpCallBack = $("#pop-up .pop-up__call-back");
+
 })

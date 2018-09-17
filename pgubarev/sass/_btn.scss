@@ -30,24 +30,42 @@ button, button:active, button:hover, button:visited,button:focus{
   border: none;
   text-align: left;
   display: inline-block;
-  &:before{
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 10px;
-    background: url("../img/Svg/caret_right.svg")no-repeat;
-    background-size: 8px;
-    bottom: 0;
-    right: -10px;
+  img{
+    height: 12px;
+    margin-left: 8px;
+    &:first-of-type{
+      display: inline-block;
+    }
+    &:last-of-type{
+      display: none;
+    }
   }
+  //&:before{
+  //  content: "";
+  //  position: absolute;
+  //  height: 20px;
+  //  width: 10px;
+  //  background: url("../img/Svg/caret_right.svg")no-repeat;
+  //  background-size: 8px;
+  //  bottom: 0;
+  //  right: -10px;
+  //}
   &.active{
     color: $color-blue;
-    &:before{
-      background: url("../img/Svg/caret_right_b.svg")no-repeat;
-      background-size: 8px;
-      bottom: 0;
-      right: -10px;
+    img{
+      &:first-of-type{
+        display: none;
+      }
+      &:last-of-type{
+        display: inline-block;
+      }
     }
+    //&:before{
+    //  background: url("../img/Svg/caret_right_b.svg")no-repeat;
+    //  background-size: 8px;
+    //  bottom: 0;
+    //  right: -10px;
+    //}
   }
 }
 .btn-red{

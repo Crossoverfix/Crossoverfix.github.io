@@ -38,29 +38,32 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
 }
 /* line 33, ../sass/_btn.scss */
-.btn-tabs:before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 10px;
-  background: url("../img/Svg/caret_right.svg") no-repeat;
-  background-size: 8px;
-  bottom: 0;
-  right: -10px;
+.btn-tabs img {
+  height: 12px;
+  margin-left: 8px;
 }
-/* line 43, ../sass/_btn.scss */
+/* line 36, ../sass/_btn.scss */
+.btn-tabs img:first-of-type {
+  display: inline-block;
+}
+/* line 39, ../sass/_btn.scss */
+.btn-tabs img:last-of-type {
+  display: none;
+}
+/* line 53, ../sass/_btn.scss */
 .btn-tabs.active {
   color: #0F346F;
 }
-/* line 45, ../sass/_btn.scss */
-.btn-tabs.active:before {
-  background: url("../img/Svg/caret_right_b.svg") no-repeat;
-  background-size: 8px;
-  bottom: 0;
-  right: -10px;
+/* line 56, ../sass/_btn.scss */
+.btn-tabs.active img:first-of-type {
+  display: none;
+}
+/* line 59, ../sass/_btn.scss */
+.btn-tabs.active img:last-of-type {
+  display: inline-block;
 }
 
-/* line 53, ../sass/_btn.scss */
+/* line 71, ../sass/_btn.scss */
 .btn-red {
   border: none;
   background-color: #F04950;
@@ -70,18 +73,18 @@ button, button:active, button:hover, button:visited, button:focus {
   display: flex;
   height: 42px;
 }
-/* line 61, ../sass/_btn.scss */
+/* line 79, ../sass/_btn.scss */
 .btn-red:hover {
   box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
   background-color: #d2363d;
 }
-/* line 65, ../sass/_btn.scss */
+/* line 83, ../sass/_btn.scss */
 .btn-red img {
   width: 18px;
   height: 18px;
   margin-right: 14px;
 }
-/* line 70, ../sass/_btn.scss */
+/* line 88, ../sass/_btn.scss */
 .btn-red p {
   font-family: "Open Sans Condensed",sans-serif;
   font-size: 18px;
@@ -92,7 +95,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin: 0;
 }
 
-/* line 80, ../sass/_btn.scss */
+/* line 98, ../sass/_btn.scss */
 .btn-refresh {
   border: none;
   background-color: transparent;
@@ -106,11 +109,11 @@ button, button:active, button:hover, button:visited, button:focus {
   padding-left: 33px;
   font-weight: bold;
 }
-/* line 92, ../sass/_btn.scss */
+/* line 110, ../sass/_btn.scss */
 .btn-refresh:hover {
   color: #d2363d;
 }
-/* line 95, ../sass/_btn.scss */
+/* line 113, ../sass/_btn.scss */
 .btn-refresh:before {
   content: "";
   position: absolute;
@@ -1039,7 +1042,7 @@ a, a:hover, a:visited {
   width: 25px;
   height: 25px;
   top: 22px;
-  left: 34px;
+  left: 26px;
 }
 /* line 816, ../sass/style.scss */
 #mobil-menu label img:first-of-type {
