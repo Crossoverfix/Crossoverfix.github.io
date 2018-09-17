@@ -82,10 +82,23 @@ $(document).ready(function () {
         $quoteCount = 0;
     }
 }
-
     var $popUp = $("#pop-up");
     var $popUpNews = $("#pop-up .pop-up__news");
     var $popUpDeputat = $("#pop-up .pop-up__deputats");
     var $popUpCallBack = $("#pop-up .pop-up__call-back");
-
+    var $callPopUp = $("[data-pop-up]");
+    $callPopUp.on('click',function () {
+        var $eventObject = $(this);
+        showPopUp($eventObject);
+    })
+    function showPopUp($eventObject) {
+        var $type = $($eventObject).attr('data-pop-up');
+        if($type != 'body-call-back' && $type != 'header-call-back'){
+            var $eventData = $($eventObject).attr('data-targets');
+        }
+        $popUp.css('display','block');
+        if($type == 'header-call-back' || $type == 'body-call-back'){
+            
+        }
+    }
 })
