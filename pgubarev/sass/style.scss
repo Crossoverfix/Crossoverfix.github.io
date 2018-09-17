@@ -57,8 +57,24 @@ a,a:hover,a:visited{
       margin: 0 12px;
       height: 20px;
       width: 20px;
+      &:hover{
+        img{
+          &:first-child{
+            display: none;
+          }
+          &:last-child{
+            display: inline-block;
+          }
+        }
+      }
       img{
         width: 20px;
+        &:first-child{
+          display: inline-block;
+        }
+        &:last-child{
+          display: none;
+        }
       }
     }
   }
@@ -299,6 +315,12 @@ padding-top: 75px;
         color: $color-text-d;
         margin-bottom: 15px;
       }
+      h3{
+        font-family: "Open Sans",sans-serif;
+        font-size: 20px;
+        color: $color-text-d;
+        margin-bottom: 15px;
+      }
       &.active{
         display: block;
       }
@@ -427,8 +449,24 @@ padding-top: 75px;
     height: 20px;
     margin: 0 13px;
     cursor: pointer;
+    &:hover{
+      img{
+        &:first-child{
+          display: none;
+        }
+        &:last-child{
+          display: inline-block;
+        }
+      }
+    }
     img{
       width: 20px;
+      &:first-child{
+        display: inline-block;
+      }
+      &:last-child{
+        display: none;
+      }
     }
   }
 }

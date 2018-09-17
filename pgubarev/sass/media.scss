@@ -12,7 +12,7 @@
         left: -200px;
       }
       &__wrapper{
-        height: 450px;
+        height: 420px;
       }
     }
   }
@@ -21,8 +21,12 @@
     padding-bottom: 30px;
   }
   .biography{
+    &__header{
+      padding-left: 5px;
+    }
     &__tabs{
-      padding-right: 105px;
+      padding-right: 130px;
+      padding-left: 5px;
     }
     &__news{
       &__card{
@@ -98,6 +102,7 @@
 @media screen and (max-width: 991px){
   .gubarev__slovo p{
     margin: 20px 0 10px 0;
+    font-size: 24px;
   }
   .header__gubarev{
     justify-content: center;
@@ -131,26 +136,27 @@
       }
     }
     &__text{
-      height: 450px;
+      height: 500px;
       &__wrapper{
-        height: 300px;
+        height: 340px;
       }
     }
   }
   .biography{
     &__header{
-      padding-left: 20px;
+      padding-left: 0;
       margin-bottom: 30px;
     }
     &__tabs{
       padding-left: 0;
       padding-right: 0;
+      margin-left: -25px;
       height: 80px;
     }
     &__content{
-      height: 280px;
+      height: 400px;
       &__point{
-        height: 270px;
+        height: 400px;
         width: 100%;
       }
     }
@@ -167,6 +173,21 @@
     font-size: 18px;
   }
   #call-back,#call-back-2{
+    .row{
+      flex-direction: column;
+      height: 55px;
+      div:first-of-type{
+        min-height: 55px;
+      }
+      div:nth-of-type(2){
+        position: relative;
+        top: -10px;
+      }
+      div:nth-of-type(3){
+        position: relative;
+        top: 10px;
+      }
+    }
     h2{
       margin-bottom: 25px;
     }
@@ -239,7 +260,7 @@
   }
   #gubarev__slovo{
     margin-top: 153px;
-    height: 790px;
+    height: 640px;
   }
   .gubarev__slovo{
     h3{
@@ -254,7 +275,7 @@
       line-height: 36px;
     }
     &__foto{
-      top: 484px;
+      top: 325px;
       left: -129px;
       background-size: 740px;
     }
@@ -337,11 +358,57 @@
       width: 100%;
     }
   }
+  #call-back .row, #call-back-2 .row{
+    flex-direction: row;
+    height: auto;
+  }
+  #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
+    top: -5px;
+  }
+  .team__body{
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 574px){
+  .gubarev__slovo{
+    padding-top: 20px;
+    h2{
+      font-size: 34px;
+      line-height: 38px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
   .gubarev-accost{
     &__foto{
       height: 66vw;
     }
+    &__text{
+      padding: 25px;
+      height: 530px;
+    }
+  }
+  #biography{
+    padding-top: 20px;
+  }
+  .biography{
+    &__header{
+      padding-left: 15px;
+    }
+    &__tabs{
+      padding-left: 15px;
+      height: 125px;
+    }
+  }
+  .btn-tabs{
+    width: 285px;
+  }
+  #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
+    top: -5px;
+  }
+  #call-back, #call-back-2{
+    padding: 25px 0 10px 15px;
   }
 }

@@ -47,15 +47,19 @@ $(document).ready(function () {
         $radioIndex = $quoteRadio.index(this);
         $quoteRadio.removeClass('active');
         $quoteRadio.eq($radioIndex).addClass('active');
-        $quoteText.css('display','none');
-        $quoteText.eq($radioIndex).css('display','block');
+        $quoteText.hide(300);
+        // $quoteText.css('display','none');
+        $quoteText.eq($radioIndex).show(300);
+        // $quoteText.eq($radioIndex).css('display','block');
     });
     setInterval(quoteAuto,5000);
     function quoteAuto() {
         $quoteRadio.removeClass('active');
         $quoteRadio.eq($quoteCount).addClass('active');
-        $quoteText.css('display','none');
-        $quoteText.eq($quoteCount).css('display','block');
+        $quoteText.hide(300);
+        // $quoteText.css('display','none');
+        $quoteText.eq($quoteCount).show(300);
+        // $quoteText.eq($quoteCount).css('display','block');
         if($quoteCount <= 1){
             $quoteCount++;
         } else {
