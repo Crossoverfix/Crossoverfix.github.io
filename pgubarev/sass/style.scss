@@ -775,3 +775,101 @@ padding-top: 75px;
     }
   }
 }
+#mobil-menu{
+  z-index: 13;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  input{
+    display: none;
+    &:checked{
+      ~ .mobil-menu{
+        display: flex;
+      }
+      ~ label{
+        img{
+          &:first-of-type{
+            display: inline-block;
+          }
+          &:last-of-type{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  label{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 22px;
+    left: 34px;
+    img{
+      &:first-of-type{
+        display: none;
+      }
+      &:last-of-type{
+        display: inline-block;
+      }
+    }
+  }
+}
+.mobil-menu{
+  flex-direction: column;
+  z-index: -1;
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: white;
+  padding: 60px 25px 35px 25px;
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+  align-items: flex-start;
+  > a{
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: $color-red;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 10px;
+      background: url("../img/Svg/caret_right.svg")no-repeat;
+      background-size: 8px;
+      bottom: -1px;
+      right: -20px;
+    }
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    a{
+      margin: 0 12px;
+      height: 20px;
+      width: 20px;
+      &:hover{
+        img{
+          &:first-child{
+            display: none;
+          }
+          &:last-child{
+            display: inline-block;
+          }
+        }
+      }
+      img{
+        width: 20px;
+        &:first-child{
+          display: inline-block;
+        }
+        &:last-child{
+          display: none;
+        }
+      }
+    }
+  }
+}

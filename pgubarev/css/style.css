@@ -999,3 +999,109 @@ a, a:hover, a:visited {
   left: 0;
   background: url("../img/Svg/location.svg") no-repeat;
 }
+
+/* line 778, ../sass/style.scss */
+#mobil-menu {
+  z-index: 13;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 784, ../sass/style.scss */
+#mobil-menu input {
+  display: none;
+}
+/* line 787, ../sass/style.scss */
+#mobil-menu input:checked ~ .mobil-menu {
+  display: flex;
+}
+/* line 792, ../sass/style.scss */
+#mobil-menu input:checked ~ label img:first-of-type {
+  display: inline-block;
+}
+/* line 795, ../sass/style.scss */
+#mobil-menu input:checked ~ label img:last-of-type {
+  display: none;
+}
+/* line 802, ../sass/style.scss */
+#mobil-menu label {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 22px;
+  left: 34px;
+}
+/* line 809, ../sass/style.scss */
+#mobil-menu label img:first-of-type {
+  display: none;
+}
+/* line 812, ../sass/style.scss */
+#mobil-menu label img:last-of-type {
+  display: inline-block;
+}
+
+/* line 818, ../sass/style.scss */
+.mobil-menu {
+  flex-direction: column;
+  z-index: -1;
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: white;
+  padding: 60px 25px 35px 25px;
+  box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
+  align-items: flex-start;
+}
+/* line 828, ../sass/style.scss */
+.mobil-menu > a {
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #F04950;
+  position: relative;
+}
+/* line 835, ../sass/style.scss */
+.mobil-menu > a:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 10px;
+  background: url("../img/Svg/caret_right.svg") no-repeat;
+  background-size: 8px;
+  bottom: -1px;
+  right: -20px;
+}
+/* line 846, ../sass/style.scss */
+.mobil-menu__social {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+}
+/* line 850, ../sass/style.scss */
+.mobil-menu__social a {
+  margin: 0 12px;
+  height: 20px;
+  width: 20px;
+}
+/* line 856, ../sass/style.scss */
+.mobil-menu__social a:hover img:first-child {
+  display: none;
+}
+/* line 859, ../sass/style.scss */
+.mobil-menu__social a:hover img:last-child {
+  display: inline-block;
+}
+/* line 864, ../sass/style.scss */
+.mobil-menu__social a img {
+  width: 20px;
+}
+/* line 866, ../sass/style.scss */
+.mobil-menu__social a img:first-child {
+  display: inline-block;
+}
+/* line 869, ../sass/style.scss */
+.mobil-menu__social a img:last-child {
+  display: none;
+}
