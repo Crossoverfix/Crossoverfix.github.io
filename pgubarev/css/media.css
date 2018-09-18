@@ -101,483 +101,487 @@
   /* line 87, ../sass/media.scss */
   .header__gubarev h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
+  }
+  /* line 90, ../sass/media.scss */
+  .header__gubarev h2 b {
+    font-size: 20px;
   }
 
-  /* line 92, ../sass/media.scss */
+  /* line 95, ../sass/media.scss */
   .header__gubarev__social {
     height: 35px;
     margin: 15px;
   }
 
-  /* line 96, ../sass/media.scss */
+  /* line 99, ../sass/media.scss */
   #gubarev__slovo {
     background-position-x: 50px;
   }
 
-  /* line 100, ../sass/media.scss */
+  /* line 103, ../sass/media.scss */
   .gubarev__slovo h3 {
     font-size: 32px;
   }
-  /* line 102, ../sass/media.scss */
+  /* line 105, ../sass/media.scss */
   .gubarev__slovo h3:before {
     left: 265px;
   }
 
-  /* line 107, ../sass/media.scss */
+  /* line 110, ../sass/media.scss */
   #gubarev-accost {
     height: auto;
   }
-  /* line 109, ../sass/media.scss */
+  /* line 112, ../sass/media.scss */
   #gubarev-accost .row {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  /* line 115, ../sass/media.scss */
+  /* line 118, ../sass/media.scss */
   .gubarev-accost__foto {
     height: 330px;
   }
-  /* line 117, ../sass/media.scss */
+  /* line 120, ../sass/media.scss */
   .gubarev-accost__foto img {
     height: auto;
     width: 100%;
     left: 0;
   }
-  /* line 123, ../sass/media.scss */
+  /* line 126, ../sass/media.scss */
   .gubarev-accost__text {
     height: 500px;
   }
-  /* line 125, ../sass/media.scss */
+  /* line 128, ../sass/media.scss */
   .gubarev-accost__text__wrapper {
     height: 338px;
   }
 
-  /* line 131, ../sass/media.scss */
+  /* line 134, ../sass/media.scss */
   .biography__header {
     padding-left: 0;
     margin-bottom: 30px;
   }
-  /* line 135, ../sass/media.scss */
+  /* line 138, ../sass/media.scss */
   .biography__tabs {
     padding-left: 0;
     padding-right: 0;
     margin-left: -25px;
     height: 80px;
   }
-  /* line 141, ../sass/media.scss */
+  /* line 144, ../sass/media.scss */
   .biography__content {
     height: 400px;
   }
-  /* line 143, ../sass/media.scss */
+  /* line 146, ../sass/media.scss */
   .biography__content__point {
     height: 400px;
     width: 100%;
   }
-  /* line 150, ../sass/media.scss */
+  /* line 153, ../sass/media.scss */
   .biography__news__card__img {
     height: 145px;
   }
 
-  /* line 156, ../sass/media.scss */
+  /* line 159, ../sass/media.scss */
   .btn-tabs {
     margin: 0 20px;
     font-size: 17px;
   }
 
-  /* line 161, ../sass/media.scss */
+  /* line 164, ../sass/media.scss */
   #call-back .row, #call-back-2 .row {
     flex-direction: column;
     height: 55px;
   }
-  /* line 164, ../sass/media.scss */
+  /* line 167, ../sass/media.scss */
   #call-back .row div:first-of-type, #call-back-2 .row div:first-of-type {
     min-height: 55px;
   }
-  /* line 167, ../sass/media.scss */
+  /* line 170, ../sass/media.scss */
   #call-back .row div:nth-of-type(2), #call-back-2 .row div:nth-of-type(2) {
     position: relative;
     top: -10px;
   }
-  /* line 171, ../sass/media.scss */
+  /* line 174, ../sass/media.scss */
   #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3) {
     position: relative;
     top: 10px;
   }
-  /* line 176, ../sass/media.scss */
+  /* line 179, ../sass/media.scss */
   #call-back h2, #call-back-2 h2 {
     margin-bottom: 25px;
   }
 
-  /* line 180, ../sass/media.scss */
+  /* line 183, ../sass/media.scss */
   #call-back button, #call-back a, #call-back-2 button, #call-back-2 a {
     float: none;
   }
 
-  /* line 185, ../sass/media.scss */
+  /* line 188, ../sass/media.scss */
   .news-blog__body__card {
     width: 48%;
   }
 
-  /* line 192, ../sass/media.scss */
+  /* line 195, ../sass/media.scss */
   .team__body__card {
     width: 360px;
   }
 
-  /* line 197, ../sass/media.scss */
+  /* line 200, ../sass/media.scss */
   .footer__body__point {
     width: 47%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 202, ../sass/media.scss */
+  /* line 205, ../sass/media.scss */
   .header__gubarev__blue-block:before {
     z-index: -1;
     width: 110vw;
     transform: translateX(-10%);
   }
 
-  /* line 207, ../sass/media.scss */
+  /* line 210, ../sass/media.scss */
   #header__gubarev {
     height: 150px;
   }
 
-  /* line 210, ../sass/media.scss */
+  /* line 213, ../sass/media.scss */
   .header__gubarev {
     margin-top: 10px;
   }
-  /* line 212, ../sass/media.scss */
+  /* line 215, ../sass/media.scss */
   .header__gubarev__social {
     display: none;
   }
 
-  /* line 217, ../sass/media.scss */
+  /* line 220, ../sass/media.scss */
   #header__gubarev .btn-ghost__red {
     display: none;
   }
 
-  /* line 221, ../sass/media.scss */
+  /* line 224, ../sass/media.scss */
   #gubarev__slovo {
     margin-top: 153px;
     height: 640px;
   }
 
-  /* line 226, ../sass/media.scss */
+  /* line 229, ../sass/media.scss */
   .gubarev__slovo h3 {
     font-size: 32px;
   }
-  /* line 228, ../sass/media.scss */
+  /* line 231, ../sass/media.scss */
   .gubarev__slovo h3:before {
     left: 275px;
   }
-  /* line 232, ../sass/media.scss */
+  /* line 235, ../sass/media.scss */
   .gubarev__slovo h2 {
     font-size: 40px;
     text-align: center;
   }
-  /* line 236, ../sass/media.scss */
+  /* line 239, ../sass/media.scss */
   .gubarev__slovo p {
     font-size: 26px;
     line-height: 36px;
   }
-  /* line 240, ../sass/media.scss */
+  /* line 243, ../sass/media.scss */
   .gubarev__slovo__foto {
     top: 325px;
     left: -129px;
     background-size: 740px;
   }
 
-  /* line 246, ../sass/media.scss */
+  /* line 249, ../sass/media.scss */
   #nav-bar {
     display: none;
   }
 
-  /* line 249, ../sass/media.scss */
+  /* line 252, ../sass/media.scss */
   #gubarev-accost {
     margin-top: 0;
   }
 
-  /* line 253, ../sass/media.scss */
+  /* line 256, ../sass/media.scss */
   .gubarev-accost__foto {
     height: 240px;
   }
 
-  /* line 258, ../sass/media.scss */
+  /* line 261, ../sass/media.scss */
   .biography__tabs {
     margin-bottom: 20px;
   }
-  /* line 261, ../sass/media.scss */
+  /* line 264, ../sass/media.scss */
   .biography__news {
     flex-wrap: wrap;
   }
-  /* line 263, ../sass/media.scss */
+  /* line 266, ../sass/media.scss */
   .biography__news__card {
     width: 100%;
   }
 
-  /* line 268, ../sass/media.scss */
+  /* line 271, ../sass/media.scss */
   .quote {
     padding: 0 15px;
   }
 
-  /* line 271, ../sass/media.scss */
+  /* line 274, ../sass/media.scss */
   .call-back__social {
     margin: 10px 0;
   }
 
-  /* line 275, ../sass/media.scss */
+  /* line 278, ../sass/media.scss */
   .news-blog__body {
     justify-content: center;
   }
-  /* line 277, ../sass/media.scss */
+  /* line 280, ../sass/media.scss */
   .news-blog__body__card {
     width: 90%;
   }
 
-  /* line 283, ../sass/media.scss */
+  /* line 286, ../sass/media.scss */
   .team__body {
     justify-content: center;
   }
-  /* line 285, ../sass/media.scss */
+  /* line 288, ../sass/media.scss */
   .team__body__card {
     width: 320px;
   }
 
-  /* line 290, ../sass/media.scss */
+  /* line 293, ../sass/media.scss */
   .footer__header {
     padding: 0 10px;
   }
 
-  /* line 293, ../sass/media.scss */
+  /* line 296, ../sass/media.scss */
   .footer__body {
     padding: 0 25px;
   }
-  /* line 295, ../sass/media.scss */
+  /* line 298, ../sass/media.scss */
   .footer__body__point {
     width: 100%;
   }
 
-  /* line 299, ../sass/media.scss */
+  /* line 302, ../sass/media.scss */
   #call-back .row, #call-back-2 .row {
     flex-direction: row;
     height: auto;
   }
 
-  /* line 303, ../sass/media.scss */
+  /* line 306, ../sass/media.scss */
   #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3) {
     top: -5px;
   }
 
-  /* line 306, ../sass/media.scss */
+  /* line 309, ../sass/media.scss */
   .team__body {
     padding-top: 30px;
   }
 
-  /* line 310, ../sass/media.scss */
+  /* line 313, ../sass/media.scss */
   #mobil-menu label {
     display: block;
   }
 
-  /* line 315, ../sass/media.scss */
+  /* line 318, ../sass/media.scss */
   .pop-up__news, .pop-up__deputats, .pop-up__call-back {
     width: 100%;
   }
-  /* line 319, ../sass/media.scss */
+  /* line 322, ../sass/media.scss */
   .pop-up__news__header {
     padding: 40px 30px 20px 30px;
   }
-  /* line 322, ../sass/media.scss */
+  /* line 325, ../sass/media.scss */
   .pop-up__news__body {
     padding: 0px 30px;
   }
-  /* line 324, ../sass/media.scss */
+  /* line 327, ../sass/media.scss */
   .pop-up__news__body__img {
     width: calc(100% + 60px);
     left: -30px;
   }
-  /* line 328, ../sass/media.scss */
+  /* line 331, ../sass/media.scss */
   .pop-up__news__body__video {
     padding: 20px;
   }
-  /* line 332, ../sass/media.scss */
+  /* line 335, ../sass/media.scss */
   .pop-up__news__footer {
     padding: 30px;
   }
-  /* line 334, ../sass/media.scss */
+  /* line 337, ../sass/media.scss */
   .pop-up__news__footer p {
     margin-right: 15px;
   }
-  /* line 337, ../sass/media.scss */
+  /* line 340, ../sass/media.scss */
   .pop-up__news__footer a {
     margin-right: 7px;
   }
-  /* line 342, ../sass/media.scss */
+  /* line 345, ../sass/media.scss */
   .pop-up__deputats {
     padding: 40px 20px 25px 30px;
   }
-  /* line 344, ../sass/media.scss */
+  /* line 347, ../sass/media.scss */
   .pop-up__deputats__left {
     width: 35%;
   }
-  /* line 347, ../sass/media.scss */
+  /* line 350, ../sass/media.scss */
   .pop-up__deputats__right {
     width: calc(65% - 40px);
   }
-  /* line 349, ../sass/media.scss */
+  /* line 352, ../sass/media.scss */
   .pop-up__deputats__right ul {
     padding-right: 20px;
   }
-  /* line 354, ../sass/media.scss */
+  /* line 357, ../sass/media.scss */
   .pop-up__call-back {
     padding: 45px 30px 30px 30px;
   }
-  /* line 357, ../sass/media.scss */
+  /* line 360, ../sass/media.scss */
   .pop-up__call-back__body__input {
     width: 45%;
   }
-  /* line 359, ../sass/media.scss */
+  /* line 362, ../sass/media.scss */
   .pop-up__call-back__body__input__wrapp {
     padding: 5px 10px;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 368, ../sass/media.scss */
+  /* line 371, ../sass/media.scss */
   .gubarev__slovo {
     padding-top: 20px;
   }
-  /* line 370, ../sass/media.scss */
+  /* line 373, ../sass/media.scss */
   .gubarev__slovo h3 {
     text-align: center;
   }
-  /* line 372, ../sass/media.scss */
+  /* line 375, ../sass/media.scss */
   .gubarev__slovo h3:before {
     left: 800px;
   }
-  /* line 376, ../sass/media.scss */
+  /* line 379, ../sass/media.scss */
   .gubarev__slovo h2 {
     font-size: 34px;
     line-height: 38px;
   }
-  /* line 380, ../sass/media.scss */
+  /* line 383, ../sass/media.scss */
   .gubarev__slovo p {
     font-size: 18px;
     line-height: 24px;
   }
 
-  /* line 386, ../sass/media.scss */
+  /* line 389, ../sass/media.scss */
   .gubarev-accost__foto {
     height: 66vw;
   }
-  /* line 389, ../sass/media.scss */
+  /* line 392, ../sass/media.scss */
   .gubarev-accost__text {
     padding: 25px;
     height: 530px;
   }
 
-  /* line 394, ../sass/media.scss */
+  /* line 397, ../sass/media.scss */
   #biography {
     padding-top: 20px;
   }
 
-  /* line 398, ../sass/media.scss */
+  /* line 401, ../sass/media.scss */
   .biography__header {
     padding-left: 15px;
   }
-  /* line 401, ../sass/media.scss */
+  /* line 404, ../sass/media.scss */
   .biography__tabs {
     padding-left: 15px;
     height: 125px;
   }
 
-  /* line 406, ../sass/media.scss */
+  /* line 409, ../sass/media.scss */
   .btn-tabs {
     margin-right: auto;
   }
 
-  /* line 409, ../sass/media.scss */
+  /* line 412, ../sass/media.scss */
   #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3) {
     top: -5px;
   }
 
-  /* line 412, ../sass/media.scss */
+  /* line 415, ../sass/media.scss */
   #call-back, #call-back-2 {
     padding: 25px 0 10px 15px;
   }
 
-  /* line 415, ../sass/media.scss */
+  /* line 418, ../sass/media.scss */
   .news-blog__header {
     padding: 0 25px;
   }
 
-  /* line 420, ../sass/media.scss */
+  /* line 423, ../sass/media.scss */
   .pop-up__news__header {
     padding: 40px 20px 10px 20px;
   }
-  /* line 423, ../sass/media.scss */
+  /* line 426, ../sass/media.scss */
   .pop-up__news__body {
     padding: 0px 20px;
   }
-  /* line 425, ../sass/media.scss */
+  /* line 428, ../sass/media.scss */
   .pop-up__news__body__img {
     width: calc(100% + 40px);
     left: -20px;
   }
-  /* line 429, ../sass/media.scss */
+  /* line 432, ../sass/media.scss */
   .pop-up__news__body__video {
     padding: 0;
     margin-bottom: 20px;
   }
-  /* line 432, ../sass/media.scss */
+  /* line 435, ../sass/media.scss */
   .pop-up__news__body__video img {
     width: 100%;
   }
-  /* line 437, ../sass/media.scss */
+  /* line 440, ../sass/media.scss */
   .pop-up__news__footer {
     padding: 20px;
   }
-  /* line 439, ../sass/media.scss */
+  /* line 442, ../sass/media.scss */
   .pop-up__news__footer p {
     width: 100%;
     text-align: center;
   }
-  /* line 445, ../sass/media.scss */
+  /* line 448, ../sass/media.scss */
   .pop-up__deputats {
     height: 100%;
     padding: 40px 20px 20px 20px;
   }
-  /* line 448, ../sass/media.scss */
+  /* line 451, ../sass/media.scss */
   .pop-up__deputats__left {
     width: 100%;
     margin-bottom: 20px;
   }
-  /* line 451, ../sass/media.scss */
+  /* line 454, ../sass/media.scss */
   .pop-up__deputats__left__img {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 455, ../sass/media.scss */
+  /* line 458, ../sass/media.scss */
   .pop-up__deputats__left > a {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 459, ../sass/media.scss */
+  /* line 462, ../sass/media.scss */
   .pop-up__deputats__left__social {
     justify-content: space-around;
   }
-  /* line 463, ../sass/media.scss */
+  /* line 466, ../sass/media.scss */
   .pop-up__deputats__right {
     width: 100%;
   }
-  /* line 467, ../sass/media.scss */
+  /* line 470, ../sass/media.scss */
   .pop-up__call-back {
     padding: 40px 20px 20px 20px;
     height: 100%;
   }
-  /* line 470, ../sass/media.scss */
+  /* line 473, ../sass/media.scss */
   .pop-up__call-back__body {
     height: auto;
   }
-  /* line 472, ../sass/media.scss */
+  /* line 475, ../sass/media.scss */
   .pop-up__call-back__body__input {
     width: 100%;
   }
