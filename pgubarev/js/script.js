@@ -93,12 +93,46 @@ $(document).ready(function () {
     })
     function showPopUp($eventObject) {
         var $type = $($eventObject).attr('data-pop-up');
+        var $closeBtn = $(".btn-close");
         if($type != 'body-call-back' && $type != 'header-call-back'){
             var $eventData = $($eventObject).attr('data-targets');
         }
         $popUp.css('display','block');
         if($type == 'header-call-back' || $type == 'body-call-back'){
-            
+            selectPopUp($popUpCallBack,'none');
+        } else if ($type == 'news' || $type == 'blog'){
+            selectPopUp($popUpNews,$eventData);
+        } else if ($type == 'deputat'){
+            selectPopUp($popUpDeputat ,$eventData);
+        }
+        function selectPopUp($typePop,$dataPop) {
+            var $tempScrol = 0;
+            var $tempScroll = false;
+            $typePop.css('display','block');
+            if($typePop.outerHeight() > window.outerHeight){
+                $tempScrol = $(document).scrollTop();
+                $(document).on('scroll',function () {
+                    $typePop.css('top',-($(document).scrollTop() - $tempScrol));
+                    $tempScroll = true;
+                    if($(document).scrollTop() >= $(document).outerHeight() - window.outerHeight){
+                        $(document).scrollTop($(document).scrollTop() - 1);
+                        $tempScrol -= 15;
+                    }
+                })
+            }
+            $closeBtn.on('click',function () {
+                closePopUp();
+            })
+            $('.pop-up__closed').on('click',function () {
+                closePopUp()
+            })
+            function closePopUp() {
+                $typePop.css('display','none');
+                $popUp.css('display','none');
+                $closeBtn.off();
+                $(document).off();
+                $popUp.off();
+            }
         }
     }
 })
