@@ -311,6 +311,58 @@
       display: block;
     }
   }
+  .pop-up{
+    &__news,&__deputats,&__call-back{
+      width: 100%;
+    }
+    &__news{
+      &__header{
+        padding: 40px 30px 20px 30px;
+      }
+      &__body{
+        padding: 0px 30px;
+        &__img{
+          width: calc(100% + 60px);
+          left: -30px;
+        }
+        &__video{
+          padding: 20px;
+        }
+      }
+      &__footer{
+        padding: 30px;
+        p{
+          margin-right: 15px;
+        }
+        a{
+          margin-right: 7px;
+        }
+      }
+    }
+    &__deputats{
+      padding: 40px 20px 25px 30px;
+      &__left{
+        width: 35%;
+      }
+      &__right{
+        width: calc(65% - 40px);
+        ul{
+          padding-right: 20px;
+        }
+      }
+    }
+    &__call-back{
+      padding: 45px 30px 30px 30px;
+      &__body{
+        &__input{
+          width: 45%;
+          &__wrapp{
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
   }
 @media screen and (max-width: 574px){
   .gubarev__slovo{
@@ -362,5 +414,65 @@
   }
   .news-blog__header{
     padding: 0 25px;
+  }
+  .pop-up{
+    &__news{
+      &__header{
+        padding: 40px 20px 10px 20px;
+      }
+      &__body{
+        padding: 0px 20px;
+        &__img{
+          width: calc(100% + 40px);
+          left: -20px;
+        }
+        &__video{
+          padding: 0;
+          margin-bottom: 20px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      &__footer{
+        padding: 20px;
+        p{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    &__deputats{
+      height: 100%;
+      padding: 40px 20px 20px 20px;
+      &__left{
+        width: 100%;
+        margin-bottom: 20px;
+        &__img{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        > a{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &__social{
+          justify-content: space-around;
+        }
+      }
+      &__right{
+        width: 100%;
+      }
+    }
+    &__call-back{
+      padding: 40px 20px 20px 20px;
+      height: 100%;
+      &__body{
+        height: auto;
+        &__input{
+          width: 100%;
+        }
+      }
+    }
   }
 }
