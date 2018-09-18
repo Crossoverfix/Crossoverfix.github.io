@@ -630,9 +630,9 @@ padding-top: 75px;
         transition: all linear 0.2s;
         transform: translateX(-50%);
         img{
-          width: 100%;
+          width: 85%;
           position: absolute;
-          top: 10px;
+          top: 100px;
           left: 50%;
           transform: translateX(-50%);
         }
@@ -641,55 +641,6 @@ padding-top: 75px;
   }
   &__footer{
     margin: 0 auto;
-  }
-}
-#orlov{
-  .team__body__card__face{
-    img{
-      top: 105px;
-      left: 255px;
-    }
-  }
-}
-#gubareva-ekaterina{
-  .team__body__card__face{
-    img{
-      top: 70px;
-      left: 225px;
-    }
-  }
-}
-#rudenko{
-  .team__body__card__face{
-    img{
-      top: 75px;
-      left: 220px;
-      width: 85%;
-    }
-  }
-}
-#barhatnova{
-  .team__body__card__face{
-    img{
-      top: 110px;
-      left: 219px;
-    }
-  }
-}
-#berdicevskiy{
-  .team__body__card__face{
-    img{
-      top: 109px;
-      left: 227px;
-    }
-  }
-}
-#ciplakov{
-  .team__body__card__face{
-    img{
-      top: 110px;
-      left: 214px;
-    }
   }
 }
 #footer{
