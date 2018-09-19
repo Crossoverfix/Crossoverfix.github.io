@@ -408,6 +408,28 @@ padding-top: 75px;
     width: 100%;
   }
 }
+.program__body__point.active{
+  .program__body__point__header{
+    &:before{
+      opacity: 0;
+    }
+    &:after{
+      opacity: 1;
+    }
+    h3{
+      color: $color-blue;
+      &:before{
+        opacity: 0;
+      }
+      &:after{
+        opacity: 1;
+      }
+    }
+    &__body{
+      //height: 100%;
+    }
+  }
+}
 .program{
   &__header{
     h2{
@@ -426,24 +448,6 @@ padding-top: 75px;
     &__point{
       width: 100%;
       margin-bottom: 2px;
-      &.active{
-        .program__body__point{
-          &__header{
-            h3{
-              color: $color-blue;
-            }
-            &:before{
-              display: none;
-            }
-            &:after{
-              display: block;
-            }
-          }
-          &__body{
-            height: 100%;
-          }
-        }
-      }
       &__header{
         cursor: pointer;
         height: 43px;
@@ -451,6 +455,7 @@ padding-top: 75px;
         padding-left: 55px;
         position: relative;
         :before{
+          opacity: 1;
           display: block;
           content: "";
           position: absolute;
@@ -458,18 +463,19 @@ padding-top: 75px;
           left: 22px;
           width: 14px;
           height: 14px;
-          background: url("../img/Svg/close_icon_r.svg")no-repeat center;
+          background: url("../img/Svg/plus.svg")no-repeat center;
           background-size: contain;
         }
         :after{
-          display: none;
+          opacity: 0;
+          display: block;
           content: "";
           position: absolute;
           top: 15px;
           left: 22px;
           width: 14px;
           height: 14px;
-          background: url("../img/Svg/close_icon.svg")no-repeat center;
+          background: url("../img/Svg/minus.svg")no-repeat center;
           background-size: contain;
         }
         h3{
@@ -488,6 +494,7 @@ padding-top: 75px;
         ul{
           list-style-type: none;
           padding-left: 64px;
+          margin: 0;
           li{
             position: relative;
             margin: 15px 0;

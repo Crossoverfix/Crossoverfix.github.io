@@ -71,6 +71,7 @@ $(document).ready(function () {
         var $quoteOld = $('.quote__text :visible');
         $quoteRadio.removeClass('active');
         $quoteRadio.eq($radioIndex).addClass('active');
+        $quoteOld.stop();
         $quoteOld.animate({'position':'absolute','right':'-300px','opacity':'0'},400,function () {
             $quoteOld.css('display','none');
             $quoteText.eq($radioIndex).css({'display':'block','right':'-300px'});
@@ -82,6 +83,7 @@ $(document).ready(function () {
     var $quoteOld = $('.quote__text :visible');
     $quoteRadio.removeClass('active');
     $quoteRadio.eq($quoteCount).addClass('active');
+    $quoteOld.stop();
     $quoteOld.animate({'position':'absolute','right':'-300px','opacity':'0'},400,function () {
         $quoteOld.css('display','none');
         $quoteText.eq($quoteCount).css({'display':'block','right':'-300px'});
@@ -149,6 +151,8 @@ $(document).ready(function () {
     var $akaredeon = $(".program__body__point");
     $akaredeon.on('click',function () {
         $akaredeon.removeClass('active');
+        $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
         $(this).addClass('active');
+        $(this).find(".program__body__point__body").animate({'height':$(this).find('ul').outerHeight() + 30}, 300);
     })
 })

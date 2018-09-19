@@ -586,14 +586,65 @@
   .pop-up__call-back__body__input {
     width: 100%;
   }
+
+  /* line 487, ../sass/media.scss */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* line 490, ../sass/media.scss */
+  .pop-up__call-back__body__input p {
+    display: none;
+  }
+
+  /* line 493, ../sass/media.scss */
+  .pop-up__call-back__body__input {
+    margin-bottom: 5px;
+  }
+
+  /* line 496, ../sass/media.scss */
+  .pop-up__call-back button {
+    margin: 20px auto 0 auto;
+  }
+
+  /* line 499, ../sass/media.scss */
+  .pop-up__call-back {
+    padding: 10px 20px 20px 20px;
+  }
+
+  /* line 502, ../sass/media.scss */
+  .pop-up__deputats {
+    padding: 15px 20px 20px 20px;
+  }
+
+  /* line 505, ../sass/media.scss */
+  .pop-up__deputats__left > a {
+    margin-top: 8px;
+  }
+
+  /* line 508, ../sass/media.scss */
+  .pop-up__deputats__left h3 {
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+
+  /* line 512, ../sass/media.scss */
+  .pop-up__deputats__right ul {
+    height: 202px;
+  }
+
+  /* line 515, ../sass/media.scss */
+  .pop-up__deputats__right h2 {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-height: 360px) {
-  /* line 489, ../sass/media.scss */
+  /* line 520, ../sass/media.scss */
   .header__gubarev {
     display: none;
   }
 
-  /* line 492, ../sass/media.scss */
+  /* line 523, ../sass/media.scss */
   #header__gubarev {
     height: 75px;
   }

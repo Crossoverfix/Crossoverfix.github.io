@@ -484,6 +484,37 @@
       }
     }
   }
+  body{
+    overflow-x: hidden;
+  }
+  .pop-up__call-back__body__input p{
+    display: none;
+  }
+  .pop-up__call-back__body__input{
+    margin-bottom: 5px;
+  }
+  .pop-up__call-back button{
+    margin: 20px auto 0 auto;
+  }
+  .pop-up__call-back{
+    padding: 10px 20px 20px 20px;
+  }
+  .pop-up__deputats{
+    padding: 15px 20px 20px 20px;
+  }
+  .pop-up__deputats__left > a{
+    margin-top: 8px;
+  }
+  .pop-up__deputats__left h3{
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+  .pop-up__deputats__right ul{
+    height: 202px;
+  }
+  .pop-up__deputats__right h2{
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-height: 360px){
   .header__gubarev{
