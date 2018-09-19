@@ -150,9 +150,14 @@ $(document).ready(function () {
     }
     var $akaredeon = $(".program__body__point");
     $akaredeon.on('click',function () {
-        $akaredeon.removeClass('active');
-        $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
-        $(this).addClass('active');
-        $(this).find(".program__body__point__body").animate({'height':$(this).find('ul').outerHeight() + 30}, 300);
+        if($(this).hasClass('active')){
+            $akaredeon.removeClass('active');
+            $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
+        } else {
+            $akaredeon.removeClass('active');
+            $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
+            $(this).addClass('active');
+            $(this).find(".program__body__point__body").animate({'height':$(this).find('ul').outerHeight() + 30}, 300);
+        }
     })
 })
