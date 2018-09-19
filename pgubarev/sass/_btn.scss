@@ -25,21 +25,32 @@ button, button:active, button:hover, button:visited,button:focus{
   line-height: 27px;
   color: $color-red;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   background-color: transparent;
   border: none;
   text-align: left;
   display: inline-block;
-  img{
-    height: 12px;
-    margin-left: 8px;
-    &:first-of-type{
-      display: inline-block;
-    }
-    &:last-of-type{
-      display: none;
-    }
+  &:after{
+    content: "";
+    display: inline-block;
+    height: 13px;
+    width: 10px;
+    background: url("../img/Svg/caret_right.svg")no-repeat;
+    background-size: 8px;
+    position: relative;
+    bottom: 0;
+    right: -10px;
   }
+  //img{
+  //  height: 12px;
+  //  margin-left: 8px;
+  //  &:first-of-type{
+  //    display: inline-block;
+  //  }
+  //  &:last-of-type{
+  //    display: none;
+  //  }
+  //}
   //&:before{
   //  content: "";
   //  position: absolute;
@@ -52,14 +63,17 @@ button, button:active, button:hover, button:visited,button:focus{
   //}
   &.active{
     color: $color-blue;
-    img{
-      &:first-of-type{
-        display: none;
-      }
-      &:last-of-type{
-        display: inline-block;
-      }
+    &:after{
+      background: url("../img/Svg/caret_right_b.svg")no-repeat;
     }
+    //img{
+    //  &:first-of-type{
+    //    display: none;
+    //  }
+    //  &:last-of-type{
+    //    display: inline-block;
+    //  }
+    //}
     //&:before{
     //  background: url("../img/Svg/caret_right_b.svg")no-repeat;
     //  background-size: 8px;

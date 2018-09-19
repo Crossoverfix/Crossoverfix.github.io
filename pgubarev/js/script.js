@@ -146,4 +146,9 @@ $(document).ready(function () {
             }
         }
     }
+    var $akaredeon = $(".program__body__point");
+    $akaredeon.on('click',function () {
+        $akaredeon.removeClass('active');
+        $(this).addClass('active');
+    })
 })
