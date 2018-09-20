@@ -37,11 +37,15 @@ $(document).ready(function () {
             $newsBlog.eq(0).addClass('active');
             $(".news-blog__body.news").css('display','flex');
             $(".news-blog__body.blog").css('display','none');
+            $("#refresh__news").css('display','block');
+            $("#refresh__blog").css('display','none');
         } else if ($newsBlog.index(this) == 2){
             $newsBlog.removeClass('active');
             $newsBlog.eq(2).addClass('active');
             $(".news-blog__body.news").css('display','none');
             $(".news-blog__body.blog").css('display','flex');
+            $("#refresh__news").css('display','none');
+            $("#refresh__blog").css('display','block');
         }
     })
     var $navMenu = $("#nav-bar");

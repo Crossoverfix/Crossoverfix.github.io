@@ -90,11 +90,11 @@
             <a href="mailto:don_voroshil@mail.ru"><img alt="mail" src="img/Svg/email.svg">don_voroshil@mail.ru</a>
             <h3>Официальные страницы</h3>
             <div class="pop-up__deputats__left__social">
-                <a href="#"><img alt="vk" src="img/Svg/vk.svg"></a>
-                <a href="#"><img alt="facebook" src="img/Svg/Fb.svg"></a>
-                <a href="#"><img alt="ok" src="img/Svg/ok.svg"></a>
-                <a href="#"><img alt="intagram" src="img/Svg/Insta.svg"></a>
-                <a href="#"><img alt="twitter" src="img/Svg/twitter.svg"></a>
+                <a class="ico-vk" href="#"></a>
+                <a class="ico-facebook" href="#"></a>
+                <a class="ico-ok" href="#"></a>
+                <a class="ico-instagram" href="#"></a>
+                <a class="ico-twitter" href="#"></a>
             </div>
         </div>
         <div class="pop-up__deputats__right">
@@ -123,41 +123,39 @@
         <form id="call-back__form" class="pop-up__call-back__body">
             <div class="pop-up__call-back__body__input">
                 <p>Представтесь</p>
-                <div class="pop-up__call-back__body__input__wrapp">
-                    <img alt="ico" src="img/Svg/person.svg">
+                <div class="pop-up__call-back__body__input__wrapp ico__input-name">
                     <input type="text" name="name" placeholder="Ваше имя">
                 </div>
             </div>
             <div class="pop-up__call-back__body__input">
                 <p>Email</p>
-                <div class="pop-up__call-back__body__input__wrapp">
-                    <img alt="ico" src="img/Svg/email.svg">
+                <div class="pop-up__call-back__body__input__wrapp ico__input-email">
                     <input type="email" name="email" placeholder="Ваш E-mail">
                 </div>
             </div>
             <div class="pop-up__call-back__body__input">
                 <p>Номер телефона</p>
-                <div class="pop-up__call-back__body__input__wrapp">
-                    <img alt="ico" src="img/Svg/call.svg">
+                <div class="pop-up__call-back__body__input__wrapp ico__input-number">
                     <input type="tel" name="phone" placeholder="(000)-000-00-00">
                 </div>
             </div>
             <div class="pop-up__call-back__body__input">
                 <p>Тема</p>
-                <div class="pop-up__call-back__body__input__wrapp">
-                    <img alt="ico" src="img/Svg/create.svg">
+                <div class="pop-up__call-back__body__input__wrapp ico__input-them">
                     <input type="text" name="them" placeholder="Тема">
                 </div>
             </div>
-            <div class="pop-up__call-back__body__input">
+            <div class="pop-up__call-back__body__input text-area">
                 <p>Текст сообщения</p>
                 <div class="pop-up__call-back__body__input__wrapp">
                     <textarea name="message"></textarea>
                 </div>
             </div>
+            <div class="pop-up__call-back__body__wrapper">
+                <div class="pop-up__call-back__capcha">Капча</div>
+                <button type="submit" class="btn-ghost__red">Отправить</button>
+            </div>
         </form>
-        <div class="pop-up__call-back__capcha">Капча</div>
-        <button type="submit" form="call-back__form" class="btn-ghost__red">Отправить</button>
     </div>
 </div>
     <header>
@@ -729,7 +727,8 @@
                     </div>
                 </div>
                 <div class="news-blog__footer">
-                    <button id="refresh__news-blog" class="btn-refresh">Показать еще</button>
+                    <button id="refresh__news" class="btn-refresh">Показать еще</button>
+                    <button id="refresh__blog" class="btn-refresh">Показать еще</button>
                 </div>
             </div>
         </div>
