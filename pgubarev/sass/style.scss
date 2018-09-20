@@ -263,10 +263,10 @@ padding-top: 75px;
     font-size: 30px;
     font-weight: bold;
     line-height: 41px;
-    padding-left: 95px;
+    padding-left: 50px;
   }
   &__tabs{
-    padding-left: 70px;
+    padding-left: 45px;
     padding-right: 15px;
     display: flex;
     flex-direction: column;
@@ -436,15 +436,18 @@ padding-top: 75px;
       font-family: "Open Sans Condensed",sans-serif;
       font-size: 30px;
       line-height: 41px;
-      text-align: center;
+      text-align: left;
       color: $color-blue;
       font-weight: bold;
       width: 100%;
     }
     margin-bottom: 30px;
+    width: 100%;
+    padding-left: 50px;
   }
   &__body{
     width: 100%;
+    padding: 0 50px;
     &__point{
       width: 100%;
       margin-bottom: 2px;

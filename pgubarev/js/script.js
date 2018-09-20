@@ -82,7 +82,7 @@ $(document).ready(function () {
             $quoteText.eq($radioIndex).animate({'position':'relative','right':'0','opacity':'1'},400);
         });
     });
-    setInterval(quoteAuto,5000);
+    setInterval(quoteAuto,15000);
     function quoteAuto() {
     var $quoteOld = $('.quote__text :visible');
     $quoteRadio.removeClass('active');
