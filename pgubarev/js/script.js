@@ -103,16 +103,16 @@ $(document).ready(function () {
     var $popUpNews = $("#pop-up .pop-up__news");
     var $popUpDeputat = $("#pop-up .pop-up__deputats");
     var $popUpCallBack = $("#pop-up .pop-up__call-back");
-    var $callPopUp = $("[data-pop-up]");
+    var $callPopUp = $("[data-pop-up]");//атрибут для клик события
     $callPopUp.on('click',function () {
         var $eventObject = $(this);
         showPopUp($eventObject);
     })
     function showPopUp($eventObject) {
-        var $type = $($eventObject).attr('data-pop-up');
+        var $type = $($eventObject).attr('data-pop-up');//тип попапа
         var $closeBtn = $(".btn-close");
         if($type != 'body-call-back' && $type != 'header-call-back'){
-            var $eventData = $($eventObject).attr('data-targets');
+            var $eventData = $($eventObject).attr('data-targets'); //если не call-back то записываем второй атрибут с индификатором
         }
         $popUp.css('display','block');
         if($type == 'header-call-back' || $type == 'body-call-back'){
@@ -121,7 +121,7 @@ $(document).ready(function () {
             selectPopUp($popUpNews,$eventData);
         } else if ($type == 'deputat'){
             selectPopUp($popUpDeputat ,$eventData);
-        }
+        } //блок проверки типа попапа
         function selectPopUp($typePop,$dataPop) {
             var $tempScrol = 0;
             var $tempScroll = false;

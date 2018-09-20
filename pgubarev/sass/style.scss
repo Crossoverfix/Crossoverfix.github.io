@@ -652,6 +652,7 @@ padding-top: 75px;
 .team{
   &__header{
     margin: 0 auto;
+    width: 100%;
     h2{
       font-family: "Open Sans Condensed",sans-serif;
       font-size: 30px;
@@ -662,6 +663,7 @@ padding-top: 75px;
     }
   }
   &__body{
+    width: 100%;
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
@@ -734,6 +736,7 @@ padding-top: 75px;
     }
   }
   &__footer{
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -1001,6 +1004,13 @@ padding-top: 75px;
             height: 18px;
             width: 18px;
             margin-right: 6px;
+          }
+          span{
+            width: calc(100% - 30px);
+            display: inline-block;
+          }
+          input{
+            width: calc(100% - 30px);
           }
           input,input:focus,textarea,textarea:focus{
             border: none;
@@ -1412,12 +1422,13 @@ padding-top: 75px;
     position: relative;
     margin: 0 12px;
     width: 20px;
+    height: 47px;
     display: inline-block;
     color: transparent;
     font-size: 0;
     a{
       color: transparent;
-      font-size: 0;
+      font-size: 0!important;
     }
     &:before{
       display: block;
