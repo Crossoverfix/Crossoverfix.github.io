@@ -145,3 +145,18 @@ button, button:active, button:hover, button:visited,button:focus{
   height: 35px;
   margin: 0!important;
 }
+.btn-back{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 0!important;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

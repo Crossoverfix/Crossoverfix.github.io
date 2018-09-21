@@ -347,6 +347,7 @@
         }
         a{
           margin-right: 7px;
+          padding: 8px 12px 0 12px;
         }
       }
     }
@@ -382,6 +383,9 @@
   }
   .program__header{
     padding-left: 0;
+  }
+  .news-mod .pop-up__news{
+    top: 104px;
   }
   }
 @media screen and (max-width: 574px){

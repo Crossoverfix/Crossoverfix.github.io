@@ -4,7 +4,11 @@ $(document).ready(function () {
         if($scrollPage >= 600){
             $("#nav-bar").css({'position':'fixed','top':'73px','bottom':'auto'});
         } else if ($scrollPage <=599){
-            $("#nav-bar").css({'position':'absolute','top':'auto','bottom':'0'});
+            if($("body").hasClass('news-mod')){
+                $("#nav-bar").css({'position':'fixed','top':'73px','bottom':'auto'});
+            } else {
+                $("#nav-bar").css({'position':'absolute','top':'auto','bottom':'0'});
+            }
         }
     });
     // $(window).on("load",function(){

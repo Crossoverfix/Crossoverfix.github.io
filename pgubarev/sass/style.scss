@@ -1541,3 +1541,17 @@ padding-top: 75px;
     }
   }
 }
+.news-mod{
+  background-color: white;
+  #nav-bar{
+    position: fixed;
+    top: 73px;
+    bottom: auto;
+  }
+  .pop-up__news{
+    position: relative;
+    left: 50%;
+    top: 73px;
+    margin-bottom: 73px;
+  }
+}
