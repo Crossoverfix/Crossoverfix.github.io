@@ -406,6 +406,7 @@ padding-top: 75px;
     color: $color-blue;
     font-weight: bold;
     width: 100%;
+    text-align: left;
   }
 }
 .program__body__point.active{
@@ -454,9 +455,8 @@ padding-top: 75px;
       margin-bottom: 2px;
       &__header{
         cursor: pointer;
-        height: 43px;
         background-color: #E7ECF1;
-        padding-left: 55px;
+        padding: 10px 10px 10px 55px;
         position: relative;
         :before{
           opacity: 1;
@@ -487,7 +487,7 @@ padding-top: 75px;
           font-family: "Open Sans",sans-serif;
           font-size: 20px;
           font-weight: 600;
-          line-height: 43px;
+          line-height: 24px;
           margin: 0;
         }
       }
@@ -881,23 +881,29 @@ padding-top: 75px;
   padding: 55px 25px 35px 25px;
   box-shadow: 0 -1px 4px 0 rgba(15, 52, 111, 0.1), 1px 2px 4px 0 rgba(15, 52, 111, 0.25);
   align-items: flex-start;
-  > a{
-    font-family: "Open Sans",sans-serif;
-    font-size: 20px;
-    height: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    color: $color-red;
-    position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      height: 13px;
-      width: 10px;
-      background: url("../img/Svg/caret_right.svg")no-repeat;
-      background-size: 8px;
-      bottom: -1px;
-      right: -20px;
+  ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+      > a{
+        font-family: "Open Sans",sans-serif;
+        font-size: 20px;
+        height: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $color-red;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          height: 13px;
+          width: 10px;
+          background: url("../img/Svg/caret_right.svg")no-repeat;
+          background-size: 8px;
+          bottom: 6px;
+          right: -20px;
+        }
+      }
     }
   }
   &__social{
@@ -908,24 +914,11 @@ padding-top: 75px;
       margin: 0 12px;
       height: 20px;
       width: 20px;
-      &:hover{
-        img{
-          &:first-child{
-            display: none;
-          }
-          &:last-child{
-            display: inline-block;
-          }
-        }
+      &:before{
+        display: block;
       }
-      img{
-        width: 20px;
-        &:first-child{
-          display: inline-block;
-        }
-        &:last-child{
-          display: none;
-        }
+      &:after{
+        display: none;
       }
     }
   }
@@ -1225,9 +1218,11 @@ padding-top: 75px;
       &__social{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        flex-wrap: wrap;
         a{
-          width: 22px;
+          width: 25%;
+          margin-bottom: 10px;
           height: 22px;
           display: inline-block;
           cursor: pointer;
@@ -1294,7 +1289,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/vk.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 55%;
     }
     &:after{
       content: "";
@@ -1304,7 +1299,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/vk_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 55%;
     }
   }
   &-facebook{
@@ -1317,7 +1312,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/Fb.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
     &:after{
       content: "";
@@ -1327,7 +1322,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/Fb_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
   }
   &-ok{
@@ -1340,7 +1335,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/ok.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
     &:after{
       content: "";
@@ -1350,7 +1345,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/ok_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
   }
   &-instagram{
@@ -1363,7 +1358,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/Insta.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
     &:after{
       content: "";
@@ -1373,7 +1368,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/Insta_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
   }
   &-twitter{
@@ -1386,7 +1381,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/twitter.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 80%;
     }
     &:after{
       content: "";
@@ -1396,7 +1391,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/twitter_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 80%;
     }
   }
   &-telegram{
@@ -1409,7 +1404,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/telegram.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
     &:after{
       content: "";
@@ -1419,7 +1414,7 @@ padding-top: 75px;
       width: 100%;
       height: 100%;
       background: url("../img/Svg/telegram_r.svg")no-repeat center;
-      background-size: contain;
+      background-size:auto 100%;
     }
   }
   &-home{

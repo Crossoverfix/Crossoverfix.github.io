@@ -58,7 +58,7 @@
     }
   }
   #team{
-    padding: 40px 0;
+    padding: 40px 15px;
   }
   .team{
     &__body{
@@ -139,7 +139,6 @@
       padding-left: 0;
       padding-right: 0;
       margin-left: -25px;
-      height: 80px;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -192,7 +191,7 @@
   .team{
     &__body{
       &__card{
-        width: 360px;
+        width: 345px;
       }
     }
   }
@@ -201,6 +200,9 @@
   }
 }
 @media screen and (max-width: 767px){
+  .news-blog__body__card__img{
+    height: 145px;
+  }
   #call-back,#call-back-2{
     .row{
       div:nth-of-type(2){
@@ -237,8 +239,9 @@
   .gubarev__slovo{
     h3{
       font-size: 32px;
+      text-align: center;
       &:before{
-        left: 275px;
+        left: 800px;
       }
     }
     h2{
@@ -273,7 +276,7 @@
     &__news{
       flex-wrap: wrap;
       &__card{
-        width: 100%;
+        width: calc(50% - 20px);
       }
     }
   }
@@ -283,19 +286,18 @@
   .call-back__social{
     margin: 10px 0;
   }
-  .news-blog{
-    &__body{
-      justify-content: center;
-      &__card{
-        width: 90%;
-      }
-    }
-  }
   .team{
     &__body{
-      justify-content: center;
+      padding-top: 30px;
       &__card{
-        width: 320px;
+        width: calc(50% - 15px);
+        height: 330px;
+        &__face{
+          top: -180px;
+          img{
+            top: 175px;
+          }
+        }
       }
     }
   }
@@ -314,9 +316,6 @@
   }
   #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
     top: -5px;
-  }
-  .team__body{
-    padding-top: 30px;
   }
   #mobil-menu{
     label{
@@ -378,16 +377,16 @@
   .program__body__point__body ul{
     padding-right: 20px;
   }
+  .program__body{
+    padding: 0;
+  }
+  .program__header{
+    padding-left: 0;
+  }
   }
 @media screen and (max-width: 574px){
   .gubarev__slovo{
     padding-top: 20px;
-    h3{
-      text-align: center;
-      &:before{
-        left: 800px;
-      }
-    }
     h2{
       font-size: 34px;
       line-height: 38px;
@@ -415,7 +414,11 @@
     }
     &__tabs{
       padding-left: 15px;
-      height: 125px;
+    }
+    &__news{
+      &__card{
+        width: 100%;
+      }
     }
   }
   #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
@@ -426,6 +429,14 @@
   }
   .news-blog__header{
     padding: 0 25px;
+  }
+  .news-blog{
+    &__body{
+      justify-content: center;
+      &__card{
+        width: 90%;
+      }
+    }
   }
   .pop-up{
     &__news{
@@ -459,7 +470,7 @@
       padding: 40px 20px 20px 20px;
       &__left{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         &__img{
           left: 50%;
           transform: translateX(-50%);
@@ -467,9 +478,6 @@
         > a{
           left: 50%;
           transform: translateX(-50%);
-        }
-        &__social{
-          justify-content: space-around;
         }
       }
       &__right{
@@ -489,6 +497,19 @@
   }
   body{
     overflow-x: hidden;
+  }
+  .team{
+    &__header{
+      h2{
+        padding-left: 10px;
+      }
+    }
+    &__body{
+      justify-content: center;
+      &__card{
+        width: 300px;
+      }
+    }
   }
   .pop-up__call-back__body__input p{
     display: none;
@@ -517,6 +538,12 @@
   }
   .pop-up__deputats__right h2{
     margin-bottom: 10px;
+  }
+  #program{
+    padding-top: 50px;
+    h2{
+      text-align: center;
+    }
   }
 }
 @media screen and (max-height: 360px){

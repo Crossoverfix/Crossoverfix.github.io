@@ -161,7 +161,7 @@ $(document).ready(function () {
             $akaredeon.removeClass('active');
             $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
             $(this).addClass('active');
-            $(this).find(".program__body__point__body").animate({'height':$(this).find('ul').outerHeight() + 30}, 300);
+            $(this).find(".program__body__point__body").animate({'height':$(this).find('.program__body__point__body__wrapp').outerHeight() + 30}, 300);
         }
     })
 })
