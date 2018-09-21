@@ -104,7 +104,7 @@ $(document).ready(function () {
     }
 }
     var $popUp = $("#pop-up");
-    var $popUpNews = $("#pop-up .pop-up__news");
+    // var $popUpNews = $("#pop-up .pop-up__news");
     var $popUpDeputat = $("#pop-up .pop-up__deputats");
     var $popUpCallBack = $("#pop-up .pop-up__call-back");
     var $callPopUp = $("[data-pop-up]");//атрибут для клик события
@@ -122,14 +122,19 @@ $(document).ready(function () {
         if($type == 'header-call-back' || $type == 'body-call-back'){
             selectPopUp($popUpCallBack,'none');
         } else if ($type == 'news' || $type == 'blog'){
-            selectPopUp($popUpNews,$eventData);
+            // selectPopUp($popUpNews,'none');
+            $popUp.css('display','none');
         } else if ($type == 'deputat'){
             selectPopUp($popUpDeputat ,$eventData);
         } //блок проверки типа попапа
         function selectPopUp($typePop,$dataPop) {
             var $tempScrol = 0;
             var $tempScroll = false;
-            $typePop.css('display','block');
+            if($dataPop != 'none'){
+                $typePop.filter('.' + $dataPop).css('display','block');
+            } else {
+                $typePop.css('display','block');
+            }
             if($typePop.outerHeight() > window.outerHeight){
                 $tempScrol = $(document).scrollTop();
                 $(document).on('scroll',function () {

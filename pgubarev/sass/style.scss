@@ -870,6 +870,20 @@ padding-top: 75px;
       display: none;
     }
   }
+  .ico-home{
+    a{
+      font-size: 20px!important;
+      color: $color-red!important;
+    }
+    font-size: 20px!important;
+    color: $color-red!important;
+    width: auto;
+    height: auto;
+    margin: 0;
+    &:before{
+      display: none!important;
+    }
+  }
 }
 .mobil-menu{
   flex-direction: column;
@@ -1325,6 +1339,29 @@ padding-top: 75px;
       background-size:auto 100%;
     }
   }
+  &-fb{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/Fb.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/Fb_r.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+  }
   &-ok{
     position: relative;
     &:before{
@@ -1371,7 +1408,53 @@ padding-top: 75px;
       background-size:auto 100%;
     }
   }
+  &-in{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/Insta.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/Insta_r.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+  }
   &-twitter{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/twitter.svg")no-repeat center;
+      background-size:auto 80%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/twitter_r.svg")no-repeat center;
+      background-size:auto 80%;
+    }
+  }
+  &-tw{
     position: relative;
     &:before{
       content: "";
@@ -1417,6 +1500,29 @@ padding-top: 75px;
       background-size:auto 100%;
     }
   }
+  &-tg{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/telegram.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/Svg/telegram_r.svg")no-repeat center;
+      background-size:auto 100%;
+    }
+  }
   &-home{
     position: relative;
     margin: 0 12px;
@@ -1427,7 +1533,7 @@ padding-top: 75px;
     font-size: 0;
     a{
       color: transparent;
-      font-size: 0!important;
+      font-size: 0;
     }
     &:before{
       display: block;
