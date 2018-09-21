@@ -11,6 +11,17 @@ $(document).ready(function () {
             }
         }
     });
+    // $(window).on("load",function(){
+    //     $(".gubarev-accost__text__wrapper").mCustomScrollbar({
+    //         theme:"my-red"
+    //     });
+    //     $(".biography__content__point").mCustomScrollbar({
+    //         theme:"my-blue"
+    //     });
+    //     $(".pop-up__deputats__right ul").mCustomScrollbar({
+    //         theme:"my-blue"
+    //     });
+    // });
     var $tabs = $(".btn-tabs");
     var $tabsContent = $(".biography__content__point");
     var $tabsNews = $(".biography__news");
@@ -93,6 +104,7 @@ $(document).ready(function () {
     }
 }
     var $popUp = $("#pop-up");
+    // var $popUpNews = $("#pop-up .pop-up__news");
     var $popUpDeputat = $("#pop-up .pop-up__deputats");
     var $popUpCallBack = $("#pop-up .pop-up__call-back");
     var $callPopUp = $("[data-pop-up]");//атрибут для клик события
@@ -109,6 +121,9 @@ $(document).ready(function () {
         $popUp.css('display','block');
         if($type == 'header-call-back' || $type == 'body-call-back'){
             selectPopUp($popUpCallBack,'none');
+        } else if ($type == 'news' || $type == 'blog'){
+            // selectPopUp($popUpNews,'none');
+            $popUp.css('display','none');
         } else if ($type == 'deputat'){
             selectPopUp($popUpDeputat ,$eventData);
         } //блок проверки типа попапа
