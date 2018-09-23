@@ -1,5 +1,5 @@
 button, button:active, button:hover, button:visited,button:focus{
-  outline: none;
+  outline: none!important;
   cursor: pointer;
 }
 .btn-ghost__red{
@@ -30,6 +30,9 @@ button, button:active, button:hover, button:visited,button:focus{
   border: none;
   text-align: left;
   display: inline-block;
+  &:focus{
+    outline: none;
+  }
   &:after{
     content: "";
     display: inline-block;

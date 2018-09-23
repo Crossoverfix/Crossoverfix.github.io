@@ -95,8 +95,13 @@ $(document).ready(function () {
     var $popUp = $("#pop-up");
     var $popUpDeputat = $("#pop-up .pop-up__deputats");
     var $popUpCallBack = $("#pop-up .pop-up__call-back");
-    var $callPopUp = $("[data-pop-up]");//атрибут для клик события
-    $callPopUp.on('click',function () {
+    var $deputatDiv = $("#team");
+    var $callPopUpBtn = $("button[data-pop-up]");//атрибут для клик события кнопка
+    $callPopUpBtn.on('click',function () {
+        var $eventObject = $(this);
+        showPopUp($eventObject);
+    })
+    $(".team__body").on('click','div[data-pop-up]',function () {
         var $eventObject = $(this);
         showPopUp($eventObject);
     })
