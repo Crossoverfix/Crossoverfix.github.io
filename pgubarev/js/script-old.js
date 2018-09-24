@@ -11,17 +11,17 @@ $(document).ready(function () {
             }
         }
     });
-    // $(window).on("load",function(){
-    //     $(".gubarev-accost__text__wrapper").mCustomScrollbar({
-    //         theme:"my-red"
-    //     });
-    //     $(".biography__content__point").mCustomScrollbar({
-    //         theme:"my-blue"
-    //     });
-    //     $(".pop-up__deputats__right ul").mCustomScrollbar({
-    //         theme:"my-blue"
-    //     });
-    // });
+    $(window).on("load",function(){
+        $(".gubarev-accost__text__wrapper").mCustomScrollbar({
+            theme:"my-red"
+        });
+        $(".biography__content__point").mCustomScrollbar({
+            theme:"my-blue"
+        });
+        $(".pop-up__deputats__right__content").mCustomScrollbar({
+            theme:"my-blue"
+        });
+    });
     var $tabs = $(".btn-tabs");
     var $tabsContent = $(".biography__content__point");
     var $tabsNews = $(".biography__news");
