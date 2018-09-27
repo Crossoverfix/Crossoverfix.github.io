@@ -1,6 +1,18 @@
 $(document).ready(function () {
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         alert('iphone');
+        $(window).on('scroll',function () {
+            alert('windows' + $(window).offset().top());
+        })
+        $(document).on('scroll',function () {
+            alert('document' + $(document).offset().top());
+        })
+        $('html').on('scroll',function () {
+            alert('html' + $('html').offset().top());
+        })
+        $('body').on('scroll',function () {
+            alert('body' + $('body').offset().top());
+        })
     }
     $(document).on('scroll',function () {
         var $scrollPage = $('html').scrollTop();
@@ -92,6 +104,7 @@ $(document).ready(function () {
     });
     $link.click(function () {
         if($("body").hasClass('news-mod')){
+
         } else {
             var $linkHref = $(this).attr("href");
             var $linkTo = $($linkHref.substring(1)).offset().top;
