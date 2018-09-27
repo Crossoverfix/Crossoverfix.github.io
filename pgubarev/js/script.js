@@ -1,4 +1,3 @@
-'use strict '
 $(document).ready(function () {
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         window.onscroll = function() {
@@ -253,7 +252,7 @@ $(document).ready(function () {
             });
         }
     });
-    $akaredeon.onTouchStart(function () {
+    $akaredeon.click(function () {
         alert('3');
         if($(this).parent().hasClass('active')){
             $akaredeon.parent().removeClass('active');
