@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        alert('iphone');
+    }
     $(document).on('scroll',function () {
         var $scrollPage = $('html').scrollTop();
         if($scrollPage >= 600){
@@ -198,18 +201,18 @@ $(document).ready(function () {
             }
         }
     }
-    var $akaredeon = $(".program__body__point");
+    var $akaredeon = $(".program__body__point__header");
     $akaredeon.on('click',function () {
-        if($(this).hasClass('active')){
-            $akaredeon.removeClass('active');
-            $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
+        if($(this).parent().hasClass('active')){
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
         } else {
-            $akaredeon.removeClass('active');
-            $akaredeon.find(".program__body__point__body").animate({'height':'0'}, 300);
-            $(this).addClass('active');
-            $(this).find(".program__body__point__body").animate({'height':$(this).find('.program__body__point__body__wrapp').outerHeight() + 30}, 300,function(){
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+            $(this).parent().addClass('active');
+            $(this).parent().find(".program__body__point__body").animate({'height':$(this).parent().find('.program__body__point__body__wrapp').outerHeight() + 30}, 300,function(){
                 if($(window).width() <= '767'){
-                    let $scrollToContent = $(this).offset().top;
+                    let $scrollToContent = $(this).parent().offset().top;
                     $('html').animate({ scrollTop: $scrollToContent - 190}, 600);
                 }
             });
