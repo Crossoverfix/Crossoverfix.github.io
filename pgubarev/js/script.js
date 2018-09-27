@@ -1,23 +1,17 @@
 $(document).ready(function () {
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-        alert('iphone');
         window.onscroll = function() {
-            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            console.log(scrolled);
-            alert('on scroll js' + 'window' + window.pageYOffset + 'document' + document.documentElement.scrollTop);
+            var $scrolledIPhone = window.pageYOffset;
+            if($scrolledIPhone >= 600){
+                $("#nav-bar").css({'position':'fixed','top':'72px','bottom':'auto'});
+            } else if ($scrolledIPhone <=599){
+                if($("body").hasClass('news-mod')){
+                    $("#nav-bar").css({'position':'fixed','top':'72px','bottom':'auto'});
+                } else {
+                    $("#nav-bar").css({'position':'absolute','top':'auto','bottom':'0'});
+                }
+            }
         }
-        $(window).on('scroll',function () {
-            alert('windows' + $(window).offset().top());
-        })
-        $(document).on('scroll',function () {
-            alert('document' + $(document).offset().top());
-        })
-        $('html').on('scroll',function () {
-            alert('html' + $('html').offset().top());
-        })
-        $('body').on('scroll',function () {
-            alert('body' + $('body').offset().top());
-        })
     }
     $(document).on('scroll',function () {
         var $scrollPage = $('html').scrollTop();
@@ -48,20 +42,7 @@ $(document).ready(function () {
     var $tabs = $(".btn-tabs");
     var $tabsContent = $(".biography__content__point");
     var $tabsNews = $(".biography__news");
-    $tabs.on('click',function () {
-        var $indexTabs = $($tabs).index(this);
-        $tabs.removeClass('active');
-        $tabsContent.removeClass('active');
-        $tabsNews.removeClass('active');
-        $tabs.eq($indexTabs).addClass('active');
-        $tabsContent.eq($indexTabs).addClass('active');
-        $tabsNews.eq($indexTabs).addClass('active');
-        if($(window).width() <= '767'){
-            let $scrollToContent = $('.biography__content').offset().top;
-            $('html').animate({ scrollTop: $scrollToContent - 160}, 1100);
-        }
-    })
-    $tabs.on('tap',function () {
+    $tabs.on('click touchstart',function () {
         var $indexTabs = $($tabs).index(this);
         $tabs.removeClass('active');
         $tabsContent.removeClass('active');
@@ -221,6 +202,58 @@ $(document).ready(function () {
     }
     var $akaredeon = $(".program__body__point__header");
     $akaredeon.on('click',function () {
+        alert('0');
+        if($(this).parent().hasClass('active')){
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+        } else {
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+            $(this).parent().addClass('active');
+            $(this).parent().find(".program__body__point__body").animate({'height':$(this).parent().find('.program__body__point__body__wrapp').outerHeight() + 30}, 300,function(){
+                if($(window).width() <= '767'){
+                    let $scrollToContent = $(this).parent().offset().top;
+                    $('html').animate({ scrollTop: $scrollToContent - 190}, 600);
+                }
+            });
+        }
+    });
+    $akaredeon.touchstart(function () {
+        alert('1');
+        if($(this).parent().hasClass('active')){
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+        } else {
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+            $(this).parent().addClass('active');
+            $(this).parent().find(".program__body__point__body").animate({'height':$(this).parent().find('.program__body__point__body__wrapp').outerHeight() + 30}, 300,function(){
+                if($(window).width() <= '767'){
+                    let $scrollToContent = $(this).parent().offset().top;
+                    $('html').animate({ scrollTop: $scrollToContent - 190}, 600);
+                }
+            });
+        }
+    });
+    $akaredeon.ontouchstart(function () {
+        alert('2');
+        if($(this).parent().hasClass('active')){
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+        } else {
+            $akaredeon.parent().removeClass('active');
+            $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
+            $(this).parent().addClass('active');
+            $(this).parent().find(".program__body__point__body").animate({'height':$(this).parent().find('.program__body__point__body__wrapp').outerHeight() + 30}, 300,function(){
+                if($(window).width() <= '767'){
+                    let $scrollToContent = $(this).parent().offset().top;
+                    $('html').animate({ scrollTop: $scrollToContent - 190}, 600);
+                }
+            });
+        }
+    });
+    $akaredeon.onTouchStart(function () {
+        alert('3');
         if($(this).parent().hasClass('active')){
             $akaredeon.parent().removeClass('active');
             $akaredeon.parent().find(".program__body__point__body").animate({'height':'0'}, 300);
