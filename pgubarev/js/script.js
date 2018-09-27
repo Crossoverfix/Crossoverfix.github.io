@@ -1,6 +1,11 @@
 $(document).ready(function () {
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         alert('iphone');
+        window.onscroll = function() {
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(scrolled);
+            alert('on scroll js' + 'window' + window.pageYOffset + 'document' + document.documentElement.scrollTop);
+        }
         $(window).on('scroll',function () {
             alert('windows' + $(window).offset().top());
         })
@@ -97,7 +102,7 @@ $(document).ready(function () {
         } else {
             $mobilCollapser.prop('checked',false);
             var $linkHrefMob = $(this).attr("href");
-            var $linkToMob = $($linkHrefMob.substring(1)).offset().top;
+            var $linkToMob = $($linkHrefMob.substring(1)).offset().top();
             $('html').animate({ scrollTop: $linkToMob - 160}, 1100);
             return false;
         }
@@ -107,7 +112,7 @@ $(document).ready(function () {
 
         } else {
             var $linkHref = $(this).attr("href");
-            var $linkTo = $($linkHref.substring(1)).offset().top;
+            var $linkTo = $($linkHref.substring(1)).offset().top();
             $link.removeClass('active');
             $(this).addClass('active');
             $('html').animate({ scrollTop: $linkTo - 110}, 1100);
