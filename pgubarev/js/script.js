@@ -1,3 +1,4 @@
+'use strict '
 $(document).ready(function () {
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         window.onscroll = function() {
